@@ -157,6 +157,8 @@ Based on each of these conditions, an action can be tied to the allocation. Reta
 
 ### Configuring Allocation Actions (Continuing Our Example)
 
+Continuing with our example, we have configured the final inventory rule that states what should be the allocation actions for those orders that did not get any inventory.
+
 {% embed url="https://youtu.be/rK3nCz-lMYA" %}
 Final Inventory Rule
 {% endembed %}
