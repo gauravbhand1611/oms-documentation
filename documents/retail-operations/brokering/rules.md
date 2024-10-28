@@ -4,7 +4,7 @@ description: Learn about rules.
 
 # Rules
 
-HotWax Commerce lets retailers apply multiple order-fetching and recursive inventory allocation rules, ensuring that each batch of orders is accurately selected for routing and allocated to the most suitable locations.
+<mark style="color:orange;">**Multiple order-fetching and recursive inventory allocation rules**</mark> ensure that each batch of orders is accurately selected for routing and allocated to the most suitable locations.
 
 ## 1. Finding Orders
 
@@ -57,7 +57,7 @@ Next, let's hop onto inventory rules. Before we proceed to apply inventory rules
 
 Retailers must specify the available facilities for brokering an order batch. To achieve this, they need to establish order brokering facility groups. For example, for standard orders, retailers may opt to broker solely within warehouses, while expedited orders can be brokered across all facilities based on proximity.
 
-To ensure this, retailers should create two distinct order brokering facility groups: one comprising warehouse locations exclusively, and the other incorporating both warehouses and stores. These facility groups can be established within the Facilities App. Refer to our [user manual](https://docs.hotwax.co/documents/v/system-admins/administration/facilities/manage-groups) for detailed instructions on creating brokering facility groups.
+To ensure this, retailers should create two distinct order brokering facility groups: one comprising warehouse locations exclusively, and the other incorporating both warehouses and stores. These facility groups can be established within the Facilities App. Learn more about brokering [facility groups](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups).
 
 {% hint style="info" %}
 HotWax Commerce routes orders based on the proximity of the customer to the facilities. To determine this proximity, HotWax Commerce compares the customer's shipping address with the facility locations. To ensure accurate location matching, it is essential that the facility's zip code, along with its latitude and longitude, is added.
@@ -160,8 +160,6 @@ Continuing with our example, we have configured the final inventory rule that st
 {% embed url="https://youtu.be/rK3nCz-lMYA" %}
 Final Inventory Rule
 {% endembed %}
-
-
 
 {% hint style="info" %}
 Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required.

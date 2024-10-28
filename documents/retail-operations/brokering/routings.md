@@ -4,12 +4,12 @@ description: Learn about routings.
 
 # Routings
 
-A routing in the brokering system defines the criteria for fetching orders and specifies the inventory rules to apply. Understanding how to create, manage, and optimize routings is crucial for configuring your order processing to meet specific fulfillment requirements.
+A <mark style="color:orange;">**routing**</mark> in the brokering system defines the criteria for fetching orders and specifies the inventory rules to apply. Understanding how to create, manage, and optimize routings is crucial for configuring your order processing to meet specific fulfillment requirements.
 
 ### Adding a New Routing
 
-* Click the `Create Order Batch`  to create a new routing.
-* Provide a name for the routing and click **Save** to add it to the routing list of a run.
+* Click the `Create Order Batch`  button to create a new routing.
+* Provide a name for the routing and click `Save` to add it to the routing list of a run.
 
 {% tabs %}
 {% tab title="Create Order Route" %}
