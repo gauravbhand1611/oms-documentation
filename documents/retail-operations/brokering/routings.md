@@ -27,8 +27,8 @@ A routing in the brokering system defines the criteria for fetching orders and s
 
 <figure><img src="../.gitbook/assets/Order Batches.png" alt="" width="375"><figcaption><p>New Routings</p></figcaption></figure>
 
-{% hint style="success" %}
-To ensure a routing is actively processing orders, it’s essential to change its status from "Draft" to "Active." Simply click on "Draft" to set it to "Active," or, if needed, revert an "Active" routing back to "Draft" by clicking on "Active."
+{% hint style="info" %}
+For a routing to actively process orders, you’ll need to change its status from "Draft" to "Active." Just click "Draft" to update it to "Active," or, if needed, revert an active routing back to "Draft" by clicking on "Active." This step should be done only after setting up all routing rules, as outlined in the upcoming [Rules](rules.md) section.
 {% endhint %}
 
 ### Sequencing Routings
