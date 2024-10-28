@@ -264,7 +264,7 @@ With this threshold in place, orders will only be split if the value of the item
 Set Brokering Shipment Threshold
 {% endembed %}
 
-## Scenario 11: Managing Order Splitting for Grouped Items
+## Scenario 11: Managing Order Splitting for Grouped Items (Kits and Gift Items)
 
 Retailers often face scenarios where certain items in an order must be shipped together, while other items can be shipped separately. For example, if a customer orders a frame and lenses along with sunglasses, the frame and lenses must be shipped together, but the sunglasses can be shipped from a different location. In such cases, items like the frame and lenses are grouped to ensure they are always shipped together.
 
@@ -278,7 +278,7 @@ HotWax Commerce allows retailers to manage these scenarios by disabling the spli
    * **Navigate to Partial Allocation**: In the inventory rule settings, locate the "Partially Available" card. This section allows you to configure how items are allocated when they are not fully available at a single location.
    * **Enable Partial Allocation**: Turn on the toggle for "Partial Order Allocation" to allow the order to be split across multiple locations for items that are not grouped.
 3. **Disable Splitting for Grouped Items**
-   * **Toggle Off for Grouped Items**: Ensure that the toggle for "Partially Allocate Grouped Items" is turned off. This setting ensures that grouped items, such as kit products and gift items are not split and are shipped together from a single location.
+   * **Toggle Off for Grouped Items**: Ensure that the toggle for "Partially Allocate Grouped Items" is turned off. This setting ensures that orders for grouped items, such as kit products and gift items are not split and are shipped together from a single location.
 4. **Optional: Enable Splitting for Specific Scenarios**
    * **Enable Grouped Item Splitting**: If the retailer sells items that are grouped but can be split under certain circumstances (e.g., gifting items), they can turn on the toggle for "Partially Allocate Grouped Items."
    * **Best Practice**: It is recommended first to create an inventory rule with grouped item splitting disabled and then follow it with a rule where grouped item splitting is enabled. This layered approach ensures that grouped items are handled appropriately based on the retailer's preferences.
