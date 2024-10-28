@@ -11,22 +11,21 @@ Runs in the brokering system act as containers for sequences of routings. These 
 Creating a brokering run is the first step in structuring your order routing process. These runs serve as scheduled sequences that execute routing rules based on your fulfillment priorities, ensuring timely and efficient handling of orders.
 
 #### Steps to Create a New Brokering Run
+
 1. Access the Order Routing App.
    * Open the `Order Routing` App and navigate to the brokering section.
-
 2. **Initiate a New Run**
    * Click on the “New Run” button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in your list of scheduled brokering tasks.
-
 3. **Name the Run**
    * Give the run a meaningful name that reflects its purpose. For example, if you’re creating a brokering run specifically for orders that require prompt fulfillment, you could name it something like “high oriority orders.”
-
 4. **Add a Description**
    * After naming the run, add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function. For instance, if the run focuses on urgent orders, you might write: “Prioritized routing for unfillable orders, next-day, and two-day delivery orders.”
-  
-<figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Run Details</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>New Brokering Run</p></figcaption></figure>
 
 5. **Schedule the Brokering Run**
-   * Once you’ve added the description, proceed to schedule the run. In the next section, we’ll cover the scheduling parameters in detail.
+
+* Once you’ve added the description, proceed to schedule the run. In the next section, we’ll cover the scheduling parameters in detail.
 
 ### Scheduling Brokering Runs
 
@@ -50,6 +49,8 @@ For example, setting the frequency of a run to "Daily" and the runtime to "7 am"
 
 2. **Run Details**
    * Click on a specific run to open its details.
+
+<figure><img src="../.gitbook/assets/Run details (1).png" alt=""><figcaption><p>Run Details</p></figcaption></figure>
 
 Understanding how to view, schedule, and manage brokering runs is essential for optimizing your order routing strategies.
 
