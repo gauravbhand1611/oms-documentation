@@ -8,7 +8,7 @@ A routing in the brokering system defines the criteria for fetching orders and s
 
 ### Adding a New Routing
 
-* Click the **Add** button next to the "Order batches" label to create a new routing.
+* Click the **Add** button next to the `Order batches` label to create a new routing.
 * Provide a name for the routing and click **Save** to add it to the routing list of a run.
 
 <figure><img src="../.gitbook/assets/Order Batches.png" alt="" width="375"><figcaption><p>New Routings</p></figcaption></figure>
