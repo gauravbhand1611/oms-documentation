@@ -14,20 +14,20 @@ Creating a brokering run is the first step in structuring your order routing pro
 
 1. **Access the Order Routing App.**
    * Open the `Order Routing` App, where you’ll see the home page displaying all currently arranged brokering runs. If no brokering runs are scheduled, this page will appear blank.
-   
+
 {% hint style="info" %}
-If you have multiple product stores, you’ll be prompted to select the store for which you want to create a brokering run. This feature helps in managing order routing uniquely for each store. https://docs.hotwax.co/documents/system-admins/product-store/add-more-product-stores
+If you have multiple product stores, you’ll be prompted to choose the store for which you want to create a brokering run. This feature helps in managing order routing uniquely for each store. Learn more about [product stores](https://docs.hotwax.co/documents/system-admins/product-store/add-more-product-stores).
 {% endhint %}
-     
+
 2. **Initiate a New Run**
-   * Click on the “New Run” button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in your list of scheduled brokering tasks.
+   * Click on the `New Run` button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in your list of scheduled brokering tasks.
 3. **Name the Run**
    * Give the run a meaningful name that reflects its purpose. For example, if you’re creating a brokering run specifically for orders that require prompt fulfillment, you could name it something like “high priority orders.”
 
 <figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>New Brokering Run</p></figcaption></figure>
 
 4. **Add a Description**
-   * After naming the run, add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function. For instance, if the run focuses on urgent orders, you might write: “Prioritized routing for unfillable orders, next-day, and two-day delivery orders.”
+   * After naming the run, add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function. For example, if the run focuses on urgent orders, you might write: “Prioritized routing for unfillable orders, next-day, and two-day delivery orders.”
 
 <figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Details</p></figcaption></figure>
 
@@ -51,7 +51,7 @@ For example, setting the frequency of a run to "Daily" and the runtime to "7 am"
 ### Viewing Brokering Runs
 
 1. **Chronological Sequence**
-   * All routing runs are presented in a chronological sequence based on their next scheduled run time in the Order Routing App.
+   * All routing runs are presented in a chronological sequence based on their next scheduled run time in the `Order Routing` App.
 
 <figure><img src="../.gitbook/assets/Brokering Runs (1).png" alt=""><figcaption><p>Brokering Runs in Order Routing App</p></figcaption></figure>
 
