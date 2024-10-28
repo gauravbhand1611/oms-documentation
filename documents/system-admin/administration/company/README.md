@@ -1,5 +1,5 @@
 ---
-description: HotWax Commerce documentation for Company.
+description: Learn about Company App in HotWax Commerce
 ---
 
 # Company
