@@ -24,7 +24,19 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 3. **Name the Run**
    * Give the run a meaningful name that reflects its purpose. For example, if you’re creating a brokering run specifically for orders that require prompt fulfillment, you could name it something like “high priority orders.”
 
-<figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>New Brokering Run</p></figcaption></figure>
+
+
+{% tabs %}
+{% tab title="Create Brokering Run" %}
+<figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>Add a New Brokering Run</p></figcaption></figure>
+
+
+{% endtab %}
+
+{% tab title="View Brokering Run" %}
+<figure><img src="../.gitbook/assets/Created Brokering Run (1).png" alt=""><figcaption><p>View Created Brokering Run</p></figcaption></figure>
+{% endtab %}
+{% endtabs %}
 
 4. **Add a Description**
    * After naming the run, add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function. For example, if the run focuses on urgent orders, you might write: “Prioritized routing for unfillable orders, next-day, and two-day delivery orders.”
@@ -53,14 +65,12 @@ For example, setting the frequency of a run to "Daily" and the runtime to "7 am"
 1. **Chronological Sequence**
    * All brokering runs are presented in a chronological sequence based on their next scheduled run time in the `Order Routing` App.
 
-<figure><img src="../.gitbook/assets/Brokering Runs (1).png" alt=""><figcaption><p>Brokering Runs in Order Routing App</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Brokering Runs.png" alt=""><figcaption><p>Brokering Runs in Order Routing App</p></figcaption></figure>
 
 2. **Run Details**
    * Click on a specific run to open its details.
 
 <figure><img src="../.gitbook/assets/Run details (1).png" alt=""><figcaption><p>Run Details</p></figcaption></figure>
-
-
 
 {% hint style="info" %}
 To ensure your brokering run is operational, it's essential to change its status from "Draft" to "Active." By default, new brokering runs are set to "Draft." Simply select "Active" from the dropdown to activate it, or revert an active run back to "Draft" if adjustments are needed. Ideally, activate the brokering run only once you've fully configured your routing, rules, and other settings.
