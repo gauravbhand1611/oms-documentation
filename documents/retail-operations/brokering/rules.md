@@ -164,7 +164,7 @@ Final Inventory Rule
 
 
 {% hint style="info" %}
-Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required. Ensure that your is also in Active status.
+Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required.
 
 Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to "Active" so that it can begin processing orders as scheduled.
 {% endhint %}
