@@ -12,7 +12,7 @@ Creating a brokering run is the first step in structuring your order routing pro
 
 #### Steps to Create a New Brokering Run
 
-1. **Access the Order Routing App.**
+1. **Access the Order Routing App**
    * Open the `Order Routing` App, where you’ll see the home page displaying all currently arranged brokering runs. If no brokering runs are scheduled, this page will appear blank.
 
 {% hint style="info" %}
@@ -59,6 +59,12 @@ For example, setting the frequency of a run to "Daily" and the runtime to "7 am"
    * Click on a specific run to open its details.
 
 <figure><img src="../.gitbook/assets/Run details (1).png" alt=""><figcaption><p>Run Details</p></figcaption></figure>
+
+
+
+{% hint style="info" %}
+To ensure your brokering run is operational, it's essential to change its status from "Draft" to "Active." By default, new brokering runs are set to "Draft." Simply select "Active" from the dropdown to activate it, or revert an active run back to "Draft" if adjustments are needed. Ideally, activate the brokering run only once you've fully configured your routing, rules, and other settings.
+{% endhint %}
 
 Understanding how to view, schedule, and manage brokering runs is essential for optimizing your order routing strategies.
 

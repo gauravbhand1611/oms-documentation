@@ -4,7 +4,7 @@ description: Learn about rules.
 
 # Rules
 
-HotWax Commerce lets retailers apply multiple order-fetching and recursive inventory allocation rules, ensuring that each batch of orders is accurately selected for routing and allocated to the most suitable locations. 
+HotWax Commerce lets retailers apply multiple order-fetching and recursive inventory allocation rules, ensuring that each batch of orders is accurately selected for routing and allocated to the most suitable locations.
 
 ## 1. Finding Orders
 
@@ -160,6 +160,14 @@ Continuing with our example, we have configured the final inventory rule that st
 {% embed url="https://youtu.be/rK3nCz-lMYA" %}
 Final Inventory Rule
 {% endembed %}
+
+
+
+{% hint style="info" %}
+Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required. Ensure that your is also in Active status.
+
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to "Active" so that it can begin processing orders as scheduled.
+{% endhint %}
 
 Understanding and appropriately configuring these actions will let you fine-tune brokering rules, improving order routing efficiency and meeting specific fulfillment requirements.
 

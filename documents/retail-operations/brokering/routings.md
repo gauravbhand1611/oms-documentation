@@ -8,10 +8,28 @@ A routing in the brokering system defines the criteria for fetching orders and s
 
 ### Adding a New Routing
 
-* Click the **Add** button next to the `Order batches` label to create a new routing.
+* Click the `Create Order Batch`  to create a new routing.
 * Provide a name for the routing and click **Save** to add it to the routing list of a run.
 
+{% tabs %}
+{% tab title="Create Order Route" %}
+<figure><img src="../.gitbook/assets/New Routing.png" alt=""><figcaption><p>Create Order Batch</p></figcaption></figure>
+
+
+{% endtab %}
+
+{% tab title="View Created Order Route" %}
+<figure><img src="../.gitbook/assets/Order Batch.png" alt=""><figcaption><p>View Order Batch</p></figcaption></figure>
+{% endtab %}
+{% endtabs %}
+
+* You can click on the `Add` button next to the `Order batches` label to add more routings.
+
 <figure><img src="../.gitbook/assets/Order Batches.png" alt="" width="375"><figcaption><p>New Routings</p></figcaption></figure>
+
+{% hint style="info" %}
+For a routing to actively process orders, you’ll need to change its status from "Draft" to "Active." Just click "Draft" to update it to "Active," or, if needed, revert an active routing back to "Draft" by clicking on "Active." This step should be done only after setting up all routing rules, as outlined in the upcoming [Rules](rules.md) section.
+{% endhint %}
 
 ### Sequencing Routings
 
@@ -47,6 +65,6 @@ As discussed initially, within each routing at the lowest level, you have indivi
 
 <figure><img src="../.gitbook/assets/Routings.png" alt=""><figcaption><p>Routing in Order Routing App</p></figcaption></figure>
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Finding Orders</strong></mark></li></ol><p>Customize the criteria for orders using the options icon in the "Filters" section.</p><p></p><p>Sort order batches by adding sorting criteria and rearranging them.</p></td><td></td><td></td><td><a href="rules.md#id-1.-finding-orders">#id-1.-finding-orders</a></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Finding Inventory</strong></mark></li></ol></td><td>Manage filters applied to determine where orders in this routing should be attempted for allocation.</td><td>Sort inventory options to prioritize available inventory effectively.</td><td><a href="rules.md#id-2.-finding-inventory">#id-2.-finding-inventory</a></td></tr><tr><td><ol start="3"><li><mark style="color:orange;"><strong>Allocation Actions</strong></mark></li></ol><p>Specify actions related to order allocation.</p><p></p></td><td></td><td></td><td><a href="rules.md#id-3.-allocation-actions">#id-3.-allocation-actions</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Finding Orders</strong></mark></li></ol><p>Customize the criteria for orders using the options icon in the "Filters" section.</p><p>Sort order batches by adding sorting criteria and rearranging them.</p></td><td></td><td></td><td><a href="rules.md#id-1.-finding-orders">#id-1.-finding-orders</a></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Finding Inventory</strong></mark></li></ol></td><td>Manage filters applied to determine where orders in this routing should be attempted for allocation.</td><td>Sort inventory options to prioritize available inventory effectively.</td><td><a href="rules.md#id-2.-finding-inventory">#id-2.-finding-inventory</a></td></tr><tr><td><ol start="3"><li><mark style="color:orange;"><strong>Allocation Actions</strong></mark></li></ol><p>Specify actions related to order allocation.</p></td><td></td><td></td><td><a href="rules.md#id-3.-allocation-actions">#id-3.-allocation-actions</a></td></tr></tbody></table>
 
 In the final chapter, let's dive deeper into the order fetching and recursive inventory allocation [rules](rules.md) that ensure orders are always fulfilled from the most optimal location, just the way you want.
