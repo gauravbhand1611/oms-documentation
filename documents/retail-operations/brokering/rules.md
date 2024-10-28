@@ -4,9 +4,9 @@ description: Learn about rules.
 
 # Rules
 
-## 1. Finding Orders
+<mark style="color:orange;">**Multiple order-fetching and recursive inventory allocation rules**</mark> ensure that each batch of orders is accurately selected for routing and allocated to the most suitable locations.
 
-HotWax Commerce allows retailers to apply multiple order fetching "rules" to ensure that the right orders are picked for routing.
+## 1. Finding Orders
 
 Order lookup is broken down into multiple facets. Each facet is designed to find orders based on metrics that are relevant to retailers. Once order results are obtained, their sequence (sort order) is configurable to ensure that even within a batch of orders, they are not bound to a simple first-in-first-out sequence.
 
@@ -14,7 +14,7 @@ Learn how you can have granular control over which orders are sent to which loca
 
 ### Managing Order Filters
 
-* Click on the options icon in the "Filters" section to add or remove filters.
+* Click on the options icon in the `Filters` section to add or remove filters.
 * Ensure orders are routed based on specific criteria that align with your fulfillment strategy.
 
 ### Available Order Filters
@@ -30,7 +30,7 @@ Learn how you can have granular control over which orders are sent to which loca
 
 ### Managing Sorting Options
 
-* Click on the options icon on the "Sort" card to add or remove sorting options.
+* Click on the options icon on the `Sort` card to add or remove sorting options.
 * Adjust the priority of sort options by clicking and dragging them to the desired sequence.
 
 ### Available Order Sorting
@@ -43,17 +43,21 @@ Learn how you can have granular control over which orders are sent to which loca
 4. **Ship After**
 5. **Shipping Method**: Retailers can sort orders by shipping method, ensuring that orders with expedited shipping are allocated inventory before those with standard shipping.
 
+### Configuring Order Filter and Sorting Rules for Routing
+
+In this example, we have created a routing to broker all orders that require two-day delivery, as they are assigned a two-day shipping method.
+
 {% embed url="https://youtu.be/y5TdKuHEQOk" %}
 Finding Orders and Managing Sorting
 {% endembed %}
 
-## 2. Finding Inventory
+Next, let's hop onto inventory rules. Before we proceed to apply inventory rules, let's first clarify their purpose.
 
-HotWax Commerce allows retailers to apply multiple recursive inventory allocation "rules" for different batches of orders.
+## 2. Finding Inventory
 
 Retailers must specify the available facilities for brokering an order batch. To achieve this, they need to establish order brokering facility groups. For example, for standard orders, retailers may opt to broker solely within warehouses, while expedited orders can be brokered across all facilities based on proximity.
 
-To ensure this, retailers should create two distinct order brokering facility groups: one comprising warehouse locations exclusively, and the other incorporating both warehouses and stores. These facility groups can be established within the Facilities App. Refer to our [user manual](https://docs.hotwax.co/documents/v/system-admins/administration/facilities/manage-groups) for detailed instructions on creating brokering facility groups.
+To ensure this, retailers should create two distinct order brokering facility groups: one comprising warehouse locations exclusively, and the other incorporating both warehouses and stores. These facility groups can be established within the Facilities App. Learn more about brokering [facility groups](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups).
 
 {% hint style="info" %}
 HotWax Commerce routes orders based on the proximity of the customer to the facilities. To determine this proximity, HotWax Commerce compares the customer's shipping address with the facility locations. To ensure accurate location matching, it is essential that the facility's zip code, along with its latitude and longitude, is added.
@@ -65,8 +69,8 @@ Once valid inventory facilities have been identified, those facilities can be so
 
 ### Managing Inventory Rules
 
-* Add a new inventory rule by clicking on the "Add Inventory Rule" button.
-* Click on the options icon on the "Filters" card to manage filters for inventory rules.
+* Add a new inventory rule by clicking on the `Add Inventory Rule` button.
+* Click on the options icon on the `Filters` card to manage filters for inventory rules.
 * Rearrange the sequence of inventory rules by clicking and dragging items using the reorder icon on each rule.
 
 ### Available Inventory Filters
@@ -83,7 +87,7 @@ Once valid inventory facilities have been identified, those facilities can be so
 
 ### Managing Sorting Options
 
-* Click on the options icon on the "Sort" card to add or remove sorting options.
+* Click on the options icon on the `Sort` card to add or remove sorting options.
 * Adjust the priority of sort options by clicking and dragging them to the desired sequence.
 
 ### Available Inventory Sorting
@@ -95,15 +99,17 @@ Once valid inventory facilities have been identified, those facilities can be so
 3. **Inventory Balance**: Inventory can be sorted based on stock levels, ensuring that orders are routed to the facility with the highest available inventory of the ordered item. This method helps to deplete stock from high-inventory locations first, ensuring better stock rotation and preventing stock outs at key locations.
 4. **Custom Sequence**: Allows full manual override to the sequence at which facilities are attempted. Retailers can set a custom sequence of facilities, defining a specific order in which locations should be considered for order routing. For example, if a retailer wants to prioritize fulfillment from underperforming stores with lower foot traffic, they can create a custom sequence that favors those stores, helping to balance inventory across all locations. Custom sequences can also be useful for managing seasonal inventory or routing orders to specific regions.
 
+### Configuring Inventory Filter and Sorting Rules (Continuing Our Example)
 
+Continuing with our example, we have configured three inventory rules to manage inventory allocation for orders that require two-day shipping. Each rule focuses on finding the best inventory to fulfill orders efficiently.
 
+{% tabs %}
+{% tab title="Adding 1st Inventory Rule" %}
 {% embed url="https://youtu.be/6z5vnutliAU" %}
 Finding Inventory and Managing Sorting
 {% endembed %}
+{% endtab %}
 
-### Add New Inventory Rules in a Routing
-
-{% tabs %}
 {% tab title="Adding 2nd Inventory Rule" %}
 {% embed url="https://youtu.be/0MH9GdNVDtc" %}
 Adding New Inventory Rule
@@ -147,11 +153,19 @@ Based on each of these conditions, an action can be tied to the allocation. Reta
 3. **Move to Queue**: Transfer unallocated items to a selected queue for further processing. When an order cannot be allocated but should not undergo further allocation attempts by other rules in the flow, it can be moved to a specific queue. This allows for holding orders until the appropriate action can be taken. For example, unfillable orders can be transferred to the "Unfillable Parking", where they can later be rerouted through a different routing strategy.
 4. **Add Auto Cancel Date**: Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long.
 
+### Configuring Allocation Actions (Continuing Our Example)
 
+Continuing with our example, we have configured the final inventory rule that states what should be the allocation actions for those orders that did not get any inventory.
 
 {% embed url="https://youtu.be/rK3nCz-lMYA" %}
 Final Inventory Rule
 {% endembed %}
+
+{% hint style="info" %}
+Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required.
+
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to "Active" so that it can begin processing orders as scheduled.
+{% endhint %}
 
 Understanding and appropriately configuring these actions will let you fine-tune brokering rules, improving order routing efficiency and meeting specific fulfillment requirements.
 

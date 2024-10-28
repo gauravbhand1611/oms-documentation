@@ -73,8 +73,6 @@ Many times retailers wants to prioritize fulfilling eCommerce orders from their 
 eCommerce Orders Routing
 {% endembed %}
 
-
-
 ## Scenario 3: Handling Peak Hours with Store Fulfillment
 
 During peak hours, store managers need the flexibility to turn off fulfillment from their stores to manage capacity effectively. This ensures that stores are not overwhelmed and can maintain service quality.
@@ -107,9 +105,8 @@ To prevent stores from being overloaded, retailers can set a maximum order capac
    * **Fulfillment App:**
      * Store managers can also set the maximum order capacity via the Fulfillment App.
      * Navigate to the fulfillment capacity card and specify the maximum number of orders.
-2.  **Monitor Capacity**
-    * Once the limit is reached, no new orders are brokered to that location until the order count drops below the maximum threshold.
-
+2. **Monitor Capacity**
+   * Once the limit is reached, no new orders are brokered to that location until the order count drops below the maximum threshold.
 
 <figure><img src="../.gitbook/assets/Custom Order Fulfillment Capacity.png" alt="" width="375"><figcaption><p>Max Order Limit</p></figcaption></figure>
 
@@ -145,36 +142,36 @@ Retailers want to ensure that orders are only fulfilled from locations within a 
 
 <figure><img src="../.gitbook/assets/Proximity based routing.png" alt=""><figcaption><p>Proximity Based Routing</p></figcaption></figure>
 
-##  Scenario 7: Minimum Stock Availability
+## Scenario 7: Minimum Stock Availability
 
 Retailers aim to maintain sufficient in-store inventory for walk-in customers while fulfilling online orders. They need a solution that allocates online orders only to locations with the minimum required stock. By using the `Brokering Safety Stock` feature, orders are routed exclusively to locations that meet the minimum stock level, ensuring that essential inventory is preserved for in-store customers.
 
 ### Steps to Implement
 
 1. **Configure Inventory Rules**
-    
-    * **First Inventory Rule**: While setting up inventory rules in the Order Routing App, choose the `Brokering Safety Stock` filter.
-    
-      **Define Brokering Safety Stock**: Define the brokering safety stock level to keep in reserve for each item.
-      
-      This ensures that online orders are only allocated to locations where the inventory for all items in the order meets or exceeds the defined `Brokering Safety Stock`. Orders will only be routed to locations that have sufficient inventory for each item, ensuring that in-store inventory remains available for walk-in customers.
-      
-      For example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock.
-    
-    * **Second Inventory Rule**: If no location can fulfill all items in an order based on Rule 1, the second rule applies. In this rule, again choose the `Brokering Safety Stock` filter, but also enable the partial allocation.
-    
+   *   **First Inventory Rule**: While setting up inventory rules in the Order Routing App, choose the `Brokering Safety Stock` filter.
+
+       **Define Brokering Safety Stock**: Define the brokering safety stock level to keep in reserve for each item.
+
+       This ensures that online orders are only allocated to locations where the inventory for all items in the order meets or exceeds the defined `Brokering Safety Stock`. Orders will only be routed to locations that have sufficient inventory for each item, ensuring that in-store inventory remains available for walk-in customers.
+
+       For example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock.
+   * **Second Inventory Rule**: If no location can fulfill all items in an order based on Rule 1, the second rule applies. In this rule, again choose the `Brokering Safety Stock` filter, but also enable the partial allocation.
+
 **Partial Allocation Setup**
-  
-  * **Enable Partial Allocation**: Turn on the toggle for partial allocation.
-    
-    This means that if a single location does not have enough stock for the entire order, the order will be split. Items will be allocated to different locations that meet the `Brokering Safety Stock for each item, allowing the order to be partially fulfilled while still preserving inventory in stores.
+
+*   **Enable Partial Allocation**: Turn on the toggle for partial allocation.
+
+    This means that if a single location does not have enough stock for the entire order, the order will be split. Items will be allocated to different locations that meet the \`Brokering Safety Stock for each item, allowing the order to be partially fulfilled while still preserving inventory in stores.
 
 2. **Activation and Scheduling**
-    
-    * **Activate Inventory Rules**:
-          Ensure all the inventory rules are activated to be in effect.
-    
-{% embed url="https://youtu.be/6R2EjkRfbyE" %}
+   * **Activate Inventory Rules**: Ensure all the inventory rules are activated to be in effect.
+
+
+
+{% embed url="https://youtu.be/eGIvwQWvNm4" %}
+Set Brokering Safety Stock
+{% endembed %}
 
 ## Scenario 8: Managing Store Fulfillment Based on Rent Agreements
 
@@ -204,8 +201,6 @@ Retailers with diverse rent agreements, particularly in malls where rent may be 
 {% embed url="https://youtu.be/sAvLINYU7O4" %}
 Store Fulfillment Based on Store Rent
 {% endembed %}
-
-
 
 ## Scenario 9: Balancing Shipping Costs and Distance with Split Shipments
 
@@ -240,7 +235,6 @@ Retailers need to balance the cost of shipping, which is influenced by both the 
 * **Schedule Brokering Runs**:
   * Schedule the brokering runs to execute these inventory rules at regular intervals, maintaining efficient order fulfillment.
 
-
 {% embed url="https://youtu.be/K59lNhHtKMM" %}
 Balance Shipping Cost and Distance with Split Shipments
 {% endembed %}
@@ -270,7 +264,7 @@ With this threshold in place, orders will only be split if the value of the item
 Set Brokering Shipment Threshold
 {% endembed %}
 
-## Scenario 11: Managing Order Splitting for Grouped Items
+## Scenario 11: Managing Order Splitting for Grouped Items (Kits and Gift Items)
 
 Retailers often face scenarios where certain items in an order must be shipped together, while other items can be shipped separately. For example, if a customer orders a frame and lenses along with sunglasses, the frame and lenses must be shipped together, but the sunglasses can be shipped from a different location. In such cases, items like the frame and lenses are grouped to ensure they are always shipped together.
 
@@ -284,7 +278,7 @@ HotWax Commerce allows retailers to manage these scenarios by disabling the spli
    * **Navigate to Partial Allocation**: In the inventory rule settings, locate the "Partially Available" card. This section allows you to configure how items are allocated when they are not fully available at a single location.
    * **Enable Partial Allocation**: Turn on the toggle for "Partial Order Allocation" to allow the order to be split across multiple locations for items that are not grouped.
 3. **Disable Splitting for Grouped Items**
-   * **Toggle Off for Grouped Items**: Ensure that the toggle for "Partially Allocate Grouped Items" is turned off. This setting ensures that grouped items, such as kit products and gift items are not split and are shipped together from a single location.
+   * **Toggle Off for Grouped Items**: Ensure that the toggle for "Partially Allocate Grouped Items" is turned off. This setting ensures that orders for grouped items, such as kit products and gift items are not split and are shipped together from a single location.
 4. **Optional: Enable Splitting for Specific Scenarios**
    * **Enable Grouped Item Splitting**: If the retailer sells items that are grouped but can be split under certain circumstances (e.g., gifting items), they can turn on the toggle for "Partially Allocate Grouped Items."
    * **Best Practice**: It is recommended first to create an inventory rule with grouped item splitting disabled and then follow it with a rule where grouped item splitting is enabled. This layered approach ensures that grouped items are handled appropriately based on the retailer's preferences.
