@@ -12,7 +12,7 @@ Creating a brokering run is the first step in structuring your order routing pro
 
 #### Steps to Create a New Brokering Run
 
-1. **Access the Order Routing App.**
+1. **Access the Order Routing App**
    * Open the `Order Routing` App, where you’ll see the home page displaying all currently arranged brokering runs. If no brokering runs are scheduled, this page will appear blank.
 
 {% hint style="info" %}
