@@ -51,7 +51,7 @@ For example, setting the frequency of a run to "Daily" and the runtime to "7 am"
 ### Viewing Brokering Runs
 
 1. **Chronological Sequence**
-   * All routing runs are presented in a chronological sequence based on their next scheduled run time in the `Order Routing` App.
+   * All brokering runs are presented in a chronological sequence based on their next scheduled run time in the `Order Routing` App.
 
 <figure><img src="../.gitbook/assets/Brokering Runs (1).png" alt=""><figcaption><p>Brokering Runs in Order Routing App</p></figcaption></figure>
 
