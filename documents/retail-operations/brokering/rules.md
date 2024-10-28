@@ -4,9 +4,9 @@ description: Learn about rules.
 
 # Rules
 
-## 1. Finding Orders
+HotWax Commerce lets retailers apply multiple order-fetching and recursive inventory allocation rules, ensuring that each batch of orders is accurately selected for routing and allocated to the most suitable locations. 
 
-HotWax Commerce allows retailers to apply multiple order fetching "rules" to ensure that the right orders are picked for routing.
+## 1. Finding Orders
 
 Order lookup is broken down into multiple facets. Each facet is designed to find orders based on metrics that are relevant to retailers. Once order results are obtained, their sequence (sort order) is configurable to ensure that even within a batch of orders, they are not bound to a simple first-in-first-out sequence.
 
@@ -14,7 +14,7 @@ Learn how you can have granular control over which orders are sent to which loca
 
 ### Managing Order Filters
 
-* Click on the options icon in the "Filters" section to add or remove filters.
+* Click on the options icon in the `Filters` section to add or remove filters.
 * Ensure orders are routed based on specific criteria that align with your fulfillment strategy.
 
 ### Available Order Filters
@@ -30,7 +30,7 @@ Learn how you can have granular control over which orders are sent to which loca
 
 ### Managing Sorting Options
 
-* Click on the options icon on the "Sort" card to add or remove sorting options.
+* Click on the options icon on the `Sort` card to add or remove sorting options.
 * Adjust the priority of sort options by clicking and dragging them to the desired sequence.
 
 ### Available Order Sorting
@@ -55,8 +55,6 @@ Next, let's hop onto inventory rules. Before we proceed to apply inventory rules
 
 ## 2. Finding Inventory
 
-HotWax Commerce allows retailers to apply multiple recursive inventory allocation "rules" for different batches of orders.
-
 Retailers must specify the available facilities for brokering an order batch. To achieve this, they need to establish order brokering facility groups. For example, for standard orders, retailers may opt to broker solely within warehouses, while expedited orders can be brokered across all facilities based on proximity.
 
 To ensure this, retailers should create two distinct order brokering facility groups: one comprising warehouse locations exclusively, and the other incorporating both warehouses and stores. These facility groups can be established within the Facilities App. Refer to our [user manual](https://docs.hotwax.co/documents/v/system-admins/administration/facilities/manage-groups) for detailed instructions on creating brokering facility groups.
@@ -71,8 +69,8 @@ Once valid inventory facilities have been identified, those facilities can be so
 
 ### Managing Inventory Rules
 
-* Add a new inventory rule by clicking on the "Add Inventory Rule" button.
-* Click on the options icon on the "Filters" card to manage filters for inventory rules.
+* Add a new inventory rule by clicking on the `Add Inventory Rule` button.
+* Click on the options icon on the `Filters` card to manage filters for inventory rules.
 * Rearrange the sequence of inventory rules by clicking and dragging items using the reorder icon on each rule.
 
 ### Available Inventory Filters
@@ -89,7 +87,7 @@ Once valid inventory facilities have been identified, those facilities can be so
 
 ### Managing Sorting Options
 
-* Click on the options icon on the "Sort" card to add or remove sorting options.
+* Click on the options icon on the `Sort` card to add or remove sorting options.
 * Adjust the priority of sort options by clicking and dragging them to the desired sequence.
 
 ### Available Inventory Sorting
