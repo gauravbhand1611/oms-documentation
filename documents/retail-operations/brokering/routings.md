@@ -4,7 +4,7 @@ description: Learn about routings.
 
 # Routings
 
-A <mark style="color:orange;">**routing**</mark> in the brokering system defines the criteria for fetching orders and specifies the inventory rules to apply. Understanding how to create, manage, and optimize routings is crucial for configuring your order processing to meet specific fulfillment requirements.
+A <mark style="color:orange;">**routing**</mark> in the Brokering Rules Builder defines the criteria for fetching orders and specifies the inventory rules to apply. Understanding how to create, manage, and optimize routings is crucial for configuring your order processing to meet specific fulfillment requirements.
 
 ### Adding a New Routing
 
