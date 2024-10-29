@@ -4,7 +4,7 @@ description: Learn about brokering runs.
 
 # Brokering Runs
 
-<mark style="color:orange;">**Runs**</mark> in the brokering system act as containers for sequences of routings. These runs are scheduled by retailers to execute at specified intervals, allowing for effective and timely order routing.
+<mark style="color:orange;">**Runs**</mark> in the Brokering Rules Builder act as containers for sequences of routings. These runs are scheduled by retailers to execute at specified intervals, allowing for effective and timely order routing.
 
 ### Creating a New Brokering Run
 
