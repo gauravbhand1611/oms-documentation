@@ -11,7 +11,7 @@ A <mark style="color:orange;">**routing**</mark> in the Brokering Rules Builder 
 * Click the `Create Order Batch` button to create a new routing.
 * Provide a name for the routing and click `Save` to add it to the routing list of a run.
 
-For example, we’ve created a new routing within our previously discussed "High Priority Orders" <mark style="color:orange;">**brokering run**</mark>.
+For example, we’ve created a new routing within our previously discussed "High priority orders" [<mark style="color:orange;">**brokering run**</mark>](brokeringruns.md#create-brokering-run).
 
 {% tabs %}
 {% tab title="Create Order Route" %}
