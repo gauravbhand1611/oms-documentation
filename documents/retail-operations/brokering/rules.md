@@ -4,7 +4,7 @@ description: Learn about rules.
 
 # Rules
 
-<mark style="color:orange;">**Multiple order-fetching and recursive inventory allocation rules**</mark> in the Brokering Rules Builder ensure that each batch of orders is accurately selected for routing and allocated to the most suitable locations.
+<mark style="color:orange;">**Multiple order-selection and recursive inventory allocation rules**</mark> in the Brokering Rules Builder ensure that each batch of orders is accurately chosen for routing and allocated to the most optimal locations.
 
 ## 1. Finding Orders
 
