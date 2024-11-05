@@ -45,7 +45,9 @@ Learn how you can have granular control over which orders are sent to which loca
 
 ### Configuring Order Filter and Sorting Rules for Routing
 
-In this example, we have created a routing to broker all orders that require two-day delivery, as they are assigned a two-day shipping method.
+In this example, we’ve are configuring order rules within our "Two day delivery" style="color:orange;">**routing**</mark>, which is a part of the "High Priority Orders" style="color:orange;">**brokerin run**</mark>.
+
+With this setup, all orders requiring two-day delivery will be picked in brokering, as they are assigned the two-day shipping method. This ensures that high-priority orders with tight delivery deadlines are effectively routed and allocated to meet service commitments.
 
 {% embed url="https://youtu.be/y5TdKuHEQOk" %}
 Finding Orders and Managing Sorting
