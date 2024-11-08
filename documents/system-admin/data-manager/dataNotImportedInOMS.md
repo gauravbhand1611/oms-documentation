@@ -20,7 +20,7 @@ You scheduled a job to import data into OMS, but the imported data is not loaded
 
 * Navigate to the Miscellaneous page in the Job Manager application.
 * Locate the `Process bulk imported files` job and schedule it.
-* Suggested frequency is 15 minutes, but adjust based on specific requirements.
+* The suggested frequency is 15 minutes, but adjust based on specific requirements.
 
 3. **Check Data Processing:**
 
@@ -32,9 +32,7 @@ You scheduled a job to import data into OMS, but the imported data is not loaded
 * Navigate to the import menu to find the files you have imported in OMS.
 * Check the status of the files; they should transition from Pending to Finished.
 
-
-
-<figure><img src="../.gitbook/assets/Frame 698.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame%20698.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Scenario 2: Incorrect File Format
 
@@ -53,7 +51,7 @@ When importing data from external systems into HotWax Commerce, files must adher
 * Download the uploaded file from the import log.
 * Verify that the file format is CSV, as HotWax Commerce supports CSV format for data imports.
 * If the format is incorrect (e.g., XLSX), investigate the data transformation process:
-  * If handled by middleware, review transformation flow.
+  * If handled by middleware, review the transformation flow.
   * Contact HotWax Commerce support to check Nifi flow if handled internally.
 
 ## Scenario 3: Empty Records
@@ -75,3 +73,7 @@ Empty records in an imported file indicate that the expected data from the exter
   * Access the SFTP path specified for file uploads.
   * Refer to [user manuals](data-import-errors.md) for correct file paths and SFTP settings.
   * Verify the existence of records in the SFTP directory.
+
+
+
+<figure><img src="../.gitbook/assets/Data Not Imported (1).png" alt=""><figcaption></figcaption></figure>
