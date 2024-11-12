@@ -106,8 +106,6 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 
 #### <mark style="color:orange;">Choosing Sorting Options to Define Order Priority:</mark>
 
-
-
 {% embed url="https://youtu.be/J2_LpfbHIlI" %}
 Applying Sorting
 {% endembed %}
@@ -121,9 +119,13 @@ If you are choosing multiple sorting options, you can prioritize them into the d
 Orders will be brokered based on order date if no sorting is specified.
 {% endhint %}
 
-Now that you already know what filters and sorting options are available and what they mean, you can easily use them for your next routing rule.
+_Now that you already know what filters and sorting options are available and what they mean, you can easily use them for your next routing rule._
 
-Let’s see what should be the right filters and sorting options for our <mark style="color:orange;">**second routing rule “Standard orders”.**</mark>
+Let’s see what should be the right filters and sorting options for our <mark style="color:orange;">**second routing rule “Standard forders”.**</mark>
+
+{% embed url="https://youtu.be/lWRdCIO9dMs" %}
+Applying Filters and Sorting for Standard Orders Batch
+{% endembed %}
 
 1. From the Filters option, we will choose the **"Shipment method type"** and **“Queue”** filters.
 
@@ -137,7 +139,7 @@ These examples help understand how retailers can use different filters and sorti
 
 ### Archiving a Routing
 
-When a routing is no longer needed in a brokering run you can Archive it:
+When a routing is no longer needed in a brokering run you can `Archive` it:
 
 {% embed url="https://youtu.be/DIllLJkyr3o" %}
 Archive Unarchive a Routing
@@ -148,4 +150,4 @@ Archive Unarchive a Routing
 
 Archived routings can be reactivated if needed and are accessible from the archive drawer at the bottom of the list.
 
-<mark style="color:orange;">**Congrats!**</mark> You now have a clear understanding of how to create <mark style="color:orange;">**brokering runs and set routing rules.**</mark> The final step is choosing [inventory rules](rules.md) to complete the order routing setup.
+<mark style="color:orange;">**Congrats!**</mark> You now have a clear understanding of how to <mark style="color:orange;">**create brokering runs and set routing rules.**</mark> The final step is choosing [inventory rules](rules.md) to complete the order routing setup.
