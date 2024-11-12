@@ -1,5 +1,5 @@
 ---
-description: Learn about routings.
+description: Learn about Routings.
 ---
 
 # Routings
