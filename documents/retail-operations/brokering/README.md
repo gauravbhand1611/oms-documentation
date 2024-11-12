@@ -26,7 +26,7 @@ HotWax Commerce's highly dynamic and configurable Order Routing App provides a s
 
 <div data-full-width="false">
 
-<figure><img src="../.gitbook/assets/order routing framework.png" alt=""><figcaption><p>Brokering Rules in HotWax Commerce</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/order routing framework.png" alt=""><figcaption><p>Brokering Framework in HotWax Commerce</p></figcaption></figure>
 
 </div>
 
@@ -34,6 +34,47 @@ Below is a brief overview of the brokering framework, we will understand each co
 
 Order routing is organized into three hierarchical levels:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><mark style="color:orange;"><strong>Runs</strong></mark></td><td>A "Run" is the highest level of organization for your brokering rules. It represents a set of rules that will be applied to incoming orders during a specific time or under certain conditions.</td><td></td><td><a href="brokeringruns.md">brokeringruns.md</a></td><td></td></tr><tr><td><mark style="color:orange;"><strong>Routings</strong></mark></td><td>Within each run, you have "Routings." Think of routings as distinct pathways that different batch of orders can take based on predefined conditions.</td><td></td><td><a href="routings.md">routings.md</a></td><td></td></tr><tr><td><mark style="color:orange;"><strong>Rules</strong></mark></td><td>At the lowest level, you have individual "Rules" within each routing. These are the specific criteria that determine how inventory is allocated during order routing.</td><td></td><td><a href="rules.md">rules.md</a></td><td></td></tr></tbody></table>
+*   [x] [<mark style="color:orange;">**Brokering Runs**</mark>](brokeringruns.md)
+
+
+
+    A Brokering Run is the highest level of organization for your order routing and lets you control the frequency of routing based on business requirements. Each brokering run can have a unique schedule and route different batches of orders to align with varying fulfillment priorities.\
+
+
+    For example, a brokering run can be scheduled every 5 minutes for high-priority batches of orders, such as those requiring same-day delivery to ensure fast routing fulfillment. For standard delivery orders (medium-priority), a different brokering run could be set for every 6 hours.
+
+
+
+*   [x] [<mark style="color:orange;">**Routing Rules**</mark> ](routings.md)
+
+
+
+    Within each brokering run, there can be multiple Routings. Each routing involves creating an order batch using filters and sorting for order lookup. We can also call a Routing as “Routing Rule”.\
+
+
+    Example of routings in a “High-priority run”:
+
+    * Same-Day Delivery Batch: One routing rule can manage a batch of orders requiring same-day delivery, ensuring prompt processing.
+    * Next-Day Delivery Batch: Another routing rule can manage a batch of next-day delivery orders, meeting their specific SLA.
+    * Two-Day Delivery Batch: A third routing rule can manage a batch of two-day delivery orders.
+
+    These routing rules help retailers prioritize routing for specific order batches with different fulfillment timelines and conditions.
+
+
+
+*   [x] [<mark style="color:orange;">**Inventory Rules**</mark>](rules.md)
+
+
+
+    Within each routing, there can be multiple recursive Inventory Rules. These rules determine how inventory is allocated to each batch of orders. These rules define which fulfillment locations to choose, and control inventory allocation for orders based on proximity, inventory availability, and other strategic fulfillment criteria.
+
+
+
+    For example,
+
+    * Same-day delivery batch: Inventory Rules can prioritize allocating inventory from warehouses closest to the customer, such as within a 100-mile radius, to meet same-day SLAs. If inventory isn’t available within this range, a secondary rule can expand the range to 250 miles and also include stores.
+    * Next-day delivery batch: For next-day orders, inventory can be allocated from warehouses within a 250-mile range, accommodating the one-day delivery SLA. Next inventory rules in sequence can apply if the first inventory rule doesn’t allocate inventory for all orders in the batch.
+
+    By configuring inventory rules for each routing (batch of orders), retailers can optimize fulfillment location selection, ensuring that every order is fulfilled according to its unique needs.
 
 In the following sections, we’ll dive deeper into each level, to understand how brokering runs, routing rules, and inventory rules work together to optimize order routing.
