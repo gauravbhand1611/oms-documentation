@@ -2,7 +2,7 @@
 description: Learn about Inventory Rules.
 ---
 
-# Rules
+# Inventory Rules
 
 As discussed, <mark style="color:orange;">**Inventory Rules**</mark> help orchestrate the process of choosing the most suitable fulfillment locations for each batch of orders based on defined criteria like proximity, stock levels, and strategic priorities. These rules act as sequential steps in the order routing, guiding the brokering engine through multiple checks to find the best fulfillment location.
 
