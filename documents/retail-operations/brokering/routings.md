@@ -2,7 +2,7 @@
 description: Learn about Routings.
 ---
 
-# Routings
+# Routing Rules
 
 As discussed, <mark style="color:orange;">**routing**</mark>, also known as <mark style="color:orange;">**routing rules**</mark>, enable retailers to create specific order batches based on their business requirements, such as a same-day delivery batch, a next-day delivery batch, and a standard order batch. These routing rules help in efficiently looking up orders based on urgency and shipping promises.
 
