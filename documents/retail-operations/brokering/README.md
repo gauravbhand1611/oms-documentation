@@ -24,7 +24,11 @@ This dynamic approach to order routing also ensures that retailers can adapt qui
 
 HotWax Commerce's highly dynamic and configurable Order Routing App provides a structured framework for managing order routing with flexibility. The app enables retailers to define how orders are routed across their fulfillment network.
 
-<figure><img src="../.gitbook/assets/HotWax Commerce Order Routing.png" alt=""><figcaption><p>Brokering Rules in HotWax Commerce</p></figcaption></figure>
+<div data-full-width="false">
+
+<figure><img src="../.gitbook/assets/order routing framework.png" alt=""><figcaption><p>Brokering Rules in HotWax Commerce</p></figcaption></figure>
+
+</div>
 
 Below is a brief overview of the brokering framework, we will understand each component in more detail in the following sections.
 
