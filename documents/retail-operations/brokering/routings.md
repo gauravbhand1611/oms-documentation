@@ -37,7 +37,7 @@ Creating New Routings
 {% hint style="warning" %}
 For a routing to actively process orders, you’ll need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active."**</mark> Just click **"Draft"** to update it to <mark style="color:green;background-color:green;">**"Active,"**</mark> or, if needed, revert an active routing back to **"Draft"** by clicking on <mark style="color:green;background-color:green;">**"Active.**</mark><mark style="background-color:green;">**"**</mark>&#x20;
 
-This step should be done only after setting up all routing rules, as outlined in the upcoming [Inventory Rules](rules.md) section.
+This step should be done only after setting up all routing rules.
 {% endhint %}
 
 ### Sequencing Routing Rules
@@ -49,8 +49,8 @@ To prioritize how the routing rules are applied:
 
 Continuing our example, we’ll position <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> before <mark style="color:orange;">**"Standard orders"**</mark> to ensure higher-priority orders are routed first.
 
-{% embed url="https://youtu.be/_ADemNU3oPo" %}
-Sequence Routings
+{% embed url="https://youtu.be/hB9QLCMXDEw" %}
+Sequence Routing Rules
 {% endembed %}
 
 ## Configuring Routing Rules to Create Order Batches
