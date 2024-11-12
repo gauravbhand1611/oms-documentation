@@ -51,7 +51,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 &#x20; 3\.  **Name the Run**
 
-* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating multiple brokering runs based on the order urgency, you can name them something like **“High priority orders”** with the next run as **“Medium priority orders”.**
+* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating multiple brokering runs based on the order urgency, you can name them as **“High priority orders”** with the next run as **“Medium priority orders”.**
 
 {% tabs %}
 {% tab title="Single Brokering Run" %}
@@ -64,8 +64,9 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 {% endtabs %}
 
 4. **Add a Description**
-   * After naming the run, add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
-   * For example, if there is a single run for everyday routing of all orders, you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
+   * After naming the run, we need to add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
+   * Click on a specific Run to open its details and now navigate to the Description card and add description that best describes your run.
+   * _For example, if there is a single brokering run for everyday routing of all orders, you can write: **“Hourly routing for all online orders”** or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”_
 
 <figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Details</p></figcaption></figure>
 
@@ -73,24 +74,15 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 <figure><img src="../.gitbook/assets/schedule run.png" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
 
-* Set the frequency and runtime for the brokering run. You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions you can use:
+* Navigate to the Scheduler card, here you can set the frequency and runtime for the brokering run.&#x20;
+* You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions you can use:
 
 <table><thead><tr><th width="231">Schedule Description</th><th width="207">Cron Expression</th><th>Explanation</th></tr></thead><tbody><tr><td>Run Every 5 Minutes</td><td><code>*/5 * * * *</code></td><td>Triggers the brokering run every 5 minutes throughout the day.</td></tr><tr><td>Run Every Hour</td><td><code>0 * * * *</code></td><td>Triggers the brokering run every hour throughout the day.</td></tr><tr><td>Run Every Hour Between 8 AM and 2 PM</td><td><code>0 8-14 * * *</code></td><td>Triggers the brokering run at the top of every hour, between 8 AM and 2 PM.</td></tr><tr><td>Run Every Day at 7 AM</td><td><code>0 7 * * *</code></td><td>Triggers the brokering run every day at 7 AM.</td></tr><tr><td>Run Every 15 Minutes Between 6 AM and 6 PM</td><td><code>*/15 6-18 * * *</code></td><td>Triggers the brokering run every 15 minutes from 6 AM to 6 PM.</td></tr></tbody></table>
 
-### Viewing Brokering Runs
+{% hint style="warning" %}
+To ensure your brokering run is operational, you need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark>.
 
-* **Chronological Sequence:** All brokering runs are displayed in a chronological sequence based on their next scheduled run time in the `Order Routing` App.
-
-<figure><img src="../.gitbook/assets/Brokering Runs.png" alt=""><figcaption><p>Brokering Runs in Order Routing App</p></figcaption></figure>
-
-* **Run Details:** Click on a specific run to open its details.
-
-<figure><img src="../.gitbook/assets/Run details (1).png" alt=""><figcaption><p>Brokering Run Details</p></figcaption></figure>
-
-{% hint style="info" %}
-To ensure your brokering run is operational, you need to change its status from **"Draft"** to <mark style="color:green;">**"Active"**</mark>.
-
-By default, new brokering runs are set to **"Draft"**. Simply select <mark style="color:green;">**"Active"**</mark> from the dropdown to activate it, or revert an active run back to **"Draft"** if adjustments are needed.&#x20;
+By default, new brokering runs are set to **"Draft"**. Simply select <mark style="color:green;background-color:green;">**"Active"**</mark> from the dropdown to activate it, or revert an active run back to **"Draft"** if adjustments are needed.&#x20;
 
 Ideally, activate the brokering run only once you've fully configured your routing, rules, and other settings.
 {% endhint %}
