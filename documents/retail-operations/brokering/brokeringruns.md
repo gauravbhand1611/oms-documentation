@@ -51,14 +51,14 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 &#x20; 3\.  **Name the Run**
 
-* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating a brokering run specifically for orders that require fast fulfillment, you could name it something like **“High Priority Orders”** with the next run as **“Medium Priority Orders”.**
+* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating multiple brokering runs based on the order urgency, you can name them something like **“High priority orders”** with the next run as **“Medium priority orders”.**
 
 {% tabs %}
 {% tab title="Single Brokering Run" %}
 <figure><img src="../.gitbook/assets/Single Brokering Run.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="Multiple Brokering Run" %}
+{% tab title="Multiple Brokering Runs" %}
 <figure><img src="../.gitbook/assets/Multiple Brokering Runs.png" alt=""><figcaption><p>Mutiple Brokering Run</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
