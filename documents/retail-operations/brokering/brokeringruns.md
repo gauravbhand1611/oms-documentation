@@ -20,7 +20,7 @@ For example, high-priority orders can be routed more frequently (every 5 minutes
 
 *   **Single Run Setup:** For retailers with similar urgency across orders and a lower order volume, a single run at regular intervals (every hour) can manage all order types in one brokering cycle.
 
-    * _Everyday routing for all orders_: Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about routing rules in the next sections.
+    * _Everyday order routing:_ Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about routing rules in the next sections.
 
 
 *   **Multiple Runs for Different Priorities:** In the event where order fulfillment priorities vary significantly and the order volume is high, creating separate runs can optimize resources and allocation:
@@ -68,11 +68,15 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
    * Click on a specific Run to open its details and now navigate to the Description card and add description that best describes your run.
    * _For example, if there is a single brokering run for everyday routing of all orders, you can write: <mark style="color:orange;">**“Hourly routing for all online orders”**</mark> or if the run focuses on urgent orders, you can write: <mark style="color:orange;">**“Prioritized routing for same-day, next-day, and two-day delivery orders.”**</mark>_
 
-<figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Details</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Run details (2).png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
 5. **Schedule the Brokering Run using Predefined Frequency or Cron Expressions**
 
-<figure><img src="../.gitbook/assets/schedule run.png" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
+<div data-full-width="false">
+
+<figure><img src="../.gitbook/assets/Find test order.png" alt=""><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
+
+</div>
 
 * Navigate to the Scheduler card, here you can set the frequency and runtime for the brokering run.&#x20;
 * You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions you can use:
