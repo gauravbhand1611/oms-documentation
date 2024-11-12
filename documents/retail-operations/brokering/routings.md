@@ -125,10 +125,6 @@ Let’s see what should be the right filters and sorting options for our <mark s
 
 These examples help understand how retailers can use different filters and sorting options to create order batches and strategically fulfill orders, aligning each routing rule with specific business objectives.
 
-{% hint style="warning" %}
-For a routing to actively process orders, you’ll need to change its status from "Draft" to "Active." Just click "Draft" to update it to "Active," or, if needed, revert an active routing back to "Draft" by clicking on "Active." This step should be done only after setting up all routing rules, as outlined in this section.
-{% endhint %}
-
 ### Archiving a Routing
 
 When a routing is no longer needed in a brokering run you can Archive it:
