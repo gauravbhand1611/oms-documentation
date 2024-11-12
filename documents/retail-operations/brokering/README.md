@@ -22,7 +22,7 @@ This dynamic approach to order routing also ensures that retailers can adapt qui
 
 ## Configurable Order Routing App
 
-HotWax Commerce's highly dynamic and configurable Order Routing App provides a structured framework for managing order routing with flexibility. The app enables retailers to define how orders are routed across their fulfillment network.
+HotWax Commerce's highly dynamic and configurable `Order Routing` App provides a structured framework for managing order routing with flexibility. The app enables retailers to define how orders are routed across their fulfillment network.
 
 <div data-full-width="false">
 
@@ -38,7 +38,7 @@ Order routing is organized into three hierarchical levels:
 
 
 
-    A Brokering Run is the highest level of organization for your order routing and lets you control the frequency of routing based on business requirements. Each brokering run can have a unique schedule and route different batches of orders to align with varying fulfillment priorities.\
+    A **Brokering Run** is the highest level of organization for your order routing and lets you control the frequency of routing based on business requirements. Each brokering run can have a unique schedule and route different batches of orders to align with varying fulfillment priorities.\
 
 
     For example, a brokering run can be scheduled every 5 minutes for high-priority batches of orders, such as those requiring same-day delivery to ensure fast routing fulfillment. For standard delivery orders (medium-priority), a different brokering run could be set for every 6 hours.
@@ -49,7 +49,7 @@ Order routing is organized into three hierarchical levels:
 
 
 
-    Within each brokering run, there can be multiple Routings. Each routing involves creating an order batch using filters and sorting for order lookup. We can also call a Routing as “Routing Rule”. Example of routings in a “High-priority run”:
+    Within each brokering run, there can be multiple **Routings**. Each routing involves creating an order batch using filters and sorting for order lookup. We can also call a Routing as **“Routing Rule”.** Example of routings in a **“High-priority run”**:
 
     * _**Same-day delivery batch:**_ One routing rule can manage a batch of orders requiring same-day delivery, ensuring prompt processing.
     * _**Next-day delivery batch:**_ Another routing rule can manage a batch of next-day delivery orders, meeting their specific SLA.

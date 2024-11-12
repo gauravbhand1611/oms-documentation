@@ -8,7 +8,7 @@ As discussed, <mark style="color:orange;">**Brokering Runs**</mark> serve as the
 
 ### Creating Brokering Runs
 
-Each brokering run has a specific frequency, such as every 5 minutes, hourly, daily, or a custom interval based on specific business requirements. With multiple brokering runs, retailers can fine-tune routing for different priority levels, handling everything from urgent, same-day orders to routine, standard delivery orders.
+Each brokering run has a specific _frequency_, such as every 5 minutes, hourly, daily, or a custom interval based on specific business requirements. With multiple brokering runs, retailers can fine-tune routing for different priority levels, handling everything from urgent, same-day orders to routine, standard delivery orders.
 
 ### Why Use Multiple Brokering Runs?
 
@@ -65,8 +65,8 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 4. **Add a Description**
    * After naming the run, we need to add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
-   * Click on a specific Run to open its details and now navigate to the Description card and add description that best describes your run.
-   * _For example, if there is a single brokering run for everyday routing of all orders, you can write: <mark style="color:orange;">**“Hourly routing for all online orders”**</mark> or if the run focuses on urgent orders, you can write: <mark style="color:orange;">**“Prioritized routing for same-day, next-day, and two-day delivery orders.”**</mark>_
+   * Click on a specific `Run` to open its details and now navigate to the Description card and add description that best describes your run.
+   * For example, if there is a single brokering run for everyday routing of all orders, you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
 <figure><img src="../.gitbook/assets/Run details (2).png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
@@ -83,7 +83,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 <table><thead><tr><th width="231">Schedule Description</th><th width="207">Cron Expression</th><th>Explanation</th></tr></thead><tbody><tr><td>Run Every 5 Minutes</td><td><code>*/5 * * * *</code></td><td>Triggers the brokering run every 5 minutes throughout the day.</td></tr><tr><td>Run Every Hour</td><td><code>0 * * * *</code></td><td>Triggers the brokering run every hour throughout the day.</td></tr><tr><td>Run Every Hour Between 8 AM and 2 PM</td><td><code>0 8-14 * * *</code></td><td>Triggers the brokering run at the top of every hour, between 8 AM and 2 PM.</td></tr><tr><td>Run Every Day at 7 AM</td><td><code>0 7 * * *</code></td><td>Triggers the brokering run every day at 7 AM.</td></tr><tr><td>Run Every 15 Minutes Between 6 AM and 6 PM</td><td><code>*/15 6-18 * * *</code></td><td>Triggers the brokering run every 15 minutes from 6 AM to 6 PM.</td></tr></tbody></table>
 
-* For our <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run we can directly choose the predefined "Hourly" frequency and save it.
+* For our <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run we can directly choose the predefined "_Hourly_" frequency and save it.
 
 {% hint style="warning" %}
 To ensure your brokering run is operational, you need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark>.
