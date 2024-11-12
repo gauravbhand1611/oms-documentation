@@ -21,16 +21,18 @@ We’ll demonstrate this by creating two routing rules: <mark style="color:orang
 Continuing our example, let's name our two routing rules as “Same-day/Next-day orders” and "Standard orders".
 
 {% tabs %}
-{% tab title="Create Order Route" %}
-<figure><img src="../.gitbook/assets/New Routing.png" alt=""><figcaption><p>Create Order Batch</p></figcaption></figure>
+{% tab title="Routing rule 1" %}
+{% embed url="https://youtu.be/8mGEsBOps9I" %}
+Creating New Routings
+{% endembed %}
 {% endtab %}
 
-{% tab title="View Created Order Route" %}
-<figure><img src="../.gitbook/assets/Order Batch.png" alt=""><figcaption><p>View Order Batch</p></figcaption></figure>
+{% tab title="Routing rule 2" %}
+{% embed url="https://youtu.be/gThkEEQPFc0" %}
+Creating New Routings
+{% endembed %}
 {% endtab %}
 {% endtabs %}
-
-<figure><img src="../.gitbook/assets/Order Batches.png" alt="" width="375"><figcaption><p>New Routings</p></figcaption></figure>
 
 {% hint style="warning" %}
 For a routing to actively process orders, you’ll need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active."**</mark> Just click **"Draft"** to update it to <mark style="color:green;background-color:green;">**"Active,"**</mark> or, if needed, revert an active routing back to **"Draft"** by clicking on <mark style="color:green;background-color:green;">**"Active.**</mark><mark style="background-color:green;">**"**</mark>&#x20;
