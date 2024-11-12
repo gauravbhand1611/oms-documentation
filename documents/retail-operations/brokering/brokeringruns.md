@@ -76,7 +76,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 * Set the frequency and runtime for the brokering run. You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions you can use:
 
-  | Schedule Description                       | Cron Expression     | Explanation                                                                                      |
+| Schedule Description                       | Cron Expression     | Explanation                                                                                      |
 |--------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------|
 | Run Every 5 Minutes                        | `*/5 * * * *`      | Triggers the brokering run every 5 minutes throughout the day.                                   |
 | Run Every Hour                             | `0 * * * *`        | Triggers the brokering run every hour throughout the day.                                        |
