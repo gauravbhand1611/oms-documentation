@@ -1,5 +1,5 @@
 ---
-description: Learn about brokering runs.
+description: Learn about Brokering Runs.
 ---
 
 # Brokering Runs
