@@ -49,14 +49,11 @@ Order routing is organized into three hierarchical levels:
 
 
 
-    Within each brokering run, there can be multiple Routings. Each routing involves creating an order batch using filters and sorting for order lookup. We can also call a Routing as “Routing Rule”.\
+    Within each brokering run, there can be multiple Routings. Each routing involves creating an order batch using filters and sorting for order lookup. We can also call a Routing as “Routing Rule”. Example of routings in a “High-priority run”:
 
-
-    Example of routings in a “High-priority run”:
-
-    * Same-Day Delivery Batch: One routing rule can manage a batch of orders requiring same-day delivery, ensuring prompt processing.
-    * Next-Day Delivery Batch: Another routing rule can manage a batch of next-day delivery orders, meeting their specific SLA.
-    * Two-Day Delivery Batch: A third routing rule can manage a batch of two-day delivery orders.
+    * _**Same-day delivery batch:**_ One routing rule can manage a batch of orders requiring same-day delivery, ensuring prompt processing.
+    * _**Next-day delivery batch:**_ Another routing rule can manage a batch of next-day delivery orders, meeting their specific SLA.
+    * _**Two-day delivery batch**:_ A third routing rule can manage a batch of two-day delivery orders.
 
     These routing rules help retailers prioritize routing for specific order batches with different fulfillment timelines and conditions.
 
@@ -66,14 +63,10 @@ Order routing is organized into three hierarchical levels:
 
 
 
-    Within each routing, there can be multiple recursive Inventory Rules. These rules determine how inventory is allocated to each batch of orders. These rules define which fulfillment locations to choose, and control inventory allocation for orders based on proximity, inventory availability, and other strategic fulfillment criteria.
+    Within each routing, there can be multiple recursive Inventory Rules. These rules determine how inventory is allocated to each batch of orders. These rules define which fulfillment locations to choose, and control inventory allocation for orders based on proximity, inventory availability, and other strategic fulfillment criteria. For example,
 
-
-
-    For example,
-
-    * Same-day delivery batch: Inventory Rules can prioritize allocating inventory from warehouses closest to the customer, such as within a 100-mile radius, to meet same-day SLAs. If inventory isn’t available within this range, a secondary rule can expand the range to 250 miles and also include stores.
-    * Next-day delivery batch: For next-day orders, inventory can be allocated from warehouses within a 250-mile range, accommodating the one-day delivery SLA. Next inventory rules in sequence can apply if the first inventory rule doesn’t allocate inventory for all orders in the batch.
+    * _**Same-day delivery batch:**_ Inventory Rules can prioritize allocating inventory from warehouses closest to the customer, such as within a 100-mile radius, to meet same-day SLAs. If inventory isn’t available within this range, a secondary rule can expand the range to 250 miles and also include stores.
+    * _**Next-day delivery batch:**_ For next-day orders, inventory can be allocated from warehouses within a 250-mile range, accommodating the one-day delivery SLA. Next inventory rules in sequence can apply if the first inventory rule doesn’t allocate inventory for all orders in the batch.
 
     By configuring inventory rules for each routing (batch of orders), retailers can optimize fulfillment location selection, ensuring that every order is fulfilled according to its unique needs.
 
