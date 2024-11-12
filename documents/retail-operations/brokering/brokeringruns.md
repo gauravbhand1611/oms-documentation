@@ -51,7 +51,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 &#x20; 3\.  **Name the Run**
 
-* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating multiple brokering runs based on the order urgency, you can name them as **“High priority orders”** with the next run as **“Medium priority orders”.**
+* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it <mark style="color:orange;">**“Everyday order routing”**</mark> or if you are creating multiple brokering runs based on the order urgency, you can name them as <mark style="color:orange;">**“High priority orders”**</mark> with the next run as <mark style="color:orange;">**“Medium priority orders”.**</mark>
 
 {% tabs %}
 {% tab title="Single Brokering Run" %}
@@ -59,14 +59,14 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 {% endtab %}
 
 {% tab title="Multiple Brokering Runs" %}
-<figure><img src="../.gitbook/assets/Multiple Brokering Runs.png" alt=""><figcaption><p>Mutiple Brokering Run</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Multiple Brokering Runs.png" alt=""><figcaption><p>Mutiple Brokering Runs</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
 4. **Add a Description**
    * After naming the run, we need to add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
    * Click on a specific Run to open its details and now navigate to the Description card and add description that best describes your run.
-   * _For example, if there is a single brokering run for everyday routing of all orders, you can write: **“Hourly routing for all online orders”** or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”_
+   * _For example, if there is a single brokering run for everyday routing of all orders, you can write: <mark style="color:orange;">**“Hourly routing for all online orders”**</mark> or if the run focuses on urgent orders, you can write: <mark style="color:orange;">**“Prioritized routing for same-day, next-day, and two-day delivery orders.”**</mark>_
 
 <figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Details</p></figcaption></figure>
 
@@ -78,6 +78,8 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 * You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions you can use:
 
 <table><thead><tr><th width="231">Schedule Description</th><th width="207">Cron Expression</th><th>Explanation</th></tr></thead><tbody><tr><td>Run Every 5 Minutes</td><td><code>*/5 * * * *</code></td><td>Triggers the brokering run every 5 minutes throughout the day.</td></tr><tr><td>Run Every Hour</td><td><code>0 * * * *</code></td><td>Triggers the brokering run every hour throughout the day.</td></tr><tr><td>Run Every Hour Between 8 AM and 2 PM</td><td><code>0 8-14 * * *</code></td><td>Triggers the brokering run at the top of every hour, between 8 AM and 2 PM.</td></tr><tr><td>Run Every Day at 7 AM</td><td><code>0 7 * * *</code></td><td>Triggers the brokering run every day at 7 AM.</td></tr><tr><td>Run Every 15 Minutes Between 6 AM and 6 PM</td><td><code>*/15 6-18 * * *</code></td><td>Triggers the brokering run every 15 minutes from 6 AM to 6 PM.</td></tr></tbody></table>
+
+* For our <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run we can directly choose the predefined "Hourly" frequency and save it.
 
 {% hint style="warning" %}
 To ensure your brokering run is operational, you need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark>.
