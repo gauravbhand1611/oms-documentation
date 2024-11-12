@@ -46,16 +46,20 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 2. **Initiate a New Run**
    * Click on the `New Run` button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in your list of scheduled brokering runs.
-3. **Name the Run**
-   * Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it “Everyday order routing” or if you are creating a brokering run specifically for orders that require fast fulfillment, you could name it something like “high priority orders” with the next run as “medium priority orders”.
+
+<figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
+
+&#x20; 3\.  **Name the Run**
+
+* Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it **“Everyday order routing”** or if you are creating a brokering run specifically for orders that require fast fulfillment, you could name it something like **“High Priority Orders”** with the next run as **“Medium Priority Orders”.**
 
 {% tabs %}
-{% tab title="Create Brokering Run" %}
-<figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>Add a New Brokering Run</p></figcaption></figure>
+{% tab title="Single Brokering Run" %}
+<figure><img src="../.gitbook/assets/Single Brokering Run.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="View Brokering Run" %}
-<figure><img src="../.gitbook/assets/Created Brokering Run (1).png" alt=""><figcaption><p>View Created Brokering Run</p></figcaption></figure>
+{% tab title="Multiple Brokering Run" %}
+<figure><img src="../.gitbook/assets/Multiple Brokering Runs.png" alt=""><figcaption><p>Mutiple Brokering Run</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
