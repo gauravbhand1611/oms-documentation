@@ -141,8 +141,8 @@ These examples help understand how retailers can use different filters and sorti
 
 When a routing is no longer needed in a brokering run you can `Archive` it:
 
-{% embed url="https://youtu.be/DIllLJkyr3o" %}
-Archive Unarchive a Routing
+{% embed url="https://youtu.be/Q_7UUkvHLPY" %}
+Archive/Unarchive Routing Rule
 {% endembed %}
 
 * Click on the `Archive` button at the bottom right of the routing card.
