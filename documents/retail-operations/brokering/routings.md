@@ -76,6 +76,10 @@ Continuing with our example, let’s take a closer look at how to apply the righ
 
 #### <mark style="color:orange;">Applying Filters to Create Order Batches:</mark>
 
+{% embed url="https://youtu.be/pSn6N2-y-DY" %}
+Applying Filters
+{% endembed %}
+
 1. Open the “Same-day/Next-day orders” routing rule’s details, then navigate to the Filters option.
 2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the **"Shipment method type"** and **“Queue”** filters.
 
@@ -101,6 +105,12 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 * **Shipping Method:** Sorting by shipping method allows to arrange orders based on the promised SLA. For example, choosing a shipping method sorting for the Same-day/Next-day batch allows same-day orders to be picked up before next-day orders, ensuring the most urgent orders are attempted inventory allocated first.
 
 #### <mark style="color:orange;">Choosing Sorting Options to Define Order Priority:</mark>
+
+
+
+{% embed url="https://youtu.be/J2_LpfbHIlI" %}
+Applying Sorting
+{% endembed %}
 
 1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**“Same-day/Next-day order”**</mark> batch we will choose the **"Shipping Method”** sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
 2. Finally, click on the `Save` icon in the right most corner to save your **configured routing rule**.
