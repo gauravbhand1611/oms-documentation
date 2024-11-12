@@ -74,7 +74,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 <div data-full-width="false">
 
-<figure><img src="../.gitbook/assets/Find test order.png" alt=""><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Find test order.png" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
 
 </div>
 
