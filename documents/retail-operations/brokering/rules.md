@@ -6,7 +6,7 @@ description: Learn about Inventory Rules.
 
 As discussed, <mark style="color:orange;">**Inventory Rules**</mark> help orchestrate the process of choosing the most suitable fulfillment location for each order in a batch of orders based on defined criteria like proximity, stock levels, and strategic priorities. These rules act as sequential steps in the order routing, guiding the brokering engine through multiple checks to find the best fulfillment location.
 
-## Creating and Managing Multiple Recursive Inventory Rules
+## Creating and Managing Multiple Inventory Rules
 
 Here’s how multiple inventory rules work within each routing rule:
 
@@ -17,7 +17,7 @@ Here’s how multiple inventory rules work within each routing rule:
 You can easily drag and drop inventory rules to reorder them. The order in which the rules are arranged is important, as the first inventory rule is always evaluated first, followed by the next one. This allows for flexibility in adjusting the sequence as per changing requirements.
 {% endhint %}
 
-In this section, we’ll demonstrate how to set up recursive inventory rules for two routing rules we created earlier: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders.”**</mark>
+In this section, we’ll demonstrate how to set up multiple inventory rules for two routing rules we created earlier: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders.”**</mark>
 
 <mark style="color:orange;">**Creating inventory rules is a three-step process:**</mark>
 
@@ -182,7 +182,7 @@ Final inventory rule
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
 * **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance.
 * **Sorting:** We will sort facilities by **Proximity**, so the closest location is selected.
-* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied various multiple recursive rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
+* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied various multiple rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
 
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
@@ -235,7 +235,7 @@ For the _**final third inventory rule**_, we will look up all warehouse location
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
 * **Filter:** We will continue to restrict the facility lookup to **warehouses** only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
 * **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse with available stock.
-* **Action:** For items in this batch that still remain unfillable after we have applied various multiple recursive inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
+* **Action:** For items in this batch that still remain unfillable after we have applied various multiple inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
 
 This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
