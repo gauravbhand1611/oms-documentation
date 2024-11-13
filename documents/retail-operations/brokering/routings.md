@@ -8,9 +8,7 @@ As discussed, <mark style="color:orange;">**routing**</mark>, also known as <mar
 
 ## Creating and Managing Order Batches
 
-This section explains how to create multiple order batches in a brokering run using filters and sorting options to match business needs.
-
-We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders”**</mark> within our previously created <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run.
+This section explains how to create multiple order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders”**</mark> within our previously created <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run.
 
 ### Adding a New Routing
 
@@ -58,6 +56,8 @@ Sequence Routing Rules
 <mark style="color:orange;">**Creating an order batch is a two-step process:**</mark>
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Filters</strong></mark></li></ol><p>Choosing <code>Filters</code> to look up orders and group them in a batch.</p></td><td></td><td></td><td></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Sorting</strong></mark></li></ol><p>Applying <code>Sorting</code> criteria to determine the sequence in which orders are picked up during routing.</p></td><td></td><td></td><td></td></tr></tbody></table>
+
+<figure><img src="../.gitbook/assets/Order filtering and sorting.png" alt="" width="375"><figcaption><p>Order Filters and Sorting</p></figcaption></figure>
 
 ### Step 1: Creating a Batch of Orders Using Filters
 
