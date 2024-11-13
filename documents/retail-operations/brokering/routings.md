@@ -133,11 +133,11 @@ Applying Filters and Sorting for Standard Orders Batch
 
 1. From the Filters option, we will choose the **"Shipment method type"** and **“Queue”** filters.
 
-* Now from the "Shipping Method" dropdown we will choose the “Standard” shipping method to include only standard shipping orders.
-* From the “Queue” dropdown we will choose the “Brokering Queue” to include all those standard shipping orders that are waiting for the inventory allocation.
+* Now from the **"Shipping Method"** dropdown we will choose the **“Standard”** shipping method to include only standard shipping orders.
+* From the **“Queue”** dropdown we will choose the “Brokering Queue” to include all those standard shipping orders that are waiting for the inventory allocation.
 
 2. From the Sorting option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
-3. Finally, click on the “Save” icon in the right most corner to save your configured routing rule.
+3. Finally, click on the `Save` icon in the right most corner to save your configured routing rule.
 
 These examples help understand how retailers can use different filters and sorting options to create order batches and strategically fulfill orders, aligning each routing rule with specific business objectives.
 
