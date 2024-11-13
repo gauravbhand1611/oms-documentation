@@ -39,7 +39,6 @@ HotWax Commerce offers several Inventory Filters to fine-tune which fulfillment 
 * **Brokering Safety Stock:** Different from online ATP safety stock, brokering safety stock defines the minimum stock required for an order to be brokered to a facility. For example, if a retailer sets a brokering safety stock level of 10 units, only facilities with at least 10 units of the item in stock will be eligible to fulfill the order. This prevents over-allocation and ensures that safety stock levels are maintained for unforeseen demand.
 * **Facility Group:** Custom grouping of locations. Grouping certain facilities allows retailers to simplify their decision-making. For example, as discussed above, there can be a dedicated facility group of only warehouses, one group can have both stores and warehouses or there can also be slow-moving or lower-demand facilities can be grouped together and allotted for non-urgent orders, while high-demand facilities are reserved for time-sensitive fulfillment.
 * **Proximity:** Distance between fulfillment facility and customer’s address. When a facility address is added in HotWax, its latitude and longitude are automatically saved. Similarly, HotWax also saves customer addresses. With both locations’ lat long saved, HotWax can compare the coordinates to identify warehouses and stores within the defined proximity that have available inventory. For example, a retailer can set a 200-mile proximity limit for next-day delivery orders, ensuring only inventory within 200 miles of the customer's address is used. This approach supports timely delivery and helps meet delivery SLAs while reducing shipping times.
-* **Broker Only if All Ship Group Items Are Available**
 * **Split Order Item Group:** Retailers can control whether they want to split items that belong to a specific order item group. For example, certain items, like gift sets or kits, may need to be shipped together to maintain the integrity of the order. Retailers can decide whether to allow splitting of such groups or to prioritize keeping them intact, even if other items in the order are split across multiple facilities.
 
 {% hint style="info" %}
@@ -211,6 +210,12 @@ Standard Orders First Inventory Rule
 Standard Orders Second Inventory Rule
 {% endembed %}
 {% endtab %}
+
+{% tab title="Final Inventory Rule" %}
+{% embed url="https://youtu.be/pvR7X9xXBDI" %}
+Standard Orders Final Inventory Rule
+{% endembed %}
+{% endtab %}
 {% endtabs %}
 
 For the _**first inventory rule**_, we will prioritize warehouse locations with most inventory.
@@ -229,7 +234,7 @@ For the _**second inventory rule**_, we will prioritize warehouse locations with
 For the _**final third inventory rule**_, we will look up all warehouse locations.
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
-* **Filter:** We will continue to restrict the facility lookup to warehouses only using the Facility Group filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
+* **Filter:** We will continue to restrict the facility lookup to **warehouses** only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
 * **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse with available stock.
 * **Action:** For items in this batch that still remain unfillable after we have applied various multiple recursive inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
 
@@ -239,19 +244,30 @@ This is how in a **single Brokering Run, you can set up multiple routings with u
 
 For standard orders, splitting is disabled across all inventory rules, the focus is solely on warehouse locations, and “Inventory balance” is prioritized over “Proximity.”
 
-## Key Takeaways
-
-* _Brokering runs_ determine the frequency for routing order batches.
-* _Routing_, also known as a routing rule, involves creating order batches based on filters for order lookup and sorting. It’s a flexible setup where you decide which orders should be grouped together.
-* _Inventory rules_, within each routing setup, you can define multiple inventory rules. If the first inventory rule doesn’t fully allocate inventory to an order, the brokering engine checks the next rules in sequence. Each rule helps look up facilities with the available inventory.
-* _After actions logic_, when inventory rules are applied, specific decisions need to be made based on inventory availability. For example, an item may be unavailable at a single facility, or not available at all. Handling these cases may involve using options like order splitting or moving orders to the Unfillable Queue.
-
-Understanding and appropriately configuring these actions will let you fine-tune brokering rules, improving order routing efficiency and meeting specific fulfillment requirements.
-
 {% hint style="success" %}
 By leveraging HotWax Commerce Order Routing App, retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
 {% endhint %}
 
+<details>
+
+<summary>Key Takeaways</summary>
+
+* _<mark style="color:orange;">**Brokering runs**</mark>_ determine the frequency for routing order batches.
+
+<!---->
+
+* _<mark style="color:orange;">**Routing**</mark>_, also known as a routing rule, involves creating order batches based on filters for order lookup and sorting. It’s a flexible setup where you decide which orders should be grouped together.
+
+<!---->
+
+* _<mark style="color:orange;">**Inventory rules**</mark>_, within each routing setup, you can define multiple inventory rules. If the first inventory rule doesn’t fully allocate inventory to an order, the brokering engine checks the next rules in sequence. Each rule helps look up facilities with the available inventory.
+
+<!---->
+
+* _<mark style="color:orange;">**After actions logic**</mark>_, when inventory rules are applied, specific decisions need to be made based on inventory availability. For example, an item may be unavailable at a single facility, or not available at all. Handling these cases may involve using options like order splitting or moving orders to the Unfillable Queue.
+
+</details>
+
 ### Next Steps
 
-In the following sections, we’ll cover a range of business use cases that the HotWax Commerce Order Routing App can help achieve, highlighting its adaptability to various inventory and order fulfillment needs.
+In the following sections, we’ll cover a range of business [use cases](scenarios.md) that the HotWax Commerce `Order Routing` App can help achieve, highlighting its adaptability to various inventory and order fulfillment needs.
