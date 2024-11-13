@@ -177,8 +177,8 @@ Fourth Inventory Rule
 
 For the final _**fifth inventory rule**_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
 
-{% embed url="https://youtu.be/bKMZ2TbiX_M" %}
-Final Inventory Rule
+{% embed url="https://youtu.be/M1Ae9VkL99Y" %}
+Final inventory rule
 {% endembed %}
 
 * Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
