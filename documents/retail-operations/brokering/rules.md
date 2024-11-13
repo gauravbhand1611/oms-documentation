@@ -35,6 +35,8 @@ Retailers set up facility groups in HotWax’s Facility App. The first facility 
 
 HotWax Commerce offers several Inventory Filters to fine-tune which fulfillment locations are eligible for allocation, including:
 
+<figure><img src="../.gitbook/assets/Inventory filters (1).png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
+
 * **Turn Off the Facility Order Limit Check:** Retailers have the option to bypass the maximum order limit for a facility. This filter allows flexibility in managing facility capacity during peak times or high demand periods. For example, if a retailer chooses to turn off this limit, orders can continue to be brokered to that facility even after its order limit has been reached.
 * **Brokering Safety Stock:** Different from online ATP safety stock, brokering safety stock defines the minimum stock required for an order to be brokered to a facility. For example, if a retailer sets a brokering safety stock level of 10 units, only facilities with at least 10 units of the item in stock will be eligible to fulfill the order. This prevents over-allocation and ensures that safety stock levels are maintained for unforeseen demand.
 * **Facility Group:** Custom grouping of locations. Grouping certain facilities allows retailers to simplify their decision-making. For example, as discussed above, there can be a dedicated facility group of only warehouses, one group can have both stores and warehouses or there can also be slow-moving or lower-demand facilities can be grouped together and allotted for non-urgent orders, while high-demand facilities are reserved for time-sensitive fulfillment.
@@ -69,6 +71,8 @@ If no warehouse within 100 miles has inventory available then in the next invent
 Once the eligible facilities are filtered, the next step is to set up sorting criteria to prioritize these locations based on specific requirements. Sorting determines the sequence in which the brokering engine evaluates facilities, enabling it to choose the most optimal location for fulfillment. For example, if 10 facilities meet the filtering criteria, sorting ensures that the brokering engine selects the best-suited one based on your fulfillment goals, whether that’s faster delivery, balanced workload, or efficient inventory usage.
 
 **Here are the available sorting options:**
+
+<figure><img src="../.gitbook/assets/Inventory sorting (1).png" alt="" width="563"><figcaption><p>Inventory Sorting</p></figcaption></figure>
 
 * **Proximity:** Retailers can sort inventory allocation based on the distance between the customer's shipping address and the facility. This sorting method prioritizes inventory located closer to the customer, helping reduce shipping times and costs, especially for expedited orders or those requiring same-day or next-day delivery.
 * **Facility Order Limit:** In order to ensure that the workload at facilities is balanced, facilities can also be sorted on how much fulfillment capacity they have left.

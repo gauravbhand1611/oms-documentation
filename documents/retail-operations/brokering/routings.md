@@ -65,6 +65,8 @@ The first step in setting up routing rules is to create a batch of orders using 
 
 **Here are the available Filters to create order batches:**
 
+<figure><img src="../.gitbook/assets/Order filters (1).png" alt="" width="563"><figcaption><p>Order Batch Filters</p></figcaption></figure>
+
 * **Origin facility groups** This parameter allows retailers to filter orders based on the facility group from which they originated. For example, many times when walk-in customers cannot find their preferred items in store, store associates place the order on their behalf. These are known as Send Sale orders. In this scenario, the origin facility becomes the specific physical location. If a retailer wants all Send Sale orders from specific facilities to be routed differently, then they can apply this filter to create a batch of orders and proceed to create their routing.
 * **Order priority:** Not all orders carry the same urgency. Retailers can pick orders with higher priorities (such as VIP or time-sensitive orders) before others. By filtering orders based on priority, they can ensure that the most critical ones are routed and processed before any less urgent orders.
 * **Promise date:** Pre-orders or backorders can be filtered based on their promise date. Retailers may choose to broker orders that have passed their promise date first, ensuring timely fulfillment of overdue orders.
@@ -97,6 +99,8 @@ If you are not selecting any filter then all orders in all parkings will be atte
 After filtering, the next step is choosing the Sorting criteria to prioritize the sequence in which individual orders within each batch are picked for inventory allocation. By applying sorting, you can align the order routing with your fulfillment goals, ensuring high-priority orders are handled first.
 
 **Available Sorting Options:**
+
+<figure><img src="../.gitbook/assets/Order sorting (1).png" alt="" width="563"><figcaption><p>Order Batch Sorting</p></figcaption></figure>
 
 * **Order Date:** Sort by order date to prioritize older orders first, following a first-in, first-out (FIFO) approach.
 * **Order Priority:** Orders can be sorted by customer priority levels, such as loyalty plus, loyalty, or regular customers, allowing retailers to prioritize orders for high-value customers.
