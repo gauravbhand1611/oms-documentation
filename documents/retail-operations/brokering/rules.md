@@ -199,6 +199,20 @@ For standard orders with a longer SLA (7 days or more), inventory rules can be c
 * Navigate to the `Brokering Run` details page, choose the **“Standard orders”** routing, and follow the steps below to add inventory rules.
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 250 miles,”** to reflect its purpose of checking only warehouse locations in the defined proximity.
 
+{% tabs %}
+{% tab title="First Inventory Rule" %}
+{% embed url="https://youtu.be/x1Nzb29UewI" %}
+Standard Orders First Inventory Rule
+{% endembed %}
+{% endtab %}
+
+{% tab title="Second Inventory Rule" %}
+{% embed url="https://youtu.be/TZWbORAr1ps" %}
+Standard Orders Second Inventory Rule
+{% endembed %}
+{% endtab %}
+{% endtabs %}
+
 For the _**first inventory rule**_, we will prioritize warehouse locations with most inventory.
 
 * **Filter:** We will choose **“Warehouses”** in the **“Facility group”,** excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
@@ -208,11 +222,11 @@ For the _**first inventory rule**_, we will prioritize warehouse locations with 
 For the _**second inventory rule**_, we will prioritize warehouse locations with most inventory.
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 500 miles".**
-* **Filter:** We will use the Facility Group filter and continue to restrict the facility lookup to warehouses only but we will now expand the distance to 500 miles using the Proximity filter.
-* **Sorting:** We will again choose “Inventory balance” sorting to select the optimal warehouse in 500 miles with the available inventory.
-* **Action:** If any items still remain unfillable, we will set the action to “Move unavailable items” to the “Next Rule.”
+* **Filter:** We will use the **Facility Group** filter and continue to restrict the facility lookup to **warehouses** only but we will now expand the distance to **500 miles** using the Proximity filter.
+* **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse in 500 miles with the available inventory.
+* **Action:** If any items still remain unfillable, we will set the action to **“Move unavailable items”** to the **“Next Rule.”**
 
-For the **final third inventory rule**, we will look up all warehouse locations.
+For the _**final third inventory rule**_, we will look up all warehouse locations.
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
 * **Filter:** We will continue to restrict the facility lookup to warehouses only using the Facility Group filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
