@@ -125,7 +125,7 @@ Orders will be brokered based on order date if no sorting is specified.
 
 _Now that you already know what filters and sorting options are available and what they mean, you can easily use them for your next routing rule._
 
-Let’s see what should be the right filters and sorting options for our <mark style="color:orange;">**second routing rule “Standard forders”.**</mark>
+Let’s see what should be the right filters and sorting options for our <mark style="color:orange;">**second routing rule “Standard orders”.**</mark>
 
 {% embed url="https://youtu.be/lWRdCIO9dMs" %}
 Applying Filters and Sorting for Standard Orders Batch
