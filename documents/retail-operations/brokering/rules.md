@@ -100,7 +100,7 @@ After applying filters and sorting, the final step is to define what be the acti
 
 1. **Partially available**
 
-* **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. Since splitting an order can increase shipping costs, HotWax Commerce offers an additional feature called the **Brokering Shipment Threshold**. This ensures that an order is only split if its value exceeds a defined minimum threshold, helping to manage shipping expenses effectively. Learn more details about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
+* **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. Since splitting an order can increase shipping costs, HotWax Commerce offers an additional feature called the **Brokering Shipment Threshold**. This ensures that an order is only split if its value exceeds a defined minimum threshold, helping to manage shipping expenses effectively. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
 * **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** the partial allocation and toggling **OFF** partial allocation for grouped items
 
 2. **Unavailable items**
