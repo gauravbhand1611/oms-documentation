@@ -48,23 +48,17 @@ All facilities enabled for online fulfillment will be attempted for brokering if
 
 Continuing our example, let's first create inventory rules for “Same-day/Next-day orders routing.
 
-#### Applying Filters to look up facilities with inventory:
+#### <mark style="color:orange;">Applying Filters to look up facilities with inventory:</mark>
 
-1. Start Creating the Inventory Rule:
+{% embed url="https://youtu.be/Lc5-YB5e7Cg" %}
+First Inventory Rule Filters
+{% endembed %}
 
-* Click the “Add Inventory Rule” button.
-* Name the rule, such as “Check all warehouses in 100 miles,” to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
-* Click “Save” to save the rule name.
+1. Start Creating the Inventory Rule, click the `Add Inventory Rule` button. Name the rule, such as **“Check all warehouses in 100 miles,”** to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
+2. Click `Save` to save the rule name.
+3. Configure Filters, select the right filters to narrow down eligible facilities. For the “Same-day/Next-day orders” routing rule, we will choose **“Facility Group**” and **“Proximity”**.
 
-2. Configure Filters:
-
-* Select the right filters to narrow down eligible facilities. For the “Same-day/Next-day orders” routing rule, we will choose “Facility Group” and “Proximity”.
-
-Here’s how it will look: (image)
-
-*   Facility Group: Select “warehouses” from the dropdown. This ensures that only warehouses with available inventory are eligible. Why did we choose warehouse locations?
-
-    Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
+* Facility Group: Select “warehouses” from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
 *   Proximity: Set the distance to 100 miles, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
 
     This ensures that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
@@ -86,9 +80,15 @@ Once the eligible facilities are filtered, the next step is to set up sorting cr
 Facilities will be sorted based on creation date if no sorting preferences are applied.
 {% endhint %}
 
-**Choosing Sorting Options to select the most optimal facility:**
+<mark style="color:orange;">**Choosing Sorting Options to select the most optimal facility:**</mark>
 
-Navigate to the Sort option. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll use the Proximity sorting option. This choice will arrange eligible facilities within the 100-mile range by their distance from the customer, ensuring that the closest warehouse is chosen for fulfillment. This approach aligns with the goal of meeting same-day or next-day delivery requirements by minimizing transit time.
+{% embed url="https://youtu.be/2-XB9nIoRg8" %}
+First Inventory Rule Sorting
+{% endembed %}
+
+Navigate to the Sort option. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll use the **"Proximity"** sorting option.
+
+This sorting option will arrange eligible facilities within the 100-mile range by their distance from the customer, ensuring that the closest warehouse is chosen for fulfillment. This approach aligns with the goal of meeting same-day or next-day delivery requirements by minimizing transit time.
 
 ### Step 3: After Actions Logic
 
@@ -112,16 +112,24 @@ After applying filters and sorting, the final step is to define what be the acti
 
     It’s also important to understand that applying auto-cancel date or clearing auto-cancel date will be applied to all the unfillable orders. If you have an exception case where you only want to perform an action for a single order, then you should do that from HotWax OMS, you can move the particular order to new parking like “Unfillable Hold Parking”, doing this removes its auto cancel date.
 
-#### Deciding Actions to choose the most optimal facility:
+#### <mark style="color:orange;">Deciding Actions to choose the most optimal facility:</mark>
 
-1. In Actions, navigate to the partially available card. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll keep the partial fulfillment as disabled because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
-2. Navigate to unavailable items card. Here we will only enable the next rule option. This means that the brokering engine will now try to allocate inventory using the next configured inventory rule in our sequence. We don’t want to apply an auto cancel date yet or move unfillable items to a separate queue. We can do this in our final rule.
+{% embed url="https://youtu.be/jRb2hWSKR78" %}
+First Inventory Rule Actions
+{% endembed %}
+
+1. In Actions, navigate to the partially available card. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll keep the **partial fulfillment as disabled** because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
+2. Navigate to unavailable items card. Here **we will only enable the next rule option**. This means that the brokering engine will now try to allocate inventory using the next configured inventory rule in our sequence. We don’t want to apply an auto cancel date yet or move unfillable items to a separate queue. We can do this in our final rule.
+
+{% hint style="info" %}
+By default partial fulfillment is disabled and move items to next rule is selected in actions.
+{% endhint %}
 
 ### Configuring Additional Inventory Rules for Same-Day and Next-Day Orders
 
 With the first inventory rule in place, the next steps involve configuring additional rules to widen the facility look up and ensure optimal allocation for same-day and next-day orders.
 
-{% hint style="info" %}
+{% hint style="success" %}
 The following examples provide a brief overview of potential inventory rules, which may vary depending on a business’s unique priorities and requirements.
 {% endhint %}
 
