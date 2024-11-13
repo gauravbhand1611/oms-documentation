@@ -83,7 +83,7 @@ During peak hours, store managers need the flexibility to turn off fulfillment f
    * Navigate to Facility App: Open the Facility App from the main menu.
    * Locate the Facility: Find the location for which you need to adjust fulfillment capacity.
    * Open Facility Details Page: Click on the location name to open the Details page.
-   * Adjust Fulfillment Capacity: Navigate to the fulfillment capacity card. Click on the chip and select “No Capacity” to temporarily turn off fulfillment from this location.
+   * Adjust Fulfillment Capacity: Navigate to the fulfillment capacity card. Click on the chip and select **“No Capacity”** to temporarily turn off fulfillment from this location.
 2. **Fulfillment App**
    * Access Fulfillment App: Store managers can log in to the Fulfillment App.
    * Locate Fulfillment Capacity Card: Navigate to the fulfillment capacity card specific to their store.
@@ -167,8 +167,6 @@ Retailers aim to maintain sufficient in-store inventory for walk-in customers wh
 2. **Activation and Scheduling**
    * **Activate Inventory Rules**: Ensure all the inventory rules are activated to be in effect.
 
-
-
 {% embed url="https://youtu.be/eGIvwQWvNm4" %}
 Set Brokering Safety Stock
 {% endembed %}
@@ -251,9 +249,9 @@ To address this issue, HotWax Commerce allows merchandisers to set threshold val
 
 1. **Navigate to Store Settings**
    * **Access Store Settings**: In the HotWax Commerce Order Management System, navigate to the Product Store page.
-   * **Add New Setting**: Go to the store settings section and click on "Add Settings."
+   * **Add New Setting**: Go to the store settings section and click on **"Add Settings."**
 2. **Set Brokering Shipment Threshold**
-   * **Select Brokering Threshold**: In the settings submenu, select "Brokering Shipment Threshold."
+   * **Select Brokering Threshold**: In the settings submenu, select **"Brokering Shipment Threshold."**
    * **Define Threshold Value**: Enter the desired shipment threshold value that will prevent splitting orders below this amount. For example, set the threshold at $100 to ensure that only orders above this value are eligible for splitting across multiple locations.
 3. **Save Settings**
    * **Finalize the Configuration**: Save the store settings to apply the brokering threshold across the Product Store.
@@ -275,12 +273,12 @@ HotWax Commerce allows retailers to manage these scenarios by disabling the spli
 1. **Create Inventory Rule for Order Batch**
    * **Access Inventory Rules**: Begin by creating an inventory rule in the HotWax Commerce Order Routing App.
 2. **Configure Partial Allocation Settings**
-   * **Navigate to Partial Allocation**: In the inventory rule settings, locate the "Partially Available" card. This section allows you to configure how items are allocated when they are not fully available at a single location.
-   * **Enable Partial Allocation**: Turn on the toggle for "Partial Order Allocation" to allow the order to be split across multiple locations for items that are not grouped.
+   * **Navigate to Partial Allocation**: In the inventory rule settings, locate the **"Partially Available"** card. This section allows you to configure how items are allocated when they are not fully available at a single location.
+   * **Enable Partial Allocation**: Turn on the toggle for **"Partial Order Allocation"** to allow the order to be split across multiple locations for items that are not grouped.
 3. **Disable Splitting for Grouped Items**
-   * **Toggle Off for Grouped Items**: Ensure that the toggle for "Partially Allocate Grouped Items" is turned off. This setting ensures that orders for grouped items, such as kit products and gift items are not split and are shipped together from a single location.
+   * **Toggle Off for Grouped Items**: Ensure that the toggle for **"Partially Allocate Grouped Items"** is turned off. This setting ensures that orders for grouped items, such as kit products and gift items are not split and are shipped together from a single location.
 4. **Optional: Enable Splitting for Specific Scenarios**
-   * **Enable Grouped Item Splitting**: If the retailer sells items that are grouped but can be split under certain circumstances (e.g., gifting items), they can turn on the toggle for "Partially Allocate Grouped Items."
+   * **Enable Grouped Item Splitting**: If the retailer sells items that are grouped but can be split under certain circumstances (e.g., gifting items), they can turn on the toggle for **"Partially Allocate Grouped Items."**
    * **Best Practice**: It is recommended first to create an inventory rule with grouped item splitting disabled and then follow it with a rule where grouped item splitting is enabled. This layered approach ensures that grouped items are handled appropriately based on the retailer's preferences.
 
 {% embed url="https://youtu.be/bPBdwJZ6Tm8" %}

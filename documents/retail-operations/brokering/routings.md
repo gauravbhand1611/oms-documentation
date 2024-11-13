@@ -82,11 +82,11 @@ Continuing with our example, let’s take a closer look at how to apply the righ
 Applying Filters
 {% endembed %}
 
-1. Open the “Same-day/Next-day orders” routing rule’s details, then navigate to the Filters option.
+1. Open the **“Same-day/Next-day orders”** routing rule’s details, then navigate to the Filters option.
 2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the **"Shipment method type"** and **“Queue”** filters.
 
-* From the “Shipping Method” dropdown, we will choose “Same Day" and "Next Day” shipping methods to include only same-day and next-day shipping orders in our batch.
-* From the “Queue” we will choose the “Brokering Queue” to include all those same-day and next-day shipping orders that are waiting for the inventory allocation.
+* From the **“Shipping Method”** dropdown, we will choose **“Same Day"** and **"Next Day”** shipping methods to include only same-day and next-day shipping orders in our batch.
+* From the **“Queue”** we will choose the **“Brokering Queue”** to include all those same-day and next-day shipping orders that are waiting for the inventory allocation.
 
 **What does this help achieve?** With these filters in place, the brokering algorithm will look specifically for orders in the Brokering Queue that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
 
