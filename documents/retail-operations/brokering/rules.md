@@ -56,10 +56,10 @@ First Inventory Rule Filters
 
 1. Start Creating the Inventory Rule, click the `Add Inventory Rule` button. Name the rule, such as **“Check all warehouses in 100 miles,”** to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
 2. Click `Save` to save the rule name.
-3. Configure Filters, select the right filters to narrow down eligible facilities. For the “Same-day/Next-day orders” routing rule, we will choose **“Facility Group**” and **“Proximity”**.
+3. Configure Filters, select the right filters to narrow down eligible facilities. For the **“Same-day/Next-day orders” routing rule**, we will choose **“Facility Group**” and **“Proximity”**.
 
-* Facility Group: Select “warehouses” from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
-*   Proximity: Set the distance to 100 miles, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
+* Facility Group: Select **“warehouses”** from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
+*   Proximity: Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
 
     This ensures that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
 
@@ -86,7 +86,7 @@ Facilities will be sorted based on creation date if no sorting preferences are a
 First Inventory Rule Sorting
 {% endembed %}
 
-Navigate to the Sort option. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll use the **"Proximity"** sorting option.
+Navigate to the Sort option. Continuing our example, for the **“Check all warehouses in 100 miles”** inventory rule, we’ll use the **"Proximity"** sorting option.
 
 This sorting option will arrange eligible facilities within the 100-mile range by their distance from the customer, ensuring that the closest warehouse is chosen for fulfillment. This approach aligns with the goal of meeting same-day or next-day delivery requirements by minimizing transit time.
 
@@ -135,7 +135,7 @@ The following examples provide a brief overview of potential inventory rules, wh
 
 To add more inventory rules, follow these steps:
 
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations in 100 miles,”** to reflect its purpose of checking both the stores and warehouses that can meet the same-day or next-day delivery SLA.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 100 miles,”** to reflect its purpose of checking both the stores and warehouses that can meet the same-day or next-day delivery SLA.
 
 For the _**second inventory rule**_, we will expand facility lookup with the **"Proximity"** Filter:
 
@@ -143,7 +143,7 @@ For the _**second inventory rule**_, we will expand facility lookup with the **"
 Second Inventory Rule
 {% endembed %}
 
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations in 100 miles".**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 100 miles".**
 * **Filter:** We will use the Proximity filter, setting the distance to 100 miles. This rule expands the facility lookup to include all facilities **(both stores and warehouses)** within a 100-mile radius of the customer’s location.
 
 {% hint style="info" %}
@@ -151,7 +151,7 @@ We are not using the Facility Group filter here to include all fulfillment locat
 {% endhint %}
 
 * **Sorting:** Under sorting, we will choose proximity to ensure the closest facility with the available inventory is selected.
-* **Action:** For any items in this batch that remain unfillable, we will set the action as “Move unavailable items” to the **“Next Rule.”**
+* **Action:** For any items in this batch that remain unfillable, we will set the action as **“Move unavailable items”** to the **“Next Rule.”**
 
 For the _**third inventory rule**_, we will further expand facility Lookup with **"Proximity**" Filter:
 
@@ -159,10 +159,10 @@ For the _**third inventory rule**_, we will further expand facility Lookup with 
 Third Inventory Rule
 {% endembed %}
 
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations in 250 miles".**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 250 miles".**
 * **Filter:** We will use the **Proximity** filter, setting the distance to 250 miles. This rule expands the facility lookup to include all facilities (both stores and warehouses) within a 250-mile radius of the customer’s location.
 * **Sorting:** Again, we will use the **Proximity** option to choose the closest facility with available inventory.
-* **Action:** For any items in this batch that remain unfillable, we will set the action as “Move unavailable items” to the **“Next Rule.”**
+* **Action:** For any items in this batch that remain unfillable, we will set the action as **“Move unavailable items”** to the **“Next Rule.”**
 
 For the _**fourth inventory rule**_, we will further expand facility lookup without any distance limitation:
 
@@ -170,10 +170,10 @@ For the _**fourth inventory rule**_, we will further expand facility lookup with
 Fourth Inventory Rule
 {% endembed %}
 
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations".**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations".**
 * **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance. This rule ensures that every facility (store or warehouse) is looked up to fulfill unallocated orders.
 * **Sorting:** We will sort facilities by proximity, so the closest location is selected.
-* **Action:** For any items in this batch that still remain unfillable, we will set the action as “Move unavailable items” to the “Next Rule.”
+* **Action:** For any items in this batch that still remain unfillable, we will set the action as “Move unavailable items” to the **“Next Rule.”**
 
 For the final _**fifth inventory rule**_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
 
@@ -181,7 +181,7 @@ For the final _**fifth inventory rule**_, we will again include all facilities b
 Final inventory rule
 {% endembed %}
 
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
 * **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance.
 * **Sorting:** We will sort facilities by **Proximity**, so the closest location is selected.
 * **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied various multiple recursive rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
@@ -189,7 +189,7 @@ Final inventory rule
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to <mark style="color:green;background-color:green;">**"Active"**</mark> " so that it can begin processing orders as scheduled.
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to <mark style="color:green;background-color:green;">**"Active"**</mark> so that it can begin processing orders as scheduled.
 {% endhint %}
 
 ### What differently can we do for standard orders?
@@ -197,25 +197,27 @@ Once all rules are active, and your routing is fully configured, ensure the [Bro
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
 * Navigate to the `Brokering Run` details page, choose the **“Standard orders”** routing, and follow the steps below to add inventory rules.
-* Click on the “Add Inventory Rule” button and give the new rule a distinct name.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 250 miles,”** to reflect its purpose of checking only warehouse locations in the defined proximity.
 
 For the _**first inventory rule**_, we will prioritize warehouse locations with most inventory.
 
-* **Filter:** We will choose “Warehouses” in the “Facility group”, excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
-* **Sorting:** We will choose “Inventory balance” to route orders to warehouses with the highest available inventory. Proximity sorting isn’t prioritized here, as the goal is to maximize inventory balance within 250 miles.
-* **Action:** For any items that remain unfillable, we will set the action to “Move unavailable items” to the “Next Rule.”
+* **Filter:** We will choose **“Warehouses”** in the **“Facility group”,** excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
+* **Sorting:** We will choose **“Inventory balance”** to route orders to warehouses with the highest available inventory. Proximity sorting isn’t prioritized here, as the goal is to maximize inventory balance within 250 miles.
+* **Action:** For any items that remain unfillable, we will set the action to **“Move unavailable items”** to the **“Next Rule.”**
 
 For the _**second inventory rule**_, we will prioritize warehouse locations with most inventory.
 
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 500 miles".**
 * **Filter:** We will use the Facility Group filter and continue to restrict the facility lookup to warehouses only but we will now expand the distance to 500 miles using the Proximity filter.
 * **Sorting:** We will again choose “Inventory balance” sorting to select the optimal warehouse in 500 miles with the available inventory.
 * **Action:** If any items still remain unfillable, we will set the action to “Move unavailable items” to the “Next Rule.”
 
-For the **final third inventory rule\_**, we will look up all warehouse locations.
+For the **final third inventory rule**, we will look up all warehouse locations.
 
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
 * **Filter:** We will continue to restrict the facility lookup to warehouses only using the Facility Group filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
-* **Sorting:** We will again choose “Inventory balance” sorting to select the optimal warehouse with available stock.
-* **Action:** For items in this batch that still remain unfillable after we have applied various multiple recursive inventory rules, we will set the final action as “Move unavailable items” to the “Queue,” and select “Unfillable Parking” from the dropdown. We will also apply an auto-cancel date for these unfillable orders.
+* **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse with available stock.
+* **Action:** For items in this batch that still remain unfillable after we have applied various multiple recursive inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
 
 This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
