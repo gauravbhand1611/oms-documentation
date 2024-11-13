@@ -60,6 +60,4 @@ Within each routing, multiple **Inventory Rules** define how inventory is alloca
 * **Same-day delivery batch**_**:**_ Inventory rules can prioritize fulfillment from warehouses within a 100-mile radius of the customer to meet same-day delivery targets. If inventory is unavailable, a secondary rule could expand the range to 250 miles and include stores.
 * **Next-day delivery batch**: For next-day orders, inventory rules can prioritize fulfillment from warehouses within a 250-mile range, accommodating the one-day delivery SLA. Next inventory rules in sequence can apply if the first inventory rule doesn’t allocate inventory for all orders in the batch.
 
-By configuring inventory rules for each routing (batch of orders), retailers can optimize facility, ensuring that every order is fulfilled according to its unique needs.
-
 In the following sections, we’ll dive deeper into each level, to understand how brokering runs, routing rules, and inventory rules work together to optimize order routing.
