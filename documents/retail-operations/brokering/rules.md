@@ -177,26 +177,26 @@ Fourth Inventory Rule
 
 For the final _**fifth inventory rule**_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
 
-
+{% embed url="https://youtu.be/bKMZ2TbiX_M" %}
+Final Inventory Rule
+{% endembed %}
 
 * Click on the “Add Inventory Rule” button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
 * **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance.
-* **Sorting:** We will sort facilities by proximity, so the closest location is selected.
-* **Action:** We will toggle ON “partial allocation” to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied various multiple recursive rules, we will set the final action as “Move unavailable items” to the “Queue,” and select “Unfillable Parking” from the dropdown.
-
-We will also apply an auto-cancel date for these unfillable orders.
+* **Sorting:** We will sort facilities by **Proximity**, so the closest location is selected.
+* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied various multiple recursive rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
 
 {% hint style="warning" %}
-Once you've configured each rule, change its status from "Draft" to "Active" to make it operational. To do this, click on "Draft" and select "Active," or revert an active rule back to "Draft" if any adjustments are required.
+Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, ensure the Brokering Run itself is set to "Active" so that it can begin processing orders as scheduled.
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to <mark style="color:green;background-color:green;">**"Active"**</mark> " so that it can begin processing orders as scheduled.
 {% endhint %}
 
 ### What differently can we do for standard orders?
 
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
-* Navigate to the Brokering Run details page, choose the “Standard orders” routing, and follow the steps below to add inventory rules.
+* Navigate to the `Brokering Run` details page, choose the **“Standard orders”** routing, and follow the steps below to add inventory rules.
 * Click on the “Add Inventory Rule” button and give the new rule a distinct name.
 
 For the _**first inventory rule**_, we will prioritize warehouse locations with most inventory.
