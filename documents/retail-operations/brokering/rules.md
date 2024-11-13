@@ -59,8 +59,8 @@ First Inventory Rule Filters
 2. Click `Save` to save the rule name.
 3. Configure Filters, select the right filters to narrow down eligible facilities. For the **“Same-day/Next-day orders” routing rule**, we will choose **“Facility Group**” and **“Proximity”**.
 
-* Facility Group: Select **“warehouses”** from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
-*   Proximity: Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
+* **Facility Group:** Select **“warehouses”** from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
+*   **Proximity:** Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
 
     This ensures that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
 
@@ -95,21 +95,19 @@ This sorting option will arrange eligible facilities within the 100-mile range b
 
 ### Step 3: After Actions Logic
 
-After applying filters and sorting, the final step is to define what be the actions if some orders in the batch do not receive inventory. These “Actions” allow you to handle scenarios where items are only partially available or completely unavailable. This step ensures that all orders are accurately managed, whether through partial fulfillment, or rerouting.
+After applying filters and sorting, the final step is to define what be the actions if some orders in the batch do not receive inventory. These **“Actions”** allow you to handle scenarios where items are only partially available or completely unavailable. This step ensures that all orders are accurately managed, whether through partial fulfillment, or rerouting.
 
 **Here are the available actions:**
 
 1. **Partially available**
 
-*   **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location.
-
-    Because order splitting increases costs, retailers can also enable “Brokering Shipment Threshold”. This ensures that an order is split only if its value is more than a defined min order value. Here are more details about this and how to implement it.
+* **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. Since splitting an order can increase shipping costs, HotWax Commerce offers an additional feature called the **Brokering Shipment Threshold**. This ensures that an order is only split if its value exceeds a defined minimum threshold, helping to manage shipping expenses effectively. Learn more details about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
 * **Partially allocate grouped items:** Allow order that contains kits or gift items to be split and allocated partially.
 
 2. **Unavailable items**
 
-* **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the "Unfillable Parking", where they can later be rerouted through a different routing strategy.
-* **Next rule:** Automatically move unallocated order items to the next inventory rule in the sequence.
+* **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the **"Unfillable Parking",** where they can later be rerouted through a different routing strategy.
+* **Next rule:** Automatically move unallocated order items to the **next inventory rule** in the sequence.
 * **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long.
 *   **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied, but incoming inventory is expected to fulfill the order. For example, if unfillable items were moved to "Unfillable Parking" with an auto-cancel date, clearing the date when stock is expected to arrive can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities.
 
