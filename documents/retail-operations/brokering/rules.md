@@ -241,7 +241,7 @@ This is how in a **single Brokering Run, you can set up multiple routings with u
 
 ### What differently did we do for standard orders?
 
-For standard orders, splitting is disabled across all inventory rules, the focus is solely on warehouse locations, and “Inventory balance” is prioritized over “Proximity.”
+For standard orders, we focused only on "Warehouse" locations, prioritized "Inventory balance" over “Proximity" and "disabled partial allocation" across all inventory rules.
 
 {% hint style="success" %}
 By leveraging HotWax Commerce Order Routing App, retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
