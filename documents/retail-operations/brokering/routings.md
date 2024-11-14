@@ -10,14 +10,14 @@ As discussed, <mark style="color:orange;">**routing**</mark>, also known as <mar
 
 Multiple routing rules within a single brokering run are useful when different order batches, like same-day, next-day and standard orders, need to be routed at the same interval.
 
-If these order batches need routing at the same frequency but require different inventory allocation strategies, unique inventory rules can be applied to each batch. This way, even with a shared routing frequency (single brokering run), each order batch is managed according to its specific requirements. We’ll understand more about inventory rules in the coming sections.
+If these order batches need routing at the same frequency but require different inventory allocation strategies, unique inventory rules can be applied to each batch. This way, even with a shared routing frequency (single brokering run), each order batch is managed according to its specific requirements. We’ll understand more about [inventory rules in the coming sections](rules.md).
 
 ## Creating and Managing Routing Rules
 
-This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders”**</mark> within our previously created <mark style="color:orange;">**“Everyday order routing”**</mark> brokering run.
+This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders”**</mark> within our previously created <mark style="color:orange;">**“**</mark>[<mark style="color:orange;">**Everyday order routing”**</mark> brokering run](brokeringruns.md).
 
 {% hint style="info" %}
-In this example, we’re routing Same-day/Next-day orders and Standard orders at the same frequency. If a business scenario requires these batches to be routed at different frequencies then separate brokering runs should be created. 
+In this example, we’re routing Same-day/Next-day orders and Standard orders at the same frequency. If a business scenario requires these batches to be routed at different frequencies then separate brokering runs should be created.
 {% endhint %}
 
 ### Adding a New Routing Rule
@@ -78,17 +78,12 @@ The first step in setting up routing rules is to create a batch of orders using 
 <figure><img src="../.gitbook/assets/Order filters (1).png" alt="" width="563"><figcaption><p>Order Batch Filters</p></figcaption></figure>
 
 * **Origin facility group:** This parameter allows retailers to filter orders based on the [facility group ](https://docs.hotwax.co/documents/system-admins/administration/introduction/facilities-app#facility-groups)from which they originated. For example, many times when walk-in customers cannot find their preferred items in store, store associates place the order on their behalf. These are known as Send Sale orders. In this scenario, the origin facility becomes the specific physical location. If a retailer wants all Send Sale orders from specific facilities to be routed differently, then they can apply this filter to create a batch of orders and proceed to create their routing.
-  
 * **Order priority:** Not all orders carry the same level of urgency. In HotWax Commerce, orders can be assigned a priority level of high, medium, or low. By default, orders are set to "medium priority," but retailers can adjust the order priority in HotWax Commerce as needed. By filtering orders based on priority, retailers can ensure that the most critical ones (high priority orders) are routed before any less urgent orders.
-
 * **Promise date:** Pre-orders or backorders can be filtered based on their promise date. Retailers may choose to broker orders that have passed their promise date first, ensuring timely fulfillment of overdue orders.
-  
 * **Queue:** The parking location to pick orders from. HotWax Commerce has [virtual queues](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-parkings#default-parkings) to park orders that are not yet brokered to a facility. Retailers can filter by queue type (Brokering Queue, Pre-order/Backorder Parking, Rejected Parking, or Unfillable Parking) to decide which orders should be brokered to available inventory.
   * All orders that are not pre-orders or backorders in HotWax Commerce and are waiting for the inventory are in the `Brokering Queue`. In most of the cases this will be the filter you will use to make your order batch.
-  
 * **Sales channel:** Channel where the order was captured. Different sales channels (eCommerce or marketplaces) may require different routing strategies. Orders can be filtered by channel to ensure the right group of orders is picked for routing based on channel-specific fulfillment rules, reducing the risk of penalties or delays in fulfilling orders from marketplaces like Amazon.
-  
-* **Shipment method type:** SLA promised to the customer. When customers choose specific shipping methods, like expedited or same-day delivery, these orders must be prioritized differently. Retailers can use this filter to create a batch of orders based on the chosen shipping method, ensuring that orders requiring fast shipping are processed first.
+* **Shipment method type:** SLA promised to the customer. When customers choose specific [shipping methods](https://docs.hotwax.co/documents/system-admins/fulfillment/shipping-methods/shippinggateways), like expedited or same-day delivery, these orders must be prioritized differently. Retailers can use this filter to create a batch of orders based on the chosen shipping method, ensuring that orders requiring fast shipping are processed first.
 
 Continuing with our example, let’s take a closer look at how to apply the right filters and sorting options for <mark style="color:orange;">**Same-day/Next day**</mark> routing rule.
 
@@ -102,12 +97,11 @@ Applying Filters
 2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the **“Queue”** and **"Shipment method type"** filters.
 
 * From the **“Queue”** we will choose the **“Brokering Queue”** to include all orders that are waiting for the inventory allocation.
-
 * From the **“Shipping Method”** dropdown, we will choose **“Same Day"** and **"Next Day”** shipping methods to include only same-day and next-day shipping orders in our batch.
 
-Since the objective is to prioritize orders with tight SLAs, we are not selecting additional filters like order priority, promise date, and sales channel. Choose the **“Queue”** and **"Shipment method type"** filters narrows the batch to same-day and next-day delivery orders specifically waiting for inventory.
+Since our objective is to prioritize orders with tight SLAs, we are not selecting additional filters like order priority, promise date, and sales channel.
 
-**Outcome?** With these filters in place, the brokering algorithm will look specifically for orders in the Brokering Queue that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
+**Outcome?** With these filters in place, the brokering algorithm will  specifically look for orders in the `Brokering Queue` that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
 
 {% hint style="info" %}
 If you are not selecting any filter then all orders in all parkings will be attempted for brokering.
@@ -125,7 +119,7 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 * **Order Priority:** Orders can be sorted by priority levels, such as high, medium, low allowing retailers to prioritize orders based on their urgency.
 * **Ship By**
 * **Ship After**
-* **Shipping Method:** Sorting by shipping method allows brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
+* **Shipping Method:** Sorting by shipping method enables the brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
 
 #### <mark style="color:orange;">Choosing Sorting Options to Define Order Priority:</mark>
 
@@ -134,7 +128,6 @@ Applying Sorting
 {% endembed %}
 
 1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**“Same-day/Next-day order”**</mark> batch we will choose the **"Shipping Method”** sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
-
 2. Finally, click on the `Save` icon in the right most corner to save your **configured routing rule**.
 
 If you are choosing multiple sorting options, you can prioritize them into the desired sequence using drag and drop.
@@ -151,10 +144,10 @@ Let’s see what should be the right filters and sorting options for our <mark s
 Applying Filters and Sorting for Standard Orders Batch
 {% endembed %}
 
-1. From the Filters option, we will choose the **"Shipment method type"** and **“Queue”** filters.
+1. From the Filters option, we will choose the "**Queue"** and "**Shipment method type"** filters.
 
-* Now from the **"Shipping Method"** dropdown we will choose the **“Standard”** shipping method to include only standard shipping orders.
-* From the **“Queue”** dropdown we will choose the “Brokering Queue” to include all those standard shipping orders that are waiting for the inventory allocation.
+* From the **“Queue”** dropdown we will choose the **“Brokering Queue”** to include all shipping orders that are waiting for the inventory allocation.
+* Now, from the **"Shipping Method"** dropdown we will choose the **“Standard”** shipping method to include only standard shipping orders. This ensures that we only include those orders in the `Brokering Queue` that have the **"Standard"** shipping method.
 
 2. From the Sorting option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
 
@@ -179,4 +172,4 @@ Archive/Unarchive Routing Rule
 
 Archived routings can be reactivated if needed and are accessible from the archive drawer at the bottom of the list.
 
-<mark style="color:orange;">**Congrats!**</mark> You now have a clear understanding of how to <mark style="color:orange;">**create brokering runs and set routing rules.**</mark> The final step is choosing [inventory rules](rules.md) to complete the order routing setup.
+Congrats! You now have a clear understanding of how to <mark style="color:orange;">**create brokering runs and set routing rules.**</mark> The final step is choosing [inventory rules](rules.md) to complete the order routing setup.
