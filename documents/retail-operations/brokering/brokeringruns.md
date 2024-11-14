@@ -4,17 +4,11 @@ description: Learn about Brokering Runs.
 
 # Brokering Runs
 
-As discussed, <mark style="color:orange;">**Brokering Runs**</mark> serve as the highest level of organization in order routing, defining when and how often order routing occurs.
-
-### Creating Brokering Runs
-
-Each brokering run has a specific _frequency_, such as every 5 minutes, hourly, daily, or a custom interval based on specific business requirements. With multiple brokering runs, retailers can fine-tune routing for different priority levels, handling everything from urgent, same-day orders to routine, standard delivery orders.
+As discussed, <mark style="color:orange;">**Brokering Runs**</mark> serve as the highest level of organization in order routing, defining when and how frequently order routing takes place. Each brokering run has a specific _frequency_, such as every 5 minutes, hourly, daily, or at custom intervals based on business needs. 
 
 ### Why Use Multiple Brokering Runs?
 
-Multiple brokering runs allow retailers to set different routing frequencies based on order priority, optimizing order processing without overloading resources.
-
-For example, high-priority orders can be routed more frequently (every 5 minutes), ensuring that urgent orders receive immediate attention, while standard or less time-sensitive orders are routed at more moderate intervals (hourly).
+Multiple brokering runs allow retailers to set different frequencies for each batch of order. For example, high-priority orders can be routed more frequently (every 5 minutes), ensuring that urgent orders receive immediate attention, while standard or less time-sensitive orders are routed at more moderate intervals (hourly).
 
 ### Single vs. Multiple Brokering Runs
 
@@ -32,6 +26,8 @@ For example, high-priority orders can be routed more frequently (every 5 minutes
 * **Seasonal Run Adjustments:** During peak seasons, like holidays, retailers can activate a dedicated high-frequency brokering run to handle increased order volumes. For example, a run set to every 5 minutes for all orders that can remain in draft mode on regular days but be activated to handle seasonal surges.
 
 The frequency and configuration of each run are critical for optimizing brokering strategies, allowing retailers to meet diverse order priorities effectively.
+
+## Creating and Managing Brokering Runs
 
 Now, let’s understand how you can achieve your order routing and fulfillment goals with the HotWax Commerce’s `Order Routing` App:
 
