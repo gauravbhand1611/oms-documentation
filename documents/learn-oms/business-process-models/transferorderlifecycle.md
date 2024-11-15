@@ -106,7 +106,7 @@ Once transfer order items are fulfilled from the store, the QOH for the correspo
 
 ### 1. Transfer Orders Created in NetSuite
 
-* Even when stores want to transfer inventory to warehouses, the transfer order will be created in NetSuite, specifying the source location as a store and the destination location as a warehouse.
+* Even when store managers want to transfer inventory to warehouses, the transfer order will be created in NetSuite, specifying the source location as a store and the destination location as a warehouse.
 * Once created, these transfer orders are automatically assigned a <mark style="color:orange;">**“Pending Fulfillment”**</mark> status.
 
 {% hint style="info" %}
