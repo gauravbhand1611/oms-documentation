@@ -14,15 +14,15 @@ Using multiple inventory rules ensures that if primary locations lack the requir
 
 For example, let’s continue with our example of **Same-day/Next-day batch**, assuming there are 1,500 orders:
 
-* The First Inventory Rule allocates inventory to 800 orders.
-* The Second Inventory Rule allocates 350 more orders.
-* The Third Inventory Rule allocates an additional 190 orders.
-* The Fourth Rule handles another 150 orders.
-* Finally, the Fifth Inventory Rule allocates 8 more orders using partial allocation.
+* [x] The First Inventory Rule allocates inventory to 800 orders.
+* [x] The Second Inventory Rule allocates 350 more orders.
+* [x] The Third Inventory Rule allocates an additional 190 orders.
+* [x] The Fourth Rule handles another 150 orders.
+* [x] Finally, the Fifth Inventory Rule allocates 8 more orders using partial allocation.
 
-Only 2 orders remain unallocated, moving to `Unfillable Parking` (configurable action) for rerouting as inventory updates.
+Only 2 orders remain unfillable, moving to `Unfillable Parking` (configurable action) for rerouting as inventory becomes available.
 
-By applying these inventory rules progressively, HotWax Commerce ensures high fulfillment rates, even for large, time-sensitive order batches, while maintaining inventory accuracy to minimize unfilled orders. This setup maximizes the potential for each order to be fulfilled without delay, utilizing the most optimal locations first and expanding options only as needed.
+By applying these inventory rules progressively, the brokering engine ensures high fulfillment rates, even for large, time-sensitive order batches, while maintaining inventory accuracy to minimize unfillable orders. This setup maximizes the potential for each order to be fulfilled without delay, utilizing the most optimal locations first and expanding options only as needed.
 
 In the next sections, we will learn how to create these multiple inventory rules for different order batches.
 
@@ -51,25 +51,22 @@ For example, a retailer may want to use both stores and warehouses for high-prio
 
 **Now, if you are wondering how to achieve this configuration, here’s how:**
 
-Retailers can set up facility groups in HotWax’s Facility App. The facility group is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
+Retailers can set up facility groups in HotWax’s Facility App. Creating facility groups is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
 
-HotWax Commerce offers several Inventory **Filters** to fine-tune which facilties are eligible for allocation, including:
+HotWax Commerce offers several Inventory **Filters** to fine-tune which facilities are eligible for allocation, including:
 
 <figure><img src="../.gitbook/assets/Inventory filters (1).png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
 
-* **Turn Off the Facility Order Limit Check:** Retailers can set[ fulfillment capacity](https://docs.hotwax.co/documents/system-admins/administration/facilities/configure-fulfillment-capacity) in HotWax,allowing them to define the maximum number of orders a facility can fulfill in a day. Disabling the facility order limit filter gives retailers the flexibility to bypass the defined order limit for a facility, which is especially useful during peak times or high-demand periods. For example, if a retailer turns off this limit, orders can continue to be assigned to that facility even after its maximum capacity has been reached.
-
+* **Turn Off the Facility Order Limit Check:** Retailers can set[ fulfillment capacity](https://docs.hotwax.co/documents/system-admins/administration/facilities/configure-fulfillment-capacity) in HotWax, allowing them to define the maximum number of orders a facility can fulfill in a day. Disabling the facility order limit filter gives retailers the flexibility to bypass the defined order limit for a facility, which is especially useful during peak times or high-demand periods. For example, if a retailer turns off this limit, orders can continue to be assigned to that facility even after its maximum capacity has been reached.
 * **Brokering Safety Stock:** Different from online ATP safety stock, [brokering safety stock](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) defines the minimum stock required for an order to be brokered to a facility. For example, if a retailer sets a brokering safety stock level of 10 units, only facilities with at least 10 units of the item in stock will be eligible to fulfill the order. This prevents over-allocation and ensures that safety stock levels are maintained for unforeseen demand.
-  
 * **Facility Group:** Custom grouping of locations. Grouping certain facilities allows retailers to simplify their decision-making. For example, as discussed above, there can be a dedicated facility group of only warehouses, one group can have both stores and warehouses or there can also be slow-moving or lower-demand facilities can be grouped together and allotted for non-urgent orders, while high-demand facilities are reserved for time-sensitive fulfillment.
-  
 * **Proximity:** The distance between a fulfillment facility and the customer’s address. When a facility address is added in HotWax, its latitude and longitude are automatically saved. Similarly, HotWax saves the latitude and longitude for customer addresses as well. With both locations’ coordinates stored, the brokering engine can compare them to identify warehouses and stores within the defined proximity that have available inventory. For example, a retailer can set a 200-mile proximity limit for next-day delivery orders, ensuring that only inventory within 200 miles of the customer’s address is used. This approach supports timely delivery, helps meet delivery SLAs, and reduces shipping times.
 
 {% hint style="info" %}
 All facilities enabled for online fulfillment will be attempted for brokering if no filter is applied.
 {% endhint %}
 
-Continuing our example, let's first create inventory rules for “Same-day/Next-day orders routing.
+Continuing our example, let's first create inventory rules for **“Same-day/Next-day** orders routing.
 
 #### <mark style="color:orange;">Applying Filters to look up facilities with inventory:</mark>
 
@@ -97,11 +94,8 @@ Once the eligible facilities are filtered, the next step is to set up sorting cr
 <figure><img src="../.gitbook/assets/Inventory sorting (1).png" alt="" width="563"><figcaption><p>Inventory Sorting</p></figcaption></figure>
 
 * **Proximity:** Retailers can sort inventory allocation based on the distance between the customer's shipping address and the facility. This sorting method prioritizes inventory located closer to the customer, helping reduce shipping times and costs, especially for expedited orders or those requiring same-day or next-day delivery.
-  
 * **Facility Order Limit:** In order to ensure that the workload at facilities is balanced, facilities can also be sorted on how much fulfillment capacity they have left.
-  
 * **Inventory Balance:** Inventory can be sorted based on stock levels, ensuring that orders are routed to the facility with the highest available inventory of the ordered item. This method helps to deplete stock from high-inventory locations first, ensuring better stock rotation and preventing stock outs at key locations.
-  
 * **Custom Sequence:** Allows full manual override to the sequence at which facilities are attempted. Retailers can set a custom sequence of facilities, defining a specific order in which locations should be considered for order routing. For example, if a retailer wants to prioritize fulfillment from underperforming stores with lower foot traffic, they can create a custom sequence that favors those stores, helping to balance inventory across all locations. Custom sequences can also be useful for managing seasonal inventory or routing orders to specific regions.
 
 {% hint style="info" %}
@@ -132,21 +126,15 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 
 1. **Partially available**
 
-* **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. For example, a same-day/next-day batch may allow partial allocation in the final inventory rule, while standard orders may prohibit partial allocation across all rules.
-
-While partial allocation enables some items to be fulfilled immediately, it can increase shipping costs. To mitigate this, retailers can enable the **Brokering Shipment Threshold** in HotWax, which only allows order splitting if the order’s value exceeds a minimum threshold. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
-  
+* **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. For example, a same-day/next-day batch may allow partial allocation in the final inventory rule, while standard orders may prohibit partial allocation across all rules. While partial allocation enables some items to be fulfilled immediately, it can increase shipping costs. To mitigate this, retailers can enable the **Brokering Shipment Threshold** in HotWax, which only allows order splitting if the order’s value exceeds a minimum threshold. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
 * **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** the partial allocation and toggling **OFF** partial allocation for grouped items
 
 2. **Unavailable items**
 
-* **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the **"Unfillable Parking",** where they can later be rerouted through a different routing strategy. Ideally, this should be part of your final inventory rule.
-
+* **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the `Unfillable Parking`**,** where they can later be rerouted through a different routing strategy. Ideally, this should be part of your final inventory rule.
 * **Next rule:** Automatically move unallocated order items to the **next inventory rule** in the sequence. When using multiple rules, this is the **default action**, allowing the brokering engine to attempt inventory allocation through each rule in sequence.
-
 * **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long. Ideally, this should be part of your final inventory rule.
-
-* **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an "Unfillable Parking" queue with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities.
+* **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities.
 
 It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
 
@@ -156,7 +144,7 @@ It's also important to note that applying or clearing an auto-cancel date will a
 First Inventory Rule Actions
 {% endembed %}
 
-1. In Actions, navigate to the partially available card. Continuing our example, for the “Check all warehouses in 100 miles” inventory rule, we’ll keep the **partial fulfillment as disabled** because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
+1. In Actions, navigate to the partially available card. Continuing our example, for the **“Check all warehouses in 100 miles”** inventory rule, we’ll keep the **partial fulfillment as disabled** because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
 2. Navigate to unavailable items card. Here **we will only enable the next rule option**. This means that the brokering engine will now try to allocate inventory using the next configured inventory rule in our sequence. We don’t want to apply an auto cancel date yet or move unfillable items to a separate queue. We can do this in our final rule.
 
 {% hint style="info" %}
@@ -222,7 +210,7 @@ Final inventory rule
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
 * **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance.
 * **Sorting:** We will sort facilities by **Proximity**, so the closest location is selected.
-* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
+* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select `Unfillable Parking` from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
 
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
@@ -275,7 +263,7 @@ For the _**final third inventory rule**_, we will look up all warehouse location
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
 * **Filter:** We will continue to restrict the facility lookup to **warehouses** only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
 * **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse with available stock.
-* **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select **“Unfillable Parking”** from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
+* **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select `Unfillable Parking` from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
 
 This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
@@ -288,7 +276,7 @@ By leveraging HotWax Commerce Order Routing App, retailers can create highly cus
 {% endhint %}
 
 {% hint style="info" %}
-When an inventory rule is no longer needed, you can simply “Archive” it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
+When an inventory rule is no longer needed, you can simply **“Archive”** it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
 {% endhint %}
 
 <details>
