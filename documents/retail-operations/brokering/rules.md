@@ -267,13 +267,11 @@ For the _**final third inventory rule**_, we will look up all warehouse location
 
 This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
+<figure><img src="../.gitbook/assets/order routing framework (1).png" alt=""><figcaption><p>Everyday Order Routing</p></figcaption></figure>
+
 ### What differently did we do for standard orders?
 
 For standard orders, we focused only on "Warehouse" locations, prioritized "Inventory balance" over “Proximity" and "disabled partial allocation" across all inventory rules.
-
-{% hint style="success" %}
-By leveraging HotWax Commerce Order Routing App, retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
-{% endhint %}
 
 {% hint style="info" %}
 When an inventory rule is no longer needed, you can simply **“Archive”** it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
@@ -298,6 +296,10 @@ When an inventory rule is no longer needed, you can simply **“Archive”** it 
 * _<mark style="color:orange;">**After actions logic**</mark>_, when inventory rules are applied, specific decisions need to be made based on inventory availability. For example, an item may be unavailable at a single facility, or not available at all. Handling these cases may involve using options like order splitting or moving orders to the Unfillable Queue.
 
 </details>
+
+{% hint style="success" %}
+By leveraging HotWax Commerce Order Routing App, retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
+{% endhint %}
 
 ### Next Steps
 
