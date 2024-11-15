@@ -1,6 +1,6 @@
 # Store to Warehouse
 
-Store maangers can return excess or unsold inventory from stores to the warehouse with store to warehouse transfer orders.
+Store managers can return excess or unsold inventory from stores to the warehouse with store to warehouse transfer orders.
 
 Now, let’s look at how store to warehouse transfer orders are processed:
 
