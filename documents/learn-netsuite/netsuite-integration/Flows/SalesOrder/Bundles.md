@@ -9,7 +9,7 @@ description: >-
 
 ## Inventory Synchronization of Bundles from NetSuite to HotWax Commerce
 
-Integration with NetSuite simplifies the inventory synchronization of Bundles in HotWax Commerce. As NetSuite shares a daily morning feed of the inventory of products, it includes the inventory for bundles as well.
+Integration with NetSuite simplifies the inventory synchronization of bundles in HotWax Commerce. As NetSuite shares a daily morning feed of the inventory of products, it includes the inventory for bundles as well.
 
 **Automatic Inventory Management of bundle**
 
