@@ -165,8 +165,8 @@ The `Upload Canceled Orders` job is used to upload canceled orders from HotWax C
 ## More Jobs
 
 ### Party Identification
-**Job Name:** Party Identification  
-**Job Enum ID:** JOB_PARTY_IDENT
+**Job Name:** `Party Identification`  
+**Job Enum ID:** `JOB_PARTY_IDENT`
 
 **Description**  
 The Party Identification job is designed to create or update Party Identification records within the system. This job ensures accurate and up-to-date identification of parties involved.
@@ -178,18 +178,18 @@ The job is configured to run at a frequency that aligns with the business needs 
 
 | Parameter          | Type      | Description                                                         | Default Value          |
 |--------------------|-----------|---------------------------------------------------------------------|------------------------|
-| propertyResource   | Required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
-| configId           | Required  | Identifies the configuration for importing party identification records. | IMP_PARTY_IDENT   |
-| remoteFilename     | Optional  | Specifies the remote filename for processing.                       | Not specified          |
-| groupBy            | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
-| additionalParameters | Optional| Additional parameters for job customization.                        | Not specified          |
-| fileNameRegex      | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
-| scheduleNow        | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
+| `propertyResource`   | Required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
+| `configId`          | Required  | Identifies the configuration for importing party identification records. | IMP_PARTY_IDENT   |
+| `remoteFilename`     | Optional  | Specifies the remote filename for processing.                       | Not specified          |
+| `groupBy`            | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
+| `additionalParameters` | Optional| Additional parameters for job customization.                        | Not specified          |
+| `fileNameRegex`      | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
+| `scheduleNow`        | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
 
 
 ### Update Order Tags
-**Job Name:** Update Order Tags  
-**Job Enum ID:** JOB_UPD_TAG_ORD  
+**Job Name:** `Update Order Tags`  
+**Job Enum ID:** `JOB_UPD_TAG_ORD`  
 
 **Description**  
 The Update Order Tags job, identified by Job Enum ID UPDATE_ORDER_TAGS, is designed to perform bulk updates to order tags on the eCommerce platform. This job facilitates efficient and large-scale modifications to order tags, ensuring synchronization with the latest data.
@@ -201,8 +201,8 @@ The job frequency can be configured based on the business needs and the desired 
 
 
 ### Complete Order Items from Shopify
-**Job Name:** Complete order items from Shopify  
-**Job Enum ID:** IMP_COMPL_ORD_ITM  
+**Job Name:** `Complete order items from Shopify`  
+**Job Enum ID:** `IMP_COMPL_ORD_ITM`  
 
 **Description**  
 The `Complete Order Items from Shopify` job ensures that order statuses remain synchronized between Shopify and HotWax Commerce. When items in an order are marked as completed in Shopify, this job automatically updates the corresponding items in HotWax to reflect their completed status. This synchronization helps maintain accurate order tracking, reduces manual updates, and ensures consistency across both platforms.
@@ -210,8 +210,8 @@ The `Complete Order Items from Shopify` job ensures that order statuses remain s
 **No custom parameters for this job**
 
 ### Approve Sales Orders
-**Job Name:** Approve Sales Order  
-**Job Enum ID:** JOB_APR_SALES_ORD
+**Job Name:** `Approve Sales Order`  
+**Job Enum ID:** `JOB_APR_SALES_ORD`
 
 **Description**  
 The Approve Sales Order job is designed to facilitate the approval of sales orders within the system. This ensures that sales orders are processed and approved promptly.
@@ -223,17 +223,17 @@ The job is configured to run at a frequency that aligns with the business needs 
 
 | Parameter         | Type      | Description                                                         | Default Value          |
 |-------------------|-----------|---------------------------------------------------------------------|------------------------|
-| propertyResource  | Required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
-| configId          | Required  | Identifies the configuration for Order Item Attribute records.      | IMP_APR_SALES_ORD      |
-| remoteFilename    | Optional  | Specifies the remote filename for processing.                       | Not specified          |
-| groupBy           | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
-| additionalParameters | Optional | Additional parameters for job customization.                       | Not specified          |
-| fileNameRegex     | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
-| scheduleNow       | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled                |
+| `propertyResource`  | Required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
+| `configId`          | Required  | Identifies the configuration for Order Item Attribute records.      | IMP_APR_SALES_ORD      |
+| `remoteFilename`    | Optional  | Specifies the remote filename for processing.                       | Not specified          |
+| `groupBy`           | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
+| `additionalParameters` | Optional | Additional parameters for job customization.                       | Not specified          |
+| `fileNameRegex`     | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
+| `scheduleNow`       | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled                |
 
 ### Bulk Process Refund for Received Return
-**Job Name:** Bulk Process Refund for Received Return  
-**Job Enum ID:** BLK_PROCESS_RTN_RFND  
+**Job Name:** `Bulk Process Refund for Received Return`  
+**Job Enum ID:** `BLK_PROCESS_RTN_RFND`  
 
 **Description**  
 The Bulk Process Refund for Received Returns job is designed to efficiently process returns in bulk and push them to the Shopify platform. This job specifically handles returns that are associated with a sales channel set to POS.  
@@ -242,12 +242,12 @@ It is particularly useful for retailers who do not use Shopify's POS system, ena
 **Custom Parameters**  
 | Parameter | Type | Description | Default Value |
 |-----------|------|-------------|---------------|
-| startDateTime | Optional | | Not Specified |
-| returnId | Optional | Unique identifier for return transactions within the system. | Not Specified |
+| `startDateTime` | Optional |It marks the beginning of the validity period for an entity or event, such as the defined period of the received returns. | Not Specified |
+| `returnId` | Optional | Unique identifier for return transactions within the system. | Not Specified |
 
 ### Create Exchange Order
-**Job Name:** Import Create Exchange Order  
-**Job Enum ID:** JOB_CRT_SALES_ORD  
+**Job Name:** `Import Create Exchange Order`  
+**Job Enum ID:** `JOB_CRT_SALES_ORD`  
 
 **Description**  
 The `Create Exchange Order` job processes orders for which an exchange has been initiated in Shopify and synchronizes these exchange details into HotWax Commerce. This ensures accurate tracking and management of exchange orders within the OMS.
@@ -255,19 +255,19 @@ The `Create Exchange Order` job processes orders for which an exchange has been 
 **Custom Parameters**  
 | Parameter | Type | Description | Default Value |
 |-----------|------|-------------|---------------|
-| configId | Required | Identifies the configuration for Order Item Attribute records. | IMP_CRT_EXCHG_ORD |
-| propertyResource | Required | Specifies the property resource for configuration. | FTP_CONFIG |
-| remoteFilename | Optional | Specifies the remote filename for processing. | Not specified |
-| groupBy | Optional | Specifies a grouping parameter for the job. | Not specified |
-| additionalParameters | Optional | Additional parameters for job customization. | Not specified |
-| fileNameRegex | Optional | Specifies a regular expression for filtering filenames. | Not specified |
+| `configId` | Required | Identifies the configuration for Order Item Attribute records. | IMP_CRT_EXCHG_ORD |
+| `propertyResource` | Required | Specifies the property resource for configuration. | FTP_CONFIG |
+| `remoteFilename` | Optional | Specifies the remote filename for processing. | Not specified |
+| `groupBy` | Optional | Specifies a grouping parameter for the job. | Not specified |
+| `additionalParameters` | Optional | Additional parameters for job customization. | Not specified |
+| `fileNameRegex` | Optional | Specifies a regular expression for filtering filenames. | Not specified |
 | importpath | Optional | Specifies the SFTP location and path for importing the file into the system. | Not specified |
-| scheduleNow | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
-| createdByJobID | Optional | ID of the job that initiated this job. | Not specified |
+| `scheduleNow` | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
+| `createdByJobID` | Optional | ID of the job that initiated this job. | Not specified |
 
 ### Create Return Order
-**Job Name:** Import Create Return Order  
-**Job Enum ID:** JOB_CRT_RETURN  
+**Job Name:** `Import Create Return Order`  
+**Job Enum ID:** `JOB_CRT_RETURN`  
 
 **Description**  
 This job imports all return requests created in Shopify into HotWax Commerce. It ensures that return data, including returned items and customer details, is automatically synced for processing. This job helps keep records up to date, supporting accurate inventory adjustments and streamlined return management across both platforms.
@@ -275,19 +275,19 @@ This job imports all return requests created in Shopify into HotWax Commerce. It
 **Custom Parameters**  
 | Parameter | Type | Description | Default Value |
 |-----------|------|-------------|---------------|
-| configId | Required | Identifies the configuration for Order Item Attribute records. | IMP_CRT_RTN_ORD |
-| propertyResource | Required | Specifies the property resource for configuration. | FTP_CONFIG |
-| remoteFilename | Optional | Specifies the remote filename for processing. | Not specified |
-| groupBy | Optional | Specifies a grouping parameter for the job. | Not specified |
-| additionalParameters | Optional | Additional parameters for job customization. | Not specified |
-| fileNameRegex | Optional | Specifies a regular expression for filtering filenames. | Not specified |
+| `configId` | Required | Identifies the configuration for Order Item Attribute records. | IMP_CRT_RTN_ORD |
+| `propertyResource` | Required | Specifies the property resource for configuration. | FTP_CONFIG |
+| `remoteFilename` | Optional | Specifies the remote filename for processing. | Not specified |
+| `groupBy` | Optional | Specifies a grouping parameter for the job. | Not specified |
+| `additionalParameters` | Optional | Additional parameters for job customization. | Not specified |
+| `fileNameRegex` | Optional | Specifies a regular expression for filtering filenames. | Not specified |
 | importpath | Optional | Specifies the SFTP location and path for importing the file into the system. | Not specified |
-| scheduleNow | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
-| createdByJobID | Optional | ID of the job that initiated this job. | Not specified |
+| `scheduleNow` | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
+| `createdByJobID` | Optional | ID of the job that initiated this job. | Not specified |
 
 ### Create Shipment for Incoming Returns
-**Job Name:** Create Shipment for Incoming Returns.  
-**Job EnumID:** INCOMING_SHPMNT_RETN  
+**Job Name:** `Create Shipment for Incoming Returns` 
+**Job EnumID:** `INCOMING_SHPMNT_RETN` 
 
 **Description**  
 The `Create Shipment for incoming returns` job serves to manage the reception of return shipments efficiently. When a return is initiated through Shopify, the return item details are added into the receiving app of HotWax Commerce.
@@ -295,19 +295,19 @@ The `Create Shipment for incoming returns` job serves to manage the reception of
 **Custom parameters**  
 | Parameter | Type | Description | Default Value |
 |-----------|------|-------------|---------------|
-| configId | Required | Identifies the configuration for Order Item Attribute records. | INCOMING_SHPMNT_RETN |
-| propertyResource | Required | Specifies the property resource for configuration. | FTP_CONFIG |
-| remoteFilename | Optional | Specifies the remote filename for processing. | Not specified |
-| groupBy | Optional | Specifies a grouping parameter for the job. | Not specified |
-| additionalParameters | Optional | Additional parameters for job customization. | Not specified |
-| fileNameRegex | Optional | Specifies a regular expression for filtering filenames. | Not specified |
+| `configId` | Required | Identifies the configuration for Order Item Attribute records. | INCOMING_SHPMNT_RETN |
+| `propertyResource` | Required | Specifies the property resource for configuration. | FTP_CONFIG |
+| `remoteFilename` | Optional | Specifies the remote filename for processing. | Not specified |
+| `groupBy` | Optional | Specifies a grouping parameter for the job. | Not specified |
+| `additionalParameters` | Optional | Additional parameters for job customization. | Not specified |
+| `fileNameRegex` | Optional | Specifies a regular expression for filtering filenames. | Not specified |
 | importpath | Optional | Specifies the SFTP location and path for importing the file into the system. | Not specified |
-| scheduleNow | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
-| createdByJobID | Optional | ID of the job that initiated this job. | Not specified |
+| `scheduleNow` | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Not specified |
+| `createdByJobID` | Optional | ID of the job that initiated this job. | Not specified |
 
 ### Import Last Day Orders from Shopify
-**Job Name:** Import last day orders from Shopify  
-**Job Enum ID:** JOB_IMP_MISS_ORD  
+**Job Name:** `Import last day orders from Shopify ` 
+**Job Enum ID:** `JOB_IMP_MISS_ORD`  
 
 **Description**  
 The `Import Last Day Orders from Shopify` job imports all orders received on Shopify from the previous day into HotWax Commerce. This job ensures that no orders are missed, keeping the order data synchronized between Shopify and HotWax Commerce for accurate processing and inventory management. It helps maintain consistency across both platforms by ensuring all recent orders are promptly imported and recorded.
@@ -315,14 +315,14 @@ The `Import Last Day Orders from Shopify` job imports all orders received on Sho
 **Custom Parameters**  
 | Parameter | Type | Description | Default Value |
 |-----------|------|-------------|---------------|
-| limit | Optional | Additional parameters for job customization. | Not specified |
-| fileProcessingDelay | Optional | Specifies the Interval for processing a file. | Not specified |
-| createdByJobId | Optional | ID of the job that initiated this job.| Not specified |
+| `limit` | Optional | Additional parameters for job customization. | Not specified |
+| `fileProcessingDelay` | Optional | Specifies the Interval for processing a file. | Not specified |
+| `createdByJobID` | Optional | ID of the job that initiated this job.| Not specified |
 
 
 ### Order Item Attribute
-**Job Name**: Order Item Attribute  
-**Job Enum ID**: JOB_ORDER_ITM_ATTR  
+**Job Name**: `Order Item Attribute`  
+**Job Enum ID**: `JOB_ORDER_ITM_ATTR` 
 
 **Description**  
 The Order Item Attribute job is designed to create or update Order Item Attribute records. This job ensures the accurate maintenance of order item attributes within the system.
@@ -334,18 +334,18 @@ The job is configured to run at a frequency that suits the needs of your busines
 
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
-| propertyResource    | Required  | Specifies the property resource for configuration.    | IMP_ORDER_ITM_ATTR |
-| configId            | Required  | Identifies the configuration for Order Item Attribute records. | FTP_CONFIG |
-| remoteFilename      | Optional  | Specifies the remote filename for processing.        | Not specified |
-| groupBy             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
-| additionalParameters| Optional  | Additional parameters for job customization.         | Not specified |
-| fileNameRegex       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
-| scheduleNow         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled |
+| `propertyResource`    | Required  | Specifies the property resource for configuration.    | IMP_ORDER_ITM_ATTR |
+| `configId`            | Required  | Identifies the configuration for Order Item Attribute records. | FTP_CONFIG |
+| `remoteFilename`      | Optional  | Specifies the remote filename for processing.        | Not specified |
+| `groupBy`             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
+| `additionalParameters`| Optional  | Additional parameters for job customization.         | Not specified |
+| `fileNameRegex`       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
+| `scheduleNow`         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled |
 
 
 ### Order Item Rejected
-**Job Name**: Order Item Rejected  
-**Job Enum ID**: JOB_ORDER_ITM_RJCT  
+**Job Name**: `Order Item Rejected`  
+**Job Enum ID**: `JOB_ORDER_ITM_RJCT`  
 
 **Description**  
 The `Order Item Rejected` job records items that cannot be fulfilled, creating a rejection record in HotWax Commerce. This job ensures that order items, that are rejected from the fulfillment location where they were first allocated, are recorded for tracking purposes. It helps improve inventory management by keeping accurate records of items that could not be fulfilled from their original location.
@@ -354,19 +354,19 @@ The `Order Item Rejected` job records items that cannot be fulfilled, creating a
 
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
-| configId            | Required  | Identifies the configuration for Order Item Attribute records. | IMP_ORDER_ITM_RJCT |
-| propertyResource    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
-| remoteFilename      | Optional  | Specifies the remote filename for processing.        | Not specified |
-| groupBy             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
-| additionalParameters| Optional  | Additional parameters for job customization.         | Not specified |
-| fileNameRegex       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
-| scheduleNow         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
-| createdByJobID      | Optional  | ID of the job that initiated this job.               | Not specified |
+| `configId`            | Required  | Identifies the configuration for Order Item Attribute records. | IMP_ORDER_ITM_RJCT |
+| `propertyResource`    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
+| `remoteFilename`      | Optional  | Specifies the remote filename for processing.        | Not specified |
+| `groupBy`             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
+| `additionalParameters`| Optional  | Additional parameters for job customization.         | Not specified |
+| `fileNameRegex`       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
+| `scheduleNow`         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
+| `createdByJobID`      | Optional  | ID of the job that initiated this job.               | Not specified |
 
 
 ### Import Transfer Order
-**Job Name**: Import Transfer Order  
-**Job Enum ID**: JOB_ORDER_ITM_TO  
+**Job Name**: `Import Transfer Order`  
+**Job Enum ID**: `JOB_ORDER_ITM_TO`  
 
 **Description**  
 The `Import Transfer Order` job brings transfer order details into the order management system from the ERP system to ensure consistency and accuracy in the inventory transfers. This process supports inventory accuracy by facilitating the fulfillment and receipt of inventory transfers.
@@ -375,23 +375,23 @@ The `Import Transfer Order` job brings transfer order details into the order man
 
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
-| configId            | Required  | Identifies the configuration for Order Item Attribute records. | IMP_TRANSFER_ORD |
-| propertyResource    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
-| remoteFilename      | Optional  | Specifies the remote filename for processing.        | Not specified |
-| groupBy             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
-| additionalParameters| Optional  | Additional parameters for job customization.         | Not specified |
-| fileNameRegex       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
+| `configId`            | Required  | Identifies the configuration for Order Item Attribute records. | IMP_TRANSFER_ORD |
+| `propertyResource`    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
+| `remoteFilename`      | Optional  | Specifies the remote filename for processing.        | Not specified |
+| `groupBy`             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
+| `additionalParameters`| Optional  | Additional parameters for job customization.         | Not specified |
+| `fileNameRegex`       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
 | importpath          | Optional  | Specifies the SFTP location and path for importing the file into the system. | Not specified |
-| scheduleNow         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
-| createdByJobID      | Optional  | ID of the job that initiated this job.               | Not specified |
+| `scheduleNow`         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified |
+| `createdByJobID`      | Optional  | ID of the job that initiated this job.               | Not specified |
 
 
 ### Order Identification
-**Job Name**: Order Identification  
-**Job Enum ID**: JOB_ORDER_IDENT  
+**Job Name**: `Order Identification`  
+**Job Enum ID**: `JOB_ORDER_IDENT`  
 
 **Description**  
-The Order Identification job is designed to create or update Order Identification records within the OMS. This job ensures accurate and up-to-date identification of orders.
+The `Order Identification` job is designed to create or update Order Identification records within the OMS. This job ensures accurate and up-to-date identification of orders.
 
 **Recommended frequency**  
 The job is configured to run at a frequency that aligns with the business needs for regular updates of order identification records.
@@ -400,21 +400,21 @@ The job is configured to run at a frequency that aligns with the business needs 
 
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
-| propertyResource    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
-| configId            | Required  | Identifies the configuration for importing order attributes. | IMP_ORDER_IDENT |
-| remoteFilename      | Optional  | Specifies the remote filename for processing.        | Not specified |
-| groupBy             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
-| additionalParameters| Optional  | Additional parameters for job customization.         | Not specified |
-| fileNameRegex       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
-| scheduleNow         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled |
+| `propertyResource`    | Required  | Specifies the property resource for configuration.    | FTP_CONFIG |
+| `configId`            | Required  | Identifies the configuration for importing order attributes. | IMP_ORDER_IDENT |
+| `remoteFilename`      | Optional  | Specifies the remote filename for processing.        | Not specified |
+| `groupBy`             | Optional  | Specifies a grouping parameter for the job.          | Not specified |
+| `additionalParameters`| Optional  | Additional parameters for job customization.         | Not specified |
+| `fileNameRegex`       | Optional  | Specifies a regular expression for filtering filenames. | Not specified |
+| `scheduleNow`         | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled |
 
 
 ### Import Order Metafield
-**Job Name**: Import Order Metafield  
-**Job Enum ID**: IMP_ORD_META_FLD  
+**Job Name**: `Import Order Metafield` 
+**Job Enum ID**: `IMP_ORD_META_FLD`  
 
 **Description**  
-The Import Order Metafield job is designed to schedule a job for downloading order metafields. This job ensures the timely synchronization of order metafields from the specified namespace.
+The `Import Order Metafield` job is designed to schedule a job for downloading order metafields. This job ensures the timely synchronization of order metafields from the specified namespace.
 
 **Recommended frequency**  
 The job is configured to run at a frequency that aligns with the business needs for regular updates of order metafields.
@@ -423,11 +423,11 @@ The job is configured to run at a frequency that aligns with the business needs 
 
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
-| namespace           | Required  | Specifies the namespace for order metafields.         | HotwaxOrderDetails |
-| bufferTime          | Optional  | Specifies the buffer time (in minutes) for scheduling job downloads. | 1 minute |
-| thruDateBuffer      | Optional  | Specifies the buffer time (in minutes) for processing orders after the through date. | Not specified |
-| filterQuery         | Optional  | Specifies a filter query for more targeted metafield downloads. | Not specified |
-| frequency           | Optional  | Specifies the frequency (in minutes) for running the job. | Not specified |
+| `namespace `          | Required  | Specifies the namespace for order metafields.         | HotwaxOrderDetails |
+| `bufferTime`          | Optional  | Specifies the buffer time (in minutes) for scheduling job downloads. | 1 minute |
+| `thruDateBuffer`      | Optional  | Specifies the buffer time (in minutes) for processing orders after the through date. | Not specified |
+| `filterQuery`         | Optional  | Specifies a filter query for more targeted metafield downloads. | Not specified |
+| `frequency`           | Optional  | Specifies the frequency (in minutes) for running the job. | Not specified |
 
 
 ### Import Customer
@@ -442,7 +442,7 @@ The Import Customer job imports customer data from Shopify into HotWax Commerce.
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
 | frequency           | Required  | Defines the default duration of the last syncing of the shipment status. | 15 |
-| bufferTime          | Optional  | Specifies the buffer time (in minutes) for scheduling job. | Not Specified |
+| `bufferTime`          | Optional  | Specifies the buffer time (in minutes) for scheduling job. | Not Specified |
 | limit               | Optional  | Additional parameters for job customization.         | Not Specified |
 
 
@@ -458,12 +458,12 @@ The Approve Transfer Order job approves all transfer orders imported into HotWax
 | Parameter           | Type      | Description                                           | Default Value  |
 |---------------------|-----------|-------------------------------------------------------|----------------|
 | orderIds            | Optional  | The ID associated with the order to be updated on the eCommerce platform. | Not Specified |
-| bufferTime          | Optional  | Specifies the buffer time (in minutes) for scheduling job. | Not Specified |
+| `bufferTime`          | Optional  | Specifies the buffer time (in minutes) for scheduling job. | Not Specified |
 
 
 ### Import Order Attribute
-**Job Name:** Import order attribute  
-**Job Enum ID:** JOB_ORDER_ITM_ATTR
+**Job Name:** `Import order attribute` 
+**Job Enum ID:** `JOB_ORDER_ITM_ATTR`
 
 **Description**  
 Order attributes are additional details associated with an order that provides essential information for processing. For example, order attributes are used to move an order from the "created" state to the approved state, among other functions.  
@@ -473,20 +473,20 @@ The Import Order Attribute job imports these attributes, ensuring they are avail
 
 | Parameter         | Type      | Description                                                         | Default Value          |
 |-------------------|-----------|---------------------------------------------------------------------|------------------------|
-| configId          | required  | Identifies the configuration for Order Item Attribute records.      | MOD_ORD_ATTR           |
-| propertyResource  | required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
-| remoteFilename    | optional  | Specifies the remote filename for processing.                       | Not specified          |
-| groupBy           | optional  | Specifies a grouping parameter for the job.                         | Not specified          |
-| additionalParameters | optional | Additional parameters for job customization.                       | Not specified          |
-| fileNameRegex     | optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
-| importpath        | optional  | Specifies the SFTP location and path for importing the file.       | Not specified          |
-| scheduleNow       | optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified          |
-| createdByJobID    | optional  | ID of the job that initiated this job.                              | Not specified          |
+| `configId`          | required  | Identifies the configuration for Order Item Attribute records.      | MOD_ORD_ATTR           |
+| `propertyResource`  | required  | Specifies the property resource for configuration.                  | FTP_CONFIG             |
+| `remoteFilename`    | optional  | Specifies the remote filename for processing.                       | Not specified          |
+| `groupBy`           | optional  | Specifies a grouping parameter for the job.                         | Not specified          |
+| `additionalParameters` | optional | Additional parameters for job customization.                       | Not specified          |
+| `fileNameRegex`     | optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
+| `importpath`        | optional  | Specifies the SFTP location and path for importing the file.       | Not specified          |
+| `scheduleNow`       | optional  | Forces the system to pick the file out of sequence for immediate processing. | Not specified          |
+| `createdByJobID`    | optional  | ID of the job that initiated this job.                              | Not specified          |
 
 
 ### Order Item Fulfillment
-**Job Name:** Order Item Fulfillment  
-**Job Enum ID:** JOB_ODR_ITM_FLFLMNT
+**Job Name:** `Order Item Fulfillment`  
+**Job Enum ID:** `JOB_ODR_ITM_FLFLMNT`
 
 **Description**  
 The Order Item Fulfillment job is designed to complete order items using a JSON file in MDM (Master Data Management). This job ensures the fulfillment of order items and synchronization with the provided JSON file.
@@ -498,12 +498,12 @@ The job is configured to run at a frequency that aligns with the business needs 
 
 | Parameter         | Type      | Description                                                         | Default Value          |
 |-------------------|-----------|---------------------------------------------------------------------|------------------------|
-| propertyResource  | Required  | Specifies the property resource for configuration.                  | Not specified          |
-| configId          | Required  | Identifies the configuration for importing order attributes.       | IMP_ODR_ITM_FLFLMNT    |
-| remoteFilename    | Optional  | Specifies the remote filename for processing.                       | Not specified          |
-| groupBy           | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
-| additionalParameters | Optional | Additional parameters for job customization.                       | Not specified          |
-| fileNameRegex     | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
-| scheduleNow       | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled                |
+| `propertyResource`  | Required  | Specifies the property resource for configuration.                  | Not specified          |
+| `configId`          | Required  | Identifies the configuration for importing order attributes.       | IMP_ODR_ITM_FLFLMNT    |
+| `remoteFilename`    | Optional  | Specifies the remote filename for processing.                       | Not specified          |
+| `groupBy`           | Optional  | Specifies a grouping parameter for the job.                         | Not specified          |
+| `additionalParameters` | Optional | Additional parameters for job customization.                       | Not specified          |
+| `fileNameRegex`     | Optional  | Specifies a regular expression for filtering filenames.             | Not specified          |
+| `scheduleNow`       | Optional  | Forces the system to pick the file out of sequence for immediate processing. | Enabled                |
 
 
