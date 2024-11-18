@@ -4,7 +4,7 @@ description: Learn about Inventory Rules.
 
 # Inventory Rules
 
-As discussed, <mark style="color:orange;">**Inventory Rules**</mark> help orchestrate the process of choosing the most suitable fulfillment locations for each order in a batch of orders based on defined criteria like proximity, stock levels, and strategic priorities. These rules act as sequential steps in the order routing, guiding the brokering engine through multiple checks to find the best fulfillment location.
+As discussed, <mark style="color:orange;">**inventory rules**</mark> help orchestrate the process of choosing the most suitable fulfillment locations for each order in a batch of orders based on defined criteria like proximity, stock levels, and strategic priorities. These rules act as sequential steps in the order routing, guiding the brokering engine through multiple checks to find the best fulfillment location.
 
 ## Why Use Multiple Inventory Rules?
 
@@ -53,9 +53,9 @@ For example, a retailer may want to use both stores and warehouses for high-prio
 
 **Now, if you are wondering how to achieve this configuration, here’s how:**
 
-Retailers can set up facility groups in HotWax’s Facility App. Creating facility groups is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
+Retailers can set up facility groups in HotWax’s `Facility App`. Creating facility groups is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
 
-<mark style="color:orange;">**HotWax Commerce offers several Inventory**</mark> `Filters` <mark style="color:orange;">**to fine-tune which facilities are eligible for allocation, including:**</mark>
+<mark style="color:orange;">**HotWax Commerce offers several inventory filters**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**to fine-tune which facilities are eligible for allocation, including:**</mark>
 
 <figure><img src="../.gitbook/assets/Inventory filters (1).png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
 
@@ -70,7 +70,7 @@ All facilities enabled for online fulfillment will be attempted for brokering if
 
 Continuing our example, let's first create inventory rules for <mark style="color:orange;">**“Same-day/Next-day**</mark> orders routing.
 
-#### <mark style="color:orange;">Applying Filters to look up facilities with inventory:</mark>
+#### <mark style="color:orange;">Applying filters to look up facilities with inventory:</mark>
 
 {% embed url="https://youtu.be/Lc5-YB5e7Cg" %}
 First Inventory Rule Filters
@@ -78,7 +78,7 @@ First Inventory Rule Filters
 
 1. Start Creating the Inventory Rule, click the `Add Inventory Rule` button. Name the rule, such as <mark style="color:orange;">**“Check all warehouses in 100 miles,”**</mark> to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
 2. Click `Save` to save the rule name.
-3. Configure Filters, select the right filters to narrow down eligible facilities. For the <mark style="color:orange;">**“Same-day/Next-day orders” routing rule**</mark><mark style="color:orange;">,</mark> we will choose <mark style="color:orange;">**“Facility Group**</mark><mark style="color:orange;">”</mark> and <mark style="color:orange;">**“Proximity”**</mark><mark style="color:orange;">.</mark>
+3. Configure filters, select the right filters to narrow down eligible facilities. For the <mark style="color:orange;">**“Same-day/Next-day orders” routing rule**</mark><mark style="color:orange;">,</mark> we will choose <mark style="color:orange;">**“Facility Group**</mark><mark style="color:orange;">”</mark> and <mark style="color:orange;">**“Proximity”**</mark><mark style="color:orange;">.</mark>
 
 * **Facility Group:** Select <mark style="color:orange;">**“Warehouses”**</mark> from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
 *   **Proximity:** Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
@@ -104,13 +104,13 @@ Once the eligible facilities are filtered, the next step is to set up sorting cr
 Facilities will be sorted based on creation date if no sorting preferences are applied.
 {% endhint %}
 
-<mark style="color:orange;">**Choosing Sorting Options to select the most optimal facility:**</mark>
+<mark style="color:orange;">**Choosing sorting options to select the most optimal facility:**</mark>
 
 {% embed url="https://youtu.be/2-XB9nIoRg8" %}
 First Inventory Rule Sorting
 {% endembed %}
 
-Navigate to the Sort option. Continuing our example, for the <mark style="color:orange;">**“Check all warehouses in 100 miles”**</mark> inventory rule, we’ll use the <mark style="color:orange;">**"Proximity"**</mark> sorting option.
+Navigate to the sort option. Continuing our example, for the <mark style="color:orange;">**“Check all warehouses in 100 miles”**</mark> inventory rule, we’ll use the <mark style="color:orange;">**"Proximity"**</mark> sorting option.
 
 This sorting option will arrange eligible facilities within the 100-mile range by their distance from the customer, ensuring that the closest warehouse is chosen for fulfillment. This approach aligns with the goal of meeting same-day or next-day delivery requirements by minimizing transit time.
 
@@ -138,7 +138,7 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 * **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long. Ideally, this should be part of your final inventory rule.
 * **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities. It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
 
-#### <mark style="color:orange;">Deciding Actions to choose the most optimal facility:</mark>
+#### <mark style="color:orange;">Deciding actions to choose the most optimal facility:</mark>
 
 {% embed url="https://youtu.be/jRb2hWSKR78" %}
 First Inventory Rule Actions
@@ -265,7 +265,7 @@ For the _<mark style="color:orange;">**final third inventory rule**</mark>_, we 
 * **Sorting:** We will again choose <mark style="color:orange;">**“Inventory balance”**</mark> sorting to select the optimal warehouse with available stock.
 * **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">**7 days auto-cancel date**</mark> for these unfillable orders.
 
-This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
+This is how in a **single brokering run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
 <figure><img src="../.gitbook/assets/order routing framework (1).png" alt=""><figcaption><p>Everyday Order Routing</p></figcaption></figure>
 
@@ -274,7 +274,7 @@ This is how in a **single Brokering Run, you can set up multiple routings with u
 For <mark style="color:orange;">**Standard orders**</mark>, we focused only on **"Warehouse"** locations, **prioritized "Inventory balance" over “Proximity"** and **"Disabled partial allocation"** across all inventory rules.
 
 {% hint style="info" %}
-When an inventory rule is no longer needed, you can simply **“Archive”** it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
+When an inventory rule is no longer needed, you can simply `Archive` it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
 {% endhint %}
 
 <details>
@@ -298,7 +298,7 @@ When an inventory rule is no longer needed, you can simply **“Archive”** it 
 </details>
 
 {% hint style="success" %}
-By leveraging HotWax Commerce, `Order Routing` App retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
+By leveraging HotWax Commerce, `Order Routing App`retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
 {% endhint %}
 
 ### Next Steps

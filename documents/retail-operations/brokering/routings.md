@@ -73,7 +73,7 @@ Sequence Routing Rules
 
 The first step in setting up routing rules is to create a batch of orders using specific filters. This ensures that the brokering algorithm correctly groups and prioritizes orders for each routing rule, allowing for more targeted fulfillment strategies.
 
-**Here are the available Filters to create order batches:**
+<mark style="color:orange;">**Here are the available filters to create order batches:**</mark>
 
 <figure><img src="../.gitbook/assets/Order filters (1).png" alt="" width="563"><figcaption><p>Order Batch Filters</p></figcaption></figure>
 
@@ -87,17 +87,17 @@ The first step in setting up routing rules is to create a batch of orders using 
 
 Continuing with our example, let’s take a closer look at how to apply the right filters and sorting options for <mark style="color:orange;">**Same-day/Next day**</mark> routing rule.
 
-#### <mark style="color:orange;">Applying Filters to Create Order Batches:</mark>
+#### <mark style="color:orange;">Applying filters to create order batches:</mark>
 
 {% embed url="https://youtu.be/pSn6N2-y-DY" %}
 Applying Filters
 {% endembed %}
 
-1. Open the **“Same-day/Next-day orders”** routing rule’s details, then navigate to the Filters option.
-2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the **“Queue”** and **"Shipment method type"** filters.
+1. Open the <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> routing rule’s details, then navigate to the Filters option.
+2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the <mark style="color:orange;">**“Queue”**</mark> and <mark style="color:orange;">**"Shipment method type**</mark>**"** filters.
 
-* From the **“Queue”** we will choose the **“Brokering Queue”** to include all orders that are waiting for the inventory allocation.
-* From the **“Shipping Method”** dropdown, we will choose **“Same Day"** and **"Next Day”** shipping methods to include only same-day and next-day shipping orders in our batch.
+* From the <mark style="color:orange;">**“Queue”**</mark> we will choose the <mark style="color:orange;">**“Brokering Queue”**</mark> to include all orders that are waiting for the inventory allocation.
+* From the <mark style="color:orange;">**“Shipping Method”**</mark> dropdown, we will choose <mark style="color:orange;">**“Same Day"**</mark> and <mark style="color:orange;">**"Next Day”**</mark> shipping methods to include only same-day and next-day shipping orders in our batch.
 
 Since our objective is to prioritize orders with tight SLAs, we are not selecting additional filters like order priority, promise date, and sales channel.
 
@@ -111,7 +111,7 @@ If you are not selecting any filter then all orders in all parkings will be atte
 
 After filtering, the next step is choosing the Sorting criteria to prioritize the sequence in which individual orders within each batch are picked for inventory allocation. By applying sorting, you can align the order routing with your fulfillment goals, ensuring high-priority orders are handled first.
 
-**Available Sorting Options:**
+<mark style="color:orange;">**Available sorting options:**</mark>
 
 <figure><img src="../.gitbook/assets/Order sorting (1).png" alt="" width="563"><figcaption><p>Order Batch Sorting</p></figcaption></figure>
 
@@ -121,13 +121,13 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 * **Ship After**
 * **Shipping Method:** Sorting by shipping method enables the brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
 
-#### <mark style="color:orange;">Choosing Sorting Options to Define Order Priority:</mark>
+#### <mark style="color:orange;">Choosing sorting options to define order priority:</mark>
 
 {% embed url="https://youtu.be/J2_LpfbHIlI" %}
 Applying Sorting
 {% endembed %}
 
-1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**“Same-day/Next-day order”**</mark> batch we will choose the **"Shipping Method”** sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
+1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**“Same-day/Next-day order”**</mark> batch we will choose the <mark style="color:orange;">**"Shipping Method”**</mark> sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
 2. Finally, click on the `Save` icon in the right most corner to save your **configured routing rule**.
 
 If you are choosing multiple sorting options, you can prioritize them into the desired sequence using drag and drop.
@@ -144,12 +144,12 @@ Let’s see what should be the right filters and sorting options for our <mark s
 Applying Filters and Sorting for Standard Orders Batch
 {% endembed %}
 
-1. From the Filters option, we will choose the "**Queue"** and "**Shipment method type"** filters.
+1. From the **filters** option, we will choose the <mark style="color:orange;">"</mark><mark style="color:orange;">**Queue"**</mark> and <mark style="color:orange;">"</mark><mark style="color:orange;">**Shipment method type"**</mark> filters.
 
-* From the **“Queue”** dropdown we will choose the **“Brokering Queue”** to include all shipping orders that are waiting for the inventory allocation.
-* Now, from the **"Shipping Method"** dropdown we will choose the **“Standard”** shipping method to include only standard shipping orders. This ensures that we only include those orders in the `Brokering Queue` that have the **"Standard"** shipping method.
+* From the <mark style="color:orange;">**“Queue”**</mark> dropdown we will choose the <mark style="color:orange;">**“Brokering Queue”**</mark> to include all shipping orders that are waiting for the inventory allocation.
+* Now, from the <mark style="color:orange;">**"Shipping Method"**</mark> dropdown we will choose the <mark style="color:orange;">**“Standard”**</mark> shipping method to include only standard shipping orders. This ensures that we only include those orders in the `Brokering Queue` that have the <mark style="color:orange;">**"Standard"**</mark> shipping method.
 
-2. From the Sorting option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
+2. From the **Sorting** option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
 
 {% hint style="info" %}
 We did not apply the Shipping Method sorting for our Standard orders because all of these orders use the same standard delivery shipping method. Therefore, sorting by shipping method in this case would not make any difference.

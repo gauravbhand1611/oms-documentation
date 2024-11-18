@@ -36,7 +36,7 @@ Order routing is organized into three hierarchical levels:
 
 * [x] [<mark style="color:orange;">**Brokering Runs**</mark>](brokeringruns.md)
 
-A **Brokering Run** is the highest level of organization in order routing and lets retailers control the routing frequency based on business needs. Each brokering run can have a different frequency, routing different batches of orders to meet varying fulfillment priorities. For example:
+A <mark style="color:orange;">**brokering run**</mark> is the highest level of organization in order routing and lets retailers control the routing frequency based on business needs. Each brokering run can have a different frequency, routing different batches of orders to meet varying fulfillment priorities. For example:
 
 * A brokering run scheduled **every 5 minutes** could prioritize high-priority orders, like same-day deliveries, to ensure fast routing and fulfillment.
 * For standard delivery orders with medium priority, a separate brokering run can be set to run **every 6 hours,** aligning with less urgent timelines.
@@ -45,7 +45,7 @@ A **Brokering Run** is the highest level of organization in order routing and le
 
 * [x] [<mark style="color:orange;">**Routing Rules**</mark> ](routings.md)
 
-Within each brokering run, there are multiple **Routings**, or **“Routing Rules.”** Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
+Within each brokering run, there are multiple <mark style="color:orange;">**routings**</mark><mark style="color:orange;">,</mark> <mark style="color:orange;"></mark><mark style="color:orange;">**or**</mark> <mark style="color:orange;">**“routing rules.”**</mark> Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
 
 * **Same-day delivery batch**: This routing rule includes orders requiring same-day delivery, ensuring they are routed quickly.
 * **Next-day delivery batch**: This routing rule includes orders requiring for next-day delivery, meeting their specific SLA requirements.
@@ -55,7 +55,7 @@ These routing rules help retailers prioritize routing for specific order batches
 
 * [x] [<mark style="color:orange;">**Inventory Rules**</mark>](rules.md)
 
-Within each routing, multiple **Inventory Rules** define how inventory is allocated to the order batches. These rules allows for optimal facility look up based on factors such as proximity, stock availability, and other strategic criteria. For example:
+Within each routing, multiple <mark style="color:orange;">**inventory rules**</mark> define how inventory is allocated to the order batches. These rules allows for optimal facility look up based on factors such as proximity, stock availability, and other strategic criteria. For example:
 
 * **Same-day delivery batch**_**:**_ Inventory rules can prioritize fulfillment from warehouses within a 100-mile radius of the customer to meet same-day delivery targets. If inventory is unavailable, a secondary rule could expand the range to 250 miles and include stores.
 * **Next-day delivery batch**: For next-day orders, inventory rules can prioritize fulfillment from warehouses within a 250-mile range, accommodating the one-day delivery SLA. Next inventory rules in sequence can apply if the first inventory rule doesn’t allocate inventory for all orders in the batch.

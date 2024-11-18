@@ -4,7 +4,7 @@ description: Learn about Brokering Runs.
 
 # Brokering Runs
 
-As discussed, <mark style="color:orange;">**Brokering Runs**</mark> serve as the highest level of organization in order routing, defining when and how frequently order routing takes place. Each brokering run has a specific _frequency_, such as every 5 minutes, hourly, daily, or at custom intervals based on business needs. 
+As discussed, <mark style="color:orange;">**brokering runs**</mark> serve as the highest level of organization in order routing, defining when and how frequently order routing takes place. Each brokering run has a specific _frequency_, such as every 5 minutes, hourly, daily, or at custom intervals based on business needs.
 
 ### Why Use Multiple Brokering Runs?
 
@@ -12,17 +12,11 @@ Multiple brokering runs allow retailers to set different frequencies for each ba
 
 ### Single vs. Multiple Brokering Runs
 
-*   **Single Run Setup:** For retailers with similar urgency across orders and a lower order volume, a single run at regular intervals (every hour) can manage all order types in one brokering cycle.
-
-    * Everyday order routing: Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about [routing rules](routings.md) in the next sections.
-
-
-*   **Multiple Runs for Different Priorities:** In the event where order fulfillment priorities vary significantly and the order volume is high, creating separate runs can optimize resources and allocation:
-
-    * High-Priority Orders: For orders requiring same-day, next-day, or two-day delivery, setting a frequency of the brokering run to every 5 minutes can quickly allocate inventory to this order batch and meet urgent fulfillment deadlines.
-    * Medium-Priority Orders: For orders on standard deliveries, a separate brokering run with a 6-hour interval can balance routine order routing with the available resources.
-
-
+* **Single Run Setup:** For retailers with similar urgency across orders and a lower order volume, a single run at regular intervals (every hour) can manage all order types in one brokering cycle.
+  * Everyday order routing: Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about [routing rules](routings.md) in the next sections.
+* **Multiple Runs for Different Priorities:** In the event where order fulfillment priorities vary significantly and the order volume is high, creating separate runs can optimize resources and allocation:
+  * High-Priority Orders: For orders requiring same-day, next-day, or two-day delivery, setting a frequency of the brokering run to every 5 minutes can quickly allocate inventory to this order batch and meet urgent fulfillment deadlines.
+  * Medium-Priority Orders: For orders on standard deliveries, a separate brokering run with a 6-hour interval can balance routine order routing with the available resources.
 * **Seasonal Run Adjustments:** During peak seasons, like holidays, retailers can activate a dedicated high-frequency brokering run to handle increased order volumes. For example, a run set to every 5 minutes for all orders that can remain in draft mode on regular days but be activated to handle seasonal surges.
 
 The frequency and configuration of each run are critical for optimizing brokering strategies, allowing retailers to meet diverse order priorities effectively.
@@ -31,7 +25,7 @@ The frequency and configuration of each run are critical for optimizing brokerin
 
 Now, let’s understand how you can achieve your order routing and fulfillment goals with the HotWax Commerce’s `Order Routing` App:
 
-#### Steps to Create a New Brokering Run
+#### <mark style="color:orange;">Steps to create a new brokering run</mark>
 
 1. **Open the Order Routing App**
    * Start by opening the `Order Routing` App. This will take you to the home page, where you can view all previously created brokering runs. If no brokering runs have been created yet, the page will appear blank.
@@ -62,7 +56,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 4. **Add a Description**
    * After naming the run, we need to add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
    * Click on a specific `Run` to open its details and now navigate to the Description card and add description that best describes your run.
-   * For example, if there is a single brokering run "everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
+   * For example, if there is a single brokering run "Everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
 <figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
