@@ -115,11 +115,11 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 
 <figure><img src="../.gitbook/assets/Order sorting (1).png" alt="" width="563"><figcaption><p>Order Batch Sorting</p></figcaption></figure>
 
-* **Order Date:** Sort by order date to prioritize older orders first, following a first-in, first-out (FIFO) approach.
-* **Order Priority:** Orders can be sorted by priority levels, such as high, medium, low allowing retailers to prioritize orders based on their urgency.
-* **Ship By**
-* **Ship After**
-* **Shipping Method:** Sorting by shipping method enables the brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
+* **Order date:** Sort by order date to prioritize older orders first, following a first-in, first-out (FIFO) approach.
+* **Order priority:** Orders can be sorted by priority levels, such as high, medium, low allowing retailers to prioritize orders based on their urgency.
+* **Ship by**
+* **Ship after**
+* **Shipping method:** Sorting by shipping method enables the brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
 
 #### <mark style="color:orange;">Choosing sorting options to define order priority:</mark>
 
@@ -149,7 +149,7 @@ Applying Filters and Sorting for Standard Orders Batch
 * From the <mark style="color:orange;">**“Queue”**</mark> dropdown we will choose the <mark style="color:orange;">**“Brokering Queue”**</mark> to include all shipping orders that are waiting for the inventory allocation.
 * Now, from the <mark style="color:orange;">**"Shipping Method"**</mark> dropdown we will choose the <mark style="color:orange;">**“Standard”**</mark> shipping method to include only standard shipping orders. This ensures that we only include those orders in the `Brokering Queue` that have the <mark style="color:orange;">**"Standard"**</mark> shipping method.
 
-2. From the **Sorting** option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
+2. From the **sorting** option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
 
 {% hint style="info" %}
 We did not apply the Shipping Method sorting for our Standard orders because all of these orders use the same standard delivery shipping method. Therefore, sorting by shipping method in this case would not make any difference.
