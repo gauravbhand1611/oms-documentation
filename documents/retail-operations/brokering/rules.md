@@ -55,7 +55,7 @@ For example, a retailer may want to use both stores and warehouses for high-prio
 
 Retailers can set up facility groups in HotWax’s `Facility App`. Creating facility groups is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
 
-<mark style="color:orange;">**HotWax Commerce offers several inventory filters**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**to fine-tune which facilities are eligible for allocation, including:**</mark>
+<mark style="color:orange;">**HotWax Commerce offers several inventory filters to fine-tune which facilities are eligible for allocation, including:**</mark>
 
 <figure><img src="../.gitbook/assets/Inventory filters (1).png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
 
