@@ -23,12 +23,12 @@ The frequency and configuration of each run are critical for optimizing brokerin
 
 ## Creating and Managing Brokering Runs
 
-Now, let’s understand how you can achieve your order routing and fulfillment goals with the HotWax Commerce’s `Order Routing` App:
+Now, let’s understand how you can achieve your order routing and fulfillment goals with the HotWax Commerce’s `Order Routing App`:
 
 #### <mark style="color:orange;">Steps to create a new brokering run</mark>
 
 1. **Open the Order Routing App**
-   * Start by opening the `Order Routing` App. This will take you to the home page, where you can view all previously created brokering runs. If no brokering runs have been created yet, the page will appear blank.
+   * Start by opening the `Order Routing App`. This will take you to the home page, where you can view all previously created brokering runs. If no brokering runs have been created yet, the page will appear blank.
 
 {% hint style="info" %}
 If you have multiple product stores, you’ll be prompted to choose the store for which you want to create a brokering run. This feature helps in managing order routing uniquely for each store. Learn more about [product stores](https://docs.hotwax.co/documents/system-admins/product-store/add-more-product-stores).
