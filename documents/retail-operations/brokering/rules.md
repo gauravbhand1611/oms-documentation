@@ -14,11 +14,11 @@ Using multiple inventory rules ensures that if primary locations lack the requir
 
 For example, let’s continue with our example of **Same-day/Next-day batch**, assuming there are 1,500 orders:
 
-* [x] The First Inventory Rule allocates inventory to 800 orders.
-* [x] The Second Inventory Rule allocates 350 more orders.
-* [x] The Third Inventory Rule allocates an additional 190 orders.
-* [x] The Fourth Rule handles another 150 orders.
-* [x] Finally, the Fifth Inventory Rule allocates 8 more orders using partial allocation.
+* [x] The first inventory rule allocates inventory to 800 orders.
+* [x] The second inventory rule allocates 350 more orders.
+* [x] The third inventory rule allocates an additional 190 orders.
+* [x] The fourth inventory rule handles another 150 orders.
+* [x] Finally, the fifth inventory rule allocates 8 more orders using partial allocation.
 
 Only 2 orders remain unfillable, moving to `Unfillable Parking` (configurable action) for rerouting as inventory becomes available.
 
@@ -55,7 +55,7 @@ For example, a retailer may want to use both stores and warehouses for high-prio
 
 Retailers can set up facility groups in HotWax’s Facility App. Creating facility groups is an important concept because it allows you to group different facilities. For example, in the scenario above, you could create facility groups where one group includes both stores and warehouses, while another includes only warehouses. This setup provides control over facility lookup based on order type and urgency. Here’s a user manual to understand more about the [app and its use cases.](https://docs.hotwax.co/documents/system-admins/administration/facilities/add-new-facilities)
 
-HotWax Commerce offers several Inventory **Filters** to fine-tune which facilities are eligible for allocation, including:
+<mark style="color:orange;">**HotWax Commerce offers several Inventory**</mark> `Filters` <mark style="color:orange;">**to fine-tune which facilities are eligible for allocation, including:**</mark>
 
 <figure><img src="../.gitbook/assets/Inventory filters (1).png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
 
@@ -68,7 +68,7 @@ HotWax Commerce offers several Inventory **Filters** to fine-tune which faciliti
 All facilities enabled for online fulfillment will be attempted for brokering if no filter is applied.
 {% endhint %}
 
-Continuing our example, let's first create inventory rules for **“Same-day/Next-day** orders routing.
+Continuing our example, let's first create inventory rules for <mark style="color:orange;">**“Same-day/Next-day**</mark> orders routing.
 
 #### <mark style="color:orange;">Applying Filters to look up facilities with inventory:</mark>
 
@@ -76,11 +76,11 @@ Continuing our example, let's first create inventory rules for **“Same-day/Nex
 First Inventory Rule Filters
 {% endembed %}
 
-1. Start Creating the Inventory Rule, click the `Add Inventory Rule` button. Name the rule, such as **“Check all warehouses in 100 miles,”** to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
+1. Start Creating the Inventory Rule, click the `Add Inventory Rule` button. Name the rule, such as <mark style="color:orange;">**“Check all warehouses in 100 miles,”**</mark> to reflect its purpose of checking only the closest warehouses that can meet the same-day or next-day delivery SLA.
 2. Click `Save` to save the rule name.
-3. Configure Filters, select the right filters to narrow down eligible facilities. For the **“Same-day/Next-day orders” routing rule**, we will choose **“Facility Group**” and **“Proximity”**.
+3. Configure Filters, select the right filters to narrow down eligible facilities. For the <mark style="color:orange;">**“Same-day/Next-day orders” routing rule**</mark><mark style="color:orange;">,</mark> we will choose <mark style="color:orange;">**“Facility Group**</mark><mark style="color:orange;">”</mark> and <mark style="color:orange;">**“Proximity”**</mark><mark style="color:orange;">.</mark>
 
-* **Facility Group:** Select **“warehouses”** from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
+* **Facility Group:** Select <mark style="color:orange;">**“Warehouses”**</mark> from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
 *   **Proximity:** Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
 
     This ensures that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
@@ -91,7 +91,7 @@ If no warehouse within 100 miles has inventory available then in the next invent
 
 Once the eligible facilities are filtered, the next step is to set up sorting criteria to prioritize these locations based on specific requirements. Sorting determines the sequence in which the brokering engine evaluates facilities, enabling it to choose the most optimal location for fulfillment. For example, if 10 facilities meet the filtering criteria, sorting ensures that the brokering engine selects the best-suited one based on your fulfillment goals, whether that’s faster delivery, balanced workload, or efficient inventory usage.
 
-**Here are the available sorting options:**
+<mark style="color:orange;">**Here are the available sorting options:**</mark>
 
 <figure><img src="../.gitbook/assets/Inventory sorting (1).png" alt="" width="563"><figcaption><p>Inventory Sorting</p></figcaption></figure>
 
@@ -110,7 +110,7 @@ Facilities will be sorted based on creation date if no sorting preferences are a
 First Inventory Rule Sorting
 {% endembed %}
 
-Navigate to the Sort option. Continuing our example, for the **“Check all warehouses in 100 miles”** inventory rule, we’ll use the **"Proximity"** sorting option.
+Navigate to the Sort option. Continuing our example, for the <mark style="color:orange;">**“Check all warehouses in 100 miles”**</mark> inventory rule, we’ll use the <mark style="color:orange;">**"Proximity"**</mark> sorting option.
 
 This sorting option will arrange eligible facilities within the 100-mile range by their distance from the customer, ensuring that the closest warehouse is chosen for fulfillment. This approach aligns with the goal of meeting same-day or next-day delivery requirements by minimizing transit time.
 
@@ -118,27 +118,25 @@ This sorting option will arrange eligible facilities within the 100-mile range b
 
 After applying filters and sorting, the final step is to define the actions to take if some orders in a batch do not receive inventory.
 
-Once filters and sorting have been defined, the brokering engine identifies the optimal facility to allocate inventory for orders. Multiple inventory rules are created so that if the first rule fails to allocate inventory to some orders, the next rule can be tried. In this scenario, specifying the action **“move items to next rule”** allows the brokering engine to check the next rule for unavailable items.
+Once filters and sorting have been defined, the brokering engine identifies the optimal facility to allocate inventory for orders. Multiple inventory rules are created so that if the first rule fails to allocate inventory to some orders, the next rule can be tried. In this scenario, specifying the action <mark style="color:orange;">**“move items to next rule”**</mark> allows the brokering engine to check the next rule for unavailable items.
 
 There may also be cases where, when the brokering engine tries to allocate inventory to an order, inventory for some items is available while for others it is not, or if available, it may be at different locations. In such cases, we can specify actions to **allow or disallow partial allocation**. This action serves as one of the final attempts to allocate inventory to orders, ideally included in the last inventory rule.
 
 After-action logic helps ensure that all orders are accurately managed, whether through partial fulfillment or rerouting at a later time, moving unfillable orders to a different queue.
 
-**Here are the available actions:**
+<mark style="color:orange;">**Here are the available actions:**</mark>
 
-1. **Partially available**
+1. <mark style="color:orange;">**Partially available**</mark>
 
 * **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. For example, a same-day/next-day batch may allow partial allocation in the final inventory rule, while standard orders may prohibit partial allocation across all rules. While partial allocation enables some items to be fulfilled immediately, it can increase shipping costs. To mitigate this, retailers can enable the **Brokering Shipment Threshold** in HotWax, which only allows order splitting if the order’s value exceeds a minimum threshold. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
-* **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** the partial allocation and toggling **OFF** partial allocation for grouped items
+* **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** the partial allocation and toggling **OFF** partial allocation for grouped items.
 
-2. **Unavailable items**
+2. <mark style="color:orange;">**Unavailable items**</mark>
 
 * **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the `Unfillable Parking`**,** where they can later be rerouted through a different routing strategy. Ideally, this should be part of your final inventory rule.
-* **Next rule:** Automatically move unallocated order items to the **next inventory rule** in the sequence. When using multiple rules, this is the **default action**, allowing the brokering engine to attempt inventory allocation through each rule in sequence.
+* **Next rule:** Automatically move unallocated order items to the <mark style="color:orange;">**next inventory rule**</mark> in the sequence. When using multiple rules, this is the **default action**, allowing the brokering engine to attempt inventory allocation through each rule in sequence.
 * **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long. Ideally, this should be part of your final inventory rule.
-* **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities.
-
-It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
+* **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities. It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
 
 #### <mark style="color:orange;">Deciding Actions to choose the most optimal facility:</mark>
 
@@ -146,8 +144,8 @@ It's also important to note that applying or clearing an auto-cancel date will a
 First Inventory Rule Actions
 {% endembed %}
 
-1. In Actions, navigate to the partially available card. Continuing our example, for the **“Check all warehouses in 100 miles”** inventory rule, we’ll keep the **partial fulfillment as disabled** because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
-2. Navigate to unavailable items card. Here **we will only enable the next rule option**. This means that the brokering engine will now try to allocate inventory using the next configured inventory rule in our sequence. We don’t want to apply an auto cancel date yet or move unfillable items to a separate queue. We can do this in our final rule.
+1. In Actions, navigate to the partially available card. Continuing our example, for the <mark style="color:orange;">**“Check all warehouses in 100 miles”**</mark> inventory rule, we’ll keep the **Partial fulfillment as disabled** because we want to try allocating inventory to orders using multiple rules without splitting an order. We can allow splitting in our final inventory rule.
+2. Navigate to unavailable items card. Here we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark> This means that the brokering engine will now try to allocate inventory using the next configured inventory rule in our sequence. We don’t want to apply an auto cancel date yet or move unfillable items to a separate queue. We can do this in our final rule.
 
 {% hint style="info" %}
 By default partial fulfillment is disabled and move items to next rule is selected in actions.
@@ -163,56 +161,56 @@ The following examples provide a brief overview of potential inventory rules, wh
 
 To add more inventory rules, follow these steps:
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 100 miles,”** to reflect its purpose of checking both the stores and warehouses that can meet the same-day or next-day delivery SLA.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations in 100 miles,”**</mark> to reflect its purpose of checking both the stores and warehouses that can meet the same-day or next-day delivery SLA.
 
-For the _**second inventory rule**_, we will expand facility lookup with the **"Proximity"** Filter:
+For the _<mark style="color:orange;">**second inventory rule**</mark>_, we will expand facility lookup with the **"Proximity"** Filter:
 
 {% embed url="https://youtu.be/ImWkqDnUsC0" %}
 Second Inventory Rule
 {% endembed %}
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 100 miles".**
-* **Filter:** We will use the Proximity filter, setting the distance to 100 miles. This rule expands the facility lookup to include all facilities **(both stores and warehouses)** within a 100-mile radius of the customer’s location.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations in 100 miles"**</mark>**.**
+* **Filter:** We will use the <mark style="color:orange;">**"Proximity"**</mark> filter, setting the distance to 100 miles. This rule expands the facility lookup to include all facilities <mark style="color:orange;">**(both stores and warehouses)**</mark> within a 100-mile radius of the customer’s location.
 
 {% hint style="info" %}
 We are not using the Facility Group filter here to include all fulfillment locations (stores and warehouses) within the 100-mile radius.
 {% endhint %}
 
 * **Sorting:** Under sorting, we will choose proximity to ensure the closest facility with the available inventory is selected.
-* **Action:** For any items in this batch that remain unfillable, we will set the action as **“Move unavailable items”** to the **“Next Rule.”**
+* **Action:** For any items in this batch that remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _**third inventory rule**_, we will further expand facility Lookup with **"Proximity**" Filter:
+For the _<mark style="color:orange;">**third inventory rule**</mark>_, we will further expand facility Lookup with **"Proximity**" Filter:
 
 {% embed url="https://youtu.be/sBPWZuzcy98" %}
 Third Inventory Rule
 {% endembed %}
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations in 250 miles".**
-* **Filter:** We will use the **Proximity** filter, setting the distance to 250 miles. This rule expands the facility lookup to include all facilities (both stores and warehouses) within a 250-mile radius of the customer’s location.
-* **Sorting:** Again, we will use the **Proximity** option to choose the closest facility with available inventory.
-* **Action:** For any items in this batch that remain unfillable, we will set the action as **“Move unavailable items”** to the **“Next Rule.”**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations in 250 miles".**</mark>
+* **Filter:** We will use the <mark style="color:orange;">**Proximity**</mark> filter, setting the distance to 250 miles. This rule expands the facility lookup to include all facilities (both stores and warehouses) within a 250-mile radius of the customer’s location.
+* **Sorting:** Again, we will use the <mark style="color:orange;">**Proximity**</mark> option to choose the closest facility with available inventory.
+* **Action:** For any items in this batch that remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _**fourth inventory rule**_, we will further expand facility lookup without any distance limitation:
+For the _<mark style="color:orange;">**fourth inventory rule**</mark>_, we will further expand facility lookup without any distance limitation:
 
 {% embed url="https://youtu.be/28DdkK3onqo" %}
 Fourth Inventory Rule
 {% endembed %}
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations".**
-* **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance. This rule ensures that every facility (store or warehouse) is looked up to fulfill unallocated orders.
-* **Sorting:** We will sort facilities by proximity, so the closest location is selected.
-* **Action:** For any items in this batch that still remain unfillable, we will set the action as “Move unavailable items” to the **“Next Rule.”**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations".**</mark>
+* **Filter:** We <mark style="color:orange;">**will not apply any filter**</mark>, allowing the brokering engine to consider all facilities, regardless of distance. This rule ensures that every facility (store or warehouse) is looked up to fulfill unallocated orders.
+* **Sorting:** We will sort facilities by <mark style="color:orange;">**"Proximity"**</mark>, so the closest location is selected.
+* **Action:** For any items in this batch that still remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the final _**fifth inventory rule**_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
+For the final _<mark style="color:orange;">**fifth inventory rule**</mark>_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
 
 {% embed url="https://youtu.be/M1Ae9VkL99Y" %}
 Final inventory rule
 {% endembed %}
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all locations, allow splitting".**
-* **Filter:** We will not apply any filter, allowing the brokering engine to consider all facilities, regardless of distance.
-* **Sorting:** We will sort facilities by **Proximity**, so the closest location is selected.
-* **Action:** We will **toggle ON “partial allocation”** to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select `Unfillable Parking` from the dropdown. We will also apply a "**7 days auto-cancel date"** for these unfillable orders.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations, allow splitting".**</mark>
+* **Filter:** We <mark style="color:orange;">**will not apply any filter**</mark>, allowing the brokering engine to consider all facilities, regardless of distance.
+* **Sorting:** We will sort facilities by <mark style="color:orange;">"</mark><mark style="color:orange;">**Proximity"**</mark>, so the closest location is selected.
+* **Action:** We will <mark style="color:orange;">**toggle ON “Partial allocation”**</mark> to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">"</mark><mark style="color:orange;">**7 days auto-cancel date"**</mark> for these unfillable orders.
 
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
@@ -224,8 +222,8 @@ Once all rules are active, and your routing is fully configured, ensure the [Bro
 
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
-* Navigate to the `Brokering Run` details page, choose the **“Standard orders”** routing, and follow the steps below to add inventory rules.
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 250 miles,”** to reflect its purpose of checking only warehouse locations in the defined proximity.
+* Navigate to the `Brokering Run` details page, choose the <mark style="color:orange;">**“Standard orders”**</mark> routing, and follow the steps below to add inventory rules.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses in 250 miles,”**</mark> to reflect its purpose of checking only warehouse locations in the defined proximity.
 
 {% tabs %}
 {% tab title="First Inventory Rule" %}
@@ -247,25 +245,25 @@ Standard Orders Final Inventory Rule
 {% endtab %}
 {% endtabs %}
 
-For the _**first inventory rule**_, we will prioritize warehouse locations with most inventory.
+For the _<mark style="color:orange;">**first inventory rule**</mark>_, we will prioritize warehouse locations with most inventory.
 
-* **Filter:** We will choose **“Warehouses”** in the **“Facility group”,** excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
-* **Sorting:** We will choose **“Inventory balance”** to route orders to warehouses with the highest available inventory. Proximity sorting isn’t prioritized here, as the goal is to maximize inventory balance within 250 miles.
-* **Action:** For any items that remain unfillable, we will set the action to **“Move unavailable items”** to the **“Next Rule.”**
+* **Filter:** We will choose <mark style="color:orange;">**“Warehouses”**</mark> in the <mark style="color:orange;">**“Facility group”**</mark>**,** excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
+* **Sorting:** We will choose <mark style="color:orange;">**“Inventory balance”**</mark> to route orders to warehouses with the highest available inventory. Proximity sorting isn’t prioritized here, as the goal is to maximize inventory balance within 250 miles.
+* **Action:** For any items that remain unfillable, we will set the action to <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _**second inventory rule**_, we will prioritize warehouse locations with most inventory.
+For the _<mark style="color:orange;">**second inventory rule**</mark>_, we will prioritize warehouse locations with most inventory.
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses in 500 miles".**
-* **Filter:** We will use the **Facility Group** filter and continue to restrict the facility lookup to **warehouses** only but we will now expand the distance to **500 miles** using the Proximity filter.
-* **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse in 500 miles with the available inventory.
-* **Action:** If any items still remain unfillable, we will set the action to **“Move unavailable items”** to the **“Next Rule.”**
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses in 500 miles".**</mark>
+* **Filter:** We will use the **Facility Group** filter and continue to restrict the facility lookup to <mark style="color:orange;">**Warehouses**</mark> only but we will now expand the distance to **500 miles** using the Proximity filter.
+* **Sorting:** We will again choose <mark style="color:orange;">**“Inventory balance”**</mark> sorting to select the optimal warehouse in 500 miles with the available inventory.
+* **Action:** If any items still remain unfillable, we will set the action to <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _**final third inventory rule**_, we will look up all warehouse locations.
+For the _<mark style="color:orange;">**final third inventory rule**</mark>_, we will look up all warehouse locations.
 
-* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as **“Check all warehouses".**
-* **Filter:** We will continue to restrict the facility lookup to **warehouses** only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
-* **Sorting:** We will again choose **“Inventory balance”** sorting to select the optimal warehouse with available stock.
-* **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as **“Move unavailable items”** to the **“Queue,”** and select `Unfillable Parking` from the dropdown. We will also apply a 7 days **auto-cancel date** for these unfillable orders.
+* Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses".**</mark>
+* **Filter:** We will continue to restrict the facility lookup to <mark style="color:orange;">**Warehouses**</mark> only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.
+* **Sorting:** We will again choose <mark style="color:orange;">**“Inventory balance”**</mark> sorting to select the optimal warehouse with available stock.
+* **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">**7 days auto-cancel date**</mark> for these unfillable orders.
 
 This is how in a **single Brokering Run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
 
@@ -273,7 +271,7 @@ This is how in a **single Brokering Run, you can set up multiple routings with u
 
 ### What differently did we do for standard orders?
 
-For standard orders, we focused only on "Warehouse" locations, prioritized "Inventory balance" over “Proximity" and "disabled partial allocation" across all inventory rules.
+For <mark style="color:orange;">**Standard orders**</mark>, we focused only on **"Warehouse"** locations, **prioritized "Inventory balance" over “Proximity"** and **"Disabled partial allocation"** across all inventory rules.
 
 {% hint style="info" %}
 When an inventory rule is no longer needed, you can simply **“Archive”** it by changing its status from the top right corner. You can unarchive the inventory rule if it’s needed again.
@@ -300,7 +298,7 @@ When an inventory rule is no longer needed, you can simply **“Archive”** it 
 </details>
 
 {% hint style="success" %}
-By leveraging HotWax Commerce Order Routing App, retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
+By leveraging HotWax Commerce, `Order Routing` App retailers can create highly customized and efficient order routing strategies that optimize inventory usage, reduce shipping times and costs, and align their fulfillment process with their unique business needs.
 {% endhint %}
 
 ### Next Steps
