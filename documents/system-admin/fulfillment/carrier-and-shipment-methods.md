@@ -5,7 +5,7 @@ description: >-
   shipment methods, and enabling methods for brands.
 ---
 
-# Map Career Shipment Methods
+# Map Carrier Shipment Methods
 
 In HotWax Commerce, carriers and shipment methods are used to define the delivery preference linked to an order.
 
