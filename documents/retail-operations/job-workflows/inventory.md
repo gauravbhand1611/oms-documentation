@@ -1,5 +1,5 @@
 ---
-description: Discover how to upload and sync inventory with OMS workflows.
+description: "Discover how Inventory job works in HotWax Commerce."
 ---
 
 # Inventory
