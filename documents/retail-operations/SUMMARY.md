@@ -23,6 +23,7 @@
   * [Fulfillment](job-workflows/orders.md)
   * [Inventory](job-workflows/inventory.md)
   * [Products](job-workflows/products.md)
+  * [Miscellaneous](job-workflows/miscellaneous.md)
   
 
 ## Products
