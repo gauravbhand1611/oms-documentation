@@ -1,3 +1,8 @@
+---
+description: "Learn about the Fulfillment jobs in HotWax Commerce."
+---
+
+
 # Fulfillment
 
 ## Shipping
