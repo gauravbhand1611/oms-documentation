@@ -19,6 +19,7 @@
   * [Order Fulfillment](order-flow/order-fulfillment.md)
   * [Order Fulfillment Notification](order-flow/order-fulfillment-notification.md)
 * [System Monitoring Guide](guidelines/system-monitoring-guide.md)
+* [Sanity Checklist](guidelines/sanity-checklist.md)
 
 ## SOP Documents
 
