@@ -1,3 +1,8 @@
+---
+description: "Learn about the miscellaneous jobs in HotWax Commerce."
+---
+
+
 # Miscellaneous
 
 ### Process upload to eCommerce
