@@ -20,7 +20,7 @@
 * [Job workflows](job-workflows/README.md)
   * [Pre-Orders](job-workflows/pre-orders.md)
   * [Orders](job-workflows/orders.md)
-  * [Fulfillment](job-workflows/orders.md)
+  * [Fulfillment](job-workflows/fulfillment.md)
   * [Inventory](job-workflows/inventory.md)
   * [Products](job-workflows/products.md)
   * [Miscellaneous](job-workflows/miscellaneous.md)
