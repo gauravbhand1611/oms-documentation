@@ -58,7 +58,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
    * Click on a specific `Run` to open its details and now navigate to the Description card and add description that best describes your run.
    * For example, if there is a single brokering run "Everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
-<figure><img src="../.gitbook/assets/Run details.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Run details (3).png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
 5. **Schedule the brokering run with a predefined frequency or using cron expressions**
 
