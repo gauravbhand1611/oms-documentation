@@ -211,9 +211,9 @@ Final inventory rule
 * **Action:** We will <mark style="color:orange;">**toggle ON “Partial allocation”**</mark> to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">"</mark><mark style="color:orange;">**7 days auto-cancel date"**</mark> for these unfillable orders.
 
 {% hint style="warning" %}
-Once you've configured each rule, change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark> to make it operational. To do this, click on **"Draft**" and select <mark style="color:green;background-color:green;">**"Active,"**</mark> or revert an active rule back to **"Draft"** if any adjustments are required.
+Once you've configured each rule, change its status from **"Draft"** to **"**<mark style="color:green;">**Active**</mark>**"** to make it operational. To do this, click on **"Draft**" and select **"**<mark style="color:green;">**Active,**</mark>**"** or revert an active rule back to **"Draft"** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to <mark style="color:green;background-color:green;">**"Active"**</mark> so that it can begin processing orders as scheduled.
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to **"**<mark style="color:green;">**Active**</mark>**"** so that it can begin processing orders as scheduled.
 {% endhint %}
 
 ### Add special handling for standard orders

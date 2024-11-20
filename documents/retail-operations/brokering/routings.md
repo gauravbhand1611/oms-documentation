@@ -43,7 +43,7 @@ Creating New Routings
 {% endtabs %}
 
 {% hint style="warning" %}
-For a routing to actively process orders, you’ll need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active."**</mark> Just click **"Draft"** to update it to <mark style="color:green;background-color:green;">**"Active,"**</mark> or, if needed, revert an active routing back to **"Draft"** by clicking on <mark style="color:green;background-color:green;">**"Active.**</mark><mark style="background-color:green;">**"**</mark>
+For a routing to actively process orders, you’ll need to change its status from **"Draft"** to **"**<mark style="color:green;">**Active**</mark>**."** Just click **"Draft"** to update it to **"**<mark style="color:green;">**Active,**</mark>**"** or, if needed, revert an active routing back to **"Draft"** by clicking on **"**<mark style="color:green;">**Active.**</mark>**"**
 
 This step should be done only after setting up all routing rules.
 {% endhint %}
@@ -138,7 +138,7 @@ Orders will be brokered based on order date if no sorting is specified.
 
 _Now that you already know what filters and sorting options are available and what they mean, you can easily use them for your next routing rule._
 
-Let’s see what should be the right filters and sorting options for our **second routing rule **<mark style="color:orange;">**Standard orders.**</mark>
+Let’s see what should be the right filters and sorting options for our \*\*second routing rule \*\*<mark style="color:orange;">**Standard orders.**</mark>
 
 {% embed url="https://youtu.be/lWRdCIO9dMs" %}
 Applying Filters and Sorting for Standard Orders Batch

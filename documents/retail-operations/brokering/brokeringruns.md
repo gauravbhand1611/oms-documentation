@@ -76,9 +76,9 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 * For our <mark style="color:orange;">**Everyday order routing**</mark> brokering run we can directly choose the predefined "_Hourly_" frequency and save it.
 
 {% hint style="warning" %}
-To ensure your brokering run is operational, you need to change its status from **"Draft"** to <mark style="color:green;background-color:green;">**"Active"**</mark>.
+To ensure your brokering run is operational, you need to change its status from **"Draft"** to **"**<mark style="color:green;">**Active**</mark>**"**.
 
-By default, new brokering runs are set to **"Draft"**. Simply select <mark style="color:green;background-color:green;">**"Active"**</mark> from the dropdown to activate it, or revert an active run back to **"Draft"** if adjustments are needed.
+By default, new brokering runs are set to **"Draft"**. Simply select **"**<mark style="color:green;">**Active**</mark>**"** from the dropdown to activate it, or revert an active run back to **"Draft"** if adjustments are needed.
 
 Ideally, activate the brokering run only once you've fully configured your routing, inventory rules, and other settings.
 {% endhint %}
