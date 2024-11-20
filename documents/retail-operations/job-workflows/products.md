@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn about the Import New Products job in HotWax Commerce. Keep your product
-  catalog updated for accurate representation on your platform.
+  Learn about the Products job in HotWax Commerce.
 ---
 
 # Products
