@@ -43,7 +43,7 @@ Creating New Routings
 {% endtabs %}
 
 {% hint style="warning" %}
-For a routing to actively process orders, you’ll need to change its status from **"Draft"** to **Active**."** Just click **"Draft"** to update it to **Active,** or, if needed, revert an active routing back to **"Draft"** by clicking on **Active.**
+For a routing to actively process orders, you’ll need to change its status from **Draft** to **Active**. Just click **Draft** to update it to **Active,** or, if needed, revert an active routing back to **Draft** by clicking on **Active.**
 
 This step should be done only after setting up all routing rules.
 {% endhint %}
@@ -87,7 +87,7 @@ The first step in setting up routing rules is to create a batch of orders using 
 
 Continuing with our example, let’s take a closer look at how to apply the right filters and sorting options for <mark style="color:orange;">**Same-day/Next day**</mark> routing rule.
 
-**<mark style="color:orange;">Applying filters to create order batches:</mark>**
+<mark style="color:orange;">**Applying filters to create order batches:**</mark>
 
 {% embed url="https://youtu.be/pSn6N2-y-DY" %}
 Applying Filters
@@ -121,7 +121,7 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 * **Ship after**
 * **Shipping method:** Sorting by shipping method enables the brokering engine to priortize orders based on the promised SLA. HotWax records the delivery days associated with each shipping method, Same-Day as 0, Next-Day as 1, Two-Day as 2, etc. For example, applying shipping method sorting for a Same-Day/Next-Day batch allows the brokering engine to pick same-day orders before next-day orders, ensuring inventory is allocated first to the most urgent orders. If you have created an order batch by a single shipping method, this sorting isn’t necessary. However, if you filter by two shipping methods, this sorting helps prioritize orders accordingly.
 
-**<mark style="color:orange;">Choosing sorting options to define order priority:</mark>**
+<mark style="color:orange;">**Choosing sorting options to define order priority:**</mark>
 
 {% embed url="https://youtu.be/J2_LpfbHIlI" %}
 Applying Sorting
