@@ -1,7 +1,6 @@
-```markdown
-# Custom Order Import Flow in Hotwax Commerce
+# Custom Order Import
 
-The **Custom Order Import Flow** in Hotwax Commerce is designed to integrate Shopify orders into the system based on each client’s specific requirements. This flow involves transforming the order JSON using Apache NiFi and making client-specific adjustments for seamless import into Hotwax Commerce.
+The custom order import in HotWax Commerce is designed to integrate Shopify orders into the system based on each client’s specific requirements. This flow involves transforming the order JSON using Apache NiFi and making client-specific adjustments for seamless import into HotWax Commerce.
 
 ---
 
@@ -67,7 +66,7 @@ NiFi picks up the downloaded JSON files from the SFTP path and processes the fol
 - **Config Id**: `CSTM_ORDR_IMP`  
 - **Property Resource**: `FTP_CONFIG`  
 
-This job calls the **`importJsonListData`** service, which retrieves the transformed JSON from the SFTP path and imports it into Hotwax Commerce.
+This job calls the **`importJsonListData`** service, which retrieves the transformed JSON from the SFTP path and imports it into HotWax Commerce.
 
 #### **Services Called**
 1. **`createShopifyOrder`**  
@@ -93,11 +92,8 @@ This job calls the **`importJsonListData`** service, which retrieves the transfo
 ---
 
 ## **Summary**
-The Custom Order Import Flow in Hotwax Commerce:
+The Custom Order Import Flow in HotWax Commerce:
 - Handles COD Fee calculations, splitting them into tax and actual fee components.
 - Maps requested delivery dates and times to the appropriate fields in the `order_item` entity.
 - Uses Apache NiFi for transformation and a custom order import job for processing.
 - Ensures accurate and client-specific order details are imported into the system.
-
---- 
-```
