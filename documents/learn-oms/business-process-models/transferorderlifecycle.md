@@ -5,7 +5,7 @@ description: >-
   between stores, or stores to warehouses transfer orders.
 ---
 
-# Transfer orders lifecycle
+# Transfer Orders Lifecycle
 
 Transfer orders are created in the ERP system, they serve various purposes, including:
 
@@ -17,7 +17,7 @@ To explain the Transfer Order Lifecycle BPM, we've opted NetSuite as the ERP sys
 
 ## Warehouse to Store Transfer Orders
 
-<figure><img src="../.gitbook/assets/warehouse to store transfer order bpm.png" alt=""><figcaption><p>Warehouse to store transfer orders lifecycle business process model</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/WarehousetoStoreTObpm.png" alt=""><figcaption><p>Warehouse to store transfer orders lifecycle business process model</p></figcaption></figure>
 
 ### 1. Transfer Orders Created in NetSuite
 
@@ -46,11 +46,11 @@ It’s crucial to note that inventory counts for the items shipped from the ware
 
 * A scheduled SuiteScript in NetSuite reads the item receipt feed and two actions take place:
   * Item receipt records are created in NetSuite and subsequently, inventory count at the store for the corresponding items are increased.
-  * The transfer order status is updated from <mark style="color:orange;">**“Pending Receipt”**</mark> to <mark style="color:orange;">**“Received”**</mark>. 
+  * The transfer order status is updated from <mark style="color:orange;">**“Pending Receipt”**</mark> to <mark style="color:orange;">**“Received”**</mark>.
 
 ## Store to Store Transfer Orders
 
-<figure><img src="../.gitbook/assets/store to store transfer order bpm.png" alt=""><figcaption><p>Store to store transfer orders lifecycle business process model</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/StoretoStoreTObpm.png" alt=""><figcaption><p>Store to store transfer orders lifecycle business process model</p></figcaption></figure>
 
 ### 1. Transfer Orders Created in NetSuite and Imported into HotWax Commerce
 
@@ -102,7 +102,7 @@ Once transfer order items are fulfilled from the store, the QOH for the correspo
 
 ## Store to Warehouse Transfer Orders
 
-<figure><img src="../.gitbook/assets/store to warehouse transfer order bpm.png" alt=""><figcaption><p>Store to warehouse transfer orders lifecycle business process model</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/StoretoWarehouseTObpm.png" alt=""><figcaption><p>Store to warehouse transfer orders lifecycle business process model</p></figcaption></figure>
 
 ### 1. Transfer Orders Created in NetSuite
 
