@@ -68,7 +68,7 @@ All facilities enabled for online fulfillment will be attempted for brokering if
 
 Continuing our example, let's first create inventory rules for <mark style="color:orange;">**Same-day/Next-day**</mark> orders routing.
 
-#### <mark style="color:orange;">Applying filters to look up facilities with inventory:</mark>
+**<mark style="color:orange;">Applying filters to look up facilities with inventory:</mark>**
 
 {% embed url="https://youtu.be/Lc5-YB5e7Cg" %}
 First Inventory Rule Filters
@@ -136,7 +136,7 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 * **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long. Ideally, this should be part of your final inventory rule.
 * **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities. It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
 
-#### <mark style="color:orange;">Deciding actions to choose the most optimal facility:</mark>
+**<mark style="color:orange;">Deciding actions to choose the most optimal facility:</mark>**
 
 {% embed url="https://youtu.be/jRb2hWSKR78" %}
 First Inventory Rule Actions
@@ -216,7 +216,7 @@ Once you've configured each rule, change its status from **"Draft"** to **"**<ma
 Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to **"**<mark style="color:green;">**Active**</mark>**"** so that it can begin processing orders as scheduled.
 {% endhint %}
 
-### Add special handling for standard orders
+### Add Special Handling for Standard Orders
 
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
@@ -267,7 +267,7 @@ This is how in a **single brokering run, you can set up multiple routings with u
 
 <figure><img src="../.gitbook/assets/order routing framework (1).png" alt=""><figcaption><p>Everyday Order Routing</p></figcaption></figure>
 
-### What differently did we do for standard orders?
+**What did we do differently for standard orders?** 
 
 For <mark style="color:orange;">**Standard orders**</mark>, we focused only on **"Warehouse"** locations, **prioritized "Inventory balance" over “Proximity"** and **"Disabled partial allocation"** across all inventory rules.
 

@@ -39,7 +39,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 <figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
 
-3\. **Name the run**
+3. **Name the run**
 
 * Give the run a meaningful name that reflects its purpose. For example, if you’re creating a single brokering run for all orders you can name it <mark style="color:orange;">**“Everyday order routing”**</mark> or if you are creating multiple brokering runs based on the order urgency, you can name them as <mark style="color:orange;">**“High priority orders”**</mark> with the next run as <mark style="color:orange;">**“Medium priority orders”.**</mark>
 
