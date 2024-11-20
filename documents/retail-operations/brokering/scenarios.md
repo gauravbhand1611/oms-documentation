@@ -27,7 +27,7 @@ A retailer wants to ensure that all orders placed through various marketplaces a
    * **Activate Order Batch:** Change the status of the order batch from `Draft` to `Active`.
    * **Schedule Routing:** Set the frequency at which the routing runs should occur to ensure timely fulfillment.
 
-<figure><img src="../.gitbook/assets/Marketplace orders.png" alt=""><figcaption><p>Marketplace Orders Routing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Marketplaceorders.png" alt=""><figcaption><p>Marketplace Orders Routing</p></figcaption></figure>
 
 ## Scenario 2: Fulfilling eCommerce Orders from Warehouse and Stores
 
@@ -89,7 +89,7 @@ During peak hours, store managers need the flexibility to turn off fulfillment f
    * Locate Fulfillment Capacity Card: Navigate to the fulfillment capacity card specific to their store.
    * Set Capacity to No Capacity: Directly control and adjust the fulfillment capacity to “No Capacity” to prevent new orders from being routed to their store during peak hours.
 
-<figure><img src="../.gitbook/assets/Order Fulfillment Capacity.png" alt="" width="375"><figcaption><p>No Capacity</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/OrderFulfillmentCapacity.png" alt="" width="375"><figcaption><p>No Capacity</p></figcaption></figure>
 
 ## Scenario 4: Setting Maximum Order Capacity for Stores
 
@@ -108,7 +108,7 @@ To prevent stores from being overloaded, retailers can set a maximum order capac
 2. **Monitor Capacity**
    * Once the limit is reached, no new orders are brokered to that location until the order count drops below the maximum threshold.
 
-<figure><img src="../.gitbook/assets/Custom Order Fulfillment Capacity.png" alt="" width="375"><figcaption><p>Max Order Limit</p></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="375"><figcaption><p>Max Order Limit</p></figcaption></figure>
 
 ## Scenario 5: Re-Routing Rejected Orders
 
@@ -125,7 +125,7 @@ When order fulfillment is rejected from stores, the order routing engine re-rout
    * **Activate Inventory Rules and Batch:** Activate the rules and the order batch to ensure they are in effect.
    * **Schedule Routing Runs:** Schedule the routing runs to occur at regular intervals, ensuring timely re-routing of rejected orders.
 
-<figure><img src="../.gitbook/assets/Rejected orders.png" alt=""><figcaption><p>Rerouting Rejected Orders</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Rejectedorders.png" alt=""><figcaption><p>Rerouting Rejected Orders</p></figcaption></figure>
 
 ## Scenario 6: Proximity-Based Order Routing
 
@@ -140,7 +140,7 @@ Retailers want to ensure that orders are only fulfilled from locations within a 
    * **Proximity Sorting:** In the inventory rule, sort the inventory allocations by proximity. This ensures that orders are fulfilled from the nearest possible location, reducing delivery times and enhancing customer satisfaction.
    * **Inventory Balances:** Optionally, further sort by inventory balances to prioritize locations with the highest stock levels, ensuring efficient inventory utilization and reducing the likelihood of stockouts.
 
-<figure><img src="../.gitbook/assets/Proximity based routing.png" alt=""><figcaption><p>Proximity Based Routing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Proximitybasedrouting.png" alt=""><figcaption><p>Proximity Based Routing</p></figcaption></figure>
 
 ## Scenario 7: Minimum Stock Availability
 

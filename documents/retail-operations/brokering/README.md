@@ -30,7 +30,7 @@ Order routing is organized into three hierarchical levels:
 
 <div data-full-width="false">
 
-<figure><img src="../.gitbook/assets/order routing framework.png" alt=""><figcaption><p>Brokering Framework in HotWax Commerce</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/routingframework.png" alt=""><figcaption><p>Brokering Framework in HotWax Commerce</p></figcaption></figure>
 
 </div>
 
@@ -43,13 +43,13 @@ A <mark style="color:orange;">**brokering run**</mark> is the highest level of o
 
 <!---->
 
-* [x] [<mark style="color:orange;">**Routing Rules**</mark> ](routings.md)
+* [x] [<mark style="color:orange;">**Routing Rules**</mark>](routings.md)
 
-Within each brokering run, there are multiple <mark style="color:orange;">**routings**</mark><mark style="color:orange;">,</mark> <mark style="color:orange;"></mark><mark style="color:orange;">**or**</mark> <mark style="color:orange;">**“routing rules.”**</mark> Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
+Within each brokering run, there are multiple <mark style="color:orange;">**routings**</mark><mark style="color:orange;">,</mark> <mark style="color:orange;">**or**</mark> <mark style="color:orange;">**“routing rules.”**</mark> Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
 
 * **Same-day delivery batch**: Includes orders that need same-day delivery.
 * **Next-day delivery batch**: Includes orders on next-day delivery.
-* **Two-day delivery batch**:  Includes orders on two-day delivery.
+* **Two-day delivery batch**: Includes orders on two-day delivery.
 
 These routing rules help retailers prioritize routing for specific order batches with different fulfillment timelines and conditions.
 

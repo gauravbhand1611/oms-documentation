@@ -37,7 +37,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 2. **Initiate a new run**
    * Click on the `New Run` button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in the list of all existing brokering runs.
 
-<figure><img src="../.gitbook/assets/New Brokering Run.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/NewBrokeringRun.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
 
 3. **Name the run**
 
@@ -45,11 +45,11 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 {% tabs %}
 {% tab title="Single Brokering Run" %}
-<figure><img src="../.gitbook/assets/Single Brokering Run.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SingleBrokeringRun.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Multiple Brokering Runs" %}
-<figure><img src="../.gitbook/assets/Multiple Brokering Runs.png" alt=""><figcaption><p>Mutiple Brokering Runs</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/MultipleBrokeringRuns.png" alt=""><figcaption><p>Mutiple Brokering Runs</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -58,13 +58,13 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
    * Click on a specific `Run` to open its details and now navigate to the Description card and add description that best describes your run.
    * For example, if there is a single brokering run "Everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
-<figure><img src="../.gitbook/assets/Run details (3).png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Rundetails.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
 5. **Schedule the brokering run with a predefined frequency or using cron expressions**
 
 <div data-full-width="false">
 
-<figure><img src="../.gitbook/assets/Find test order.png" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
 
 </div>
 

@@ -34,4 +34,4 @@ Retailers sometimes prefer not to split orders to minimize shipping costs. If on
 
 
 
-<figure><img src="../../.gitbook/assets/Inventory Unavailability 1.png" alt="" width="461"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="461"><figcaption></figcaption></figure>
