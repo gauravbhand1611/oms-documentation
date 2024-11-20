@@ -124,12 +124,12 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 
 <mark style="color:orange;">**Here are the available actions:**</mark>
 
-1. <mark style="color:orange;">**Partially available**</mark>
+1. **Partially available**
 
 * **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. For example, a same-day/next-day batch may allow partial allocation in the final inventory rule, while standard orders may prohibit partial allocation across all rules. While partial allocation enables some items to be fulfilled immediately, it can increase shipping costs. To mitigate this, retailers can enable the **Brokering Shipment Threshold** in HotWax, which only allows order splitting if the order’s value exceeds a minimum threshold. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
 * **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** partial allocation and toggling **OFF** partial allocation for grouped items.
 
-2. <mark style="color:orange;">**Unavailable items**</mark>
+2. **Unavailable items**
 
 * **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the `Unfillable Parking`**,** where they can later be rerouted through a different routing strategy. Ideally, this should be part of your final inventory rule.
 * **Next rule:** Automatically move unallocated order items to the <mark style="color:orange;">**next inventory rule**</mark> in the sequence. When using multiple rules, this is the **default action**, allowing the brokering engine to attempt inventory allocation through each rule in sequence.
