@@ -211,9 +211,9 @@ Final inventory rule
 * **Action:** We will <mark style="color:orange;">**toggle ON “Partial allocation”**</mark> to enable partial allocation across multiple facilities if inventory is spread out. For items in this batch that still remain unfillable after we have applied multiple rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">"</mark><mark style="color:orange;">**7 days auto-cancel date"**</mark> for these unfillable orders.
 
 {% hint style="warning" %}
-Once you've configured each rule, change its status from **"Draft"** to **"**<mark style="color:green;">**Active**</mark>**"** to make it operational. To do this, click on **"Draft**" and select **"**<mark style="color:green;">**Active,**</mark>**"** or revert an active rule back to **"Draft"** if any adjustments are required.
+Once you've configured each rule, change its status from **"Draft"** to **Active** to make it operational. To do this, click on **"Draft**" and select **Active,** or revert an active rule back to **"Draft"** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to **"**<mark style="color:green;">**Active**</mark>**"** so that it can begin processing orders as scheduled.
+Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to **Active** so that it can begin processing orders as scheduled.
 {% endhint %}
 
 ### Add Special Handling for Standard Orders
@@ -263,7 +263,7 @@ For the final **third inventory rule**, we will look up all warehouse locations.
 * **Sorting:** We will again choose <mark style="color:orange;">**“Inventory balance”**</mark> sorting to select the optimal warehouse with available stock.
 * **Action:** For items in this batch that still remain unfillable after we have applied multiple inventory rules, we will set the final action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Queue,”**</mark> and select `Unfillable Parking` from the dropdown. We will also apply a <mark style="color:orange;">**7 days auto-cancel date**</mark> for these unfillable orders.
 
-This is how in a **single brokering run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.**
+This is how in a single brokering run, you can set up multiple routings with unique inventory rules based on each order batch specific needs.
 
 <figure><img src="../.gitbook/assets/order routing framework (1).png" alt=""><figcaption><p>Everyday Order Routing</p></figcaption></figure>
 
