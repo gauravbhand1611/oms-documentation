@@ -43,7 +43,7 @@ Creating New Routings
 {% endtabs %}
 
 {% hint style="warning" %}
-For a routing to actively process orders, you’ll need to change its status from **"Draft"** to **"**<mark style="color:green;">**Active**</mark>**."** Just click **"Draft"** to update it to **"**<mark style="color:green;">**Active,**</mark>**"** or, if needed, revert an active routing back to **"Draft"** by clicking on **"**<mark style="color:green;">**Active.**</mark>**"**
+For a routing to actively process orders, you’ll need to change its status from **"Draft"** to **Active**."** Just click **"Draft"** to update it to **Active,** or, if needed, revert an active routing back to **"Draft"** by clicking on **Active.**
 
 This step should be done only after setting up all routing rules.
 {% endhint %}
