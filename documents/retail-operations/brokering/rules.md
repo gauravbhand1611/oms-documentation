@@ -31,7 +31,7 @@ In the next sections, we will learn how to create these multiple inventory rules
 Here’s how multiple inventory rules work within each routing rule:
 
 * Each rule is checked in sequence. If a rule does not allocate inventory to an order, the brokering engine attempts inventory allocation using the next rule.
-* If, after all rules, an order still lacks inventory allocation, an auto-cancellation date can be applied, or the order may be moved to a different queue for reattempted routing at a later time with a different strategy.
+* If no inventory is allocated after all the rules are checked, an auto-cancellation date can be applied or the order may be moved to a different queue for reattempted routing later with a different strategy.
 
 {% hint style="success" %}
 You can easily drag and drop inventory rules to reorder them. The order in which the rules are arranged is important, as the first inventory rule is always evaluated first, followed by the next one. This allows for flexibility in adjusting the sequence as per changing requirements.
@@ -47,7 +47,7 @@ In this section, we’ll demonstrate how to set up multiple inventory rules for 
 
 ### Step 1: Finding Facilities with Inventory Using Filters
 
-The first step is to filter the available facilities to identify those capable of fulfilling an order. This filtering ensures that the brokering algorithm only considers facilities meeting the specific criteria retailers have set for fulfilling orders.
+The first step is to filter the available facilities to identify those capable of fulfilling an order. This filtering ensures that the brokering algorithm only considers facilities that meet the specific criteria retailers have set for fulfilling orders.
 
 For example, a retailer may want to use both stores and warehouses for high-priority orders, such as same-day and next-day deliveries. While, for standard orders, they may prefer to rely only on warehouses, avoiding the use of stores. These preferences can be configured using inventory rules to address these types of cases effectively.
 
