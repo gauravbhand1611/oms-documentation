@@ -127,7 +127,7 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 1. <mark style="color:orange;">**Partially available**</mark>
 
 * **Allow partial allocation:** Allow an order to be split and allocated partially if some items are available at a location. For example, a same-day/next-day batch may allow partial allocation in the final inventory rule, while standard orders may prohibit partial allocation across all rules. While partial allocation enables some items to be fulfilled immediately, it can increase shipping costs. To mitigate this, retailers can enable the **Brokering Shipment Threshold** in HotWax, which only allows order splitting if the order’s value exceeds a minimum threshold. Learn more about [Brokering Shipment Threshold](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) and how to implement it.
-* **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** the partial allocation and toggling **OFF** partial allocation for grouped items.
+* **Partially allocate grouped items:** Allow orders containing kits or gift items to be split and allocated partially if some items are available. If you want to allow splitting for other items but wish to [prevent splitting for grouped items](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios), you can configure this by toggling **ON** partial allocation and toggling **OFF** partial allocation for grouped items.
 
 2. <mark style="color:orange;">**Unavailable items**</mark>
 
@@ -216,7 +216,7 @@ Once you've configured each rule, change its status from **"Draft"** to <mark st
 Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to <mark style="color:green;background-color:green;">**"Active"**</mark> so that it can begin processing orders as scheduled.
 {% endhint %}
 
-### What differently can we do for standard orders?
+### Add special handling for standard orders
 
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
