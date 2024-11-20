@@ -65,7 +65,7 @@ Sequence Routing Rules
 
 <mark style="color:orange;">**Creating an order batch is a two-step process:**</mark>
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Filters</strong></mark></li></ol><p>Choosing <code>Filters</code> to look up orders and group them in a batch.</p></td><td></td><td></td><td></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Sorting</strong></mark></li></ol><p>Applying <code>Sorting</code> criteria to determine the sequence in which orders are picked up during routing.</p></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Filters</strong></mark></li></ol><p>Look up orders and group them in a batch.</p></td><td></td><td></td><td></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Sorting</strong></mark></li></ol><p>Determine the sequence in which orders are picked up during routing.</p></td><td></td><td></td><td></td></tr></tbody></table>
 
 <figure><img src="../.gitbook/assets/Order filtering and sorting (1).png" alt="" width="563"><figcaption><p>Order Filters and Sorting</p></figcaption></figure>
 
@@ -101,7 +101,7 @@ Applying Filters
 
 Since our objective is to prioritize orders with tight SLAs, we are not selecting additional filters like order priority, promise date, and sales channel.
 
-**Outcome?** With these filters in place, the brokering algorithm will  specifically look for orders in the `Brokering Queue` that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
+**Outcome?** With these filters in place, the brokering algorithm will specifically look for orders in the `Brokering Queue` that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
 
 {% hint style="info" %}
 If you are not selecting any filter then all orders in all parkings will be attempted for brokering.
