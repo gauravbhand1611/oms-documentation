@@ -37,7 +37,7 @@ Here’s how multiple inventory rules work within each routing rule:
 You can easily drag and drop inventory rules to reorder them. The order in which the rules are arranged is important, as the first inventory rule is always evaluated first, followed by the next one. This allows for flexibility in adjusting the sequence as per changing requirements.
 {% endhint %}
 
-In this section, we’ll demonstrate how to set up multiple inventory rules for two routing rules we created earlier: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders.”**</mark>
+In this section, we’ll demonstrate how to set up multiple inventory rules for two routing rules we created earlier: <mark style="color:orange;">**Same-day/Next-day orders**</mark> and <mark style="color:orange;">**Standard orders.**</mark>
 
 <mark style="color:orange;">**Creating inventory rules is a three-step process:**</mark>
 
@@ -66,7 +66,7 @@ Retailers can set up facility groups in HotWax’s `Facility App`. Creating faci
 All facilities enabled for online fulfillment will be attempted for brokering if no filter is applied.
 {% endhint %}
 
-Continuing our example, let's first create inventory rules for <mark style="color:orange;">**“Same-day/Next-day**</mark> orders routing.
+Continuing our example, let's first create inventory rules for <mark style="color:orange;">**Same-day/Next-day**</mark> orders routing.
 
 #### <mark style="color:orange;">Applying filters to look up facilities with inventory:</mark>
 
@@ -161,7 +161,7 @@ To add more inventory rules, follow these steps:
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations in 100 miles,”**</mark> to reflect its purpose of checking both the stores and warehouses that can meet the same-day or next-day delivery SLA.
 
-For the _<mark style="color:orange;">**second inventory rule**</mark>_, we will expand facility lookup with the **"Proximity"** Filter:
+For the **second inventory rule**, we will expand facility lookup with the **"Proximity"** Filter:
 
 {% embed url="https://youtu.be/ImWkqDnUsC0" %}
 Second Inventory Rule
@@ -177,7 +177,7 @@ We are not using the Facility Group filter here to include all fulfillment locat
 * **Sorting:** Under sorting, we will choose proximity to ensure the closest facility with the available inventory is selected.
 * **Action:** For any items in this batch that remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _<mark style="color:orange;">**third inventory rule**</mark>_, we will further expand facility Lookup with **"Proximity**" Filter:
+For the **third inventory rule**, we will further expand facility Lookup with **"Proximity**" Filter:
 
 {% embed url="https://youtu.be/sBPWZuzcy98" %}
 Third Inventory Rule
@@ -188,7 +188,7 @@ Third Inventory Rule
 * **Sorting:** Again, we will use the <mark style="color:orange;">**Proximity**</mark> option to choose the closest facility with available inventory.
 * **Action:** For any items in this batch that remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _<mark style="color:orange;">**fourth inventory rule**</mark>_, we will further expand facility lookup without any distance limitation:
+For the **fourth inventory rule**, we will further expand facility lookup without any distance limitation:
 
 {% embed url="https://youtu.be/28DdkK3onqo" %}
 Fourth Inventory Rule
@@ -199,7 +199,7 @@ Fourth Inventory Rule
 * **Sorting:** We will sort facilities by <mark style="color:orange;">**"Proximity"**</mark>, so the closest location is selected.
 * **Action:** For any items in this batch that still remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the final _<mark style="color:orange;">**fifth inventory rule**</mark>_, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
+For the final **fifth inventory rule**, we will again include all facilities but also enable order splitting to allow partial fulfillment across different facilities.
 
 {% embed url="https://youtu.be/M1Ae9VkL99Y" %}
 Final inventory rule
@@ -220,7 +220,7 @@ Once all rules are active, and your routing is fully configured, ensure the [Bro
 
 For standard orders with a longer SLA (7 days or more), inventory rules can be configured differently to prioritize fulfillment from warehouse locations, reserving in-store stock for higher-priority, faster-shipping orders. Here’s how to create inventory rules for “Standard orders” routing:
 
-* Navigate to the `Brokering Run` details page, choose the <mark style="color:orange;">**“Standard orders”**</mark> routing, and follow the steps below to add inventory rules.
+* Navigate to the `Brokering Run` details page, choose the <mark style="color:orange;">**Standard orders**</mark> routing, and follow the steps below to add inventory rules.
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses in 250 miles,”**</mark> to reflect its purpose of checking only warehouse locations in the defined proximity.
 
 {% tabs %}
@@ -243,20 +243,20 @@ Standard Orders Final Inventory Rule
 {% endtab %}
 {% endtabs %}
 
-For the _<mark style="color:orange;">**first inventory rule**</mark>_, we will prioritize warehouse locations with most inventory.
+For the **first inventory rule**, we will prioritize warehouse locations with most inventory.
 
 * **Filter:** We will choose <mark style="color:orange;">**“Warehouses”**</mark> in the <mark style="color:orange;">**“Facility group”**</mark>**,** excluding stores to maintain inventory levels for faster-shipping orders. We will also use the Proximity filter, setting the distance to 250 miles. This rule expands the facility lookup to include all warehouses within a 250-mile radius of the customer’s location, ensuring if a nearby warehouse is available, we can reduce the shipping cost.
 * **Sorting:** We will choose <mark style="color:orange;">**“Inventory balance”**</mark> to route orders to warehouses with the highest available inventory. Proximity sorting isn’t prioritized here, as the goal is to maximize inventory balance within 250 miles.
 * **Action:** For any items that remain unfillable, we will set the action to <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _<mark style="color:orange;">**second inventory rule**</mark>_, we will prioritize warehouse locations with most inventory.
+For the **second inventory rule**, we will prioritize warehouse locations with most inventory.
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses in 500 miles".**</mark>
 * **Filter:** We will use the **Facility Group** filter and continue to restrict the facility lookup to <mark style="color:orange;">**Warehouses**</mark> only but we will now expand the distance to **500 miles** using the Proximity filter.
 * **Sorting:** We will again choose <mark style="color:orange;">**“Inventory balance”**</mark> sorting to select the optimal warehouse in 500 miles with the available inventory.
 * **Action:** If any items still remain unfillable, we will set the action to <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
-For the _<mark style="color:orange;">**final third inventory rule**</mark>_, we will look up all warehouse locations.
+For the final **third inventory rule**, we will look up all warehouse locations.
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all warehouses".**</mark>
 * **Filter:** We will continue to restrict the facility lookup to <mark style="color:orange;">**Warehouses**</mark> only using the **Facility Group** filter. However, this time we will not use the Proximity filter, allowing all warehouse locations to be considered.

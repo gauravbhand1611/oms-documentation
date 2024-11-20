@@ -14,7 +14,7 @@ If these order batches need routing at the same frequency but require different 
 
 ## Creating and Managing Routing Rules
 
-This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**“Standard orders”**</mark> within our previously created <mark style="color:orange;">**“**</mark>[<mark style="color:orange;">**Everyday order routing”**</mark> brokering run](brokeringruns.md).
+This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules: <mark style="color:orange;">**Same-day/Next-day orders**</mark> and <mark style="color:orange;">**Standard orders**</mark> within our previously created <mark style="color:orange;">**“**</mark>[<mark style="color:orange;">**Everyday order routing”**</mark> brokering run](brokeringruns.md).
 
 {% hint style="info" %}
 In this example, we’re routing Same-day/Next-day orders and Standard orders at the same frequency. If a business scenario requires these batches to be routed at different frequencies then separate brokering runs should be created.
@@ -26,7 +26,7 @@ In this example, we’re routing Same-day/Next-day orders and Standard orders at
 * Name the routing rule and click `Save` to add it to the list of routing rules.
 * To add the next routing rule click on the `New` button next to the "Order batches" label and name your new routing rule.
 
-Continuing our example, let's name our two routing rules as <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> and <mark style="color:orange;">**"Standard orders"**</mark>.
+Continuing our example, let's name our two routing rules as <mark style="color:orange;">**Same-day/Next-day orders**</mark> and <mark style="color:orange;">**Standard orders**</mark>.
 
 {% tabs %}
 {% tab title="Routing rule 1" %}
@@ -55,7 +55,7 @@ To prioritize which the routing rule is applied first:
 * Click and drag the chip on the top right of the routing card.
 * The sequence number on the card will automatically update based on the card's position.
 
-Continuing our example, we’ll position <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> before <mark style="color:orange;">**"Standard orders"**</mark> to ensure the higher-priority order batch is routed first.
+Continuing our example, we’ll position <mark style="color:orange;">**Same-day/Next-day orders**</mark> before <mark style="color:orange;">**Standard orders**</mark> to ensure the higher-priority order batch is routed first.
 
 {% embed url="https://youtu.be/hB9QLCMXDEw" %}
 Sequence Routing Rules
@@ -93,7 +93,7 @@ Continuing with our example, let’s take a closer look at how to apply the righ
 Applying Filters
 {% endembed %}
 
-1. Open the <mark style="color:orange;">**“Same-day/Next-day orders”**</mark> routing rule’s details, then navigate to the Filters option.
+1. Open the <mark style="color:orange;">**Same-day/Next-day orders**</mark> routing rule’s details, then navigate to the Filters option.
 2. Filters help define which orders should be looked up to create a batch. For the “Same-day/Next-day” routing rule we will choose the <mark style="color:orange;">**“Queue”**</mark> and <mark style="color:orange;">**"Shipment method type**</mark>**"** filters.
 
 * From the <mark style="color:orange;">**“Queue”**</mark> we will choose the <mark style="color:orange;">**“Brokering Queue”**</mark> to include all orders that are waiting for the inventory allocation.
@@ -127,7 +127,7 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 Applying Sorting
 {% endembed %}
 
-1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**“Same-day/Next-day order”**</mark> batch we will choose the <mark style="color:orange;">**"Shipping Method”**</mark> sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
+1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**Same-day/Next-day order**</mark> batch we will choose the <mark style="color:orange;">**"Shipping Method”**</mark> sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
 2. Finally, click on the `Save` icon in the right most corner to save your **configured routing rule**.
 
 If you are choosing multiple sorting options, you can prioritize them into the desired sequence using drag and drop.
@@ -138,7 +138,7 @@ Orders will be brokered based on order date if no sorting is specified.
 
 _Now that you already know what filters and sorting options are available and what they mean, you can easily use them for your next routing rule._
 
-Let’s see what should be the right filters and sorting options for our <mark style="color:orange;">**second routing rule “Standard orders”.**</mark>
+Let’s see what should be the right filters and sorting options for our **second routing rule **<mark style="color:orange;">**Standard orders.**</mark>
 
 {% embed url="https://youtu.be/lWRdCIO9dMs" %}
 Applying Filters and Sorting for Standard Orders Batch
