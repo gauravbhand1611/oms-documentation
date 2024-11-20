@@ -155,7 +155,7 @@ Applying Filters and Sorting for Standard Orders Batch
 We did not apply the Shipping Method sorting for our Standard orders because all of these orders use the same standard delivery shipping method. Therefore, sorting by shipping method in this case would not make any difference.
 {% endhint %}
 
-4. Finally, click on the `Save` icon in the right most corner to save your configured routing rule.
+3. Finally, click on the `Save` icon in the right most corner to save your configured routing rule.
 
 These examples help understand how retailers can use different filters and sorting options to create order batches and strategically fulfill orders, aligning each routing rule with specific business objectives.
 
