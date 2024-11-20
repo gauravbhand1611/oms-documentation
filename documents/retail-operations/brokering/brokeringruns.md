@@ -62,11 +62,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 5. **Schedule the brokering run with a predefined frequency or using cron expressions**
 
-<div data-full-width="false">
-
-<figure><img src="broken-reference" alt="" width="375"><figcaption><p>Schedule a Brokering Run</p></figcaption></figure>
-
-</div>
+<figure><img src="../.gitbook/assets/schedulerun.png" alt="" width="375"><figcaption><p>Schedule Brokering Run</p></figcaption></figure>
 
 * Navigate to the Scheduler card, here you can set the frequency and runtime for your brokering run.
 * You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions that you can use:
