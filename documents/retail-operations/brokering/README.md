@@ -47,9 +47,9 @@ A <mark style="color:orange;">**brokering run**</mark> is the highest level of o
 
 Within each brokering run, there are multiple <mark style="color:orange;">**routings**</mark><mark style="color:orange;">,</mark> <mark style="color:orange;"></mark><mark style="color:orange;">**or**</mark> <mark style="color:orange;">**“routing rules.”**</mark> Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
 
-* **Same-day delivery batch**: This routing rule includes orders requiring same-day delivery, ensuring they are routed quickly.
-* **Next-day delivery batch**: This routing rule includes orders requiring for next-day delivery, meeting their specific SLA requirements.
-* **Two-day delivery batch**: This routing rule includes orders requiring for two-day delivery, meeting their specific SLA requirements.
+* **Same-day delivery batch**: First, orders requiring same-day delivery are routed to meet their time-sensitive needs.
+* **Next-day delivery batch**: Next, orders for next-day delivery are routed to meet their specific SLA requirements.
+* **Two-day delivery batch**: Finally, orders for two-day delivery are routed to meet their specific SLA requirements.
 
 These routing rules help retailers prioritize routing for specific order batches with different fulfillment timelines and conditions.
 
