@@ -7,8 +7,8 @@ This document highlights how Transfer Orders (TOs) will be managed after a recom
 
 1. **Creating and Accepting Transfer Orders**
    - After Transfer Order recommendations are generated, the merchandising team reviews and accepts the needed TOs.
-   - add merchandising step 
-   - Accepted TOs are exported as a CSV file, and an existing job within HotWax OMS creates the corresponding TOs .
+   - The merchandising team will create CSV file and upload them into HotWax using EXIM.
+   - Once the file is uplaoded an existing job within HotWax OMS creates the corresponding TOs.
    - **Note**: More detail is required on this process.
 
 2. **Fulfilling Transfer Orders**
