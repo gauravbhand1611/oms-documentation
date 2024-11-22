@@ -3,7 +3,7 @@
 Recently, our instances were migrated to the New Kubernetes Setup to enhance availability. When an instance is migrated or upgraded, a thorough sanity check is essential to ensure all functionalities are operational and new updates are implemented successfully.
 
 {% hint style="info" %} Sanity tests on production instances differ as some instances lack Maarg setup and Solr-based reporting. 
-No actions should be performed on production instances; all checks are done on a view-only basis. { % endhint %}
+No actions should be performed on production instances; all checks are done on a view-only basis. {% endhint %}
 
 
 ## Test Objectives
