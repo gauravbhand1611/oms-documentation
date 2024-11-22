@@ -20,7 +20,7 @@ This document highlights how Transfer Orders (TOs) will be managed after a recom
    - A scheduled job will be created to pull all new `"OUT_TRANSFER"` shipments in the `"PURCH_SHIP_SHIPPED"` status.
    - These shipments will be placed at an SFTP location for further processing.
    - **Note**: The format of this file needs to be identified. Ideally, it should match the format used by the existing jobs. This is JSON
-   - **Note**: This job may be helpful here `TransferOrderFulfilledItemsFeed`
+   - **Note**: This job may be helpful here `generate_TransferOrderFulfilledItemsFeed"`
 
 4. **Using NiFi to Create Incoming Transfers**
    - A NiFi flow will be created to process the files placed at the SFTP location.
