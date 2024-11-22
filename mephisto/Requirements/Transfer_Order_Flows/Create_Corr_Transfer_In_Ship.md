@@ -1,28 +1,33 @@
 # Transfer Order Processing Workflow
 
 ## Overview
-This document highlights how Transfer Orders (TOs) will be managed after a recommendation has been accepted within HotWax OMS. Most of these processes already exist. Specifically, we will create the corresponding `OUT_TRANSFER` and `IN_TRANSFER` for accepted TOs.
+This document highlights how Transfer Orders (TOs) will be managed after a recommendation has been accepted within HotWax OMS. Most of these processes already exist. Specifically, we will create the corresponding `OUT_TRANSFER` and `IN_TRANSFER` shipments for accepted TOs.
 
 ### Step-by-Step Process
 
 1. **Creating and Accepting Transfer Orders**
    - After Transfer Order recommendations are generated, the merchandising team reviews and accepts the needed TOs.
-   - Accepted TOs are exported as a CSV file, and an existing job within HotWax OMS creates the corresponding TOs with `"shipmentTypeId": "OUT_TRANSFER"`.
+   - add merchandising step 
+   - Accepted TOs are exported as a CSV file, and an existing job within HotWax OMS creates the corresponding TOs .
    - **Note**: More detail is required on this process.
 
 2. **Fulfilling Transfer Orders**
-   - The store fulfills these accepted Transfer Orders and creates shipments for them.
+   - The store fulfills these accepted Transfer Orders and creates shipments for them with `"shipmentTypeId": "OUT_TRANSFER"`.
    - This process already exists in HotWax OMS.
    - **Note**: More detail is required on this process.
 
 3. **Scheduled Job for Outgoing Transfers**
    - A scheduled job will be created to pull all new `"OUT_TRANSFER"` shipments in the `"PURCH_SHIP_SHIPPED"` status.
    - These shipments will be placed at an SFTP location for further processing.
-   - **Note**: The format of this file needs to be identified. Ideally, it should match the format used by the existing jobs.
+   - **Note**: The format of this file needs to be identified. Ideally, it should match the format used by the existing jobs. This is JSON
+   - **Note**: This job may be helpful here `TransferOrderFulfilledItemsFeed`
 
 4. **Using NiFi to Create Incoming Transfers**
    - A NiFi flow will be created to process the files placed at the SFTP location.
    - For each `"OUT_TRANSFER"`, NiFi will generate the corresponding `"IN_TRANSFER"` and place it back at the SFTP location.
+
+5. **Upload the new Incoming Transfers**
+   - The file created by NiFi will be uploaded into OMS using configID: `IMP_SHIPMENT` and job: `createIncomingShipment` 
 
 ### JOLT Transformation for Incoming Transfers
 The following JOLT transformation is used create the new `"IN_TRANSFER"` shipment:
