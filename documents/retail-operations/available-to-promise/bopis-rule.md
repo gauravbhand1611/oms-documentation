@@ -5,7 +5,7 @@ As discussed in previous sections, to enable store pickup for a facility, it is 
 In HotWax Commerce, retailers can create different types of store pickup rules:
 - Configure which facilities will participate in store pickup.
 - Configure which products will be available for which inventory channel.
-- Configure whether store pickup will be available from a facility or not.
+- Configure whether store pickup for a product will be available from a facility or not.
 
 In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer who has five retail locations, including three retail stores and two warehouses. They want to configure store pickup rules for a specific product: a **Blue Medium-sized shirt from the NotNaked brand**. Let’s see how retailers can configure store pickup rules for this scenario.
 
