@@ -1,4 +1,4 @@
-# Threshold Rule Overview
+# Threshold Rule
 
 Retail brands sell products across various channels such as offline stores, marketplaces, social media, and their own websites. Managing inventory across these platforms can be challenging, as each channel may have different rules and penalties for order fulfillment delays or rejections. For example, platforms like Amazon impose penalties for delayed fulfillment or rejected orders, which makes managing inventory crucial. 
 
@@ -54,6 +54,6 @@ You can also filter products based on specific attributes such as color, size, o
 Once you’ve configured the threshold value, selected the channels, and chosen the products, click the `Save` button at the bottom right corner to finalize and save the rule. The system will now apply the threshold, ensuring that the selected product has a 10-unit buffer stock reserved across your chosen channel.
 
 
-# Setting Threshold Rules for Multiple Channels
+## Setting Threshold Rules for Multiple Channels
 
-If you want to create a threshold rule for multiple inventory channels, you will need to create separate channels and set up threshold rules for each of them. To learn how to create new channels and manage threshold configurations, refer to our **Detailed User Manual** for further instructions.
+If you want to create a threshold rule for multiple inventory channels, you will need to create separate channels and select channel config facility as per the requirement. To learn how to create new channels and manage threshold configurations, refer to our **Detailed User Manual** for further instructions.
