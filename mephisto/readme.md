@@ -1,6 +1,3 @@
-Mephisto Placeholder
-
-
 **Application components**
 *  OMS
 *  Maarg
