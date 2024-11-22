@@ -1,6 +1,7 @@
 Mephisto Placeholder
 
 https://git.hotwax.co/commerce/oms/blob/dc99f7ac08a12656a75bddef148902b6d0e64bbe/applications/hwmapps/data/commerce/optionalJobData/NetSuiteJobData.xml#L36
+https://dev-oms.hotwax.io/commerce/control/ImportData?configId=IMP_TRANSFER_ORD
 
 
 https://git.hotwax.co/HC2/plugins/nifi-transform/-/tree/develop/hotwax-feeds/shipmentsReceipt
