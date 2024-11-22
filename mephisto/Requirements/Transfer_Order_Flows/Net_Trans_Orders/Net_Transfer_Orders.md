@@ -44,8 +44,8 @@ FROM (
 
     -- Incoming Transfers
     SELECT 
-        s.destination_facility_id AS source_facility,
-        s.origin_facility_id AS destination_facility,
+        s.origin_facility_id AS source_facility,
+        s.destination_facility_id AS destination_facility,
         si.product_id,
         -SUM(si.quantity) AS total_transfer
     FROM 
@@ -53,7 +53,7 @@ FROM (
     JOIN 
         shipment s ON si.shipment_id = s.shipment_id
     WHERE 
-        s.shipment_type_id = 'OUT_TRANSFER'
+        s.shipment_type_id = 'IN_TRANSFER'
     GROUP BY 
         s.destination_facility_id, s.origin_facility_id, si.product_id
 ) transfers

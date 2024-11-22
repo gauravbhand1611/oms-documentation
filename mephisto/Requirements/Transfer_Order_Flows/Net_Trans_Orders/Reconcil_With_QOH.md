@@ -15,7 +15,7 @@ Below is the SQL query for aggregating the net changes in inventory due to trans
 -- Aggregate Outgoing and Incoming Transfers
 SELECT 
     source_facility,
-    destination_facility,
+    destination_facility, 
     product_id,
     SUM(total_transfer) AS net_QOH_changes
 FROM (
@@ -40,8 +40,8 @@ FROM (
 
     -- Incoming Transfers
     SELECT 
-        s.destination_facility_id AS source_facility,
-        s.origin_facility_id AS destination_facility,
+        s.origin_facility_id AS source_facility,
+        s.destination_facility_id AS destination_facility,
         ii.product_id,
         SUM(iid.quantity_on_hand_diff) AS total_transfer
     FROM 
@@ -51,7 +51,7 @@ FROM (
         JOIN 
             inventory_item ii ON iid.inventory_item_id = ii.inventory_item_id
     WHERE 
-        s.shipment_type_id = 'OUT_TRANSFER'
+        s.shipment_type_id = 'IN_TRANSFER'
     GROUP BY 
         s.destination_facility_id, s.origin_facility_id, ii.product_id
 ) transfers
