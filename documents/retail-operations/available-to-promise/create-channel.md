@@ -1,10 +1,10 @@
-### Multichannel ATP Computation
+# Multichannel ATP Computation
 
 Retail brands often sell products across various channels such as offline stores, marketplaces, social media, and their own websites. However, managing inventory across these different platforms can be challenging, as each channel has its own set of rules and penalties. For instance, marketplaces like Amazon impose charges for delayed fulfillment or rejected orders. To prevent overselling and efficiently manage inventory, many brands allocate separate Available-to-Promise (ATP) inventories for each sales channel.
 
 This section explains how to set up inventory channels, link facilities to those channels, and configure product inventory for each channel.
 
-### Create an Inventory Channel
+## Create an Inventory Channel
 
 In HotWax Commerce, Inventory Channels combine Facility Groups and Configuration Facilities. Follow these steps to create a new inventory channel:
 
