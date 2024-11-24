@@ -1,65 +1,37 @@
 # Table of Contents
 
-## Tax Recalculation with Avalara
-Integrate HotWax OMS with Avalara to dynamically recalculate taxes based on retailer and customer locations, ensuring accurate tax compliance.
+## Sales Velocity Calculation
 
-### Tax Discrepancies
-Decide on policies for handling tax discrepancies, balancing customer satisfaction with legal compliance.
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Transfer_Recom/sales_velocity_calc.md)
 
-## Return and Exchange Process
-Mephisto used Redo for returns and exchange processing.
+This proposal outlines the development of a BI report to assist store managers in making data-driven inventory transfer decisions. Leveraging sales velocity analysis across all products and facilities, the report will identify high-demand and low-demand locations. 
 
-### Returns Management
-Integrate Redo with HotWax OMS to authorize returns and route them back to the original fulfilling retailer.
+## Inventory Transfer Recommendation Creation
 
-### Exchange Routing
-Automatically route exchange orders to the original fulfillment location, with options to reroute if necessary.
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Transfer_Recom/Inven_Trans_Rec_Create.md) 
 
-## Inventory Visibility and Historical Tracking
-Provide comprehensive visibility into inventory levels and historical data to support decision-making.
+This solution optimizes inventory balance by identifying facilities with stock shortages and recommending transfers from facilities with surplus inventory. It evaluates feasibility based on minimum stock levels and sales velocity while calculating shipment value for financial insight.
 
-### Real-Time Data
-Offer dashboards and API access displaying current on-hand inventory per location.
+## Create Corrolating Transfer in Shipment
 
-### Historical Access
-Allow querying of past inventory levels with policies in place for data retention and historical tracking.
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Create_Corr_Transfer_In_Ship.md)
 
-## Model Stock/Reorder Points
-Set minimum inventory thresholds and automate reordering to maintain optimal stock levels.
+This workflow outlines how Transfer Orders (TOs) are managed within HotWax OMS after recommendations are accepted. It covers the creation and acceptance of TOs, fulfillment with "OUT_TRANSFER" shipments, and the generation of "IN_TRANSFER" shipments.
 
-### Minimum Levels
-Define model stock levels for each SKU and location to prevent shortages.
+## Reconcile with QOH
 
-### Reordering Alerts
-Notify purchasing teams when inventory approaches reorder points, using historical sales data for accuracy. Report: Transfer Order Recommendations
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Net_Trans_Orders/Reconcil_With_QOH.md)
 
-## Transfer Order Recommndation
-Effectively balance inventory levels across facilities by identifying stock shortages and recommending transfers from facilities with surplus. The process involves four main steps:
+This flow focuses on calculating net changes in inventory quantity on hand (QOH) due to transfer orders (TOs) between facilities. It ensures inventory accuracy and tracks inventory flows by reconciling transfers effectively.
 
-1. **Identify Facilities with Insufficient Stock**: Pinpoints facilities that need inventory replenishment.
-2. **Find Potential Source Facilities**: Identifies facilities with surplus stock that can fulfill the need.
-3. **Evaluate Transfer Feasibility**: Ensures that the source facility can afford to make the transfer without falling below its own minimum inventory requirements.
-4. **Recommend Transfers**: Recommends optimal transfers based on the evaluation, including the value of the shipment.
+## Discrepancy Identification Between Transfers and QOH
 
-## Inventory Display Rules Enforcement
-Control the visibility of inventory based on discount levels to maintain brand integrity and pricing strategies.
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Net_Trans_Orders/Discrep_ID_BW_Trans_QOH.md)
 
-### Discount Restrictions
-Implement business rules to hide retailer inventory when discounts exceed 40%.
+This flow aims to identify and report mismatches between shipment quantities and inventory quantity on hand (QOH) differences during transfer orders.
 
-## Financial Reporting and Settlement
-Streamline financial operations with detailed reporting and needed settlements for retailers.
+## Net Transfer Orders
 
-### Bi-Weekly Reports
-Generate automated reports every two weeks detailing amounts owed to each independent retailer.
+[Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Net_Trans_Orders/Net_Transfer_Orders.md)
 
-## Net Transfers Calculation Between Facilities
-Calculate and analyze the net movement of products between facilities to optimize inventory distribution.
-Determine the total net transfers of products between Mephisto retail stores by aggregating shipment data.
-
-### Key Concepts
-- **Outgoing Transfers**: Shipments moving products from one facility to another.
-- **Incoming Transfers**: Shipments where products are received from another facility.
-- **Net Transfers**: The difference between outgoing and incoming transfers for each product.
-
-An SQL query will aggregate these shipments to calculate the overall net quantity transferred.
+This report calculates the net movement of products between facilities for Mephisto retail stores, determining the total net transfers by aggregating outgoing and incoming shipments. 
