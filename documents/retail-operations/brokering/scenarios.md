@@ -4,28 +4,36 @@
 
 A retailer wants to ensure that all orders placed through various marketplaces are fulfilled exclusively from their warehouse. This scenario is common for businesses that prefer to manage marketplace orders separately due to specific logistical or contractual obligations.
 
+### Pre-Requisites for This Scenario
+
+- **Marketplace_sales_channel** must be created in HotWax Commerce and mapped with the relevant [sales channels in Shopify](https://docs.hotwax.co/documents/learn-shopify/setup-shopify/integration-mapping/sales-channel-mapping).
+- A [facility group must be created](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups) in HotWax Commerce with the **Brokering_group** subtype, which includes all warehouse locations.
+
 ### Steps to Implement
 
-1. **Identify Marketplace Orders**
-   * Marketplace orders can be identified using specific order tags from Shopify. These tags help differentiate marketplace orders from other sales channels.
-   * **Order Tags:** Ensure that all orders coming from marketplaces are tagged with `marketplace_sales_channel` in Shopify.
-2. **Set Up Facility Groups**
-   * HotWax Commerce allows retailers to create specific facility groups for different sales channels.
-   * **Create Facility Group:** Set up a facility group that includes only warehouse.
-   * **Inventory Filter:** In the inventory filter, select the warehouses to ensure only these are considered for fulfillment.
-3. **Configure Order Routing Rules**
-   * Create specific routing rules to handle marketplace orders:
-   * **Create Order Batch:** In HotWax Commerce, navigate to the Order Routing App and create a new order batch for marketplace orders.
-   * **Order Filter:** Apply filters to select orders based on the `marketplace_sales_channel` tag. This ensures that only orders from marketplaces are included in this batch.
-4. **Set Up Inventory Rules**
-   * Define inventory rules to route marketplace orders to the warehouse:
-   * **Create Inventory Rule:** Create an inventory rule in the newly created order batch.
-   * **Select Facility Group:** Apply the previously created facility group that includes only warehouses.
-5. **Activate and Schedule**
-   * Ensure the routing rules and order batches are activated and scheduled appropriately:
-   * **Activate Inventory Rule:** Activate the inventory rule to ensure it is applied to incoming marketplace orders.
-   * **Activate Order Batch:** Change the status of the order batch from `Draft` to `Active`.
-   * **Schedule Routing:** Set the frequency at which the routing runs should occur to ensure timely fulfillment.
+#### Create Run
+
+To create a new brokering run for marketplace orders, begin by opening the Order Routing App. If you are managing multiple product stores, select the relevant store to ensure marketplace orders are routed correctly. Next, click on New Run and name the run something clear and specific, such as “Marketplace Order Routing,” to easily identify its purpose. Add a description like “Routing all marketplace orders through warehouse locations only” to provide clarity for your team. Finally, navigate to the Scheduler card and set the appropriate frequency for this routing run, ensuring marketplace orders are processed on time.
+
+#### Create Routing Rules
+
+To set up routing rules for marketplace orders, first, select the previously created routing run for marketplace orders in the Order Routing App. This ensures the routing rule is linked to the correct run.
+
+In the next step, apply the necessary configurations:
+
+- **Add Order Filter:** Use the Sales Channel filter to include only marketplace orders, ensuring orders from Shopify or other marketplaces are grouped and brokered separately from other channels.
+
+- **Sort Orders:** Set the sorting criteria to Order Date. This ensures that older marketplace orders are prioritized for inventory allocation, following a first-in, first-out (FIFO) approach.
+
+#### Create Inventory Rule
+
+To create inventory rules for marketplace orders, first ensure that the appropriate routing rule for marketplace orders is selected, then click on Add Inventory Rule. Once the inventory rule is created, follow these steps:
+
+- **Add Inventory Filter:** Apply the Facility Group filter and select the group for warehouses only. This ensures that the inventory from warehouse locations is considered for the routing.
+
+- **Sort Inventory:** Sort the inventory by proximity to the customer’s delivery address. This helps minimize shipping costs by prioritizing inventory that is closer to the destination.
+
+- **Define Actions:** If inventory is unavailable, toggle on Partial Fulfillment to allow order splitting. For completely unavailable inventory, select Send Orders to Queue and assign them to the Unfillable Queue for further processing.
 
 <figure><img src="../.gitbook/assets/Marketplaceorders.png" alt=""><figcaption><p>Marketplace Orders Routing</p></figcaption></figure>
 
