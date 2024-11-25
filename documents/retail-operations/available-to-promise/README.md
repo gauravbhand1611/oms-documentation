@@ -1,3 +1,7 @@
+---
+description: This page explains how HotWax Commerce calculates Available-to-Promise (ATP) by syncing inventory across channels and factoring in safety stock, thresholds, and facility exclusions.
+---
+
 # Available to Promise
 
 HotWax Commerce integrates with ERP, POS, and WMS systems to provide a unified inventory view, ensuring stock levels are synchronized with platforms like Shopify. When calculating `Online Available to Promise` (ATP) for Shopify, HotWax Commerce considers more than just the quantity on hand (QOH). It also factors in safety stock, thresholds, reserved quantities, brokering queue orders, and excluded facilities` to avoid overselling scenarios.
