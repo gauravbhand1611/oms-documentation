@@ -11,8 +11,9 @@ The rule configuration can be adjusted by toggling the store pickup and shipping
 
 Each omnichannel configuration, safety stock, threshold, BOPIS, and shipping can have multiple rules to target specific product and facility selections. Since there are multiple rules for each configuration type, products and facilities may overlap among rules. When this occurs, the last rule in the sequence of rules overrides previous rules for a unique combination of products and facilities.
 
+### Example: Setting Thresholds for Shirts and Blue Shirts
 
-Consider a retailer who wants to set different inventory thresholds for general shirts and blue shirts. The retailer sets a threshold of 5 for all shirts, allowing a minimum of 5 shirts to be available as network-level buffer stock. However, for blue shirts, the retailer wants to increase the threshold to 10 to ensure enough is available for demand.
+Consider a retailer who wants to set different inventory thresholds for general shirts and blue shirts. The retailer sets a threshold of 5 for all shirts, allowing a minimum of 5 shirts to be available for ATP. However, for blue shirts, the retailer wants to increase the threshold to 10 to ensure there are enough available for demand.
 
 To achieve this, the retailer would create two rules:
 
@@ -25,9 +26,3 @@ To achieve this, the retailer would create two rules:
 These rules should be listed in the correct sequence to ensure that the specific blue shirt rule overrides the general shirt rule for blue shirts while maintaining the broader threshold for all other shirts.
 
 A balloon icon in the bottom right corner allows retailers to collapse or expand the inventory rules. Retailers can collapse the inventory rules to rearrange the sequencing of the inventory rules according to the cascade.
-
-{% embed url ="https://youtu.be/EYvFXLzoe88" %} Change Rule Sequence {% endembed %}
-
-
-
-

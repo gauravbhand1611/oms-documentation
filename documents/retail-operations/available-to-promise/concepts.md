@@ -1,3 +1,7 @@
+---
+description: This page explains how retailers use product tags and facility groups in HotWax Commerce to manage inventory and order fulfillment across multiple sales channels, including setting up Available-to-Promise (ATP) rules, facility participation, and channel-specific inventory configurations.
+---
+
 # Concepts
 
 ## Product Tags
@@ -72,7 +76,9 @@ This configuration ensures that the correct inventory from the appropriate facil
 
 ### Configuration Facility and Network-Level Product Settings
 
-The Configuration Facility is a virtual facility that plays a critical role when managing product-level ATP configurations at a network-wide scale. It is used to apply product-level settings such as inventory thresholds and product visibility across channels (e.g., Store Pickup and Shipping settings). This virtual facility ensures that certain network-wide configurations, like ATP thresholds, are applied consistently across all relevant sales channels.
+The Configuration Facility is a virtual facility designed to manage product-level ATP configurations across the network, ensuring consistent application of settings like inventory thresholds and product visibility across channels and from selected facilities (e.g., Store Pickup and Shipping). This network-level control is essential for maintaining an optimized omnichannel strategy.
+
+This config facility is particularly useful for BOPIS (Buy Online, Pickup In-Store) and shipping, allowing retailers to suppress the fulfillment of certain products from specific channels or locations. Not every product in the catalog should be available for shipping or BOPIS from stores. For example, special product launches or exclusive items may only be sold in-store. Retailers can disable store fulfillment or online inventory for select products from chosen channels and locations, providing granular control. This network-level approach ensures that orders are allocated efficiently and strategically across all relevant sales channels.
 
 ### Inventory Channel Setup
 
