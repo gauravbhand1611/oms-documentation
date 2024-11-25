@@ -76,7 +76,7 @@ Here's how you can create a Store Pickup Rule by Facility:
    To disable store pickup for this product at the specified facilities, turn off the toggle for **Store Pickup**. This ensures that the **Blue Shirt (Size M)** will no longer be available for in-store pickup at the selected locations.
 
 **Selecting Facilities:**  
-  Pickup rules apply to facility groups since etailers can have numerous facilities, and managing store pickup can be a dynamic process. To make this easier, it is recommended to create a **facility group** for the warehouses when setting up HotWax Commerce. Creating different facility groups based on **Facility Types** (e.g., warehouses vs. retail stores) is useful not only for store pickup but also for order routing.
+  Pickup rules apply to facility groups since retailers can have numerous facilities, and managing store pickup can be a dynamic process. To make this easier, it is recommended to create a **facility group** for the warehouses when setting up HotWax Commerce. Creating different facility groups based on **Facility Types** (e.g., warehouses vs. retail stores) is useful not only for store pickup but also for order routing.
 
    If you want to create a custom facility group, you can do so through the `Facility App`.  
    Once the facility group is created, navigate to the `ATP rule configuration` page. Click the `Add` button in the **Include** section of the facilities and add the relevant facility group. You can also use the **Exclude** feature to exclude specific facilities or select **All Facilities** if you want to disable fulfillment of the product from all locations.
