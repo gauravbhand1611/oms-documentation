@@ -4,7 +4,7 @@
 
 [Document Link](https://github.com/hotwax/oms-documentation/blob/94a76904f4ffd56f480a93f993a9bbf7a7fe300f/mephisto/Requirements/Transfer_Order_Flows/Transfer_Recom/sales_velocity_calc.md)
 
-This proposal outlines the development of a BI report to assist store managers in making data-driven inventory transfer decisions. Leveraging sales velocity analysis across all products and facilities, the report will identify high-demand and low-demand locations. 
+This BI report will assist store managers in making data-driven inventory transfer decisions. Leveraging sales velocity analysis across all products and facilities, the report will identify high-demand and low-demand locations. 
 
 ## Inventory Transfer Recommendation Creation
 
