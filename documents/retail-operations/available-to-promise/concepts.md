@@ -1,3 +1,7 @@
+---
+description: This page explains how retailers use product tags and facility groups in HotWax Commerce to manage inventory and order fulfillment across multiple sales channels, including setting up Available-to-Promise (ATP) rules, facility participation, and channel-specific inventory configurations.
+---
+
 # Concepts
 
 ## Product Tags
