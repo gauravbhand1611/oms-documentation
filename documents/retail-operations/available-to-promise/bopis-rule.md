@@ -1,3 +1,7 @@
+---
+description: This page explains how retailers use store pickup rules in HotWax Commerce to manage product availability across facilities and sales channels.
+---
+
 # Store Pickup Rule
 
 As discussed in previous sections, to enable store pickup for a facility, it is essential that the facility is added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. However, retailers may have specific business configurations, determining whether store pickup should be available for all products at a facility or only for certain products. If a facility is already included in the **PICKUP group**, rules only need to be created if the retailer wishes to exclude specific products from being available for in-store pickup.
