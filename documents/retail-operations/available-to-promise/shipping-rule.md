@@ -1,18 +1,18 @@
 # Shipping Rules
 
-As discussed previously, all facilities included in the `CHANNEL_FAC_GRP` type will have their inventory available for online sales. With the new shipping feature, retailers can configure inventory availability on a per-product, per-facility basis, allowing them to control which product’s inventory will be available for online sales from specific facilities and for specific channels.
+As discussed previously, all facilities included in the `CHANNEL_FAC_GRP` type will have their inventory available for online sales. With the new shipping feature, retailers can configure inventory availability on a per-product, per-facility basis, allowing them to control which product’s inventory will be suppressed for online sales from specific facilities and for specific channels.
 
-For example, retailers can choose to disable the availability of a blue shirt for shipping from `bUS` while keeping it available for fulfillment in Canada. Similarly, they can configure the availability of a product, such as the blue shirt, to restrict shipping from specific locations, such as stores, while keeping all other products available for shipping from the stores.
+For example, retailers can suppress the availability of a blue shirt for shipping from the US Shopify Store. Similarly, they can suppress a product, such as the blue shirt, to restrict shipping from specific locations, such as retail stores, while keeping all other products available for shipping from these retail stores.
 
 In HotWax Commerce, retailers can create different types of shipping rules:
 
 - Configure the capacity of online orders from a store.
-- Configure which products will be available for which inventory channel.
-- Configure whether shipping of a product will be available from a facility or not.
+- Configure which products will be suppressed from which channel.
+- Configure which product will be suppressed from which facility.
 
-In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer who has five retail locations, including three retail stores and two warehouses. They want to configure shipping rules for a specific product: a Blue Medium-sized shirt from the NotNaked brand. Let’s see how retailers can configure shipping rules for such scenarios.
+In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer that has five retail locations, including three retail stores and two warehouses, and sell their inventory across Canada and US. They want to configure shipping rules for a specific product: a Blue Medium-sized shirt from the NotNaked brand. Let’s see how retailers can configure shipping rules for such scenarios.
 
-## Facility Rule
+## Setting Maximum Order Capacity of a Facility
 
 Retailers often face operational constraints in their stores, as they must balance serving walk-in customers while fulfilling online orders. To prevent overwhelming the store's capacity, HotWax Commerce allows retailers to set a maximum order capacity for each store. Once this limit is reached, the brokering engine automatically routes additional orders to alternative facilities with available capacity.
 
@@ -40,51 +40,50 @@ For the warehouses, leave the setting as `Unlimited Capacity`, ensuring they can
 
 Once this setup is complete, the system will automatically redirect any additional orders beyond the store's daily capacity to other facilities with available capacity.
 
-## Shipping by Channel Rule
+## Suppressing Shipping for Channel
 
-In this scenario, the retailer wants to disable shipping for the Blue Shirt (Size M) across the `Shopify` channel, making it available exclusively for walk-in customers. This could be due to high demand in-store or a strategic decision to drive in-store traffic.
+In this scenario, the retailer wants to suppress shipping for the Blue Shirt (Size M) across the `Shopify` channel, making it available exclusively for walk-in customers. This could be due to high demand in-store or a strategic decision to drive in-store traffic.
 
-Here’s how to set up the rule to disable shipping for this specific product on the Shopify channel:
+Here’s how to set up the rule to suppress shipping for this specific product on the Shopify channel:
 
 **Create Rule**
 Navigate to the `Shipping` page within the `ATP App` and select the `Product and Channel` tab. Click the `Add` button to create a new rule.
 
 **Rule Name**
-Enter a descriptive name for the rule, such as “Disable Shipping on Shopify.” This name should clearly reflect the rule’s purpose.
+Enter a descriptive name for the rule, such as “Suppress Shipping on Shopify.” This name should clearly reflect the rule’s purpose.
 
 **Rule Configuration**
-After naming the rule, configure it by turning off the toggle for `Shipping`. This action ensures that the Blue Shirt (Size M) will not be available for shipping through the selected channel.
+After naming the rule, configure it by turning off the toggle for `Shipping`. This action ensures that the Blue Shirt (Size M) will be suppressed from the selected channel.
 
 **Selecting Channel**
-Choose the relevant channel configuration facility, as all network rules for the products are governed by these configuration facilities. Since we are disabling shipping of the Blue Shirt from all the channels while keeping other products available for shipping, turn on the toggle to select `all channels`. If you want to disable shipping for specific channels, such as the US Shopify store, select the relevant `US Config Facility` from the list of all available config facilities.
+Choose the relevant channel configuration facility, as all network rules for the products are governed by these configuration facilities. Since we are suppressing shipping of the Blue Shirt from all the channels, turn on the toggle to select `all channels`. If you want to suppress shipping for specific channels, such as the US Shopify store, select the relevant `US Config Facility` from the list of all available config facilities.
 
 **Selecting Products**
 To apply this rule to the Blue Shirt (Size M), you can use the `Tag` or `Feature` filters:
      - **Tags**: Add the “Blue Shirt” tag from your product catalog using the `Include` card.
      - **Features**: Alternatively, use the product feature filters to select “Color: Blue” and “Size: M,” ensuring the rule applies only to this specific variant of the Blue Shirt.
-You can also use the `Exclude` card to exclude specific products before disabling shipping. If you want to configure this setting for all the products, you don't have to include/exclude any of the products either by the tag or the feature.
+You can also use the `Exclude` card to exclude specific products before suppressing shipping. If you want to configure this setting for all the products, you don't have to include/exclude any of the products either by the tag or the feature.
 
 **Saving Configuration**
-Once you have selected the relevant product and configured the rule, click the `Save` button to apply the settings. This will finalize the rule, ensuring that the Blue Shirt (Size M) is no longer available for shipping on the Shopify channel, making it exclusive to walk-in customers at physical stores.
+Once you have selected the relevant product and configured the rule, click the `Save` button to apply the settings. This will finalize the rule, ensuring that the Blue Shirt (Size M) is suppressed for shipping on the Shopify channel, making it exclusive to walk-in customers at physical stores.
 
+## Suppressing Shipping from Facility
 
-## Shipping by Facility Rule
-
-In this scenario, the retailer wants to disable shipping for the Blue Shirt (Size M) from their retail stores due to higher demand from walk-in customers. Shipping for this product will remain available at other locations, ensuring that online orders can still be fulfilled from other facilities.
+In this scenario, the retailer wants to suppress shipping for the Blue Shirt (Size M) from their retail stores due to higher demand from walk-in customers. Shipping for this product will remain available at other locations, ensuring that online orders can still be fulfilled from other facilities.
 
 Here’s how to set up this rule:
 
 **Create Rule**
-Navigate to the `Shipping` page within the `ATP App` and select the `Product and Facility` tab. Click the `Add` button to create a new rule. This rule will allow the retailer to disable shipping for specific products at certain facilities while maintaining availability at others.
+Navigate to the `Shipping` page within the `ATP App` and select the `Product and Facility` tab. Click the `Add` button to create a new rule. This rule will allow the retailer to suppress shipping for specific products at certain facilities.
 
 **Rule Name**
-Enter a descriptive name for the rule, such as “Disable Shipping for Blue Shirt (Size M) from stores” to easily identify it later.
+Enter a descriptive name for the rule, such as “Suppress Shipping for Blue Shirt (Size M) from stores” to easily identify it later.
 
 **Rule Configuration**
-To disable shipping for this product at the specific facilities, turn off the toggle for `Shipping`. This ensures that the Blue Shirt (Size M) will no longer be shipped from the selected stores while keeping it available for shipping from other locations.
+To suppress shipping for this product at the specific facilities, turn off the toggle for `Shipping`. This ensures that the Blue Shirt (Size M) will be suppressed from selected stores.
 
 **Selecting Facilities**
-Shipping rules apply to `facility groups` since retailers can have numerous facilities, and managing shipping for all the facilities can be a time-consuming process. To make this easier, it is recommended to create a facility group for the stores when setting up HotWax Commerce. If such a facility group does not exist, you can create a custom facility group through the `Facility App`. Once the facility group is created, navigate to the `ATP rule` configuration page. Click the `Add` button in the `Include` section of the facilities and add the relevant facility group. You can also use the `Exclude` feature to exclude specific facilities or select `All Facilities` if you want to disable fulfillment of the product from all locations.
+Shipping rules apply to `facility groups` since retailers can have numerous facilities, and managing shipping for all the facilities can be a time-consuming process. To make this easier, it is recommended to create a facility group for the stores when setting up HotWax Commerce. If such a facility group does not exist, you can create a custom facility group through the `Facility App`. Once the facility group is created, navigate to the `ATP rule` configuration page. Click the `Add` button in the `Include` section of the facilities and add the relevant facility group. You can also use the `Exclude` feature to exclude specific facilities or select `All Facilities` if you want to suppress fulfillment of the product from all locations.
 
 5. **Selecting Products**
 To specify the Blue Shirt (Size M), you can either use `Tags` or `Features`:
@@ -92,4 +91,4 @@ To specify the Blue Shirt (Size M), you can either use `Tags` or `Features`:
      - **Features**: Filter products by selecting “Color: Blue” and “Size: M” to target only this specific variant of the product.
 
 6. **Saving Configuration**
-After configuring the rule, selecting the facilities, and choosing the product, click the `Save` button at the bottom right of the page. This finalizes the rule, ensuring that the Blue Shirt (Size M) is no longer available for shipping from the stores while keeping shipping available for other products from these stores.
+After configuring the rule, selecting the facilities, and choosing the product, click the `Save` button at the bottom right of the page. This finalizes the rule, ensuring that the Blue Shirt (Size M) is suppressed for shipping from the stores while keeping shipping available for other products from these stores.
