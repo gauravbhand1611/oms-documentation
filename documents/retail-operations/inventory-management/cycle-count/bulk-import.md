@@ -37,7 +37,7 @@ Here’s how users can utilize the Bulk Import feature within the `Cycle Count` 
 * This will open the `Bulk Upload` page.
 * Click on the `Upload` button and select the prepared CSV file containing the cycle count data.
 
-**5. ### Map CSV Fields to HotWax Fields**
+**5. Map CSV Fields to HotWax Fields**
 
 When using the Bulk Import feature in HotWax Commerce’s `Cycle Count` App, the system enables users to map fields from their uploaded CSV file to the relevant fields within HotWax Commerce. This flexible mapping process allows retailers to customize their cycle count creation based on their unique inventory and operational needs. Additionally, once mappings are completed, users can **save these mappings for future uploads**, eliminating the need to reconfigure them every time, further streamlining the process.
 
