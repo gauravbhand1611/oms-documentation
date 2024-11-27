@@ -43,6 +43,8 @@ In this section, we’ll demonstrate how to set up multiple inventory rules for 
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><ol><li><mark style="color:orange;"><strong>Filters</strong></mark></li></ol><p>Look up eligible facilities with inventory that can fulfill an order.</p></td><td></td><td></td></tr><tr><td><ol start="2"><li><mark style="color:orange;"><strong>Sorting</strong></mark></li></ol><p>Determine which eligible facility should be prioritized to allocate an order.</p></td><td></td><td></td></tr><tr><td><ol start="3"><li><mark style="color:orange;"><strong>Actions</strong></mark></li></ol><p>Define fallback actions for orders that cannot be fully allocated to a single facility. The actions also help configure the final steps if all previous rules don’t allocate inventory to orders.</p></td><td></td><td></td></tr></tbody></table>
 
+<figure><img src="../.gitbook/assets/chooseOptimallocations.png" alt=""><figcaption><p>Choose Optimal Facilties</p></figcaption></figure>
+
 ### Step 1: Finding Facilities with Inventory Using Filters
 
 The first step is to filter the available facilities to identify those capable of fulfilling an order. This filtering ensures that the brokering algorithm only considers facilities that meet the specific criteria retailers have set for fulfilling orders.
@@ -281,17 +283,11 @@ When an inventory rule is no longer needed, you can simply `Archive` it by chang
 
 * _<mark style="color:orange;">**Brokering runs**</mark>_ determine the frequency for routing order batches.
 
-<!---->
-
-* _<mark style="color:orange;">**Routing**</mark>_, also known as a routing rule, involves creating order batches based on filters for order lookup and sorting. It’s a flexible setup where you decide which orders should be grouped together.
-
-<!---->
+- _<mark style="color:orange;">**Routing**</mark>_, also known as a routing rule, involves creating order batches based on filters for order lookup and sorting. It’s a flexible setup where you decide which orders should be grouped together.
 
 * _<mark style="color:orange;">**Inventory rules**</mark>_, within each routing setup, you can define multiple inventory rules. If the first inventory rule doesn’t fully allocate inventory to an order, the brokering engine checks the next rules in sequence. Each rule helps look up facilities with the available inventory.
 
-<!---->
-
-* _<mark style="color:orange;">**After actions logic**</mark>_, when inventory rules are applied, specific decisions need to be made based on inventory availability. For example, an item may be unavailable at a single facility, or not available at all. Handling these cases may involve using options like order splitting or moving orders to the Unfillable Queue.
+- _<mark style="color:orange;">**After actions logic**</mark>_, when inventory rules are applied, specific decisions need to be made based on inventory availability. For example, an item may be unavailable at a single facility, or not available at all. Handling these cases may involve using options like order splitting or moving orders to the Unfillable Queue.
 
 </details>
 
