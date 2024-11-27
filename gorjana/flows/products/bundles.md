@@ -7,7 +7,7 @@ Gorjana sources its main bundles, also known as parent products, directly from S
 #### <a name="_1t8otou35s5y"></a>**2. Linking Components from NetSuite**
 Bundles in the OMS consist of individual components sourced from NetSuite. For example, the “Chloe Set” includes a necklace (SKU "161-105-G") and earrings (SKU "102-005-G"), each retaining its SKU whether sold individually or in a set, while the bundle has a unique SKU like "GS-184-102-G." The automated **IMP\_KIT\_COMP** job updates bundle data by importing component details from NetSuite. A "Saved Search" script generates a CSV of components, which is converted to JSON to map each component to its parent product using product IDs.
 <p align="center">
-  <img src="gorjana/.gitbook/assets/Kit_Product_Creation.jpeg" alt="Image Description">
+  <img src="https://github.com/prachi872/oms-documentation-1/blob/implementations-pub/gorjana/.gitbook/assets/Kit_Product_Creation.jpeg?raw=true" alt="Image Description">
 </p>
 
 ### **Why This Transformation is Needed**
