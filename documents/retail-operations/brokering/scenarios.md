@@ -168,8 +168,7 @@ Define the routing rules to ensure online orders are routed only to locations th
 Set up inventory rules that ensure fulfillment is done only from locations that meet the required stock levels.
 
 * **First Inventory Rule**:
-  * **Add Inventory Filter**: Apply the `Brokering Safety Stock` filter and define the minimum stock level required for inventory allocation. For example, you may set the minimum stock level for each item at 10 units.\
-    &#xNAN;_&#x46;or example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock._
+  * **Add Inventory Filter**: Apply the `Brokering Safety Stock` filter and define the minimum stock level required for inventory allocation. For example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock._
   * **Sort Inventory**: Sort the inventory by `Inventory Balance` to prioritize locations with higher stock levels.
   * **Action**: If no location can fulfill the entire order based on the first rule, select the option to `Send to Next Rule`.
 * **Second Inventory Rule**:
@@ -189,7 +188,7 @@ Set Brokering Safety Stock
 
 Retailers who manage stores with varying rent agreements, especially those in malls where rent is tied to sales revenue, need to optimize order fulfillment to avoid high rental costs. By prioritizing stores with fixed or lower rent costs for order fulfillment, retailers can increase profitability while still ensuring order fulfillment.
 
-### Prerequisites
+### Prerequisites for This Scenario
 
 * **Facility Group Setup**: Ensure that facility groups are already created for stores with fixed rental agreements.
   * **Fixed Rent Stores**: Group stores with fixed or lower rent costs.
@@ -229,42 +228,106 @@ Activate both inventory rules and the order routing batch. Ensure that the rules
 Store Fulfillment Based on Store Rent
 {% endembed %}
 
-## Scenario 9: Balancing Shipping Costs and Distance with Split Shipments
+## Scenario 7: Balancing Shipping Costs and Distance with Split Shipments
 
 Retailers need to balance the cost of shipping, which is influenced by both the distance and the number of shipments. The goal is to minimize shipping costs by considering when it's more cost-effective to ship from multiple locations versus a single distant location. This scenario is particularly relevant for retailers with stores and warehouses spread across a wide geographic area.
 
 ### Steps to Implement
 
-1. **Initial Proximity Check Without Partial Allocation:**
+#### Create Run
+Open the `Order Routing App` and create a new brokering run. Name it "Proximity and Cost-Based Shipping" to reflect that the routing will balance shipping costs with distance and split shipments when necessary. Set up a regular schedule for the run to ensure continuous order processing.
 
-* When creating the first inventory rule, apply a proximity filter with a specified distance (e.g., 100 miles) without allowing partial allocation.
-* This rule ensures that orders are fulfilled from a single location if all items are available within the specified distance, minimizing the shipping distance.
+#### Create Routing Rules
+Define routing rules to balance shipping costs and minimize the distance of fulfillment.
 
-2. **Partial Shipment Within Proximity:**
+- **Add Order Filter**: Apply the `Brokering Queue` filter to ensure that orders from the correct queue are routed.
+- **Sort Orders**: Sort orders by `Order Date` to ensure older orders are fulfilled first.
 
-* Create a second inventory rule that allows partial shipment within the same proximity filter (e.g., 100 miles).
-* This rule ensures that if no single location within the specified distance has all items, the order can be split and fulfilled from multiple nearby locations.
+#### Create Inventory Rules
+Define a series of four inventory rules to balance shipping costs with proximity and partial allocation options.
 
-3. **Fallback to Distant Locations Without Splitting:**
+- **First Inventory Rule**:  
+  - **Add Inventory Filter**: Apply a `Proximity Filter` to limit the search to locations within 100 miles.
+  - **Sort Inventory**: Sort the inventory based on `Proximity` to prioritize the nearest locations.
+  - **Action**: Disable partial allocation to ensure that the entire order is fulfilled from a single location within 100 miles. If no location can fulfill the order, send to the next rule.
 
-* In the third inventory rule, remove the proximity filter and disable partial shipment.
-* This rule ensures that if the items are not available within the initial proximity, the entire order is shipped from a distant location that can fulfill the order completely, minimizing the number of shipments.
+- **Second Inventory Rule**:  
+  - **Add Inventory Filter**: Apply the same `Proximity Filter` of 100 miles.
+  - **Sort Inventory**: Sort the inventory based on `Proximity`.
+  - **Action**: Enable partial allocation to allow the order to be split across multiple locations within the 100-mile proximity. If the order cannot be fully allocated, send to the next rule.
 
-4. **Include All Stores:**
+- **Third Inventory Rule**:  
+  - **Remove Proximity Filter**: This rule expands the search to distant locations without any proximity constraints.
+  - **Sort Inventory**: Sort the inventory based on `Proximity`.
+  - **Action**: Disable partial allocation to require the entire order to be fulfilled from a single, distant location. If no single distant location can fulfill the order, send to the next rule.
 
-* The final inventory rule includes all stores with partial shipment allowed.
-* This rule ensures that if the order cannot be fulfilled completely from distant locations, it is split across all available locations to prevent unfulfilled orders.
+- **Fourth Inventory Rule**:  
+  - **No Inventory Filter**: Allow all available locations to be included.
+  - **Sort Inventory**: Sort the inventory based on `Proximity`.
+  - **Action**: Enable partial allocation to allow the order to be split across all available locations. If the order still cannot be fulfilled, send to the unfillable queue.
 
-5. **Activation and Scheduling**:
-
-* **Activate Inventory Rules**:
-  * Ensure all the inventory rules are activated to be in effect.
-* **Schedule Brokering Runs**:
-  * Schedule the brokering runs to execute these inventory rules at regular intervals, maintaining efficient order fulfillment.
+#### Activation and Scheduling
+Activate all inventory rules and ensure that the order routing batch is active. Schedule the brokering runs to execute at regular intervals, ensuring a balance between shipping cost and distance while also handling split shipments when required.
 
 {% embed url="https://youtu.be/K59lNhHtKMM" %}
 Balance Shipping Cost and Distance with Split Shipments
 {% endembed %}
+
+## Scenario 8: Managing Order Splitting for Grouped Items (Kits and Gift Items)
+
+Retailers often face scenarios where certain items in an order must be shipped together, while other items can be shipped separately. For example, if a customer orders a frame and lenses along with sunglasses, the frame and lenses must be shipped together, but the sunglasses can be shipped from a different location. In such cases, items like the frame and lenses are grouped to ensure they are always shipped together.
+
+HotWax Commerce allows retailers to manage these scenarios by disabling the splitting of grouped items while keeping the option to split other items in the order. This ensures that grouped items, which are critical to be shipped together, are handled appropriately, while other non-grouped items can still be split for faster fulfillment.
+
+#### Create Run  
+Set up a brokering run in the `Order Routing App` and label it “Grouped and Split Shipments” to manage orders containing both grouped and non-grouped items.
+
+#### Create Routing Rules  
+Set up routing rules to manage the overall flow of orders.
+
+- **Add Order Filter**: Apply the `Brokering Queue` filter to prioritize orders correctly.
+- **Add Inventory Filters**: Since this scenario does not require specific inventory filters, no filter needs to be added here.
+- **Sort Orders**: Sort by `Order Date` to process the oldest orders first.
+
+#### Create Inventory Rules  
+Define three inventory rules that control how grouped and non-grouped items are allocated, with specific actions for each rule.
+
+- **First Inventory Rule**:  
+  - **Add Inventory Filters**: Since no specific inventory filters are needed for this scenario, no filters are applied.
+  - **Sort Inventory**: Sort inventory based on `Proximity` to prioritize fulfillment from the closest locations.
+  - **Action**: Disable both `Partial Fulfillment` and `Split Grouped Items` to ensure that the entire order, including grouped items, is fulfilled from a single location. If no location can fulfill the order, send it to the next rule.
+
+- **Second Inventory Rule**:  
+  - **Add Inventory Filters**: No filters are applied here as well.
+  - **Sort Inventory**: Continue sorting by `Proximity` to ensure the closest locations are prioritized.
+  - **Action**: Enable `Partial Fulfillment` to allow non-grouped items to be split across multiple locations but keep `Split Grouped Items` disabled to ensure grouped items stay together. If unavailable, send the order to the next rule.
+
+- **Third Inventory Rule**:  
+  - **Add Inventory Filters**: Again, no filters need to be applied here.
+  - **Sort Inventory**: Sort by `Proximity` again to prioritize fulfillment from nearby locations.
+  - **Action**: Enable both `Partial Fulfillment` and `Split Grouped Items` to allow the entire order, including grouped items, to be split across multiple locations. If no fulfillment is possible, send the order to the unfillable queue.
+
+#### 4. Activation and Scheduling  
+Activate all inventory rules and ensure the brokering run is scheduled to process orders at regular intervals. This setup ensures that grouped items like kits are handled together while non-grouped items can be split for faster delivery, based on the retailer’s fulfillment strategy.
+
+{% embed url="https://youtu.be/bPBdwJZ6Tm8" %}
+Managing Order Splitting
+{% endembed %}
+
+## Scenario 9: Setting Maximum Order Capacity for Stores
+
+Retailers often face operational constraints in their stores, as they must balance serving walk-in customers while fulfilling online orders. To prevent overwhelming the store's capacity, HotWax Commerce allows retailers to set a maximum order capacity for each store. Once this limit is reached, the brokering engine automatically routes additional orders to alternative facilities with available capacity.
+The process for setting the Maximum Order Capacity for stores is consistent across the [Facility](https://docs.hotwax.co/documents/system-admins/administration/facilities/configure-fulfillment-capacity), [Fulfillment](https://docs.hotwax.co/documents/store-operations/orders/fulfillment/fulfillment-setting-page#online-order-fulfillment), and [ATP](./../available-to-promise/shipping-rule.md#setting-maximum-order-capacity-of-a-facility) apps. For setting max order capacity for a facility from these apps, you can follow the same steps to configure the capacity:
+
+1. For each app (Facility, Fulfillment, ATP), locate the capacity settings for the store.
+2. Click on the capacity chip on the facilities` order capacity card.
+3. You will see the following options:
+   - **Unlimited Capacity**
+   - **No Capacity**
+   - **Custom Capacity**
+4. Select `Custom Capacity` and set the maximum limit (e.g., 10 orders per day) for each facility.
+
+{% hint style="info" %} During peak hours, store managers need the flexibility to turn off fulfillment from their stores to manage capacity effectively. In such cases, they can set the order capacity to `No Capacity`. {% endhint %}
 
 ## Scenario 10: Optimizing Order Splitting by Setting Shipment Thresholds
 
@@ -277,10 +340,10 @@ To address this issue, HotWax Commerce allows merchandisers to set threshold val
 ### Steps to Implement
 
 1. **Navigate to Store Settings**
-   * **Access Store Settings**: In the HotWax Commerce Order Management System, navigate to the Product Store page.
-   * **Add New Setting**: Go to the store settings section and click on **"Add Settings."**
+   * **Access Store Settings**: In the HotWax Commerce Order Management System, navigate to the `Product Store` page.
+   * **Add New Setting**: Go to the store settings section and click on `Add Settings`.**
 2. **Set Brokering Shipment Threshold**
-   * **Select Brokering Threshold**: In the settings submenu, select **"Brokering Shipment Threshold."**
+   * **Select Brokering Threshold**: In the settings submenu, select `Brokering Shipment Threshold`.
    * **Define Threshold Value**: Enter the desired shipment threshold value that will prevent splitting orders below this amount. For example, set the threshold at $100 to ensure that only orders above this value are eligible for splitting across multiple locations.
 3. **Save Settings**
    * **Finalize the Configuration**: Save the store settings to apply the brokering threshold across the Product Store.
@@ -291,25 +354,6 @@ With this threshold in place, orders will only be split if the value of the item
 Set Brokering Shipment Threshold
 {% endembed %}
 
-## Scenario 11: Managing Order Splitting for Grouped Items (Kits and Gift Items)
 
-Retailers often face scenarios where certain items in an order must be shipped together, while other items can be shipped separately. For example, if a customer orders a frame and lenses along with sunglasses, the frame and lenses must be shipped together, but the sunglasses can be shipped from a different location. In such cases, items like the frame and lenses are grouped to ensure they are always shipped together.
 
-HotWax Commerce allows retailers to manage these scenarios by disabling the splitting of grouped items while keeping the option to split other items in the order. This ensures that grouped items, which are critical to be shipped together, are handled appropriately, while other non-grouped items can still be split for faster fulfillment.
 
-### Steps to Implement
-
-1. **Create Inventory Rule for Order Batch**
-   * **Access Inventory Rules**: Begin by creating an inventory rule in the HotWax Commerce Order Routing App.
-2. **Configure Partial Allocation Settings**
-   * **Navigate to Partial Allocation**: In the inventory rule settings, locate the **"Partially Available"** card. This section allows you to configure how items are allocated when they are not fully available at a single location.
-   * **Enable Partial Allocation**: Turn on the toggle for **"Partial Order Allocation"** to allow the order to be split across multiple locations for items that are not grouped.
-3. **Disable Splitting for Grouped Items**
-   * **Toggle Off for Grouped Items**: Ensure that the toggle for **"Partially Allocate Grouped Items"** is turned off. This setting ensures that orders for grouped items, such as kit products and gift items are not split and are shipped together from a single location.
-4. **Optional: Enable Splitting for Specific Scenarios**
-   * **Enable Grouped Item Splitting**: If the retailer sells items that are grouped but can be split under certain circumstances (e.g., gifting items), they can turn on the toggle for **"Partially Allocate Grouped Items."**
-   * **Best Practice**: It is recommended first to create an inventory rule with grouped item splitting disabled and then follow it with a rule where grouped item splitting is enabled. This layered approach ensures that grouped items are handled appropriately based on the retailer's preferences.
-
-{% embed url="https://youtu.be/bPBdwJZ6Tm8" %}
-Managing Order Splitting
-{% endembed %}
