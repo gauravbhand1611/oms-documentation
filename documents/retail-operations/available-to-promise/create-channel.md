@@ -38,3 +38,24 @@ To link facilities to an inventory channel:
 
 **Example**:  
 If a Canadian retailer has two Shopify stores—one in the US and another in Canada—and they want to compute ATP for the US store using only their warehouses, they would link the warehouses to the inventory channel. This would create a facility group that includes only the warehouses.
+
+## Publishing ATP to a Channel
+
+Retailers managing multiple online sales channels must decide which facility group will publish its inventory to which channel. This setup ensures that only selected facilities' inventory will be made available on the defined sales channels. Follow the steps below to publish inventory to your Shopify store using the Available-to-Promise (`ATP`) app.
+
+### Steps to Publish Inventory:
+
+1. **Access the `ATP` App**
+Navigate to the `ATP` app within HotWax Commerce and locate the `Inventory Channel` page.
+
+2. **Go to the `Publish` Tab**
+Once on the `Inventory Channel` page, click on the `Publish` tab to proceed. This tab will display a list of Shopify stores connected to the product store.
+
+3. **Select Run Time and Frequency**
+Here, you can choose the `Run Time` and the `Frequency` (daily, weekly, etc.) to push inventory updates to Shopify. This setting helps define when the inventory will be published.
+
+4. **Choose the Inventory Channel**
+From the dropdown menu, select the inventory channel from which you want to publish. This corresponds to the facility group whose inventory will be pushed to the Shopify store.
+
+5. **Save and Schedule the Job**
+After selecting the appropriate options, click `Save Changes` to finalize the settings. This will schedule the inventory publishing job as per the selected time and frequency.
