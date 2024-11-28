@@ -3,7 +3,7 @@ Gorjana aims to make shopping easier and more enjoyable for customers by offerin
 ### <a name="_5st0nlzeiktv"></a>**Creating Bundles at Gorjana**
 Previously, Gorjana used the Bundle App to manage bundle products, but with HotWax Commerce as their OMS, they now handle bundles seamlessly without the need for the app.
 #### <a name="_528yrqr0ttw5"></a>**1. Sourcing the Main Bundle from Shopify**
-Gorjana sources its main bundles, also known as parent products, directly from Shopify. In Shopify, bundles and finished goods are identical, so the OMS uses the same product import job, **IMPORT\_PRODUCTS,** to handle both seamlessly. Bundles are tagged as “Kit” in Shopify, with a unique SKU like any other product. Kit components, such as the earrings and necklace in a “Chloe Set” bundle, are tagged as “Kit Components.”
+Gorjana sources its main bundles, also known as parent products, directly from Shopify. In Shopify, bundles and finished goods are identical, so the OMS uses the same product import job, **IMPORT\_PRODUCTS,** to handle both seamlessly. Bundles are tagged as “Kit” in Shopify, with a unique SKU. Kit components, such as the earrings and necklace in a “Chloe Set” bundle, are tagged as “Kit Components.”
 #### <a name="_1t8otou35s5y"></a>**2. Linking Components from NetSuite**
 Bundles in the OMS consist of individual components sourced from NetSuite. For example, the “Chloe Set” includes a necklace (SKU "161-105-G") and earrings (SKU "102-005-G"), each retaining its SKU whether sold individually or in a set, while the bundle has a unique SKU like "GS-184-102-G." The automated **IMP\_KIT\_COMP** job updates bundle data by importing component details from NetSuite. A "Saved Search" script generates a CSV of components, which is converted to JSON to map each component to its parent product using product IDs.
 <p align="center">
@@ -11,8 +11,7 @@ Bundles in the OMS consist of individual components sourced from NetSuite. For e
 </p>
 
 ### **Why This Transformation is Needed**
-
-NetSuite uses a unique Product ID, the "Internal ID," while the OMS relies on the OFBiz Product ID, which NetSuite doesn't recognize. To bridge this, the OMS stores the NetSuite Product ID in the *GoodIdentification* entity. NiFi maps the NetSuite ID to the OFBiz ID, ensuring seamless data synchronization.
+Netsuite and Hotwax use Internal ID and Product ID respectively as product identifiers. HotWax stores the Internal ID in the GoodIdentification entity and then maps it to the Product ID. To bridge this, the OMS stores the NetSuite Product ID in the *GoodIdentification* entity. NiFi maps the NetSuite ID to the OFBiz ID, ensuring seamless data synchronization.
 
 As part of Gorjana’s system integration, here’s an example of how the Kit Product data would look :
 
