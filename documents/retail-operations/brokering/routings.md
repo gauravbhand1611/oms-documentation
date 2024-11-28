@@ -55,7 +55,7 @@ To prioritize which the routing rule is applied first:
 * Click and drag the chip on the top right of the routing card.
 * The sequence number on the card will automatically update based on the card's position.
 
-Continuing our example, we’ll position <mark style="color:orange;">**Same-day/Next-day orders**</mark> before <mark style="color:orange;">**Standard orders**</mark> to ensure the higher-priority order batch is routed first.
+Continuing our example, we’ll position <mark style="color:orange;">**Same-day/Next-day orders**</mark> before <mark style="color:orange;">**Standard orders**</mark> so that the higher-priority order batch is routed first.
 
 {% embed url="https://youtu.be/hB9QLCMXDEw" %}
 Sequence Routing Rules
@@ -71,18 +71,18 @@ Sequence Routing Rules
 
 ### Step 1: Creating a Batch of Orders Using Filters
 
-The first step in setting up routing rules is to create a batch of orders using specific filters. This ensures that the brokering algorithm correctly groups and prioritizes orders for each routing rule, allowing for more targeted fulfillment strategies.
+The first step in setting up routing rules is to create a batch of orders using specific filters. This helps the brokering algorithm group and prioritize orders accurately for each routing rule, enabling more targeted and effective fulfillment strategies.
 
 <mark style="color:orange;">**Here are the available filters to create order batches:**</mark>
 
 <figure><img src="../.gitbook/assets/Orderfilters.png" alt="" width="563"><figcaption><p>Order Batch Filters</p></figcaption></figure>
 
 * **Origin facility group:** This parameter allows retailers to filter orders based on the [facility group ](https://docs.hotwax.co/documents/system-admins/administration/introduction/facilities-app#facility-groups)from which they originated. For example, many times when walk-in customers cannot find their preferred items in store, store associates place the order on their behalf. These are known as Send Sale orders. In this scenario, the origin facility becomes the specific physical location. If a retailer wants all Send Sale orders from specific facilities to be routed differently, then they can apply this filter to create a batch of orders and proceed to create their routing.
-* **Order priority:** Not all orders carry the same level of urgency. In HotWax Commerce, orders can be assigned a priority level of high, medium, or low. By default, orders are set to "medium priority," but retailers can adjust the order priority in HotWax Commerce as needed. By filtering orders based on priority, retailers can ensure that the most critical ones (high priority orders) are routed before any less urgent orders.
+* **Order priority:** Not all orders carry the same level of urgency. In HotWax Commerce, orders can be assigned a priority level of high, medium, or low. By default, orders are set to "medium priority," but retailers can adjust the order priority in HotWax Commerce as needed. By filtering orders based on priority, the most critical ones (high-priority orders) are routed before less urgent ones.
 * **Promise date:** Pre-orders or backorders can be filtered based on their promise date. Retailers may choose to broker orders that have passed their promise date first, ensuring timely fulfillment of overdue orders.
 * **Queue:** The parking location to pick orders from. HotWax Commerce has [virtual queues](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-parkings#default-parkings) to park orders that are not yet brokered to a facility. Retailers can filter by queue type (Brokering Queue, Pre-order/Backorder Parking, Rejected Parking, or Unfillable Parking) to decide which orders should be brokered to available inventory.
   * All orders that are not pre-orders or backorders in HotWax Commerce and are waiting for the inventory are in the `Brokering Queue`. In most of the cases this will be the filter you will use to make your order batch.
-* **Sales channel:** Channel where the order was captured. Different sales channels (eCommerce or marketplaces) may require different routing strategies. Orders can be filtered by channel to ensure the right group of orders is picked for routing based on channel-specific fulfillment rules, reducing the risk of penalties or delays in fulfilling orders from marketplaces like Amazon.
+* **Sales channel:** Channel where the order was captured. Different sales channels (eCommerce or marketplaces) may require different routing strategies. Orders can be filtered by channel so that the right group of orders is picked for routing based on channel-specific fulfillment rules, reducing the risk of penalties or delays in fulfilling orders from marketplaces like Amazon.
 * **Shipment method type:** SLA promised to the customer. When customers choose specific [shipping methods](https://docs.hotwax.co/documents/system-admins/fulfillment/shipping-methods/shippinggateways), like expedited or same-day delivery, these orders must be prioritized differently. Retailers can use this filter to create a batch of orders based on the chosen shipping method, ensuring that orders requiring fast shipping are processed first.
 
 Continuing with our example, let’s take a closer look at how to apply the right filters and sorting options for <mark style="color:orange;">**Same-day/Next day**</mark> routing rule.
@@ -101,7 +101,7 @@ Applying Filters
 
 Since our objective is to prioritize orders with tight SLAs, we are not selecting additional filters like order priority, promise date, and sales channel.
 
-**Outcome?** With these filters in place, the brokering algorithm will specifically look for orders in the `Brokering Queue` that need same-day or next-day delivery. This ensures that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
+**Outcome?** With these filters in place, the brokering algorithm will specifically look for orders in the `Brokering Queue` that need same-day or next-day delivery. This means that urgent orders are prioritized in your batch for quicker inventory allocation and fulfillment.
 
 {% hint style="info" %}
 If you are not selecting any filter then all orders in all parkings will be attempted for brokering.
@@ -127,7 +127,7 @@ After filtering, the next step is choosing the Sorting criteria to prioritize th
 Applying Sorting
 {% endembed %}
 
-1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**Same-day/Next-day order**</mark> batch we will choose the <mark style="color:orange;">**"Shipping Method”**</mark> sorting. This will ensure all same-day orders are sequenced first following by all the next day orders.
+1. Navigate to the `Sort` option. Continuing our example, for the <mark style="color:orange;">**Same-day/Next-day order**</mark> batch we will choose the <mark style="color:orange;">**"Shipping Method”**</mark> sorting so that all same-day orders are sequenced first following by all the next day orders.
 2. Finally, click on the `Save` icon in the right most corner to save your **configured routing rule**.
 
 If you are choosing multiple sorting options, you can prioritize them into the desired sequence using drag and drop.
@@ -147,7 +147,7 @@ Applying Filters and Sorting for Standard Orders Batch
 1. From the **filters** option, we will choose the <mark style="color:orange;">"</mark><mark style="color:orange;">**Queue"**</mark> and <mark style="color:orange;">"</mark><mark style="color:orange;">**Shipment method type"**</mark> filters.
 
 * From the <mark style="color:orange;">**“Queue”**</mark> dropdown we will choose the <mark style="color:orange;">**“Brokering Queue”**</mark> to include all shipping orders that are waiting for the inventory allocation.
-* Now, from the <mark style="color:orange;">**"Shipping Method"**</mark> dropdown we will choose the <mark style="color:orange;">**“Standard”**</mark> shipping method to include only standard shipping orders. This ensures that we only include those orders in the `Brokering Queue` that have the <mark style="color:orange;">**"Standard"**</mark> shipping method.
+* Now, from the <mark style="color:orange;">**"Shipping Method"**</mark> dropdown we will choose the <mark style="color:orange;">**“Standard”**</mark> shipping method to include only standard shipping orders present in the `Brokering Queue`.
 
 2. From the **sorting** option, even if we don’t choose any option all standard orders are sequenced based on their order date that is FIFO basis ensuring older orders are picked first for inventory allocation.
 
