@@ -21,16 +21,16 @@ To set up routing rules for marketplace orders, first, select the previously cre
 
 In the next step, apply the necessary configurations:
 
-* **Add Order Filter:** Use the Sales Channel filter to include only marketplace orders, ensuring orders from Shopify or other marketplaces are grouped and brokered separately from other channels.
-* **Sort Orders:** Set the sorting criteria to Order Date. This ensures that older marketplace orders are prioritized for inventory allocation, following a first-in, first-out (FIFO) approach.
+* **Order Filter:** Use the Sales Channel filter to include only marketplace orders, ensuring orders from Shopify or other marketplaces are grouped and brokered separately from other channels.
+* **Order Sort:** Set the sorting criteria to Order Date. This ensures that older marketplace orders are prioritized for inventory allocation, following a first-in, first-out (FIFO) approach.
 
 #### Create Inventory Rule
 
 To create inventory rules for marketplace orders, first ensure that the appropriate routing rule for marketplace orders is selected, then click on Add Inventory Rule. Once the inventory rule is created, follow these steps:
 
-* **Add Inventory Filter:** Apply the Facility Group filter and select the group for warehouses only. This ensures that the inventory from warehouse locations is considered for the routing.
-* **Sort Inventory:** Sort the inventory by proximity to the customer’s delivery address. This helps minimize shipping costs by prioritizing inventory that is closer to the destination.
-* **Define Actions:** If inventory is unavailable, toggle on Partial Fulfillment to allow order splitting. For completely unavailable inventory, select Send Orders to Queue and assign them to the `Unfillable Queue` for further processing.
+* **Inventory Filter:** Apply the Facility Group filter and select the group for warehouses only. This ensures that the inventory from warehouse locations is considered for the routing.
+* **Inventory Sort:** Sort the inventory by proximity to the customer’s delivery address. This helps minimize shipping costs by prioritizing inventory that is closer to the destination.
+* **Actions:** If inventory is unavailable, toggle on Partial Fulfillment to allow order splitting. For completely unavailable inventory, select Send Orders to Queue and assign them to the `Unfillable Queue` for further processing.
 
 <figure><img src="../.gitbook/assets/Marketplaceorders.png" alt=""><figcaption><p>Marketplace Orders Routing</p></figcaption></figure>
 
@@ -52,23 +52,23 @@ To create a new brokering run for eCommerce orders, open the `Order Routing App`
 
 To configure the routing rules for eCommerce orders, first, ensure that the **eCommerce Order Routing** run is selected.
 
-* **Add Order Filter**: Use the `Sales Channel filter` to select only eCommerce orders. This will group and broker orders specifically from your eCommerce channel, keeping them separate from orders placed through other sales channels.
-* **Sort Orders**: Set the sorting criteria to `Order Date`. This ensures that older orders are processed first, following a first-in, first-out (FIFO) model for order fulfillment.
+* **Order Filter**: Use the `Sales Channel filter` to select only eCommerce orders. This will group and broker orders specifically from your eCommerce channel, keeping them separate from orders placed through other sales channels.
+* **Order Sort**: Set the sorting criteria to `Order Date`. This ensures that older orders are processed first, following a first-in, first-out (FIFO) model for order fulfillment.
 
 #### Create Inventory Rules
 
 Now, create inventory rules to route orders through the appropriate facilities. First, make sure that the correct **eCommerce Order Routing** rule is selected, then click on `Add Inventory Rule`.
 
-* **First Inventory Rule (Warehouses)**\
+* **First Inventory Rule for Warehouses**\
   The first rule ensures that orders are fulfilled from warehouse locations:
-  * **Add Inventory Filter**: Apply the `Facility Group filter` and select the group for **Warehouses** only, ensuring that orders are initially routed through the warehouse locations for fulfillment.
-  * **Sort Inventory**: Sort by `proximity` to the customer’s delivery address to help minimize shipping costs, prioritizing fulfillment from warehouses closest to the destination.
-  * **Define Actions**: If inventory is unavailable at the warehouses, set the rule to send the order to the next inventory rule, allowing the system to route the order to available retail stores. If you want to allocate partially available inventory from the warehouse to the orders, turn on the toggle for Prtial Fulfillment.
-* **Second Inventory Rule (Stores)**\
+  * **Inventory Filter**: Apply the `Facility Group filter` and select the group for **Warehouses** only, ensuring that orders are initially routed through the warehouse locations for fulfillment.
+  * **Inventory Sort**: Sort by `proximity` to the customer’s delivery address to help minimize shipping costs, prioritizing fulfillment from warehouses closest to the destination.
+  * **Actions**: If inventory is unavailable at the warehouses, set the rule to send the order to the next inventory rule, allowing the system to route the order to available retail stores. If you want to allocate partially available inventory from the warehouse to the orders, turn on the toggle for Prtial Fulfillment.
+* **Second Inventory Rule for Stores**\
   The second rule is triggered when the warehouse is unable to fulfill the order:
-  * **Add Inventory Filter**: Apply the `Facility Group filter` and select the group for **Stores**, allowing the system to route orders through retail store locations as a secondary option.
+  * **Inventory Filter**: Apply the `Facility Group filter` and select the group for **Stores**, allowing the system to route orders through retail store locations as a secondary option.
   * **Sort Inventory**: Sort by `proximity` to the customer’s delivery address, helping to minimize shipping costs by routing orders to the nearest store.
-  * **Define Actions**: If the inventory is also unavailable in the stores, send the order to the `Unfillable Queue` for further processing, ensuring that orders that cannot be fulfilled are properly handled. Allow partial fulfillment by turning on the toggle to allow order splitting and ensure available items are fulfilled.
+  * **Actions**: If the inventory is also unavailable in the stores, send the order to the `Unfillable Queue` for further processing, ensuring that orders that cannot be fulfilled are properly handled. Allow partial fulfillment by turning on the toggle to allow order splitting and ensure available items are fulfilled.
 
 #### Activate and Schedule
 
@@ -92,16 +92,16 @@ Start by creating a new brokering run for rejected orders in the `Order Routing 
 
 Once the run is created, set up the routing rules for re-routing rejected orders.
 
-* **Add Queue Filter**: Apply the `Queue Filter` in the order batch settings and select the `Rejected Order Item` queue. This ensures that only rejected orders are included in this batch.
-* **Sort Orders**: Set the sorting criteria to `Order Date`, ensuring that the oldest rejected orders are reprocessed first, following a first-in, first-out (FIFO) method.
+* **Order Filter**: Apply the `Queue Filter` in the order batch settings and select the `Rejected Order Item` queue. This ensures that only rejected orders are included in this batch.
+* **Order Sort**: Set the sorting criteria to `Order Date`, ensuring that the oldest rejected orders are reprocessed first, following a first-in, first-out (FIFO) method.
 
 #### Create Inventory Rule
 
 Now, create an inventory rule that routes orders to the best available location.
 
-* **Add Inventory Filter**: If you are checking the inventory at all locations, without any additional filters, you don't have to add inventory rule here.
-* **Sort Inventory**: Sort by `proximity` to the customer’s delivery address to minimize shipping costs.
-* **Define Actions**: If inventory is unavailable across all locations, select one of the following options:
+* **Inventory Filter**: If you are checking the inventory at all locations, without any additional filters, you don't have to add inventory rule here.
+* **Inventory Sort**: Sort by `proximity` to the customer’s delivery address to minimize shipping costs.
+* **Actions**: If inventory is unavailable across all locations, select one of the following options:
   * If you want to split the order to allocate the inventory for the items available, turn on the toggle for partial rejection.
   * If you have another inventory rule for further allocation, select send to `Next Rule` to attempt routing based on the next rule.
   * If no further rules exist, select send to `Unfillable Queue` to handle orders manually or through alternative processes.
@@ -126,19 +126,16 @@ To start, open the `Order Routing App` and create a new brokering run for proxim
 
 Once the run is created, define the routing rules to prioritize fulfillment based on customer proximity.
 
-* **Add Order Filter**: Apply the `Queue Filter` to select the `Brokering Queue`. By default, orders from all queues will be included. If you need to focus on a specific queue, select accordingly.
-* **Sort Orders**: Sort the orders by `Order Date`. This ensures that older orders are given priority in the routing process, following a first-in, first-out (FIFO) approach.
+* **Order Filter**: Apply the `Queue Filter` to select the `Brokering Queue`. By default, orders from all queues will be included. If you need to focus on a specific queue, select accordingly.
+* **Order Sort**: Sort the orders by `Order Date`. This ensures that older orders are given priority in the routing process, following a first-in, first-out (FIFO) approach.
 
 #### Create Inventory Rule
 
 Now, configure the inventory rule to allocate stock based on proximity.
 
-* **Add Inventory Filter**: Apply the `Proximity Filter` with a specified distance (e.g., 50 miles). This ensures that orders are routed to locations within the defined proximity of the customer’s delivery address.
-* **Sort Inventory**: Sort the inventory by `Proximity`. This ensures that the nearest fulfillment locations are prioritized for order allocation.
-* **Define Actions**: Define actions if the inventory is not found for the order in this inventory rule.
-  * **Allow Partial Fulfillment**- If you want to split the order to allocate the inventory within 50 miles for the items available, turn on the toggle for partial rejection.
-  * **Send to Next Rule**: If you want to broaden the search beyond 50 miles, select the option to send the order to the next inventory rule.
-  * **Send to Unfillable Queue**: If you want to limit fulfillment to locations within 50 miles and no inventory is available, send the order to the `Unfillable Queue` for further action.
+* **Inventory Filter**: Apply the `Proximity Filter` with a specified distance (e.g., 50 miles). This ensures that orders are routed to locations within the defined proximity of the customer’s delivery address.
+* **Inventory Sort**: Sort the inventory by `Proximity`. This ensures that the nearest fulfillment locations are prioritized for order allocation.
+* **Actions**: If you want to split the order to allocate the inventory within 50 miles for the items available, turn on the toggle for partial rejection. In case of inventory unavailability, you can choose to send the order to the next rule if you want to broaden the search beyond 50 miles, select the option to send the order to the next inventory rule. Alternatively, if you want to limit fulfillment to locations within 50 miles and no inventory is available, send the order to the `Unfillable Queue` for further action.
 
 #### Activate and Schedule
 
@@ -160,20 +157,20 @@ Open the `Order Routing App` to begin creating a new brokering run. Name the run
 
 Define the routing rules to ensure online orders are routed only to locations that meet the minimum stock levels for each item.
 
-* **Add Order Filter**: Apply the `Brokering Queue` filter to route orders from the appropriate queue.
-* **Sort Orders**: Sort orders by `Order Date` to prioritize older orders in the routing process, ensuring a first-in, first-out (FIFO) approach.
+* **Order Filter**: Apply the `Brokering Queue` filter to route orders from the appropriate queue.
+* **Orde Sort**: Sort orders by `Order Date` to prioritize older orders in the routing process, ensuring a first-in, first-out (FIFO) approach.
 
 #### Create Inventory Rules
 
 Set up inventory rules that ensure fulfillment is done only from locations that meet the required stock levels.
 
 * **First Inventory Rule**:
-  * **Add Inventory Filter**: Apply the `Brokering Safety Stock` filter and define the minimum stock level required for inventory allocation. For example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock._
-  * **Sort Inventory**: Sort the inventory by `Inventory Balance` to prioritize locations with higher stock levels.
+  * **Inventory Filter**: Apply the `Brokering Safety Stock` filter and define the minimum stock level required for inventory allocation. For example, if the `Brokering Safety Stock` is set to greater than 10, the inventory will only be allocated if the store has more than 10 units of that item available. This ensures that walk-in customers have access to sufficient stock._
+  * **InventorySort **: Sort the inventory by `Inventory Balance` to prioritize locations with higher stock levels.
   * **Action**: If no location can fulfill the entire order based on the first rule, select the option to `Send to Next Rule`.
 * **Second Inventory Rule**:
-  * **Add Inventory Filter**: No specific filter is selected, as inventory can be allocated from any available location.
-  * **Sort Inventory**: Sort the inventory by `Inventory Balance` to prioritize locations with the most available stock.
+  * **Inventory Filter**: No specific filter is selected, as inventory can be allocated from any available location.
+  * **Inventory Sort**: Sort the inventory by `Inventory Balance` to prioritize locations with the most available stock.
   * **Action**: If partial fulfillment is allowed, enable `Allow Partial Fulfillment` to split the order between multiple locations. If partial allocation is not an option, select `Send to Unfillable Queue`.
 
 #### Activation and Scheduling
@@ -190,7 +187,7 @@ Retailers who manage stores with varying rent agreements, especially those in ma
 
 ### Prerequisites for This Scenario
 
-* **Facility Group Setup**: Ensure that [facility groups are created](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups) for stores with fixed rental agreements.
+Ensure that [facility groups are created](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups) for stores with fixed rental agreements.
   * **Fixed Rent Stores**: Group stores with fixed or lower rent costs.
   * **All Stores**: Group all stores to use as a fallback for order fulfillment when necessary.
 
@@ -204,20 +201,20 @@ Open the `Order Routing App` and set up a new brokering run. Name the run someth
 
 Define routing rules to prioritize cost-effective fulfillment locations.
 
-* **Add Order Filter**: Apply the `Brokering Queue` filter to route orders from the appropriate queue.
-* **Sort Orders**: Sort orders by `Order Date` to prioritize older orders in the routing process.
+* **Order Filter**: Apply the `Brokering Queue` filter to route orders from the appropriate queue.
+* **Order Sort**: Sort orders by `Order Date` to prioritize older orders in the routing process.
 
 #### Create Inventory Rules
 
 Set up inventory rules to ensure fulfillment is prioritized based on store rent agreements.
 
 * **First Inventory Rule**:
-  * **Add Inventory Filter**: Select the facility group created for stores with fixed or lower rent costs.
-  * **Sort Inventory**: Sort inventory by `Inventory Balance` to prioritize locations with sufficient stock levels in these low-rent stores.
+  * **Inventory Filter**: Select the facility group created for stores with fixed or lower rent costs.
+  * **Inventory**: Sort inventory by `Inventory Balance` to prioritize locations with sufficient stock levels in these low-rent stores.
   * **Action**: If no location can fulfill the order based on this rule, select the option to `Send to Next Rule`.
 * **Second Inventory Rule**:
-  * **Add Inventory Filter**: Select the facility group that includes all stores to broaden the search to any available location.
-  * **Sort Inventory**: Sort inventory by `Inventory Balance` to prioritize locations with the most available stock.
+  * **Inventory Filter**: Select the facility group that includes all stores to broaden the search to any available location.
+  * **Inventory Sort**: Sort inventory by `Inventory Balance` to prioritize locations with the most available stock.
   * **Action**: If partial fulfillment is allowed, enable `Allow Partial Fulfillment` to split the order between multiple locations. If partial allocation is not an option, select `Send to Unfillable Queue`.
 
 #### Activation and Scheduling
@@ -240,31 +237,31 @@ Open the `Order Routing App` and create a new brokering run. Name it "Proximity 
 #### Create Routing Rules
 Define routing rules to balance shipping costs and minimize the distance of fulfillment.
 
-- **Add Order Filter**: Apply the `Brokering Queue` filter to ensure that orders from the correct queue are routed.
-- **Sort Orders**: Sort orders by `Order Date` to ensure older orders are fulfilled first.
+- **Order Filter**: Apply the `Brokering Queue` filter to ensure that orders from the correct queue are routed.
+- **Order Sort**: Sort orders by `Order Date` to ensure older orders are fulfilled first.
 
 #### Create Inventory Rules
 Define a series of four inventory rules to balance shipping costs with proximity and partial allocation options.
 
 - **First Inventory Rule**:  
-  - **Add Inventory Filter**: Apply a `Proximity Filter` to limit the search to locations within 100 miles.
-  - **Sort Inventory**: Sort the inventory based on `Proximity` to prioritize the nearest locations.
-  - **Action**: Disable partial allocation to ensure that the entire order is fulfilled from a single location within 100 miles. If no location can fulfill the order, send to the next rule.
+  - **Inventory Filter**: Apply a `Proximity Filter` to limit the search to locations within 100 miles.
+  - **Inventory Sort**: Sort the inventory based on `Proximity` to prioritize the nearest locations.
+  - **Action**: Disable partial allocation to ensure that the entire order is fulfilled from a single location within 100 miles. If no location can fulfill the order, send to the `next rule`.
 
 - **Second Inventory Rule**:  
-  - **Add Inventory Filter**: Apply the same `Proximity Filter` of 100 miles.
-  - **Sort Inventory**: Sort the inventory based on `Proximity`.
-  - **Action**: Enable partial allocation to allow the order to be split across multiple locations within the 100-mile proximity. If the order cannot be fully allocated, send to the next rule.
+  - **Inventory Filter**: Apply the same `Proximity Filter` of 100 miles.
+  - **Inventory Sort**: Sort the inventory based on `Proximity`.
+  - **Action**: Enable partial allocation to allow the order to be split across multiple locations within the 100-mile proximity. If the order cannot be fully allocated, send it to the `next rule`.
 
 - **Third Inventory Rule**:  
-  - **Remove Proximity Filter**: This rule expands the search to distant locations without any proximity constraints.
-  - **Sort Inventory**: Sort the inventory based on `Proximity`.
-  - **Action**: Disable partial allocation to require the entire order to be fulfilled from a single, distant location. If no single distant location can fulfill the order, send to the next rule.
+  - **Inventory Filter**: Remove the inventory filter to expand the search to distant locations without any proximity constraints.
+  - **Inventory Sort**: Sort the inventory based on `Proximity`.
+  - **Action**: Disable partial allocation to require the entire order to be fulfilled from a single, distant location. If no single distant location can fulfill the order, send it to the `next rule`.
 
 - **Fourth Inventory Rule**:  
-  - **No Inventory Filter**: Allow all available locations to be included.
-  - **Sort Inventory**: Sort the inventory based on `Proximity`.
-  - **Action**: Enable partial allocation to allow the order to be split across all available locations. If the order still cannot be fulfilled, send to the unfillable queue.
+  - **Inventory Filter**: Allow all available locations to be included.
+  - **Inventory Sort**: Sort the inventory based on `Proximity`.
+  - **Action**: Enable partial allocation to allow the order to be split across all available locations. If the order still cannot be fulfilled, send it to the `unfillable queue`.
 
 #### Activation and Scheduling
 Activate all inventory rules and ensure that the order routing batch is active. Schedule the brokering runs to execute at regular intervals, ensuring a balance between shipping cost and distance while also handling split shipments when required.
@@ -285,26 +282,25 @@ Set up a brokering run in the `Order Routing App` and label it “Grouped and Sp
 #### Create Routing Rules  
 Set up routing rules to manage the overall flow of orders.
 
-- **Add Order Filter**: Apply the `Brokering Queue` filter to prioritize orders correctly.
-- **Add Inventory Filters**: Since this scenario does not require specific inventory filters, no filter needs to be added here.
-- **Sort Orders**: Sort by `Order Date` to process the oldest orders first.
+- **Order Filter**: Apply the `Brokering Queue` filter to prioritize orders correctly.
+- **Order Sort**: Sort by `Order Date` to process the oldest orders first.
 
 #### Create Inventory Rules  
 Define three inventory rules that control how grouped and non-grouped items are allocated, with specific actions for each rule.
 
 - **First Inventory Rule**:  
-  - **Add Inventory Filters**: Since no specific inventory filters are needed for this scenario, no filters are applied.
-  - **Sort Inventory**: Sort inventory based on `Proximity` to prioritize fulfillment from the closest locations.
+  - **Inventory Filters**: Since no specific inventory filters are needed for this scenario, no filters are applied.
+  - **Inventory Sort**: Sort inventory based on `Proximity` to prioritize fulfillment from the closest locations.
   - **Action**: Disable both `Partial Fulfillment` and `Split Grouped Items` to ensure that the entire order, including grouped items, is fulfilled from a single location. If no location can fulfill the order, send it to the next rule.
 
 - **Second Inventory Rule**:  
-  - **Add Inventory Filters**: No filters are applied here as well.
-  - **Sort Inventory**: Continue sorting by `Proximity` to ensure the closest locations are prioritized.
+  - **Inventory Filters**: No filters are applied here as well.
+  - **Inventory Sort**: Continue sorting by `Proximity` to ensure the closest locations are prioritized.
   - **Action**: Enable `Partial Fulfillment` to allow non-grouped items to be split across multiple locations but keep `Split Grouped Items` disabled to ensure grouped items stay together. If unavailable, send the order to the next rule.
 
 - **Third Inventory Rule**:  
-  - **Add Inventory Filters**: Again, no filters need to be applied here.
-  - **Sort Inventory**: Sort by `Proximity` again to prioritize fulfillment from nearby locations.
+  - **Inventory Filters**: Again, no filters need to be applied here.
+  - **Inventory Sort**: Sort by `Proximity` again to prioritize fulfillment from nearby locations.
   - **Action**: Enable both `Partial Fulfillment` and `Split Grouped Items` to allow the entire order, including grouped items, to be split across multiple locations. If no fulfillment is possible, send the order to the unfillable queue.
 
 #### 4. Activation and Scheduling  
