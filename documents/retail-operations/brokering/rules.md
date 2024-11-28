@@ -8,9 +8,9 @@ As discussed, <mark style="color:orange;">**inventory rules**</mark> help orches
 
 ## Why Use Multiple Inventory Rules?
 
-Multiple inventory rules are essential because a single rule may not allocate inventory to all orders in a batch. If the first rule does not allocate inventory to some orders, the brokering engine will proceed to the next rule in sequence. This multi-step process continues through each rule until all possible options are exhausted.
+Multiple inventory rules are required because a single rule may not allocate inventory to all orders in a batch. If the first rule does not allocate inventory to some orders, the brokering engine will proceed to the next rule in sequence. This multi-step process continues through each rule until all possible options are exhausted.
 
-Using multiple inventory rules ensures that if primary locations lack the required inventory, secondary locations can be considered. This layered approach increases the likelihood of successful allocation by exploring various fulfillment options.
+Using multiple inventory rules means that if primary locations lack the required inventory, secondary locations can be considered. This layered approach increases the likelihood of successful allocation by exploring various fulfillment options.
 
 For example, let’s continue with our example of **Same-day/Next-day batch**, assuming there are 1,500 orders:
 
@@ -22,7 +22,7 @@ For example, let’s continue with our example of **Same-day/Next-day batch**, a
 
 Only 2 orders remain unfillable, moving to `Unfillable Parking` (configurable action) for rerouting as inventory becomes available.
 
-By applying these inventory rules progressively, the brokering engine ensures high fulfillment rates, even for large, time-sensitive order batches, while maintaining inventory accuracy to minimize unfillable orders. This setup maximizes the potential for each order to be fulfilled without delay, utilizing the most optimal locations first and expanding options only as needed.
+Applying these inventory rules progressively increases the likelihood of fulfilling each order without delay by prioritizing the most optimal locations first and expanding options only when needed.
 
 In the next sections, we will learn how to create these multiple inventory rules for different order batches.
 
@@ -47,7 +47,7 @@ In this section, we’ll demonstrate how to set up multiple inventory rules for 
 
 ### Step 1: Finding Facilities with Inventory Using Filters
 
-The first step is to filter the available facilities to identify those capable of fulfilling an order. This filtering ensures that the brokering algorithm only considers facilities that meet the specific criteria retailers have set for fulfilling orders.
+The first step is to filter the available facilities to identify those capable of fulfilling an order, so the brokering algorithm considers only facilities that meet the specific criteria set by retailers for order fulfillment.
 
 For example, a retailer may want to use both stores and warehouses for high-priority orders, such as same-day and next-day deliveries. While, for standard orders, they may prefer to rely only on warehouses, avoiding the use of stores. These preferences can be configured using inventory rules to address these types of cases effectively.
 
@@ -60,7 +60,7 @@ Retailers can set up facility groups in HotWax’s `Facility App`. Creating faci
 <figure><img src="../.gitbook/assets/Inventoryfilters.png" alt="" width="563"><figcaption><p>Inventory Filters</p></figcaption></figure>
 
 * **Turn off the facility order limit check:** Retailers can set[ fulfillment capacity](https://docs.hotwax.co/documents/system-admins/administration/facilities/configure-fulfillment-capacity) in HotWax, allowing them to define the maximum number of orders a facility can fulfill in a day. Disabling the facility order limit filter gives retailers the flexibility to bypass the defined order limit for a facility, which is especially useful during peak times or high-demand periods. For example, if a retailer turns off this limit, orders can continue to be assigned to that facility even after its maximum capacity has been reached.
-* **Brokering safety stock:** Different from online ATP safety stock, [brokering safety stock](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) defines the minimum stock required for an order to be brokered to a facility. For example, if a retailer sets a brokering safety stock level of 10 units, only facilities with at least 10 units of the item in stock will be eligible to fulfill the order. This prevents over-allocation and ensures that safety stock levels are maintained for unforeseen demand.
+* **Brokering safety stock:** Different from online ATP safety stock, [brokering safety stock](https://docs.hotwax.co/documents/retail-operations/orders/brokering/scenarios) defines the minimum stock required for an order to be brokered to a facility. For example, if a retailer sets a brokering safety stock level of 10 units, only facilities with at least 10 units of the item in stock will be eligible to fulfill the order. This prevents over-allocation and maintains safety stock levels for unforeseen demand.
 * **Facility Group:** Custom grouping of locations. Grouping certain facilities allows retailers to simplify their decision-making. For example, as discussed above, there can be a dedicated facility group of only warehouses, one group can have both stores and warehouses or there can also be slow-moving or lower-demand facilities can be grouped together and allotted for non-urgent orders, while high-demand facilities are reserved for time-sensitive fulfillment.
 * **Proximity:** The distance between a fulfillment facility and the customer’s address. When a facility address is added in HotWax, its latitude and longitude are automatically saved. Similarly, HotWax saves the latitude and longitude for customer addresses as well. With both locations’ coordinates stored, the brokering engine can compare them to identify warehouses and stores within the defined proximity that have available inventory. For example, a retailer can set a 200-mile proximity limit for next-day delivery orders, ensuring that only inventory within 200 miles of the customer’s address is used. This approach supports faster, cost-effective delivery while meeting SLA requirements.
 
@@ -80,23 +80,23 @@ First Inventory Rule Filters
 2. Click `Save` to save the rule name.
 3. Configure filters, select the right filters to narrow down eligible facilities. For the <mark style="color:orange;">**“Same-day/Next-day orders” routing rule**</mark><mark style="color:orange;">,</mark> we will choose <mark style="color:orange;">**“Facility Group**</mark><mark style="color:orange;">”</mark> and <mark style="color:orange;">**“Proximity”**</mark><mark style="color:orange;">.</mark>
 
-* **Facility Group:** Select <mark style="color:orange;">**“Warehouses”**</mark> from the dropdown. This ensures that only warehouses with available inventory are eligible. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
+* **Facility Group:** Select <mark style="color:orange;">**“Warehouses”**</mark> from the dropdown. This limits eligibility to only warehouses with available inventory. **Why did we choose warehouse locations?** Warehouses handle larger inventory volumes and can better support online order fulfillment compared to stores, which often focus on walk-in customers.
 *   **Proximity:** Set the distance to **100 miles**, so the rule includes only those warehouses within a 100-mile radius of the customer’s location.
 
-    This ensures that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
+    This means that only nearby warehouses are considered, optimizing delivery speed and meeting SLA requirements.
 
-If no warehouse within 100 miles has inventory available then in the next inventory rule we’ll expand the search to include both stores and warehouses. This multi-step approach ensures that the brokering engine first considers optimal warehouse locations before looking at stores, maximizing efficiency.
+If no warehouse within 100 miles has inventory available, the next inventory rule expands the search to include both stores and warehouses. This multi-step approach allows the brokering engine to consider optimal warehouse locations first before evaluating stores, maximizing efficiency.
 
 ### Step 2: Sequencing Eligible Facilities Using Sorting
 
-Once the eligible facilities are filtered, the next step is to set up sorting criteria to prioritize these locations based on specific requirements. Sorting determines the sequence in which the brokering engine evaluates facilities, enabling it to choose the most optimal location for fulfillment. For example, if 10 facilities meet the filtering criteria, sorting ensures that the brokering engine selects the best-suited one based on your fulfillment goals, whether that’s faster delivery, balanced workload, or efficient inventory usage.
+Once the eligible facilities are filtered, the next step is to set up sorting criteria to prioritize these locations based on specific requirements. Sorting determines the sequence in which the brokering engine evaluates facilities. For example, if 10 facilities meet the filtering criteria, sorting enables the brokering engine to choose the most optimal one based on your fulfillment goals, such as faster delivery, balanced workload, or efficient inventory usage.
 
 <mark style="color:orange;">**Here are the available sorting options:**</mark>
 
 <figure><img src="../.gitbook/assets/Inventorysorting.png" alt="" width="563"><figcaption><p>Inventory Sorting</p></figcaption></figure>
 
 * **Proximity:** Retailers can sort inventory allocation based on the distance between the customer's shipping address and the facility. This sorting method prioritizes inventory located closer to the customer, helping reduce shipping times and costs, especially for expedited orders or those requiring same-day or next-day delivery.
-* **Facility order limit:** In order to ensure that the workload at facilities is balanced, facilities can also be sorted on how much fulfillment capacity they have left.
+* **Facility order limit:** To maintain a balanced workload at facilities, they can also be sorted based on the remaining fulfillment capacity.
 * **Inventory balance:** Inventory can be sorted based on stock levels, ensuring that orders are routed to the facility with the highest available inventory of the ordered item. This method helps to deplete stock from high-inventory locations first, ensuring better stock rotation and preventing stock outs at key locations.
 * **Custom sequence:** Allows full manual override to the sequence at which facilities are attempted. Retailers can set a custom sequence of facilities, defining a specific order in which locations should be considered for order routing. For example, if a retailer wants to prioritize fulfillment from underperforming stores with lower foot traffic, they can create a custom sequence that favors those stores, helping to balance inventory across all locations. Custom sequences can also be useful for managing seasonal inventory or routing orders to specific regions.
 
@@ -122,7 +122,7 @@ Once filters and sorting have been defined, the brokering engine identifies the 
 
 There may also be cases where, when the brokering engine tries to allocate inventory to an order, inventory for some items is available while for others it is not, or if available, it may be at different locations. In such cases, we can specify actions to **allow or disallow partial allocation**. This action serves as one of the final attempts to allocate inventory to orders, ideally included in the last inventory rule.
 
-After-action logic helps ensure that all orders are accurately managed, whether through partial fulfillment or rerouting at a later time, moving unfillable orders to a different queue.
+After-action logic helps manage orders accurately, whether through partial fulfillment or rerouting at a later time, by moving unfillable orders to a different queue.
 
 <mark style="color:orange;">**Here are the available actions:**</mark>
 
@@ -135,7 +135,7 @@ After-action logic helps ensure that all orders are accurately managed, whether 
 
 * **Move items to queue:** Transfer unallocated order items to the selected queue for further processing. When inventory couldn’t be allocated to an order but further allocation attempts should not be made, the order can be moved to a specific queue. This allows for holding such unfillable orders until the appropriate action can be taken. For example, unfillable orders can be moved to the `Unfillable Parking`**,** where they can later be rerouted through a different routing strategy. Ideally, this should be part of your final inventory rule.
 * **Next rule:** Automatically move unallocated order items to the <mark style="color:orange;">**next inventory rule**</mark> in the sequence. When using multiple rules, this is the **default action**, allowing the brokering engine to attempt inventory allocation through each rule in sequence.
-* **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on the inventory availability, retailers may want to add an auto cancel date on the order, to ensure that they do not remain in the fulfillment pipeline for too long. Ideally, this should be part of your final inventory rule.
+* **Auto cancel days:** Specify the number of days to automatically cancel orders that could not be allocated. Based on inventory availability, retailers may want to set an auto-cancel date for orders to prevent them from staying in the fulfillment pipeline for too long. Ideally, this should be part of the final inventory rule.
 * **Clear auto cancel days:** This option is helpful when an auto-cancel date has been applied to an order, but incoming inventory is expected to fulfill it. For example, if unfillable items were moved to an `Unfillable Parking`with an auto-cancel date, and inventory is now expected to arrive, clearing the auto-cancellation date during routing can prevent automatic cancellation. This allows the brokering engine to reroute the order once inventory arrives, maximizing fulfillment opportunities. It's also important to note that applying or clearing an auto-cancel date will apply to all unfillable orders. If there’s an exception and you want to perform an action for a single order only, you should do so directly in HotWax OMS. You can move the specific order to a new queue, like `Unfillable Hold Parking`, and then remove its auto-cancel date.
 
 <mark style="color:orange;">**Deciding actions to choose the most optimal facility:**</mark>
@@ -151,7 +151,7 @@ First Inventory Rule Actions
 By default partial fulfillment is disabled and move items to next rule is selected in actions.
 {% endhint %}
 
-Great! With your first inventory rule in place, creating additional inventory rules will further broaden the facility lookup and ensure optimal inventory allocation for same-day and next-day orders.
+Great! With your first inventory rule in place, creating additional inventory rules will expand the facility lookup and optimize inventory allocation for same-day and next-day orders.
 
 ### Configuring Additional Inventory Rules for Same-Day and Next-Day Orders
 
@@ -176,7 +176,7 @@ Second Inventory Rule
 We are not using the Facility Group filter here to include all fulfillment locations (stores and warehouses) within the 100-mile radius.
 {% endhint %}
 
-* **Sorting:** Under sorting, we will choose proximity to ensure the closest facility with the available inventory is selected.
+* **Sorting:** Under sorting, we will choose proximity so that the closest facility with the available inventory is selected.
 * **Action:** For any items in this batch that remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
 For the **third inventory rule**, we will further expand facility Lookup with **"Proximity**" Filter:
@@ -197,7 +197,7 @@ Fourth Inventory Rule
 {% endembed %}
 
 * Click on the `Add Inventory Rule` button and give the new rule a distinct name, such as <mark style="color:orange;">**“Check all locations".**</mark>
-* **Filter:** We <mark style="color:orange;">**will not apply any filter**</mark>, allowing the brokering engine to consider all facilities, regardless of distance. This rule ensures that every facility (store or warehouse) is looked up to fulfill unallocated orders.
+* **Filter:** We <mark style="color:orange;">**will not apply any filter**</mark>, allowing the brokering engine to consider all facilities, regardless of distance. This rule allows every facility (store or warehouse) to be considered for fulfilling unallocated orders.
 * **Sorting:** We will sort facilities by <mark style="color:orange;">**"Proximity"**</mark>, so the closest location is selected.
 * **Action:** For any items in this batch that still remain unfillable, we will set the action as <mark style="color:orange;">**“Move unavailable items”**</mark> to the <mark style="color:orange;">**“Next Rule.”**</mark>
 
@@ -215,7 +215,7 @@ Final inventory rule
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **Draft** to **Active** to make it operational. To do this, click on **Draft** and select **Active,** or revert an active rule back to **Draft** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, ensure the [Brokering Run](brokeringruns.md) itself is set to **Active** so that it can begin processing orders as scheduled.
+Once all rules are active, and your routing is fully configured, set the [Brokering Run](brokeringruns.md) to **Active** so that orders can be processed as scheduled.
 {% endhint %}
 
 ### Add Special Handling for Standard Orders

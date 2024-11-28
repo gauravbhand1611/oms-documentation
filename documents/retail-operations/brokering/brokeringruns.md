@@ -55,7 +55,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 4. **Add a description**
    * After naming the run, we need to add a description to provide further context. Descriptions help in clarifying the intent behind each brokering run, making it easier for team members to understand its specific function.
-   * Click on a specific `Run` to open its details and now navigate to the Description card and add description that best describes your run.
+   * Click on a specific `Run` to open its details and now navigate to the Description card and add details that best describes your run.
    * For example, if there is a single brokering run "Everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
 <figure><img src="../.gitbook/assets/Rundetails.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
@@ -72,13 +72,13 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 * For our <mark style="color:orange;">**Everyday order routing**</mark> brokering run we can directly choose the predefined "_Hourly_" frequency and save it.
 
 {% hint style="warning" %}
-To ensure your brokering run is operational, you need to change its status from **Draft** to **Active.**
+You need to change the brokering run's status from **Draft** to **Active** to make it operational. 
 
 By default, new brokering runs are set to **Draft**. Simply select **Active** from the dropdown to activate it, or revert an active run back to **Draft** if adjustments are needed.
 
 Ideally, activate the brokering run only once you've fully configured your routing, inventory rules, and other settings.
 {% endhint %}
 
-Understanding how to view, schedule, and manage brokering runs is essential for optimizing your order routing strategies.
+Understanding how to view, schedule, and manage brokering runs is important for optimizing your order routing strategies.
 
 Now, let's understand about [routings](routings.md) within a brokering run.
