@@ -60,8 +60,8 @@ Choose the relevant channel configuration facility, as all network rules for the
 
 **Selecting Products**
 To apply this rule to the Blue Shirt (Size M), you can use the `Tag` or `Feature` filters:
-     - **Tags**: Add the “Blue Shirt” tag from your product catalog using the `Include` card.
-     - **Features**: Alternatively, use the product feature filters to select “Color: Blue” and “Size: M,” ensuring the rule applies only to this specific variant of the Blue Shirt.
+   - **Tags**: Add the “Blue Shirt” tag from your product catalog using the `Include` card.
+   - **Features**: Alternatively, use the product feature filters to select “Color: Blue” and “Size: M,” ensuring the rule applies only to this specific variant of the Blue Shirt.
 You can also use the `Exclude` card to exclude specific products before suppressing shipping. If you want to configure this setting for all the products, you don't have to include/exclude any of the products either by the tag or the feature.
 
 **Saving Configuration**
@@ -83,7 +83,7 @@ Enter a descriptive name for the rule, such as “Suppress Shipping for Blue Shi
 To suppress shipping for this product at the specific facilities, turn off the toggle for `Shipping`. This ensures that the Blue Shirt (Size M) will be suppressed from selected stores.
 
 **Selecting Facilities**
-Shipping rules apply to `facility groups` since retailers can have numerous facilities, and managing shipping for all the facilities can be a time-consuming process. To make this easier, it is recommended to create a facility group for the stores when setting up HotWax Commerce. If such a facility group does not exist, you can create a custom facility group through the `Facility App`. Once the facility group is created, navigate to the `ATP rule` configuration page. Click the `Add` button in the `Include` section of the facilities and add the relevant facility group. You can also use the `Exclude` feature to exclude specific facilities or select `All Facilities` if you want to suppress fulfillment of the product from all locations.
+Shipping rules apply to `facility groups` since retailers can have numerous facilities, and managing shipping for all the facilities can be a time-consuming process. To make this easier, it is recommended to create a facility group for the stores when setting up HotWax Commerce. If such a facility group does not exist, you can create a custom facility group through the `Facility App`. Once the facility group is created, navigate to the `ATP rule configuration` page. Click the `Add` button in the `Include` section of the facilities and add the relevant facility group. You can also use the `Exclude` feature to exclude specific facilities or select `All Facilities` if you want to suppress fulfillment of the product from all locations.
 
 5. **Selecting Products**
 To specify the Blue Shirt (Size M), you can either use `Tags` or `Features`:
