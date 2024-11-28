@@ -8,7 +8,7 @@ As discussed, <mark style="color:orange;">**brokering runs**</mark> serve as the
 
 ### Why Use Multiple Brokering Runs?
 
-Multiple brokering runs allow retailers to set different frequencies for each batch of order. For example, high-priority orders can be routed more frequently (every 5 minutes), ensuring that urgent orders receive immediate attention, while standard or less time-sensitive orders are routed at more moderate intervals (hourly).
+Multiple brokering runs allow retailers to set different frequencies for each batch of orders. For example, high-priority orders can be routed more frequently (every 5 minutes), so urgent orders receive immediate attention, while standard or less time-sensitive orders are routed at more moderate intervals (hourly).
 
 ### Single vs. Multiple Brokering Runs
 
