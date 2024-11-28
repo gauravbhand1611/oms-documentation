@@ -103,7 +103,6 @@
   * [Set Individual Safety Stock](inventory/safety-stock/set-individual-safety-stock.md)
   * [Set Facility-Wise Safety Stock](inventory/safety-stock/facility-wise-safety-stock.md)
 * [Re-Order Feature](inventory/reorder-channel.md)
-* [Multichannel Inventory Setup](inventory/multichannel-inventory-setup.md)
 * [Troubleshooting](inventory/troubleshooting/README.md)
   * [View Inventory Log](inventory/troubleshooting/view-inventory-log.md)
   * [Inventory Synchronization Errors](inventory/troubleshooting/inventory-synchronization.md)
