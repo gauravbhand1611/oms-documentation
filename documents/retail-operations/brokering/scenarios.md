@@ -40,13 +40,13 @@ Retailers often prefer to fulfill eCommerce orders from their warehouse first, b
 
 ### Pre-Requisites for This Scenario:
 
-To implement this scenario, you need two key facility groups in HotWax Commerce. First, create a **Warehouses** facility group under the Brokering\_Group subtype, which will include all your warehouse locations. Second, create a **Stores** facility group, also under the Brokering\_Group subtype, to ensure that all retail store locations are available for routing when necessary. These facility groups ensure clear separation of inventory between warehouses and retail stores.
+To implement this scenario, you need to [create two facility groups](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups) in HotWax Commerce. First, create a **Warehouses** facility group under the Brokering_Group subtype, which will include all your warehouse locations. Second, create a **Stores** facility group, also under the Brokering_Group subtype, to ensure that all retail store locations are available for routing when necessary. These facility groups ensure a clear separation of inventory between warehouses and retail stores.
 
 ### Steps to Implement
 
 #### Create Run
 
-To create a new brokering run for eCommerce orders, open the `Order Routing App`. If your system manages multiple product stores, be sure to select the relevant store to ensure the correct routing. Click on `New Run`, and give it a clear name such as "eCommerce Order Routing." This naming convention will help easily identify the run for future use. In the description field, add something like "Prioritizing warehouse fulfillment, with store fallback" to clarify the purpose of the run for the rest of your team. Finally, navigate to the `Scheduler card` to set the run's frequency. This ensures that eCommerce orders are processed in a timely manner.
+To create a new brokering run for eCommerce orders, open the `Order Routing App`. If your system manages multiple product stores, be sure to select the relevant store from the bottom-left switcher to ensure the correct routing. Click on `New Run`, and give it a clear name such as "eCommerce Order Routing." This naming convention will help easily identify the run for future use. In the description field, add something like "Prioritizing warehouse fulfillment, with store fallback" to clarify the purpose of the run for the rest of your team. Finally, navigate to the `Scheduler card` to set the run's frequency. This ensures that eCommerce orders are processed in a timely manner.
 
 #### Create Routing Rules
 
@@ -190,7 +190,7 @@ Retailers who manage stores with varying rent agreements, especially those in ma
 
 ### Prerequisites for This Scenario
 
-* **Facility Group Setup**: Ensure that facility groups are already created for stores with fixed rental agreements.
+* **Facility Group Setup**: Ensure that [facility groups are created](https://docs.hotwax.co/documents/system-admins/administration/facilities/manage-groups) for stores with fixed rental agreements.
   * **Fixed Rent Stores**: Group stores with fixed or lower rent costs.
   * **All Stores**: Group all stores to use as a fallback for order fulfillment when necessary.
 
