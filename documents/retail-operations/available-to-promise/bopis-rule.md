@@ -1,17 +1,17 @@
 ---
-description: This page explains how retailers use store pickup rules in HotWax Commerce to manage product availability across facilities and sales channels.
+description: This page explains how retailers use store pickup rules in HotWax Commerce to suppress product availability across facilities and sales channels.
 ---
 
 # Store Pickup Rule
 
-As discussed in previous sections, to enable store pickup for a facility, it is essential that the facility is added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. However, retailers may have specific business configurations, determining whether store pickup should be available for all products at a facility or only for certain products. If a facility is already included in the **PICKUP group**, rules only need to be created if the retailer wishes to exclude specific products from being available for in-store pickup.
+As discussed in previous sections, to enable store pickup for a facility, the facility must be added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. However, if a retailer wants to suppress store pickup of a product from a facility or a channel, they can create ATP rules for that.
 
 In HotWax Commerce, retailers can create different types of store pickup rules:
 - Configure which facilities will participate in-store pickup.
 - Configure which products will be suppressed for store pickup from which inventory channel.
 - Configure which products will be suppressed for store pickup from which facility.
 
-In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer who has five retail locations, including three retail stores and two warehouses. They want to configure store pickup rules for a specific product: a **Blue Medium-sized shirt from the NotNaked brand**. Let’s see how retailers can configure store pickup rules for this scenario.
+In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer who has five retail locations, including three retail stores and two warehouses. They want to suppress a specific product: a **Blue Medium-sized shirt from the NotNaked brand**. Let’s see how retailers can configure store pickup rules for this scenario.
 
 ## Add Facility to Pickup Group
 
@@ -19,7 +19,7 @@ As previously discussed, retailers must add facilities that can offer store pick
 
 For example, let’s assume the retailer wants to enable store pickup at their three stores, but not at their warehouses.
 
-Here's how you can Set up the Store Pickup Rule Using the ATP App:
+Here's how you can set up the Store Pickup rule Using the ATP App:
 
 **Navigate to the Store Pickup Page:**  
    Go to the `Store Pickup` page within the `ATP App`.
@@ -33,7 +33,7 @@ Here's how you can Set up the Store Pickup Rule Using the ATP App:
 **Finalize Setup:**  
    Once toggled on, these stores will automatically be added to the **PICKUP facility group**.  All products available at these stores will now be eligible for in-store pickup.
 
-## Suppress Store Pickup from Channel
+## Suppress Store Pickup from Channel/ Configuration facility
 
 In this scenario, let’s assume the retailer wants to suppress store pickup from their US stores channel, allowing only customers in canada to pickup their orders from stores. Here’s how the retailer can set up this rule through the ATP app:
 
