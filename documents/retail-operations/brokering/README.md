@@ -10,7 +10,7 @@ description: >-
 
 ## What is Order Routing?
 
-Sophisticated order routing is essential for retailers handling multiple sales channels and fulfillment locations. It ensures that each order is fulfilled from the most optimal location, factoring in considerations such as shipping method, proximity to the customer, inventory levels, fulfillment capabilities, and options for splitting orders across locations. Effective order routing helps retailers achieve faster delivery times, reduce shipping costs, and maintain balanced inventory across all locations.
+Retailers handling multiple sales channels and fulfillment locations need sophisticated order routing. It allows each order to be fulfilled from the most optimal location, considering factors such as shipping method, proximity to the customer, inventory levels, fulfillment capabilities, and the option to split orders across locations. Effective order routing helps retailers achieve faster delivery times, reduce shipping costs, and maintain balanced inventory across all locations.
 
 ## What is Configurable Order Routing?
 
@@ -18,7 +18,7 @@ Configurable order routing takes traditional routing a step further by allowing 
 
 This high level of customization enables retailers to create order routing that aligns with their unique business needs, and adjust routing parameters in real time without requiring external support. Retailers can optimize factors such as fulfillment costs, inventory distribution, and workload across locations, offering a strategic approach to order management. For scenarios where an order doesn’t meet the criteria of any rule set, configurable routing allows retailers to define specific actions to manage all unfillable orders, ensuring no order is left without a resolution.
 
-This dynamic approach to order routing also ensures that retailers can adapt quickly to evolving market conditions and customer expectations.
+This dynamic approach to order routing also lets retailers quickly adapt to evolving market conditions and customer expectations.
 
 ## Configurable Order Routing App
 
@@ -38,7 +38,7 @@ Order routing is organized into three hierarchical levels:
 
 A <mark style="color:orange;">**brokering run**</mark> is the highest level of organization in order routing and lets retailers control the routing frequency based on business needs. Each brokering run can have a different frequency, routing different batches of orders to meet varying fulfillment priorities. For example:
 
-* A brokering run scheduled **every 5 minutes** could prioritize high-priority orders, like same-day deliveries, to ensure fast routing and fulfillment.
+* A brokering run scheduled **every 5 minutes** could prioritize high-priority orders, like same-day deliveries for fast routing and fulfillment.
 * For standard delivery orders with medium priority, a separate brokering run can be set to run **every 6 hours,** aligning with less urgent timelines.
 
 <!---->
