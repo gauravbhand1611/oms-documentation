@@ -7,8 +7,8 @@ For example, retailers can suppress the availability of a blue shirt for shippin
 In HotWax Commerce, retailers can create different types of shipping rules:
 
 - Configure the capacity of online orders from a store.
-- Configure which products will be suppressed from which channel.
-- Configure which product will be suppressed from which facility.
+- Configure which products will be suppressed to sell from which sales channel.
+- Configure which product will be suppressed for which facility so that the inventory of these facilities for that product is not computed.
 
 In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer that has five retail locations, including three retail stores and two warehouses, and sell their inventory across Canada and US. They want to configure shipping rules for a specific product: a Blue Medium-sized shirt from the NotNaked brand. Let’s see how retailers can configure shipping rules for such scenarios.
 
@@ -55,7 +55,7 @@ Enter a descriptive name for the rule, such as “Suppress Shipping on Shopify.�
 **Rule Configuration**
 After naming the rule, configure it by turning off the toggle for `Shipping`. This action ensures that the Blue Shirt (Size M) will be suppressed from the selected channel.
 
-**Selecting Channel**
+**Selecting Channel / configuration facility**
 Choose the relevant channel configuration facility, as all network rules for the products are governed by these configuration facilities. Since we are suppressing shipping of the Blue Shirt from all the channels, turn on the toggle to select `all channels`. If you want to suppress shipping for specific channels, such as the US Shopify store, select the relevant `US Config Facility` from the list of all available config facilities.
 
 **Selecting Products**
