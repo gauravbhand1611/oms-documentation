@@ -95,7 +95,7 @@ After configuring the rule, selecting the facilities, and choosing the product, 
 
 ## Schedule Shipping Rule
 
-Retailers can manage the scheduling of the ATP computation job responsible for the shipping rule from the store pickup page. By default, ATP computation jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
+Retailers can manage the scheduling of the ATP computation job responsible for the shipping rule from the shipping page. By default, ATP computation jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
 
 However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
 
