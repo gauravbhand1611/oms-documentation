@@ -1,4 +1,4 @@
-# Order Routing to Ensure Inventory Balance
+# Retailer Routing Orders While Maintaining Invnetory Balance
 
 ## Business Overview for the Retailer
 
@@ -27,12 +27,25 @@ If no store has sufficient inventory to fulfill an order, the order should be fl
 #### 5. Routing Interval
 The retailer requires regular brokering to ensure timely processing of both regular and rejected orders. For unfillable orders, the brokering process should occur within a predefined interval, allowing time for potential inventory replenishment.
 
-To meet these requirements, the retailer has implemented HotWax Commerce's Configurable Order Routing System. This system allows the retailer to establish custom routing rules and criteria to ensure orders are fulfilled from locations with the appropriate inventory levels to align with their business needs.
+## Key Routing Considerations
+
+#### Minimum Stock Availability Rules
+The routing process for the retailer must filter locations based on Minimum Stock availability. Locations with 15 or more units of an item should be prioritized first.
+
+If inventory is insufficient, the criteria need to be adjusted to include locations with 10 or more units, then 5 or more units, expanding the search while still focusing on locations with higher stock levels.
+
+If no location has the minimum stock, any location with available inventory should be included to ensure that orders are fulfilled.
+
+If no single location can fully meet the order requirements, partial fulfillment should be allowed. This approach optimizes inventory usage and improves order completion rates by combining stock from multiple locations.
+
+#### Order Routing Priority
+
+Expedited Orders should be prioritized before standard orders when routing orders. Furthermore, if there are orders that are rejected once from any fulfillment location due to inventory unavailability, these orders should be prioritized before regular orders that are being routed for the first time.
 
 ## Setting Up Order Routing for the Retailer
 
 ### Create Run
-We begin by creating a Regular Order Run. This run will manage all regular orders, excluding unfillable orders, which the retailer prefers to broker separately at regular intervals. The run will consist of multiple routing rules, each configured based on different shipping methods and fulfillment priorities.
+We begin by creating a Regular Order Run. This run will manage all regular orders, excluding unfillable orders, which the retailer prefers to broker separately since the schedule of these run would be different. The regular run will consist of multiple routing rules, each configured based on different shipping methods and fulfillment priorities. The regular order runs are scheduled every 15 minutes for timely order processing and fulfillment.
 
 ### Create Routing Rule
 
@@ -112,8 +125,18 @@ This routing rule manages **rejected expedited orders**, including Next-Day, Two
 
 > **Note**: The inventory rules for this order batch are the same as the rules for standard orders, focusing on maintaining inventory balance.
 
+#### Routing Rule Sequence
+
+Since the client wants Rejected order routing first before the regular orders and wants to prioritize expedited orders, the routing Rules should be sequenced in the following manner:
+
+1. Rejected Expedited Orders
+2. Rejected Standard Orders
+3. Expedited Orders
+4. Standard Orders
+
 ### Create Second Runs
-For **Unfillable Orders**, create a separate run to handle orders when inventory is unavailable across all stores. This run checks for inventory replenishment periodically, and once stock is available, the orders are re-brokered.
+
+Retailers need to create a separate run to handle orders when inventory is unavailable across all stores. This is created as a separate run since inventory replenishment can take time so checking for inventory in every 15 minutes is not required. Therefore, this run is scheduled to run in evey 6 hours and once stock is available, the orders are re-brokered.
 
 ### Create Routing Rule
 
@@ -136,6 +159,14 @@ This routing rule manages **unfillable standard orders** that were previously re
 - **Order Sort**: Orders are sorted by **Order Date**, ensuring that orders rejected earlier are processed first for potential fulfillment.
 
 > **Note**: The inventory rules for this order batch are the same as the rules for standard orders, focusing on maintaining inventory balance.
+
+ #### Routing Rule Sequence
+
+Since the client wants to prioritize expedited orders, the routing Rules should be sequenced in the following manner:
+
+1. Unfillable Expedited Orders
+2. Unfillable Standard Orders
+
 
 ### Activating Runs
 
