@@ -4,7 +4,9 @@ description: This page explains how retailers use store pickup rules in HotWax C
 
 # Store Pickup Rule
 
+
 As discussed in previous sections, to enable store pickup for a facility, it is essential that the facility is added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. If a facility is already included in the **PICKUP group**, rules only need to be created if the retailer wishes to suppress specific products from being available for in-store pickup.
+
 
 In HotWax Commerce, retailers can create different types of store pickup rules:
 - Configure which facilities will participate in in-store pickup.
@@ -19,7 +21,7 @@ As previously discussed, retailers must add facilities that can offer store pick
 
 For example, let’s assume the retailer wants to enable store pickup at their three stores, but not at their warehouses.
 
-Here's how you can Set up the Store Pickup Rule Using the ATP App:
+Here's how you can set up the Store Pickup rule Using the ATP App:
 
 **Navigate to the Store Pickup Page:**  
    Go to the `Store Pickup` page within the `ATP App`.
@@ -96,7 +98,6 @@ Here's how you can suppress Store Pickup from a Facility:
 **Saving Configuration:**  
    Once you have configured the rule, selected the facilities, and chosen the product, click the `Save` button at the bottom-right of the page. This finalizes the rule, ensuring that the **Blue Shirt (Size M)** is suppressed for pickup from warehouse locations, while keeping store pickup available for other products and at other locations.
 
----
 
 ## Schedule Store Pickup Rule
 
