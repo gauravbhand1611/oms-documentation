@@ -1,5 +1,9 @@
 # Use Cases
 
+This section contains use cases designed to help you understand how various scenarios can be handled in the HotWax Commerce Order Routing App. These use cases are written as if you are creating an order routing run for the first time, ensuring simplicity and clarity for new users.
+
+However, if you already have an existing order routing run and want to maintain the same schedule, you don’t need to create a new run. Simply add the routing rules from these cases to the relevant existing runs. This way, you can enhance your current routing logic without altering your established workflows.
+
 ## Scenario 1: Fulfilling Marketplace Orders from Warehouse
 
 A retailer wants to ensure that all orders placed through various marketplaces are fulfilled exclusively from their warehouse. This scenario is common for businesses that prefer to manage marketplace orders separately due to specific logistical or contractual obligations.
