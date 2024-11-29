@@ -20,9 +20,9 @@ The process for setting the Maximum Order Capacity is consistent across the [Fac
 
 {% hint style="info" %} During peak hours, store managers can turn off fulfillment to manage store capacity by setting the order capacity to `No Capacity`. {% endhint %}
 
-## Shipment Thresholds
+## Brokering Shipment Thresholds
 
-To optimize inventory usage and fulfillment speed, retailers often split orders across multiple locations. However, this can result in high shipping costs, especially for low-value items. HotWax Commerce provides an option to set a shipment threshold value to avoid high shipping costs. If this threshold is set, orders will be allowed to split only if they are above the mentioned threshold.
+To optimize inventory usage and fulfillment speed, retailers often split orders across multiple locations. However, this can result in high shipping costs, especially for low-value items. HotWax Commerce provides an option to set a Brokering shipment threshold value to avoid high shipping costs. If this threshold is set, orders will be allowed to split only if they are above the mentioned threshold.
 
 **Example:** 1- If an order contains two items—'Brown Belt' and 'Brown Wallet'—each worth $160, and the brokering threshold is set to $100, the items will be split if they are not available at the same location. 
 
