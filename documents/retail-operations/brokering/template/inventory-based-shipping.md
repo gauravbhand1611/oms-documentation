@@ -25,7 +25,7 @@ Since the retailer operates within a limited geographical area, proximity is not
 If no store has sufficient inventory to fulfill an order, the order should be flagged and brokered again after a set time to check for inventory replenishment, ensuring the order can eventually be fulfilled.
 
 #### 5. Routing Interval
-The retailer requires regular brokering runs to ensure timely processing of both regular and rejected orders. For unfillable orders, the brokering process should occur within a predefined interval, allowing time for potential inventory replenishment.
+The retailer requires regular brokering to ensure timely processing of both regular and rejected orders. For unfillable orders, the brokering process should occur within a predefined interval, allowing time for potential inventory replenishment.
 
 To meet these requirements, the retailer has implemented HotWax Commerce's Configurable Order Routing System. This system allows the retailer to establish custom routing rules and criteria to ensure orders are fulfilled from locations with the appropriate inventory levels to align with their business needs.
 
