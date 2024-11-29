@@ -54,7 +54,7 @@
   * [Inventory Rules](brokering/rules.md)
   * [Use Cases](brokering/scenarios.md)
   * [Templates](orders/brokering/templates/README.md)
-    * [](brokering/template/cross-border-shipping.md)
+    * [Retailer Routing Orders to Fulfill Orders from Multiple Countries](brokering/template/cross-border-shipping.md)
     * [Retailer Routing Orders While Maintaining Inventory Balance](brokering/template/inventory-based-shipping.md)
   * [Troubleshooting](brokering/troubleshooting/README.md)
     * [Scheduling Errors](brokering/troubleshooting/scheduling-error.md)
