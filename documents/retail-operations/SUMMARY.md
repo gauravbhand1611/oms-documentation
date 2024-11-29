@@ -55,7 +55,7 @@
   * [Use Cases](brokering/scenarios.md)
   * [Templates](orders/brokering/templates/README.md)
     * [Cross-Border Shipping](brokering/template/cross-border-shipping.md)
-    * [Inventory-Based Routing](brokering/template/inventory-based-shipping.md)
+    * [Order ROuting for Inventory Balance](brokering/template/inventory-based-shipping.md)
   * [Troubleshooting](brokering/troubleshooting/README.md)
     * [Scheduling Errors](brokering/troubleshooting/scheduling-error.md)
     * [Incorrect Facility Configurations](brokering/troubleshooting/facility-association.md)

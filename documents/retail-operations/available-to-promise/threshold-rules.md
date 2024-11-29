@@ -57,3 +57,11 @@ Once you’ve configured the threshold value, selected the channels, and chosen 
 ## Setting Threshold Rules for Multiple Channels
 
 If you want to create a threshold rule for multiple inventory channels, you will need to create separate channels and select channel config facility as per the requirement. To learn how to create new channels and manage threshold configurations, refer to our **Detailed User Manual** for further instructions.
+
+## Schedule Threshold Rule
+
+Retailers can manage the scheduling of the ATP computation job responsible for the threshold rule from the threshold page. By default, ATP computation jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
+
+However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
+
+Once the threshold rules are created, they will be visible as rule cards on the threshold page as per the created rule. Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations. The rule configuration can be adjusted by clicking on the threshold chip and updating the number,

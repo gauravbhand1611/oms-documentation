@@ -40,7 +40,7 @@ For the warehouses, leave the setting as `Unlimited Capacity`, ensuring they can
 
 Once this setup is complete, the system will automatically redirect any additional orders beyond the store's daily capacity to other facilities with available capacity.
 
-## Suppressing Shipping for Channel
+## Suppressing Shipping for Channel/ Configuration Facility
 
 In this scenario, the retailer wants to suppress shipping for the Blue Shirt (Size M) across the `Shopify` channel, making it available exclusively for walk-in customers. This could be due to high demand in-store or a strategic decision to drive in-store traffic.
 
@@ -92,3 +92,11 @@ To specify the Blue Shirt (Size M), you can either use `Tags` or `Features`:
 
 6. **Saving Configuration**
 After configuring the rule, selecting the facilities, and choosing the product, click the `Save` button at the bottom right of the page. This finalizes the rule, ensuring that the Blue Shirt (Size M) is suppressed for shipping from the stores while keeping shipping available for other products from these stores.
+
+## Schedule Shipping Rule
+
+Retailers can manage the scheduling of the ATP computation job responsible for the shipping rule from the store pickup page. By default, ATP computation jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
+
+However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
+
+Once the shipping  rules are created, they will be visible as rule cards on the Product and Channel or Product and Facility page as per the created rule. Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations. The rule configuration can be adjusted by toggling the store pickup on or off.
