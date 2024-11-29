@@ -1,8 +1,8 @@
 # Use Cases
 
-This section contains use cases designed to help you understand how various scenarios can be handled in the HotWax Commerce Order Routing App. These use cases are written as if you are creating an order routing run for the first time, ensuring simplicity and clarity for new users.
+This section contains use cases designed to help you understand how various scenarios can be handled in the HotWax Commerce Order Routing App. These use cases are written as if you are creating a brokering run for the first time, ensuring simplicity and clarity for new users.
 
-However, if you already have an existing order routing run and want to maintain the same schedule, you don’t need to create a new run. Simply add the routing rules from these cases to the relevant existing runs. This way, you can enhance your current routing logic without altering your established workflows.
+However, if you already have an existing brokering run and want to maintain the same schedule, you don’t need to create a new run. Simply add the routing rules from these cases to the relevant existing runs. This way, you can enhance your current routing logic without altering your established workflows.
 
 ## Scenario 1: Fulfilling Marketplace Orders from Warehouse
 
@@ -274,7 +274,7 @@ Activate all inventory rules and ensure that the order routing batch is active. 
 Balance Shipping Cost and Distance with Split Shipments
 {% endembed %}
 
-> Note: To further minimize high cost of shipping duer to order splitting, you can use the [shipment threshold](./additional-sttings.md) feature of HotWax Commerce.
+> Note: To further minimize the high cost of shipping due to order splitting, you can use the [shipment threshold](./additional-settings.md) feature of HotWax Commerce.
 
 ## Scenario 8: Managing Order Splitting for Grouped Items (Kits and Gift Items)
 
