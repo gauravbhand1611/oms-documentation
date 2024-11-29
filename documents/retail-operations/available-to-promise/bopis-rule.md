@@ -50,7 +50,7 @@ Here's how you can suppress store pickup from Channel:
 **Rule Configuration:**  
    After naming the rule, configure it by turning off the toggle for **Store Pickup**. This ensures that the selected products will be suppressed for store pickup from the designated channel.
 
-**Selecting Channel:**  
+**Selecting Channel/ Configuration facility:**  
    Next, choose the relevant **channel configuration facility**, as all network rules for the products are governed by these configuration facilities. Since we are suppressing store pickup for the **US Shopify store**, select the **US Config Facility** from the channel options. This ensures the rule applies specifically to this channel.  
    If you want to suppress store pickup for **all channels**, turn on the toggle to select all channels.
 
