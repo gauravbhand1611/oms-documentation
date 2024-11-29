@@ -1,11 +1,12 @@
 # Scheduling Inventory Rules
 
-Retailers can manage the scheduling of the job responsible for ATP (Available to Promise) rules from the top of the page. By default, ATP rule jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
+Retailers can manage the scheduling of the job responsible for ATP (Available to Promise) rules from the top of the page for safety stock, threshold, and suppression of products from a sales channel and facilities. By default, all the ATP rule jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day. However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
 
-Retailers can view the history of job runs, disable a job, or run a job once by selecting the relevant option from the job's overflow menu.
+Retailers can view the history of job runs and disable the job from the overflow menu.
 
-Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations.  
-The rule configuration can be adjusted by toggling the store pickup and shipping options on or off, or by setting values for threshold and safety stock by clicking on the number chips.
+Each rule card provides an overview of configurations and product facility selections. Retailers can click the `Edit rule` button to modify rule configurations. The rule configuration can be adjusted by toggling the store pickup and shipping options on or off, or by setting values for threshold and safety stock by clicking on the number of chips.
+
+The ATP computation job is different for all the types of rules, such as all the threshold rules will have one job, safety stock rules have one job, and so on. The Job computes atp on the basis of all the created rules on that page based on the sequence of the rules.
 
 ## Understanding the Cascade of Inventory Rule
 
