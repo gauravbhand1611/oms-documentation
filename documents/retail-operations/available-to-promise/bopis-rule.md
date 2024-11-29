@@ -1,17 +1,17 @@
 ---
-description: This page explains how retailers use store pickup rules in HotWax Commerce to manage product availability across facilities and sales channels.
+description: This page explains how retailers use store pickup rules in HotWax Commerce to suppress product availability across facilities and sales channels.
 ---
 
 # Store Pickup Rule
 
-As discussed in previous sections, to enable store pickup for a facility, it is essential that the facility is added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. However, retailers may have specific business configurations, determining whether store pickup should be available for all products at a facility or only for certain products. If a facility is already included in the **PICKUP group**, rules only need to be created if the retailer wishes to exclude specific products from being available for in-store pickup.
+As discussed in previous sections, to enable store pickup for a facility, it is essential that the facility is added to the **PICKUP facility group**. By default, store pickup is enabled for all products at facilities that are part of this group. If a facility is already included in the **PICKUP group**, rules only need to be created if the retailer wishes to suppress specific products from being available for in-store pickup.
 
 In HotWax Commerce, retailers can create different types of store pickup rules:
-- Configure which facilities will participate in-store pickup.
+- Configure which facilities will participate in in-store pickup.
 - Configure which products will be suppressed for store pickup from which inventory channel.
 - Configure which products will be suppressed for store pickup from which facility.
 
-In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer who has five retail locations, including three retail stores and two warehouses. They want to configure store pickup rules for a specific product: a **Blue Medium-sized shirt from the NotNaked brand**. Let’s see how retailers can configure store pickup rules for this scenario.
+In this user manual, we will set up different types of configurations. For the remainder of the setup, we will use the example of a Canadian retailer that has five retail locations, including three retail stores and two warehouses. They want to suppress store pickup for a specific product: a **Blue Medium-sized shirt from the NotNaked brand**. Let’s see how retailers can configure store pickup rules for this scenario.
 
 ## Add Facility to Pickup Group
 
@@ -33,7 +33,7 @@ Here's how you can Set up the Store Pickup Rule Using the ATP App:
 **Finalize Setup:**  
    Once toggled on, these stores will automatically be added to the **PICKUP facility group**.  All products available at these stores will now be eligible for in-store pickup.
 
-## Suppress Store Pickup from Channel
+## Suppress Store Pickup from Channel/ Configuration Facility
 
 In this scenario, let’s assume the retailer wants to suppress store pickup from their US stores channel, allowing only customers in canada to pickup their orders from stores. Here’s how the retailer can set up this rule through the ATP app:
 
@@ -97,3 +97,12 @@ Here's how you can suppress Store Pickup from a Facility:
    Once you have configured the rule, selected the facilities, and chosen the product, click the `Save` button at the bottom-right of the page. This finalizes the rule, ensuring that the **Blue Shirt (Size M)** is suppressed for pickup from warehouse locations, while keeping store pickup available for other products and at other locations.
 
 ---
+
+## Schedule Store Pickup Rule
+
+Retailers can manage the scheduling of the ATP computation job responsible for the store pickup rule from the store pickup page. By default, ATP computation jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day.
+
+However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
+
+Once the Store Pickup rules are create, they will be visible as rule cards in the Product and Channel or Product and Facility page as per the created rule. Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations. The rule configuration can be adjusted by toggling the store pickup on or off.
+
