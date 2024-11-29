@@ -310,45 +310,7 @@ Activate all inventory rules and ensure the brokering run is scheduled to proces
 Managing Order Splitting
 {% endembed %}
 
-## Scenario 9: Setting Maximum Order Capacity for Stores
 
-Retailers often face operational constraints in their stores, as they must balance serving walk-in customers while fulfilling online orders. To prevent overwhelming the store's capacity, HotWax Commerce allows retailers to set a maximum order capacity for each store. Once this limit is reached, the brokering engine automatically routes additional orders to alternative facilities with available capacity.
-The process for setting the Maximum Order Capacity for stores is consistent across the [Facility](https://docs.hotwax.co/documents/system-admins/administration/facilities/configure-fulfillment-capacity), [Fulfillment](https://docs.hotwax.co/documents/store-operations/orders/fulfillment/fulfillment-setting-page#online-order-fulfillment), and [ATP](./../available-to-promise/shipping-rule.md#setting-maximum-order-capacity-of-a-facility) apps. For setting max order capacity for a facility from these apps, you can follow the same steps to configure the capacity:
-
-1. For each app (Facility, Fulfillment, ATP), locate the capacity settings for the store.
-2. Click on the capacity chip on the facilities` order capacity card.
-3. You will see the following options:
-   - **Unlimited Capacity**
-   - **No Capacity**
-   - **Custom Capacity**
-4. Select `Custom Capacity` and set the maximum limit (e.g., 10 orders per day) for each facility.
-
-{% hint style="info" %} During peak hours, store managers need the flexibility to turn off fulfillment from their stores to manage capacity effectively. In such cases, they can set the order capacity to `No Capacity`. {% endhint %}
-
-## Scenario 10: Optimizing Order Splitting by Setting Shipment Thresholds
-
-Retailers often split orders across multiple locations to optimize inventory usage and expedite fulfillment. However, this strategy can lead to challenges, particularly concerning shipping costs for low-value items. Retailers may incur losses when splitting orders that include items of low value. While multi-location fulfillment can ensure timely delivery and effective inventory management, it can also result in disproportionately high shipping costs for low-value items.
-
-To address this issue, HotWax Commerce allows merchandisers to set threshold values for order items. This helps in more efficient order splitting while reducing the risk of losses due to shipping low-value items separately.
-
-**Example:** If an order contains two items, such as a 'Brown Belt' and a 'Brown Wallet,' each valued at $160, and a brokering threshold of $100 is set, the items will be split even if they are not available at a single location. Conversely, if an order includes a 'Black Belt' and a 'Black Wallet,' each valued at $80, the order will not be split as it would cause the shipment to fall below the threshold.
-
-### Steps to Implement
-
-1. **Navigate to Store Settings**
-   * **Access Store Settings**: In the HotWax Commerce Order Management System, navigate to the `Product Store` page.
-   * **Add New Setting**: Go to the store settings section and click on `Add Settings`.**
-2. **Set Brokering Shipment Threshold**
-   * **Select Brokering Threshold**: In the settings submenu, select `Brokering Shipment Threshold`.
-   * **Define Threshold Value**: Enter the desired shipment threshold value that will prevent splitting orders below this amount. For example, set the threshold at $100 to ensure that only orders above this value are eligible for splitting across multiple locations.
-3. **Save Settings**
-   * **Finalize the Configuration**: Save the store settings to apply the brokering threshold across the Product Store.
-
-With this threshold in place, orders will only be split if the value of the items meets or exceeds the set threshold, optimizing shipping costs and preventing losses on low-value shipments.
-
-{% embed url="https://youtu.be/GQU6wyNI4kw" %}
-Set Brokering Shipment Threshold
-{% endembed %}
 
 
 
