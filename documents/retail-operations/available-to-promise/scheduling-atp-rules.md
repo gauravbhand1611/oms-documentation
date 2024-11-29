@@ -1,6 +1,6 @@
-# Scheduling Inventory Rules
+# Managing Jobs for Inventory Rules
 
-Retailers can manage the scheduling of the job responsible for ATP (Available to Promise) rules from the top of the page for safety stock, threshold, and suppression of products from a sales channel and facilities. By default, all the ATP rule jobs are scheduled to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day. However, if you have created a new rule and want to compute ATP immediately, you can run a job once by selecting the relevant option from the job's overflow menu.
+As discussed in every individual rule, all jobs for safety stock, threshold, store pickup, and shipping are available on individual pages. These jobs are scheduled by default to run at midnight to ensure ATP calculations occur when store traffic is minimal, making the inventory ATP ready before the start of the day. However, if you have created a new rule for any of the configurations and want to compute ATP immediately for that, you need to go to the relevant page and click on the 'Run Now' from the overflow menu of the job.
 
 Retailers can view the history of job runs and disable the job from the overflow menu.
 
