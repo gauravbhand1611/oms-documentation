@@ -1,4 +1,4 @@
-# Retailer Routing Orders While Maintaining Invnetory Balance
+# Retailer Routing Orders While Maintaining Inventory Balance
 
 ## Business Overview for the Retailer
 
