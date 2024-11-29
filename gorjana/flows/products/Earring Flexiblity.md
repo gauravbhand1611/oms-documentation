@@ -3,10 +3,7 @@
 ## Overview
 Gorjana allows customers to purchase earrings as either a single piece or a pair. HotWax Commerce supports this flexibility with a product setup that efficiently handles both options.
 
----
-
 ## How Pairing Works
-
 ### Single Earring
 - **SKU:** `232-009-185-G`
 - Represents a single earring.
@@ -17,14 +14,10 @@ Gorjana allows customers to purchase earrings as either a single piece or a pair
 - Represents a pair of earrings and acts as the **parent product**.
 - Includes SKU `232-009-185-G` as a component with a **quantity of two**.
 
----
-
 ## Order Example
 If a customer orders a pair of earrings, they select SKU `232-010-185-G` as the product.  
 - **System Tracking:** The system tracks this order as two units of SKU `232-009-185-G`.  
 - **Benefit:** This setup ensures the Order Management System (OMS) treats the pair as a grouped item while maintaining accurate inventory tracking for each individual earring.
-
----
 
 ## Example JSON
 The following JSON represents the data structure for a paired earring (kit product):
