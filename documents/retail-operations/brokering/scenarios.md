@@ -274,6 +274,8 @@ Activate all inventory rules and ensure that the order routing batch is active. 
 Balance Shipping Cost and Distance with Split Shipments
 {% endembed %}
 
+> Note: To further minimize high cost of shipping duer to order splitting, you can use the [shipment threshold](./additional-sttings.md) feature of HotWax Commerce.
+
 ## Scenario 8: Managing Order Splitting for Grouped Items (Kits and Gift Items)
 
 Retailers often face scenarios where certain items in an order must be shipped together, while other items can be shipped separately. For example, if a customer orders a frame and lenses along with sunglasses, the frame and lenses must be shipped together, but the sunglasses can be shipped from a different location. In such cases, items like the frame and lenses are grouped to ensure they are always shipped together.
