@@ -183,7 +183,7 @@ Set Brokering Safety Stock
 
 ## Scenario 6: Managing Store Fulfillment Based on Rent Agreements
 
-Retailers who manage stores with varying rent agreements, especially those in malls where rent is tied to sales revenue, need to optimize order fulfillment to avoid high rental costs. By prioritizing stores with fixed or lower rent costs for order fulfillment, retailers can increase profitability while still ensuring order fulfillment.
+Retailers who manage stores with varying rent agreements, especially those in malls where rent is tied to sales revenue, need to optimize order routing to avoid giving commissions to the malls. By prioritizing the stores that are not in malls, retailers can increase profitability.
 
 ### Prerequisites for This Scenario
 
