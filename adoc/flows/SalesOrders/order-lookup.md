@@ -1,71 +1,31 @@
 ---
 description: >-
-  The document highlights the HotWax Commerce Order Lookup feature, which enables store associates to efficiently manage in-store order inquiries with direct access to comprehensive order information.
+  This document highlights the Order Lookup feature, enabling ADOC store associates to access and manage online order details efficiently, including COD-specific information.
 ---
 
-# Order Lookup: Streamlining In-Store Operations
+# Order Lookup Feature
 
-In the world of omnichannel retail, managing online order inquiries in-store presents unique challenges, especially for retailers without access to Shopify POS. Store associates often struggle to address customer inquiries directly due to a lack of access to centralized order information. This dependence on Customer Service Representatives (CSRs) leads to delays, disrupts store operations, and diminishes the overall customer experience.
+The **Order Lookup** feature was introduced by HotWax to assist store managers at ADOC in retrieving detailed order information when customers inquire about their online orders while in-store. Previously, store associates faced challenges due to the lack of unified visibility of order details, often requiring them to contact the Customer Support Representative (CSR) to obtain the necessary information. This feature empowers store associates to respond efficiently to customer inquiries.
 
-## The Solution: HotWax Commerce Order Lookup Feature
 
-HotWax Commerce offers a comprehensive Order Lookup feature within its Fulfillment App, empowering store associates to independently access detailed order information on their store devices. This feature eliminates the reliance on CSRs, enabling seamless in-store operations and improving customer service.
+## Key Features
 
-With the Order Lookup feature, store associates can:
-- Quickly retrieve order details, including status, product availability, and delivery timelines.
-- Provide immediate, accurate updates to customers, ensuring a seamless shopping experience.
-- Enhance operational efficiency by reducing disruptions and optimizing staff performance.
+1. There is a dedicated section for order lookup in the Fulfillment App.
+2. Allows sorting orders by date and filtering by brand, facility, order status, type, and sales channel.
+3. Displays detailed information on the Order Details page, such as the facility where items are allocated for fulfillment, customer information, order identification details, and more.
 
----
 
-## Key Features of the Order Lookup Screen
+## Additional Details Card
 
-### Centralized Order Access
-Store associates can view all orders directly within the Fulfillment App, the primary tool used for fulfilling in-store orders.
+An **Additional Details Card** is available for each order, providing granular details such as:
+- **Municipio**
+- **Customer ID**
+- **Invoicing Facility**: The facility responsible for invoicing the order.
 
-### Order Visibility Options
-- View orders with or without their items by toggling the `Show Order Items` button.
-- Sort orders by date, either newest to oldest or oldest to newest, ensuring easy navigation.
 
-### Customizable Filters
-Use the toolbar button on the top-right corner of the page to filter orders by:
-- **Brand**
-- **Type**
-- **Fulfillment Status**
-- **Channel**
-- **Date**
+## Handling COD Orders
 
----
+For **Cash on Delivery (COD)** orders, ADOC requires visibility of the carrier responsible for shipping the order. This information is crucial as the store reconciles the amount to be collected from the carrier within **Retail Pro**.
 
-## Order Detail Page: Comprehensive Information at a Glance
-
-Clicking on an order in the Order Lookup screen navigates to its **View Detail Page**, a centralized hub of order-specific details. This page empowers store associates with all the necessary information to address customer inquiries and manage in-store operations effectively. 
-
-### Key Sections of the View Detail Page
-
-#### 1. Customer Information
-- Name, contact details, and delivery address.
-
-#### 2. Order Source and Identifiers
-- Information on the order’s origin (e.g., online store, marketplace).
-- Unique order identifiers for easy tracking.
-
-#### 3. Payment Details
-- Payment method (e.g., credit card, PayPal).
-- Payment status (e.g., paid, pending).
-
-#### 4. Order Items
-- A detailed list of items allocated to the store's facility for fulfillment.
-- Quantities and descriptions of the products in the order.
-
-#### 5. Fulfillment Allocation Details
-- Displays brokered items and their allocation across facilities, specifying the facility assigned for their fulfillment.
-
-#### 6. Additional Data
-- Supplementary information relevant to the order, such as notes or special instructions.
-
----
-
-## Empowering Store Associates
-
-The Order Lookup Page streamlines in-store order management, enabling store associates to address customer inquiries with precision. It enhances efficiency and empowers teams to deliver better customer service.
+- **Carrier Name**: Displayed in the Additional Details Card using labels like `COD-Drivin`.
+- **Multi-Facility allocation**: If the order is allocated to multiple facilities, the carrier selected by the **Invoicing Facility** is displayed.  
