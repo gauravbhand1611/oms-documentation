@@ -5,11 +5,8 @@ Facilities can be set up in advance before their official launch. To prevent ord
 
 ## Sell Inventory Online  
 
-1. Navigate to the [Facilities App](https://facilities.hotwax.io/tabs/find-facilities).  
-2. Use the search bar to find the facility that needs to be configured.  
-3. Click on the facility name to open its details page.  
-4. Scroll to the **Sell Inventory Online** section.  
-5. Turn off the **Online Facility Group** toggle.  
+1. Scroll to the **Sell Inventory Online** section.  
+2. Turn off the **Online Facility Group** toggle.  
 
 This prevents online orders from being brokered to the facility until the toggle is turned on.
 
