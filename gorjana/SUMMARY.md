@@ -8,6 +8,7 @@
 * [Product](flows/products/README.md)
   * [Bundles](flows/products/bundles.md)
   * [Service Products](flows/products/service-products.md)
+  * [SOP for Product Setup](flows/products/product-set-up-sop.md)
 * [Inventory](flows/inventory/README.md)
 * [Sales Orders](flows/sales-orders/README.md)
   * [Billing Address](flows/sales-orders/billing-address.md)
