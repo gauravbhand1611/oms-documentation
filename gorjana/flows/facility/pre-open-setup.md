@@ -13,11 +13,8 @@ This prevents online orders from being brokered to the facility until the toggle
 
 ## Fulfillment Settings  
 
-1. Navigate to the [Facilities App](https://facilities.hotwax.io/tabs/find-facilities).  
-2. Use the search bar to find the facility that needs to be configured.  
-3. Click on the facility name to open its details page.  
-4. Scroll to the **Fulfillment Settings** section.  
-5. Turn off the **Allow Pickup** toggle.  
+1. Scroll to the **Fulfillment Settings** section.  
+2. Turn off the **Allow Pickup** toggle.  
 
 This ensures customers cannot select the facility for store pickup orders until the toggle is turned on.
 
