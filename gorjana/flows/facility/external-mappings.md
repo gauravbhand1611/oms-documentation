@@ -1,18 +1,18 @@
-## Key Configurations
+# External Mappings
 
-### Facility Blanket Customer ID
+## Facility Blanket Customer ID
 
 - Some Shopify POS orders lack customer details.  
 - NetSuite requires every order to be associated with an existing customer.  
 - Gorjana uses a **blanket customer ID** for such orders.  
 - Each facility must have its unique blanket customer ID mapped in both NetSuite and OMS to ensure smooth integration.  
 
-### ShipSi Fulfillment Location
+## ShipSi Fulfillment Location
 
 - Gorjana integrates with ShipSi, which assigns a unique **Fulfillment Location ID** to each facility using its services.  
 - This ID must be mapped in OMS to enable integration between OMS and ShipSi’s Fulfillment App.  
 
-### NetSuite Department Code
+## NetSuite Department Code
 
 - Facilities are grouped into departments in NetSuite using specific **department codes**.  
 - OMS must maintain these codes to post the appropriate department code for sales orders:  
