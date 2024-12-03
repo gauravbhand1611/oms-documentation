@@ -2,7 +2,6 @@
 
 ## Guidlines
 
-* [Initial Training](README.md)
 * [Internal Usage](<README (2).md>)
 * [Documentation Guideline](sop/documentation-guideline.md)
 * [ChatGPT Prompts](sop/chatgpt-prompts.md)
