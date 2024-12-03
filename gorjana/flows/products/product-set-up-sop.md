@@ -46,7 +46,15 @@ This document provides detailed instructions for setting up and managing product
 ### Syncing Changes Made in Shopify
 1. Make any required changes in Shopify.
 2. A scheduled job in HotWax imports product updates every hour.
-3. For immediate synchronization, run the **Import Product Updates** job from the Products section of the Job Manager.
+3. For immediate synchronization, import the product updates using the [CreatAndUpdateShopifyProducts](https://gorjana-oms.hotwax.io/commerce/control/ShopifyJobRun?configId=SOP_CRT_UPDATE_PRODS) EXIM by following the below steps:
+   - Navigate to said [EXIM](https://gorjana-oms.hotwax.io/commerce/control/ShopifyJobRun?configId=SOP_CRT_UPDATE_PRODS).
+   - Enter the Shopify product IDs, separated by commas, of all the products that need to updated.
+   - Click 'Run'
+4. Alternatively, the user can run the **Import Product Updates** job from the Products section of the [Job Manager](https://job-manager.hotwax.io/product).
+
+<div style=border-left: 6px solid #ffa500; padding: 10px;">
+<strong>Note:</strong> Using the EXIM is recommended over running the job as running the job imports all product updates since the last run time (any sale/inventory change on a product in Shopify also counts as an update).
+</div>
 
 ### Syncing Changes Made in NetSuite
 1. Make the required changes in NetSuite.
