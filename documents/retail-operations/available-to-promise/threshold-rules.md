@@ -80,6 +80,10 @@ However, if you have created a new rule and want to compute ATP immediately, you
 Once the threshold rules are created, they will be visible as rule cards on the threshold page as per the created rule. Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations. The rule configuration can be adjusted by clicking on the threshold chip and updating the number.
 
 {% embed url="https://youtu.be/UekJap0j5dQ" %}
+Scheduling Threshold Rule
+{% endembed %}
+
+
 
 
 

@@ -36,9 +36,11 @@ You can also filter products based on specific attributes such as color, size, o
 
 Once you’ve set the safety stock level, selected the facilities, and applied the product tags or features, click the `Save` button at the bottom right corner to apply the rule. The system will now reserve 10 units of the selected products at each selected store location for walk-in customers.
 
-
-
 {% embed url="https://youtu.be/s3jwK7BiW3A" %}
+Safety Stock Rule
+{% endembed %}
+
+
 
 ## Schedule Safety Stock Rule
 

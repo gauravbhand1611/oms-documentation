@@ -24,9 +24,11 @@ The Configuration Facility is a virtual facility that plays a critical role when
 2. **Select an Existing Virtual Facility**:
    * When you setup HotWax Commerce, you already get one configuration facility by default. If you are adding such an existing virtual facility, you can choose it from the dropdown menu.
 
-
-
 {% embed url="https://youtu.be/3EnQHxa7R2c" %}
+Inventory Channel Creation
+{% endembed %}
+
+
 
 ### Link Facilities to the Inventory Channel
 
@@ -40,9 +42,11 @@ To link facilities to an inventory channel:
 **Example**:\
 If a Canadian retailer has two Shopify stores—one in the US and another in Canada—and they want to compute ATP for the US store using only their warehouses, they would link the warehouses to the inventory channel. This would link the facilities to the relevant facility group that includes only the warehouses.
 
-
-
 {% embed url="https://youtu.be/YgAS-Bi5Prg" %}
+Linking Facility
+{% endembed %}
+
+
 
 ## Publishing ATP to a Sales Channel
 
@@ -55,4 +59,6 @@ Retailers managing multiple online sales channels must decide which facility gro
 3. **Select Run Time and Frequency** Here, you can choose the `Run Time` and the `Frequency` (daily, weekly, etc.) to push inventory updates to Shopify. This setting helps define when the inventory will be published.
 4. **Choose the Inventory Channel** From the dropdown menu, select the inventory channel from which you want to publish. This corresponds to the facility group whose inventory will be pushed to the Shopify store.
 5. **Save and Schedule the Job** After selecting the appropriate options, click `Save Changes` to finalize the settings. This will schedule the inventory publishing job as per the selected time and frequency.
+
+
 
