@@ -69,8 +69,7 @@ Customers looking to customize frames with specialty lenses (e.g., polarized or 
 ---
 
 ### **Customer-Owned Frames**  
-When a customer wants to change the lenses in their pre-owned frame, we can use the same HotWax admin helper to add a custom line item property.
-
+When a customer wants to change the lenses in their pre-owned frame, the HotWax admin helper can be used to add a custom line item property. This allows the system to capture the specific request for lens replacement and ensure the correct fulfillment process.
 
 1. **Order Identification**:  
    - For customer-owned frames, a custom line item property will be added. This allows us to link the pre-owned frame to the lens product they are purchasing. In shopify the lens product will be visible as a line item and the customer owned frame will be added in the line item property of the order JSON. 
