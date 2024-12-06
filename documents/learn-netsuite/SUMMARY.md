@@ -22,7 +22,7 @@
   * [Order Allocation](netsuite-integration/Flows/SalesOrder/OrderAllocation.md)
   * [Fulfillment](netsuite-integration/Flows/SalesOrder/Fulfillment.md)
   * [Invoicing](netsuite-integration/Flows/SalesOrder/Invoicing.md)
-  * [Bundles](netsuite-integration/Flows/SalesOrder/Bundles.md)
+  * [Kit Products](netsuite-integration/Flows/SalesOrder/kitProducts.md)
   * [Shipping Methods](netsuite-integration/Flows/SalesOrder/ShippingMethods.md)
   * [Gift Card Orders](netsuite-integration/Flows/SalesOrder/giftcardorders.md)
   * [POS Orders](netsuite-integration/Flows/SalesOrder/posOrders.md)
