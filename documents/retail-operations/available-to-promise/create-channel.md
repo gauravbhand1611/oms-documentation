@@ -62,3 +62,7 @@ Retailers managing multiple online sales channels must decide which facility gro
 
 
 
+<figure><img src="../.gitbook/assets/publish-atp-to-sales-channel 1.png" alt=""><figcaption><p>Publish ATP to a Sales Channel</p></figcaption></figure>
+
+
+
