@@ -1,38 +1,84 @@
 ---
-description: >-
-  Discover how integration with NetSuite simplifies inventory synchronization
-  and management of bundles in HotWax Commerce, ensuring accurate inventory
-  calculations and order fulfillment updates.
+Description: >-
+  Discover how integration with NetSuite simplifies the relationship of kit and its components in HotWax Commerce, ensuring accurate inventory calculations of kit products.
 ---
+# Kit Products
 
-# Bundles
+## Synchronization of Kit Products from NetSuite to HotWax Commerce
 
-## Inventory Synchronization of Bundles from NetSuite to HotWax Commerce
+HotWax Commerce syncs the catalog of kit products and their components from NetSuite. These products are of type `MARKETING_PKG_PICK` in HotWax Commerce.
 
-Integration with NetSuite simplifies the inventory synchronization of Bundles in HotWax Commerce. As NetSuite shares a daily morning feed of the inventory of products, it includes the inventory for bundles as well.
+The synchronization of kit products from NetSuite to HotWax Commerce follows a three-step process:
 
-**Automatic Inventory Management of bundle**
+### Step 1: Fetch Kit and its Components from NetSuite
 
-NetSuite independently manages the Inventory of Bundles by considering the lowest common denominator among their components. For example: if a bundle comprises a belt and a wallet, where the belt's inventory is 7 and the wallet’s inventory is 10, the inventory of bundles aligns with the lowest available quantity, which becomes 7.
+1.1 The catalog of kit products and their components is fetched by a SuiteScript (runs once in a day to fetch all time records) in NetSuite, which creates a CSV file and places it in an SFTP location.
 
-**Multi-Location Inventory Handling**
+#### SuiteScript:
+`HC_MR_ExportedKITProductCSV`
 
-NetSuite operates similarly to HotWax Commerce in calculating the Inventory of Bundles across multiple locations, considering the availability of components at each location. If all bundle components are available at a single location, NetSuite considers the Inventory of Bundles for that specific location. For instance, imagine a bundle consisting of a belt and wallet distributed across various locations:
+#### CSV:
 
-* Times Square Store: 5 Belts
-* Brooklyn Store: 10 Wallets
-* Broadway Store: 3 Belts and 7 Wallets
+| productId | productIdTo | quantity | productAssocTypeId |
+|-----------|-------------|----------|---------------------|
+| 10003     | 10571       | 1        | PRODUCT_COMPONENT   |
+| 10003     | 10594       | 1        | PRODUCT_COMPONENT   |
 
-NetSuite calculates the inventory of a bundle by computing the lowest available quantity within a single facility. As a result, NetSuite will push an inventory of 3 to HotWax for this bundle, reflecting the available quantity of the scarcest component at one location in the bundle.
+#### SFTP Location:
+`/home/user-sftp/netsuite/product/kit-nifi`
 
-**Post-Inventory Computation Handling**
+### Step 2: Transformation
 
-After NetSuite's inventory calculation for bundles, NetSuite synchronizes the inventory of the bundles to HotWax Commerce like [other products’ inventory](../inventory.md)
+2.1 The SFTP location is:
+`/home/user-sftp/netsuite/product/kit-nifi`
 
-## Order Synchronization of bundles from HotWax Commerce to NetSuite
+This file contains product SKUs, but HotWax Commerce requires its internal IDs at the time of import to read and process the data.
 
-When [syncing an order](OrderAllocation.md) containing a bundle to NetSuite, only the bundle's product ID is sent. NetSuite does not require bundle component details as retailers already have bundle-component associations set up within NetSuite to simplify the import process.
+2.2 NiFi reads and transforms this CSV file into JSON format and converts the SKU to the HotWax Commerce internal ID so that HotWax Commerce can read this file. The JSON path is placed at an SFTP location.
 
-## Bundle Order Fulfillment Updates from NetSuite to HotWax Commerce
+#### JSON Path:
+`/home/user-sftp/netsuite/product/kit`
 
-When the bundle is [fulfilled from a location in NetSuite](Fulfillment.md), HotWax Commerce receives the bundle's ID in the fulfilled order feed from NetSuite. Processing this information, HotWax Commerce marks both the bundle and its components as fulfilled, ensuring accurate fulfillment status within the eCommerce system.
+### Step 3: Import Kit and its Components in HotWax Commerce
+
+3.1 The "Import KIT Component" job runs every 6 hours and performs the following tasks:
+
+- Imports and creates/updates the relationship between kit products and their components based on the quantities.
+
+#### Job to Calculate Kit Product's Inventory on the Basis of its Components
+
+The "Bulk Recent Kit Product Inventory Setup" job calculates the inventory of the kit products by considering the lowest common denominator among its components at a given location.
+
+**For Example:**
+
+#### For Single Location:
+
+A kit product consisting of a belt and wallet at a single location:
+
+- **Times Square Store:**
+  - 5 Belts
+  - 10 Wallets
+
+It will record an inventory of 5 in HotWax Commerce for this kit product, reflecting the availability of the most limited component at this location in the kit product.
+
+#### For Multi-Location:
+
+A kit product consisting of a belt and wallet distributed across multiple locations:
+
+- **Times Square Store:** 5 Belts
+- **Brooklyn Store:** 10 Wallets
+- **Broadway Store:** 3 Belts and 7 Wallets
+
+It will record an inventory of 3 in HotWax Commerce for this kit product, because only the Broadway store has both belts and wallets, so a kit product can only be fulfilled from the Broadway store. Thus, the inventory reflects the available quantity of the most limited component at a location where both components are available.
+
+#### Example for Correct Calculation:
+
+A kit product consisting of a belt and wallet distributed across multiple locations:
+
+- **Times Square Store:** 5 Belts
+- **Brooklyn Store:** 3 Belts and 2 Wallets
+- **Broadway Store:** 1 Belt and 5 Wallets
+
+Here, Brooklyn has enough stock to make 2 kits (3 belts and 2 wallets), and Broadway can fulfill 1 kit (1 belt and 1 wallet). While the total available belts and wallets across all locations might be summed up as 4 belts (3 + 1) and 7 wallets (2 + 5), this does not represent the actual number of kits that can be fulfilled.
+
+The correct calculation is based on the available components at each location, resulting in **3 kits**: 2 from Brooklyn and 1 from Broadway.
