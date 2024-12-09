@@ -15,7 +15,7 @@
   * [Inventory Synchronization](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization.md)
   * [Location Mapping](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/location-mapping.md)
   * [Inventory Synchronization of Gift Cards](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventorysynchronizationgiftcards.md)
-  * [Inventory Synchronization of Bundles](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization-of-bundles.md)
+  * [Inventory Synchronization of Kit Products](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization-of-kitProducts.md) 
 * [Orders](integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/how-are-orders-downloaded-from-shopify-to-hotwax-commerce.md)
   * [Order Download](shopify-integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/order-download/README.md)
     * [thruDateBuffer and bufferTime](shopify-integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/order-download/thrudatebuffer-and-buffertime.md)
