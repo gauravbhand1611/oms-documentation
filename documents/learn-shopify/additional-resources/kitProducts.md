@@ -82,12 +82,4 @@ For example, suppose a kit product consists of a belt and a wallet, with the inv
 
 In this case, the Bundles app calculates the total kit inventory as 4 by adding the total number of belts and wallets across both locations (belts: 3 + 1 = 4, wallets: 2 + 5 = 7). However, this calculation is incorrect because the actual number of kits that can be fulfilled is only 3. Brooklyn can fulfill 2 kits (with 3 belts and 2 wallets), and Broadway can fulfill 1 kit (with 1 belt and 1 wallet). The remaining items are insufficient to complete any additional kits.
 
-### Managing Kit Products and their Components without Bundles App
-
-To reduce the risk of inaccurate kit inventory, HotWax Commerce suggests that retailers set up kit products in Shopify as individual products with their SKUs, just like any other item. Even though these kits are made up of several components, Shopify treats them as a single product.
-
-In this setup, **NetSuite** helps by connecting the kit product to its components. HotWax Commerce downloads these kits from Shopify as regular products and uses its integration with NetSuite to identify the components that make up each kit.
-
-HotWax Commerce calculates kit inventory based on the lowest available quantity of each component at individual locations, ensuring that the correct number of kits can be fulfilled at each fulfillment location.
-
 Learn more about how HotWax Commerce helps retailers manage kit products and their components in Shopify and NetSuite if the retailer is not using the Bundles App.
