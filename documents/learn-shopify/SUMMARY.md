@@ -15,7 +15,7 @@
   * [Inventory Synchronization](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization.md)
   * [Location Mapping](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/location-mapping.md)
   * [Inventory Synchronization of Gift Cards](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventorysynchronizationgiftcards.md)
-  * [Inventory Synchronization of Kit Products](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization-of-kitProducts.md) 
+  * [Inventory Synchronization of Kit Products](integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization-of-kitProducts.md)
 * [Orders](integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/how-are-orders-downloaded-from-shopify-to-hotwax-commerce.md)
   * [Order Download](shopify-integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/order-download/README.md)
     * [thruDateBuffer and bufferTime](shopify-integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/order-download/thrudatebuffer-and-buffertime.md)
@@ -55,7 +55,7 @@
   * [Sales channel](shopify-integration/ShopifyIntegration/sales-channel-mapping.md)
   * [Payment Method](shopify-integration/ShopifyIntegration/payment-method-type.md)
   * [Product Type](shopify-integration/ShopifyIntegration/product-type.md)
-* Troubleshooting
+* [Troubleshooting](setup-shopify/troubleshooting/README.md)
   * [Facility Mapping Discrepancy](shopify-setup/troubleshooting/facility-mapping-discrepancy.md)
 
 ## Synchronization Flows
