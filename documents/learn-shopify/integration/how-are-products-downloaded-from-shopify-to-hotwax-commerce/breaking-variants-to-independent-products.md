@@ -33,7 +33,7 @@ In Shopify, a parent product may have multiple variants defined by the combinati
 
     </div>
 
-- **Parent Product:** HC Shoe (Red)
+- **Parent Product:** HC Shoe (Tan)
   - **Variants:**
     <div align="center">
 
