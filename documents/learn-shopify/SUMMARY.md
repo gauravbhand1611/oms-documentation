@@ -8,6 +8,7 @@
   * [Updating Product Details](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/updating-product-details.md)
   * [Deleting Products](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/deleting-products.md)
   * [Creating/Deleting Products with Shopify Webhooks](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/creating-deleting-products-with-shopify-webhooks.md)
+  * [Breaking Variants to Independent Products](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/breaking-variants-to-independent-products.md)
   * [Gift Cards Download](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/giftcardsdownload.md)
   * [Kit Products Download](integration/how-are-products-downloaded-from-shopify-to-hotwax-commerce/downloading-Kitproducts.md)
   * [Product Synchronization for Multiple Shopify Stores](integration/multiple-store-setup.md)
