@@ -15,7 +15,6 @@
   * [Updating Product Details](how-are-products-downloaded-from-shopify-to-hotwax-commerce/updating-product-details.md)
   * [Deleting Products](how-are-products-downloaded-from-shopify-to-hotwax-commerce/deleting-products.md)
   * [Creating/Deleting Products with Shopify Webhooks](how-are-products-downloaded-from-shopify-to-hotwax-commerce/creating-deleting-products-with-shopify-webhooks.md)
-  * [Breaking Variants into Independent Products](how-are-products-downloaded-from-shopify-to-hotwax-commerce/breaking-variants-to-independent-products.md)
   * [Gift Cards Download](how-are-products-downloaded-from-shopify-to-hotwax-commerce/giftcardsdownload.md)
   * [Bundles Download](how-are-products-downloaded-from-shopify-to-hotwax-commerce/downloading-bundles.md)
   * [Product Synchronization for Multiple Shopify Stores](multiple-store-setup.md)
