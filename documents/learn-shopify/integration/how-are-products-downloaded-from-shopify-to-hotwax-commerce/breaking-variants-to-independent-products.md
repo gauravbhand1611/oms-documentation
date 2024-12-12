@@ -39,8 +39,8 @@ In Shopify, a parent product may have multiple variants defined by the combinati
 
     | Colour | Size | SKU  |
     |:------:|:----:|:----:|
-    | Red    |  7   |  7R  |
-    | Red    |  8   |  8R  |
+    | Tan    |  7   |  7T  |
+    | Tan    |  8   |  8T  |
 
     </div>
 
