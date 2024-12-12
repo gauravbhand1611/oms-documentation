@@ -71,8 +71,6 @@ Here, the user has decided to divide the initial parent product into two, each f
 If the variants are linked to multiple Shopify shops, only unlink them from the specific shop where the edits were made. Keep the links to other shops intact.
 {% endhint %}
 
-![Unlink Variant Video](hotwax/oms-documentation/documents/learn-shopify/.gitbook/assets/Unlink_Variant.mp4)
-
 ### Step 4: Sync changes in the OMS
 
 - Run the following jobs from the Products section of the [Job Manager App](https://job-manager.hotwax.io/product)
