@@ -19,7 +19,7 @@ In this setup, a new SKU, **232-010-185-G**, is created to represent the pair of
 - Represents a pair of earrings (parent product).
 - Includes **232-009-185-G** as a component with a quantity of two.
 
----
+
 <div align="center">
   <img src="https://github.com/prachi872/oms-documentation-1/blob/e030b98209e593e7e02ee14d0308aa0f12d21293/gorjana/.gitbook/assets/EarringFlexiblity.png" alt="Earring Pairing Example">
 </div>
