@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how seamless integration between NetSuite and HotWax Commerce
+  Discover how integration between NetSuite and HotWax Commerce
   automates Purchase Order synchronization, streamlines inventory receipt, and
   updates order statuses efficiently.
 ---
