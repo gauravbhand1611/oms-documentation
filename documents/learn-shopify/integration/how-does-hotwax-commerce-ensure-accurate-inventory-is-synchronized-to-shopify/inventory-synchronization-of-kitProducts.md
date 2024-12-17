@@ -13,18 +13,22 @@ The **"Bulk Recent Kit Product Inventory Setup"** job calculates the inventory o
 #### Example 1:  
 A kit product consisting of a belt and wallet distributed across multiple locations:  
 
-- **Times Square Store:** 5 Belts  
-- **Brooklyn Store:** 10 Wallets  
-- **Broadway Store:** 3 Belts and 7 Wallets  
+| **Store Location**     | **Belts** | **Wallets** |
+|-------------------------|-----------|-------------|
+| Times Square Store      | 5         | 0           |
+| Brooklyn Store          | 0         | 10          |
+| Broadway Store          | 3         | 7           |
 
 It will record an inventory of **3** in HotWax Commerce for this kit product because only the Broadway store has both belts and wallets. So, a kit product can only be fulfilled from the Broadway store. The inventory reflects the available quantity of the most limited component at a location where both components are available.  
 
 #### Example 2:  
 Another example of a belt and wallet distributed across multiple locations:  
 
-- **Times Square Store:** 5 Belts  
-- **Brooklyn Store:** 3 Belts and 2 Wallets  
-- **Broadway Store:** 1 Belt and 5 Wallets  
+| **Store Location**     | **Belts** | **Wallets** |
+|-------------------------|-----------|-------------|
+| Times Square Store      | 5         | 0           |
+| Brooklyn Store          | 3         | 2           |
+| Broadway Store          | 1         | 5           |  
 
 Here, Brooklyn has enough stock to make **2 kits** (2 belts and 2 wallets), and Broadway can fulfill **1 kit** (1 belt and 1 wallet).  
 
@@ -39,9 +43,11 @@ The Bundles App aggregates the lowest inventory of each component accessible acr
 #### Example:  
 Suppose a kit product consists of a belt and a wallet, with the inventory distributed between two stores:  
 
-- **Brooklyn Store:** 3 belts, 2 wallets  
-- **Broadway Store:** 1 belt, 5 wallets  
-
+| **Store Location**     | **Belts** | **Wallets** |
+|-------------------------|-----------|-------------|
+| Brooklyn Store          | 3         | 2           |
+| Broadway Store          | 1         | 5           |
+ 
 In this case, the Bundles App calculates the total kit inventory as **4** by adding the total number of belts and wallets across both locations (belts: 3 + 1 = 4, wallets: 2 + 5 = 7).  
 
 However, this calculation is incorrect because the actual number of kits that can be fulfilled is only **3**:  
