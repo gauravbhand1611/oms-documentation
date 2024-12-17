@@ -1,23 +1,27 @@
 ---
 description: >-
-  Discover the process of downloading bundle orders from Shopify to HotWax
-  Commerce.
+  Discover the Process of Downloading Kit Orders from Shopify to HotWax Commerce.
 ---
 
-# Bundles Order Download
+# Kit Order Download
 
-### How are Orders for Bundles Downloaded from Shopify to HotWax Commerce?
+### How are Orders for Kit Products Downloaded from Shopify to HotWax Commerce?  
 
-HotWax Commerce manages order downloads for bundles through two distinct jobs:
+HotWax Commerce imports orders for kit products from Shopify through the **Import Orders** job.  
 
-Job-1: [Import Orders](how-are-orders-downloaded-from-shopify-to-hotwax-commerce.md):
+When HotWax imports an order, the first step is to check how many items are included in the order. For each item, HotWax retrieves its associated **product ID**.  
 
-This job downloads orders for product bundles alongside other open sales orders.
+These product IDs are predefined in HotWax Commerce and mapped to specific product types. For example:  
 
-Job-2: Internal Bundle Product Job:
+- If the **product ID** is **1001**, the system recognizes the product type as **FINISHED GOOD**.  
+- If the **product ID** is **2010**, the system identifies the product type as **MARKETING_PKG_PICK**, which corresponds to a **kit product**.  
 
-This job is specifically designed for orders with bundles. Once it finds that an order has a bundle i.e. modeled as a marketing package in HotWax Commerce, it takes the following steps to ensure fulfillment of the bundle
+Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as **MARKETING_PKG_PICK**, the order is recognized as a **Kit Order**.  
 
-* HotWax Commerce creates a ship group for the bundle, and its components are also added as new order items in that ship group of the order.
-* Creating a new ship group helps in disabling Split Shipment configuration for specifically this new ship group, so Split Shipment is disabled to ensure that all items of that bundle are routed to a single fulfillment location.
-* When the brokering engine runs, it skips the brokering of the bundle as it does not possess any inventory, and inventory is only allocated for components.
+### Kit Order Brokering  
+
+After identifying the product type as **MARKETING_PKG_PICK**, HotWax Commerce directly brokers the entire kit order to the facility where the inventory is available rather than brokering each component separately.  
+
+A specific job called the **"Bulk Recent Kit Product Inventory Setup"** job runs in HotWax Commerce to calculate the inventory of kit products by considering the lowest available inventory of their components at a given location.  
+
+This job computes the kit inventory for each location and the **order routing and brokering** in HotWax Commerce then ensures that the kit order is sent to the appropriate facility based on the available inventory of the kit product and its components.  
