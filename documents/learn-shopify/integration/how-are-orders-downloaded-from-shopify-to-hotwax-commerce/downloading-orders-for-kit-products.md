@@ -13,8 +13,10 @@ When HotWax imports an order, the first step is to check how many items are incl
 
 These product IDs are predefined in HotWax Commerce and mapped to specific product types. For example:  
 
-- If the **product ID** is **1001**, the system recognizes the product type as **FINISHED GOOD**.  
-- If the **product ID** is **2010**, the system identifies the product type as **MARKETING_PKG_PICK**, which corresponds to a **kit product**.  
+| **Product ID** | **Product Type**       |
+|----------------|------------------------|
+| 1001           | FINISHED GOOD          |
+| 2010           | MARKETING_PKG_PICK     |
 
 Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as **MARKETING_PKG_PICK**, the order is recognized as a **Kit Order**.  
 
