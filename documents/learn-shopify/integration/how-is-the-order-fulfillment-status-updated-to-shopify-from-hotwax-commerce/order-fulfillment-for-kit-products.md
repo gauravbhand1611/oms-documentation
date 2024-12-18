@@ -1,7 +1,5 @@
 ---
-description: >-
-  Learn how HotWax Commerce updates bundle order fulfillment status
-  to Shopify.
+description: Learn how HotWax Commerce updates Kit order fulfillment status to Shopify.
 ---
 
 # Kit Order Fulfillment

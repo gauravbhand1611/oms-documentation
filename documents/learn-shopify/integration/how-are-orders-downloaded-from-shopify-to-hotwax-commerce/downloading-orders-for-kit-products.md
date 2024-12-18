@@ -19,8 +19,8 @@ These product IDs are predefined in HotWax Commerce and mapped to specific produ
 | 1001           | FINISHED GOOD        |
 | 2010           | MARKETING\_PKG\_PICK |
 
-Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as `MARKETING\_PKG\_PICK`, the order is recognized as a **Kit Order**.
+Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as `MARKETING_PKG_PICK`, the order is recognized as a **Kit Order**.
 
 ### Kit Order Brokering
 
-After identifying the product type as `MARKETING\_PKG\_PICK`, HotWax Commerce directly [brokers](https://docs.hotwax.co/documents/retail-operations/orders/brokering) the entire kit order to the facility where the inventory is available rather than brokering each component separately.
+After identifying the product type as `MARKETING_PKG_PICK`, HotWax Commerce directly [brokers](https://docs.hotwax.co/documents/retail-operations/orders/brokering) the entire kit order to the facility where the inventory is available rather than brokering each component separately.
