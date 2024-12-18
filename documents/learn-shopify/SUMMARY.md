@@ -26,7 +26,7 @@
   * [Kit Order Download](integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/downloading-orders-for-kit-products.md)
 * [Order Fulfillment](integration/how-is-the-order-fulfillment-status-updated-to-shopify-from-hotwax-commerce/how-is-the-order-fulfillment-status-updated-to-shopify-from-hotwax-commerce.md)
   * [Gift Cards Order Fulfillment](integration/how-is-the-order-fulfillment-status-updated-to-shopify-from-hotwax-commerce/giftcardsfulfillment.md)
-  * [Bundles Order Fulfillment](integration/how-is-the-order-fulfillment-status-updated-to-shopify-from-hotwax-commerce/order-fulfillment-for-bundles.md)
+  * [Kit Order Fulfillment](integration/how-is-the-order-fulfillment-status-updated-to-shopify-from-hotwax-commerce/order-fulfillment-for-kit-products.md)
 * [Order Cancellations](integration/how-does-hotwax-commerce-manage-order-cancellations/how-does-hotwax-commerce-manage-order-cancellations.md)
   * [Complete Order Cancellation](integration/how-does-hotwax-commerce-manage-order-cancellations/complete-order-cancellation.md)
   * [Partial Order Cancellation](integration/how-does-hotwax-commerce-manage-order-cancellations/partial-order-cancellation.md)

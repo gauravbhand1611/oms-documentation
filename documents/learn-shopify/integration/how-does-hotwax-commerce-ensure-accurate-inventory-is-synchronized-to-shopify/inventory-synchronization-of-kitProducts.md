@@ -8,7 +8,7 @@ description: >-
 
 ### Inventory of Kit Products and their Components in HotWax Commerce
 
-The **"Bulk Recent Kit Product Inventory Setup"** job calculates the inventory of the kit products by considering the lowest common denominator among its components at a given location.
+The `Bulk Recent Kit Product Inventory Setup` job calculates the inventory of the kit products by considering the lowest common denominator among its components at a given location.
 
 #### Example 1:
 
@@ -62,6 +62,6 @@ The remaining items are insufficient to complete any additional kits.
 
 ### How does HotWax Commerce Synchronize the Inventory of Kit Products with Shopify?
 
-HotWax Commerce syncs the inventory of kit products and their components just like regular products, using webhooks and the [**Upload Recent Inventory Change**](https://docs.hotwax.co/documents/learn-shopify/shopify-integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization#upload-recent-inventory-change) job. This process is the same for kit products and their components as other products.
+HotWax Commerce syncs the inventory of kit products and their components just like regular products, using webhooks and the `Upload Recent Inventory Change` [job](https://docs.hotwax.co/documents/learn-shopify/shopify-integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization#upload-recent-inventory-change). This process is the same for kit products and their components as other products.
 
 [Learn more about inventory synchronization.](https://docs.hotwax.co/documents/learn-shopify/shopify-integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization)

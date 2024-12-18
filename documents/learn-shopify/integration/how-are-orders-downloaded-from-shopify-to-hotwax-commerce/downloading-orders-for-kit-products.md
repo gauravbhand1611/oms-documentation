@@ -8,7 +8,7 @@ description: >-
 
 ### How are Orders for Kit Products Downloaded from Shopify to HotWax Commerce?
 
-HotWax Commerce imports orders for kit products from Shopify through the [**Import Orders**](https://docs.hotwax.co/documents/learn-shopify/shopify-integration/how-are-orders-downloaded-from-shopify-to-hotwax-commerce/order-download) job.
+HotWax Commerce imports orders for kit products from Shopify through the `Import Orders` job.
 
 When HotWax imports an order, the first step is to check how many items are included in the order. For each item, HotWax retrieves its associated **product ID**.
 
@@ -19,8 +19,8 @@ These product IDs are predefined in HotWax Commerce and mapped to specific produ
 | 1001           | FINISHED GOOD        |
 | 2010           | MARKETING\_PKG\_PICK |
 
-Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as **MARKETING\_PKG\_PICK**, the order is recognized as a **Kit Order**.
+Once the product ID is identified, HotWax associates it with the right product in its system. If the product type is identified as `MARKETING\_PKG\_PICK`, the order is recognized as a **Kit Order**.
 
 ### Kit Order Brokering
 
-After identifying the product type as **MARKETING\_PKG\_PICK**, HotWax Commerce directly [brokers](https://docs.hotwax.co/documents/retail-operations/orders/brokering) the entire kit order to the facility where the inventory is available rather than brokering each component separately.
+After identifying the product type as `MARKETING\_PKG\_PICK`, HotWax Commerce directly [brokers](https://docs.hotwax.co/documents/retail-operations/orders/brokering) the entire kit order to the facility where the inventory is available rather than brokering each component separately.
