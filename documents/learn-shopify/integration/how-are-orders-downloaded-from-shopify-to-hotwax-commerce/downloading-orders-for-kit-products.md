@@ -23,8 +23,4 @@ Once the product ID is identified, HotWax associates it with the right product i
 
 ### Kit Order Brokering
 
-After identifying the product type as **MARKETING\_PKG\_PICK**, HotWax Commerce directly brokers the entire kit order to the facility where the inventory is available rather than brokering each component separately.
-
-A specific job called the [**"Bulk Recent Kit Product Inventory Setup"**](https://docs.hotwax.co/documents/learn-netsuite/integration-flows/kitproducts#job-to-calculate-kit-products-inventory-on-the-basis-of-its-components) job runs in HotWax Commerce to calculate the inventory of kit products by considering the lowest available inventory of their components at a given location.
-
-This job computes the kit inventory for each location and the [**order routing**](https://docs.hotwax.co/documents/retail-operations/orders/brokering) in HotWax Commerce then ensures that the kit order is sent to the appropriate facility based on the available inventory of the kit product and its components.
+After identifying the product type as **MARKETING\_PKG\_PICK**, HotWax Commerce directly [brokers](https://docs.hotwax.co/documents/retail-operations/orders/brokering) the entire kit order to the facility where the inventory is available rather than brokering each component separately.
