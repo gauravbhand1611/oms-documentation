@@ -7,7 +7,7 @@
 
 * [Product](flows/products/README.md)
   * [Bundles](flows/products/bundles.md)
-  * [Earring Flexiblity](gorjana/flows/products/Earring-Flexiblity.md)
+  * [Earring Flexiblity](/flows/products/Earring-Flexiblity.md)
   * [Service Products](flows/products/service-products.md)
   * [SOP for Product Setup](flows/products/product-set-up-sop.md)
 * [Service Products](/flows/products/Service-products)
