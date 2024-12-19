@@ -15,7 +15,7 @@
   * [External Mappings](flows/facility/external-mappings.md)
   * [Pre-open Setup](flows/facility/pre-open-setup.md)
 * [Inventory](flows/inventory/README.md)
-  * [Kit Inventory Computation](flows/products/Kit-inventory-Computation.md)
+  * [Kit Inventory Computation](flows/inventory/Kit-Inventory-Computation.md)
 * [Sales Orders](flows/sales-orders/README.md)
   * [Billing Address](flows/sales-orders/billing-address.md)
   * [Gift Cards](flows/sales-orders/gift-cards.md)
