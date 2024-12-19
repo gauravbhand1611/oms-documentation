@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Why HotWax Commerce](whyHotWax.md)
 
-## FLows
+## Flows
 
 * [Product](flows/products/README.md)
   * [Bundles](flows/products/bundles.md)
