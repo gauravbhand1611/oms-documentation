@@ -7,7 +7,7 @@
 
 * [Product](flows/products/README.md)
   * [Bundles](flows/products/bundles.md)
-  * [Earring Flexiblity](/flows/products/Earring-Flexiblity.md)
+  * [Earring Flexiblity]([/flows/products/Earring-Flexiblity.md](https://github.com/prachi872/oms-documentation-1/blob/0a68057c74861fd33d8007e29ee25bb5ab669d70/gorjana/flows/products/Earring-Flexiblity.md))
   * [Service Products](flows/products/service-products.md)
   * [SOP for Product Setup](flows/products/product-set-up-sop.md)
 * [Service Products](/flows/products/Service-products)
