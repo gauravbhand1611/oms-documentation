@@ -1,5 +1,5 @@
 ﻿# <a name="_jvw8vlt8r96"></a>**Kit Product Creation** 
-Gorjana aims to make shopping easier and more enjoyable for customers by offering bundles, or "kits", that combine related items. For example, if you’re interested in coordinating jewelry, Gorjana provides bundles that pair earrings with matching necklaces, customers can choose to purchase each item individually or enjoy the convenience of a pre-styled set.
+Gorjana makes shopping simple with "kits" or bundles that pair matching items like earrings and necklaces.   Customer can buy them separately or as a set.
 ### <a name="_5st0nlzeiktv"></a>**Creating Bundles at Gorjana**
 Previously, Gorjana used the Bundle App to manage bundle products, but with HotWax Commerce as their OMS, they now handle bundles seamlessly without the need for the app.
 #### <a name="_528yrqr0ttw5"></a>**1. Sourcing the Main Bundle from Shopify**
