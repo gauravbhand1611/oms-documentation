@@ -21,7 +21,7 @@ In this setup, a new SKU, **232-010-185-G**, is created to represent the pair of
 
 
 <div align="center">
-  <img src="https://github.com/prachi872/oms-documentation-1/blob/e030b98209e593e7e02ee14d0308aa0f12d21293/gorjana/.gitbook/assets/EarringFlexiblity.png" alt="Earring Pairing Example">
+  <img src="https://github.com/prachi872/oms-documentation-1/blob/2c61ed9a63d1966a5fd33d8c89143f5af483e289/gorjana/.gitbook/assets/EarringFlexiblity.jpeg">
 </div>
 
 ### **Order Example**
