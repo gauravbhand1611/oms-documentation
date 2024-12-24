@@ -7,7 +7,7 @@ The `Store Permissions` tab allows you to configure specific settings that contr
 The `Quantity on Hand` card includes a toggle for `Show Systemic Inventory`:
 
 - `When enabled`, the system displays the current systemic inventory, showing the expected physical quantities at each location during inventory counting.
-- `When disabled`, the systemic inventory values are hidden from store associates, ensuring they only see the manually counted inventory quantities.
+- `When disabled`, the systemic inventory values are hidden from store associates, ensuring they only see their manually counted inventory quantities.
 
 ## Force Scan Card
 
