@@ -92,6 +92,7 @@
   * [Review Counts](inventory-management/cycle-count/pending-review-count.md)
   * [View Closed Counts](inventory-management/cycle-count/closed-counts.md)
   * [Bulk Upload Cycle Count](inventory-management/cycle-count/bulk-import.md)
+  * [Store Permissions](inventory-management/cycle-count/store-permissions.md)
 * [Available to Promise Management](available-to-promise/README.md)
   * [Concepts](available-to-promise/concepts.md)
   * [Create Channels](available-to-promise/create-channel.md)
