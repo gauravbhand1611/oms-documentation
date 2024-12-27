@@ -19,6 +19,7 @@
   * [Order Fulfillment Notification](order-flow/order-fulfillment-notification.md)
 * [System Monitoring Guide](guidelines/system-monitoring-guide.md)
 * [Sanity Checklist](guidelines/sanity-checklist.md)
+  
 
 ## SOP Documents
 
@@ -38,6 +39,7 @@
 * [Product Duplication](sop/duplicate-products.md)
 * [Ticket and Release Managemnet](sop/ticket-management.md)
 * [Job Runtime Error](sop/runtime-error.md)
+* [FetchPut SFTP Retry](sop/fetch_put_sftp_retry.md)
 
 ## Napita
 
