@@ -172,6 +172,9 @@ Rejected orders are orders brokered for fulfillment but rejected by a warehouse 
 ## Reserved Inventory
 Reserved inventories refer to inventory, whether in a store or warehouse, that has already been allocated to fulfill orders. Reserved quantities are not included in the "available to promise" (ATP) and are not eligible to be sold.
 
+## Reset Inventory
+Reset Inventory is a method used to synchronize the available inventory across systems by updating inventory records to reflect the actual sellable stock, ensuring accurate and consistent data for order fulfillment.
+
 ## Safety Stock
 Safety stock helps retailers control how much inventory they promise to online channels. Once a store’s inventory count falls below the designated safety stock quantity, the remaining inventory will be reserved for in-store sales. Retailers often face inventory discrepancies, where a system’s inventory does not match the actual inventory in stores. Keeping safety stock also helps retailers mitigate the risk of taking orders that cannot be fulfilled due to inventory discrepancies. A robust omnichannel order management system helps retailers easily manage safety stock for each store. 
 To Know more about Safety Stock [Click Here](https://docs.hotwax.co/documents/v/retail-operations/inventory/safety-stock)
