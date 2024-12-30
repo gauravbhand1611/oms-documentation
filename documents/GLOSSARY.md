@@ -66,7 +66,7 @@ A Customer Service Representative (CSR) is the first point of contact for any cu
 Customer Service Representatives (CSRs) can utilize HotWax Commerce to get detailed visibility about the orders and perform actions accordingly as per the customer’s requests.
 
 ## Delta
-Delta refers to the difference or adjustment in stock levels at a location or between two different systems caused by events, such as sales, returns, or transfers. It represents the change in inventory at a given location, which can be either positive or negative.
+Delta refers to the difference in stock levels between two different systems caused by events, such as sales, returns, or transfers. It represents the change in inventory levels  at a given location, which can be either positive or negative.
 
 **For Example**
 If a product had 10 units in stock and 3 units were sold, the delta is **-3**, reflecting the reduction in inventory. Similarly, if 5 more units are restocked, the delta is **+5**, reflecting the increase.
@@ -179,8 +179,12 @@ Rejected orders are orders brokered for fulfillment but rejected by a warehouse 
 ## Reserved Inventory
 Reserved inventories refer to inventory, whether in a store or warehouse, that has already been allocated to fulfill orders. Reserved quantities are not included in the "available to promise" (ATP) and are not eligible to be sold.
 
-## Reset Inventory
-Reset Inventory is a method used to synchronize the available inventory across systems by updating inventory records to reflect the actual sellable stock, ensuring accurate and consistent data for order fulfillment.
+## Reset inventory 
+Reset inventory refers to updating the current number of inventory of a product to the latest number received.
+
+**For example** 
+The current number of the inventory of product A is 10. Now, let’s say an external system provides an inventory reset file containing the updated inventory number for product A, which is 20.
+HotWax will then update the inventory number for product A from 10 to 20."
 
 ## Safety Stock
 Safety stock helps retailers control how much inventory they promise to online channels. Once a store’s inventory count falls below the designated safety stock quantity, the remaining inventory will be reserved for in-store sales. Retailers often face inventory discrepancies, where a system’s inventory does not match the actual inventory in stores. Keeping safety stock also helps retailers mitigate the risk of taking orders that cannot be fulfilled due to inventory discrepancies. A robust omnichannel order management system helps retailers easily manage safety stock for each store. 
