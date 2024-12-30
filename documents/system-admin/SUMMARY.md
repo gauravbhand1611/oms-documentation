@@ -44,7 +44,6 @@
 * [SOLR Indexing](search-admin.md)
 * [Data manager](data-manager/README.md)
   * [Configurations](data-manager/configurations.md)
-  * [Imports](data-manager/imports.md)
   * [Troubleshooting](administration/data-manager/troubleshooting/README.md)
     * [Data not imported](data-manager/dataNotImportedInOMS.md)
     * [SFTP errors](data-manager/data-import-errors.md)
