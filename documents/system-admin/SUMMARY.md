@@ -43,6 +43,7 @@
 * [Delete customers](delete-customers.md)
 * [SOLR Indexing](search-admin.md)
 * [Data manager](data-manager/README.md)
+  * [Data import and export](import-and-export.md)
   * [Configurations](data-manager/configurations.md)
   * [Troubleshooting](administration/data-manager/troubleshooting/README.md)
     * [Data not imported](data-manager/dataNotImportedInOMS.md)
