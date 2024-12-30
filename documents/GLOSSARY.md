@@ -65,6 +65,13 @@ A Customer Service Representative (CSR) is the first point of contact for any cu
 
 Customer Service Representatives (CSRs) can utilize HotWax Commerce to get detailed visibility about the orders and perform actions accordingly as per the customer’s requests.
 
+## Delta
+Delta refers to the difference or adjustment in stock levels at a location or between two different systems caused by events, such as sales, returns, or transfers. It represents the change in inventory at a given location, which can be either positive or negative.
+
+**For Example**
+If a product had 10 units in stock and 3 units were sold, the delta is **-3**, reflecting the reduction in inventory. Similarly, if 5 more units are restocked, the delta is **+5**, reflecting the increase.
+
+
 ## Digital Gift Cards
 
 Digital gift cards, or e-gift cards, are virtual equivalents of physical gift cards. Customers receive them via email or text message along with a unique serial number that they can use to redeem the value stored in the card. When customers order a digital gift card on Shopify, the order is immediately auto-fulfilled, a serial number is assigned, and the value is loaded to activate the gift card. Consequently, when HotWax Commerce downloads that order from Shopify, it is automatically marked as "Completed". 
