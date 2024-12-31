@@ -186,7 +186,7 @@ Retailers can manually apply safety stock at products per location by importing 
 
 When importing safety stock some fields need to be filled mandatorily, while others can be filled for further references. Here is the list of mandatory fields:
 
-<table><thead><tr><th width="97">S.No.</th><th>Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>facility-id</td><td>Unique identifier for the facility within the system.</td></tr><tr><td>2</td><td>facility-external-id</td><td>External identifier used to represent the facility in external systems.</td></tr><tr><td>3</td><td>product-id</td><td>Unique identifier for the product in the system.</td></tr><tr><td>4</td><td>product-sku</td><td>Stock Keeping Unit (SKU) of the product for tracking and inventory management.</td></tr><tr><td>5</td><td>facility-safety-stock</td><td>Quantity of safety stock reserved for walk-in customers at the facility.</td></tr></tbody></table>
+<table><thead><tr><th width="97">S.No.</th><th>Field Name</th><th width="434">Description</th></tr></thead><tbody><tr><td>1</td><td>facility-id</td><td>Unique identifier for the facility within the system.</td></tr><tr><td>2</td><td>facility-external-id</td><td>External identifier used to represent the facility in external systems.</td></tr><tr><td>3</td><td>product-id</td><td>Unique identifier for the product in the system.</td></tr><tr><td>4</td><td>product-sku</td><td>Stock Keeping Unit (SKU) of the product for tracking and inventory management.</td></tr><tr><td>5</td><td>facility-safety-stock</td><td>Quantity of safety stock reserved for walk-in customers at the facility.</td></tr></tbody></table>
 
 ## Import/Export Purchase Order
 
