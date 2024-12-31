@@ -87,7 +87,7 @@ When scheduling a restock, certain mandatory fields should be filled. These fiel
 When NetSuite (or any third-party system) is used as a Warehouse Management System (WMS), it reserves inventory for orders that need to be fulfilled. To sync inventory with HotWax Commerce OMS based on the sellable inventory in NetSuite (or any third-party system of records for inventory), the **Reset Inventory by ATP** method is used.\
 This process updates HotWax OMS by comparing the quantity in the import file with the system's current ATP. The difference (delta in ATP) is applied to both ATP and QOH (Quantity on Hand) in HotWax OMS.
 
-### Example:
+**Example:**
 
 For Product A at a store:
 
@@ -111,7 +111,9 @@ The Reset file contains the following fields:
 The **Reset Inventory by QOH** method is used when you want to sync the physical inventory from a third-party system, such as NetSuite, to HotWax Commerce OMS without considering inventory reservations. This ensures that the QOH (Quantity on Hand) in HotWax matches the physical inventory recorded in the external system.\
 When the reset file is imported, the OMS compares the QOH value in the file with its systemic QOH. The difference (delta in QOH) is then applied to both QOH and ATP (Available to Promise), ignoring any reservations.
 
-**Example:** For Product A at a store:
+**Example:**&#x20;
+
+For Product A at a store:
 
 * **Initial QOH**: 10 units
 * **Initial ATP**: 5 units
@@ -132,7 +134,9 @@ When the “RESET INVENTORY BY QOH” file is uploaded it has some fields which 
 
 The **Reset Inventory by ATP & QOH** method is used when you want to update both QOH (Quantity on Hand) and ATP (Available to Promise) in HotWax Commerce OMS, while maintaining the difference between them. This method accounts for reservations, safety stock, and network thresholds configured in HotWax OMS when recalculating ATP.
 
-**Example:** For Product A:
+**Example:**&#x20;
+
+For Product A
 
 * **Initial QOH**: 15 units
 * **Initial ATP**: 10 units
