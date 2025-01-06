@@ -56,6 +56,7 @@ After fulfillment, a completed order feed is sent to NetSuite via NiFi. In the "
 
 </details>
 All of these items receive the same Keepsake Box (SKU: PKG245).
+
 ## Mapping for Keepsake Box in Shopify
 ```xml
 <ShopifyShopTypeMapping 
