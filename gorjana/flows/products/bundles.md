@@ -1,5 +1,5 @@
 ﻿# <a name="_jvw8vlt8r96"></a>**Kit Product Creation** 
-Gorjana aims to make shopping easier and more enjoyable for customers by offering bundles, or "kits", that combine related items. For example, if you’re interested in coordinating jewelry, Gorjana provides bundles that pair earrings with matching necklaces, customers can choose to purchase each item individually or enjoy the convenience of a pre-styled set.
+Gorjana makes shopping simple with "kits" or bundles that pair matching items like earrings and necklaces.   Customer can buy them separately or as a set.
 ### <a name="_5st0nlzeiktv"></a>**Creating Bundles at Gorjana**
 Previously, Gorjana used the Bundle App to manage bundle products, but with HotWax Commerce as their OMS, they now handle bundles seamlessly without the need for the app.
 #### <a name="_528yrqr0ttw5"></a>**1. Sourcing the Main Bundle from Shopify**
@@ -7,7 +7,7 @@ Gorjana sources its main bundles, also known as parent products, directly from S
 #### <a name="_1t8otou35s5y"></a>**2. Linking Components from NetSuite**
 Bundles in the OMS consist of individual components sourced from NetSuite. For example, the “Chloe Set” includes a necklace (SKU "161-105-G") and earrings (SKU "102-005-G"), each retaining its SKU whether sold individually or in a set, while the bundle has a unique SKU like "GS-184-102-G." The automated **IMP\_KIT\_COMP** job updates bundle data by importing component details from NetSuite. A "Saved Search" script generates a CSV of components, which is converted to JSON to map each component to its parent product using product IDs.
 <p align="center">
-  <img src="https://github.com/prachi872/oms-documentation-1/blob/implementations-pub/gorjana/.gitbook/assets/Kit_Product_Creation.jpeg?raw=true" alt="Image Description">
+  <img src="https://github.com/prachi872/oms-documentation-1/blob/implementations-pub/gorjana/.gitbook/assets/Kit_Product_Creation.jpeg?raw=true" alt="Bundle creation flow">
 </p>
 
 ### **Why This Transformation is Needed**
