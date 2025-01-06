@@ -55,8 +55,7 @@ After fulfillment, a completed order feed is sent to NetSuite via NiFi. In the "
 | 2310-3009-185-G       | Classic Diamond Eternity Ring (size 9)           |
 
 </details>
-All of these items receive the same Keepsake Box. **Keepsake Box SKU: PKG245**
-
+All of these items receive the same Keepsake Box (SKU: PKG245).
 ## Mapping for Keepsake Box in Shopify
 ```xml
 <ShopifyShopTypeMapping 
