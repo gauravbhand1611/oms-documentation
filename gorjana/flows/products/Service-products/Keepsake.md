@@ -1,21 +1,23 @@
 # Keepsake Box 
 
+## Process
 A complimentary **Keepsake Box** (SKU: **PKG245**) is included with the purchase of select high-value products. Although it doesn't appear in the Shopify order, it is added during order processing in **HotWax Commerce OMS**.
 
-## Eligibility Check
+### 1. Eligibility Check
 Gorjana provides a list of SKUs eligible for the Keepsake Box.
 
-## Order Processing
+### 2. Order Processing
 During the order import process, a Groovy script in the NiFi Custom Order Import workflow checks the SKUs of the imported orders. If an order contains an eligible SKU, the Keepsake Box is added as a line item to the order with price “0.00” in OMS.
-## Shipping and Fulfillment
 
-- **Grouping**: Eligible items and the Keepsake Box are grouped together under the OrderItemGroup entity, with the group type set to "brokering group." This ensures both items are fulfilled together, preventing partial allocation or splitting.
+### 3. Shipping and Fulfillment
+- **Grouping:**  
+  Eligible items and the Keepsake Box are grouped together under the `OrderItemGroup` entity, with the group type set to "brokering group." This ensures both items are fulfilled together, preventing partial allocation or splitting.
 
-- **Fulfillment**: Both the product and the Keepsake Box are picked and shipped from the same facility as a single group.
+- **Fulfillment:**  
+  Both the product and the Keepsake Box are picked and shipped from the same facility as a single group.
+### 4. Post-Fulfillment
+After fulfillment, a completed order feed is sent to NetSuite via NiFi. In the "Fulfilled Order Item Feed NetSuite to HotWax" workflow, if the SKU is "PKG245," JOLT assigns the external ID "PKG2451234" to the item.
 
-
-## Post-Fulfillment
-After fulfillment, a completed order feed is sent to NetSuite via NiFi. In the "Fulfilled Order Item Feed NetSuite to HotWax" workflow, If the SKU is "PKG245," JOLT assigns the external ID "PKG2451234" to the item."
 ## Eligible Products for Keepsake Box
 
 <details>
