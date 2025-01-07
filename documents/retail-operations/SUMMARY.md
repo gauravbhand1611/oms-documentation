@@ -88,6 +88,7 @@
   * [Schedule Restocking](inventory-management/schedule-restock.md)
 * [Cycle Count](inventory-management/cycle-count/introduction.md)
   * [Draft Counts](inventory-management/cycle-count/draft-cycle-count.md)
+  * [Hard Counts](inventory-management/cycle-count/hard-count.md)
   * [View Assigned Counts](inventory-management/cycle-count/manage-assigned-counts.md)
   * [Review Counts](inventory-management/cycle-count/pending-review-count.md)
   * [View Closed Counts](inventory-management/cycle-count/closed-counts.md)
