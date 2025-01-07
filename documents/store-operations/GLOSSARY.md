@@ -118,11 +118,12 @@ Future Inventory refers to stock that is not currently available but is expected
 
 Inventory Allocation in HotWax Commerce involves routing online orders to fulfillment locations using configurable rules. These rules consider factors such as shipping method, customer loyalty, proximity to the shipping address, inventory levels, store fulfillment capacity, and splitting configurations. This comprehensive approach ensures efficient and accurate fulfillment, optimizing inventory distribution and enhancing customer satisfaction.
 
-## Inventory Delta
+### Inventory Delta
 Inventory delta means adjusting the stock count of an item in a facility by adding or subtracting a specific amount of inventory, as provided by an external system like an ERP.
+
 For example, if the Central Warehouse has 10 socks in stock and a delta file specifies a change of +2, the stock count will be adjusted to 12 by adding the delta value (+2) to the existing stock count.
 
-## Inventory Reset
+### Inventory Reset
 Inventory reset means updating the stock count of an item in a facility with a new count provided by an external system, like an ERP.
 
 **For example**, if the Central Warehouse has 10 socks in stock, and a reset file from the ERP specifies a count of 15, the stock count in HotWax will be reset to 15, discarding the previous count entirely.
