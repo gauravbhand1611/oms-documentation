@@ -22,5 +22,5 @@ Hard counts are used for large-scale inventory checks, such as year-end stock ta
 ---
 
 ### Auto Assigning Hard Counts
-1. After creating the hard count, toggle the `Auto assign to store` setting (located in the top right of the page) to automatically assign the hard count to stores.
-2. Click on the `tick icon at the bottom right of the page` to finalize. The count will be automatically assigned to the selected facilities.
+1. After creating the hard count, toggle the `Auto assign to store` setting located in the top right of the page to automatically assign the hard count to stores. If this setting is turned off, the hard count will be created in the Draft status.
+2. Click on the `Checkmark done icon` at the bottom right of the page to finalize.
