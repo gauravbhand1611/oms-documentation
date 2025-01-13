@@ -8,6 +8,8 @@ Transfer orders are instrumental in the internal movement of inventory within an
 
 Transfer orders are initiated in the NetSuite ERP system, facilitating the movement of inventory from warehouses to stores, between stores, or stores to warehouses.
 
-
+{% hint style="info" %}
+Once a transfer order is created and synced, any updates or modifications must be handled by creating a new transfer order. The same transfer order should never be edited.
+{% endhint %}
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Warehouse to Store</td><td><a href="warehousetostore.md">warehousetostore.md</a></td></tr><tr><td>Store to Warehouse</td><td><a href="storetowarehouse.md">storetowarehouse.md</a></td></tr><tr><td>Store to Store</td><td><a href="storetostore.md">storetostore.md</a></td></tr></tbody></table>
