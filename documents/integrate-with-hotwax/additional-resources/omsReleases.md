@@ -59,11 +59,22 @@ description: Discover  the versions of HotWax Commerce OMS releases.
 {% endtab %}
 {% endtabs %}
 
+## Release - v5.18.15 (17th January 2025)
+
+| Information     | Value                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------  |
+| Release Version | v5.18.15                                                                                                        |
+| Release Type    | Hotfix                                                                                                              |
+| Image Tag       | v5.18.15                                                                                                            |
+| Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-latest-v5.18.15`                            |
+| Diff            | [Link to diff](https://git.hotwax.co/commerce/oms/-/compare/v5.18.14...v5.18.15?from_project_id=161&straight=false) |
+| Changelog       | [Link to changelog](https://git.hotwax.co/commerce/oms/-/blob/v5.18.15/CHANGELOG.md?ref_type=tags)                  |
+
 ## Release - v5.18.14 (10th January 2025)
 
 | Information     | Value                                                                                                               |
 | --------------- | ------------------------------------------------------------------------------------------------------------------  |
-| Release Version | v5.18.14                                                                                                           |
+| Release Version | v5.18.14                                                                                                            |
 | Release Type    | Hotfix                                                                                                              |
 | Image Tag       | v5.18.14                                                                                                            |
 | Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-latest-v5.18.14`                            |
