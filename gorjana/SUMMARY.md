@@ -11,6 +11,7 @@
   * [SOP for Product Setup](flows/products/product-set-up-sop.md)
 * [Service Products](flows/products/Service-products)
   * [Flyer](flows/products/Service-products/flyer.md)
+  * [Bespoke](flows/products/Service-products/Bespoke.md)
 * [Facility](flows/facility/README.md)
   * [External Mappings](flows/facility/external-mappings.md)
   * [Pre-open Setup](flows/facility/pre-open-setup.md)
