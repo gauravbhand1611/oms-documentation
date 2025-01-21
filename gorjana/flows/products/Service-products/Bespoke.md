@@ -1,6 +1,8 @@
-## Bespoke
+# Bespoke
 
 Gorjana offers engraving services for certain products, with inventory and fulfillment handled only at warehouses due to processing needs.
+
+## Process Flow
 
 ### 1) Ordering Bespoke Products on Shopify
 
