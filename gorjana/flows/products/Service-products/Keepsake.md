@@ -1,7 +1,7 @@
 # Keepsake Box 
 
 ## Process
-A complimentary **Keepsake Box** (SKU: **PKG245**) is included with the purchase of select high-value products. Although it doesn't appear in the Shopify order, it is added during order processing in **HotWax Commerce OMS**.
+A complimentary **Keepsake Box** (SKU: **PKG245**) is included with the purchase of selected high-value products. Although it doesn't appear in the Shopify order, it is added during order processing in **HotWax Commerce OMS**.
 
 ### 1. Eligibility Check
 Gorjana provides a list of SKUs eligible for the Keepsake Box.
