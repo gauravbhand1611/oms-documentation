@@ -37,14 +37,6 @@ Gorjana offers engraving services for certain products, with inventory and fulfi
 ### Visibility on Packing Slips:
 - The details are also included on the packing slip, ensuring clear communication during fulfillment.
 
-### Supported Fonts for Engraving:
-The following fonts are available for engraving:
-- **Helvetica Custom**
-- **Custom Script**
-- **Avant Garde Custom**
-- **Century Custom**
-- **Roman Monogram** (restricted to certain SKUs, does not support ❤)
-
 ## Example of Shopify JSON:
 ```json
 {
@@ -56,3 +48,14 @@ The following fonts are available for engraving:
     }
   ]
 }
+```
+<details>
+<summary> <b> Supported Fonts for Engraving:</b></summary>
+ 
+- Helvetica Custom  
+- Custom Script  
+- Avant Garde Custom  
+- Century Custom  
+- Roman Monogram (restricted to certain SKUs, does not support 🤍)
+
+</details>
