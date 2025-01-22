@@ -12,7 +12,6 @@
   * [Financial Posting](flows/fulfillment/financialPosting.md)
   * [BI/BW Feed](flows/fulfillment/bibwFeed.md)
   * [Store Fulfillment Feed](flows/fulfillment/storeFulfilledDeltaFeed.md)
-  * [E Hidden 3 Feed](flows/fulfillment/eHidden3Feed.md)
   * [WMS Feed](flows/fulfillment/wmsFeed/README.md)
     * [Header Item](flows/fulfillment/wmsFeed/headerItem.md)
     * [Detail Item](flows/fulfillment/wmsFeed/detailItem.md)
@@ -25,7 +24,10 @@
   * [Custom Order Import](flows/salesOrder/custom-order-import.md)
   * [Payment Methods](flows/salesOrder/paymentMethods.md)
 * [Product Store](flows/product-store/README.md)
-* [Production Data Setup](flows/production-data-setup/Klaviyo.md)
+* [Klaviyo](flows/klaviyo/README.md)
 
 ## Troubleshooting
 * [Rollback](troubleshooting/rollback.md)
+
+## Old Design
+* [E Hidden 3 Feed](flows/oldDesigns/eHidden3Feed.md)
