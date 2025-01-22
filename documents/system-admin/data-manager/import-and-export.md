@@ -19,7 +19,7 @@ HotWax Commerce OMS provides two methods for adding or updating data in bulk:
 3. On the **EXIM** page, retailers can click the link they want.
 4. Inside the **MDM**, on the top-left corner, retailers can upload a CSV file and download a sample CSV file.
 
-## Import/Export Generally Used in Initial Setup
+## Import/Export Used in Initial Setup
 
 ## Import/Export Facilities
 
