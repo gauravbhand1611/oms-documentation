@@ -25,8 +25,9 @@
   * [Payment Methods](flows/salesOrder/paymentMethods.md)
 * [Product Store](flows/product-store/README.md)
 * [Production Data Setup](flows/production-data-setup/Klaviyo.md)
-* [Old Designs](flows/oldDesigns/README.MD)
-  * [E Hidden 3 Feed](flows/oldDesigns/eHidden3Feed.md)
 
 ## Troubleshooting
 * [Rollback](troubleshooting/rollback.md)
+
+## Old Design
+* [E Hidden 3 Feed](flows/oldDesigns/eHidden3Feed.md)
