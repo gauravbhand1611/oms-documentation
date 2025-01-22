@@ -9,10 +9,17 @@ description: >-
 New Era Caps will use its stores for fulfillment along with their warehouse, but the conditions for when to use stores fulfillment are very particular and require that brokering be configured correctly to accommodate for these preferences.
 
 **SFTP Path to export orders brokered at Warehouse:** 
+
 UAT
-`/home/newera-uat-sftp/hotwax/Testing_Hotwax/from-shopify`
+```
+/home/newera-uat-sftp/hotwax/Testing_Hotwax/from-shopify
+```
+
 PROD 
-`/home/newera-oms-sftp/Testing-Hotwax/from-shopify`
+```
+/home/newera-oms-sftp/Testing-Hotwax/from-shopify
+```
+
 
 Online shipping orders are always routed to the warehouse unless the customer has selected a store that they want the product to be shipped from when adding the item to their cart. In the event that an order item contains a soft allocated ship-from facility, the OMS will read the pre-selected facility and allocate those order items to the respective locations for fulfillment.
 
