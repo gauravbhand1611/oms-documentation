@@ -9,7 +9,7 @@ Gorjana offers customers the option to add a personal touch to their orders by s
 - Customers choose whether they want the items wrapped together or separately.  
 
 ### Choosing the Wrapping Style
-- Customers select the gift wrapper design (e.g., **"With Love Wrapper"**).  
+- Customers select the gift wrapper design (e.g., **"With Love"**).  
 
 ### Adding a Gift Note (Optional)
 - Customers have the option to add a personalized note that will appear on the gift.  
@@ -68,16 +68,16 @@ In NetSuite, the gift wrap details are stored as follows:
     "note": "happy birthday",
     "note_attribute": [
       {
-        "name": "Gift wrap option",
-        "value": "Gift wrap items together"
+        "name": "Gift Wrap Option",
+        "value": "Gift Wrap Items Together"
       }
     ],
     "line_items": [
       {
         "properties": [
           {
-            "name": "Gift wrap",
-            "value": "with love"
+            "name": "Gift Wrap",
+            "value": "With Love"
           }
         ]
       }
