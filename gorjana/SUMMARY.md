@@ -13,6 +13,7 @@
   * [Flyer](flows/products/Service-products/flyer.md)
   * [Bespoke](flows/products/Service-products/Bespoke.md)
   * [Keepsake Box](flows/products/Service-products/Keepsake.md)
+  * [Gift Wrap](flows/products/Service-products/GiftWrapping.md)
 * [Facility](flows/facility/README.md)
   * [External Mappings](flows/facility/external-mappings.md)
   * [Pre-open Setup](flows/facility/pre-open-setup.md)
