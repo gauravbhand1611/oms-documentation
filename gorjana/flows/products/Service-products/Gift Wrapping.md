@@ -30,6 +30,8 @@ Placed orders are imported into OMS through the "Custom Order Import" NiFi flow,
 
 ### 3. Gift Wrap Handling in NetSuite:
 In NetSuite, the gift wrap details are stored as follows:
+
+#### Header Level Details:
 - **Memo (Message Note)**: Contains the Gift Wrap Note (personalized message).
 
 - **Custom Gift Wrap Option**: Indicates whether the items are to be wrapped together or separately.
