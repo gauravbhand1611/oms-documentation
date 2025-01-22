@@ -12,13 +12,13 @@ In the event that the order is a “ReShipped” order, then the order name in t
 
 ## CSV Schema
 
-### **SFTP Path**
+**SFTP Path**
 
-#### For UAT
+UAT
 ```
 /home/newera-uat-sftp/hotwax/Testing_Hotwax/tracking_info
 ```
-#### For PROD
+PROD
 ```
 newera_prod_hw/tracking_info
 ```
