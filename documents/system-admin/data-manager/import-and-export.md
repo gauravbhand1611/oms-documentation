@@ -31,7 +31,11 @@ When importing facilities, some fields need to be filled mandatorily, while othe
 
 <table><thead><tr><th width="82">S.No.</th><th width="139">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>facility-id</td><td>Unique identifier for the facility.</td></tr><tr><td>2</td><td>external-id</td><td>External identifier for the facility.</td></tr><tr><td>3</td><td>facility-name</td><td>The name of the facility.</td></tr><tr><td>4</td><td>address-line-1</td><td>Primary address line of the facility.</td></tr><tr><td>5</td><td>address-line-2</td><td>Secondary address line of the facility, if applicable.</td></tr><tr><td>6</td><td>City</td><td>The city where the facility is located.</td></tr><tr><td>7</td><td>zip-code</td><td>Zip or postal code of the facility's location.</td></tr><tr><td>8</td><td>state</td><td>State or province of the facility's location.</td></tr><tr><td>9</td><td>country</td><td>Country where the facility is located.</td></tr><tr><td>10</td><td>latitude</td><td>Latitude coordinate of the facility's location.</td></tr><tr><td>11</td><td>longitude</td><td>Longitude coordinate of the facility's location.</td></tr><tr><td>12</td><td>phone-number</td><td>Phone number for contacting the facility.</td></tr><tr><td>13</td><td>email</td><td>Contact email address for the facility.</td></tr></tbody></table>
 
-***
+
+
+{% file src="../.gitbook/assets/import_export_facilities.csv" %}
+Sample CSV File
+{% endfile %}
 
 ## Import Employee
 
