@@ -11,7 +11,7 @@ Gorjana offers customers the option to add a personal touch to their orders by s
 - **Adding a Gift Note (Optional):** Customers have the option to add a personalized note that will appear on the gift.
 
 ## Order Handling:
-The order handling process smoothly manages gift wrapping choices from Shopify to HotWax OMS and then to NetSuite, making the fulfillment process efficient and automated.
+The order handling process smoothly manages gift wrapping choices from Shopify to OMS and then to NetSuite, making the fulfillment process efficient and automated.
 
 ### 1. Shopify Order Properties:
 Gift wrap selections are stored in Shopify with following details:
