@@ -6,7 +6,7 @@ Gorjana offers customers the option to add a personal touch to their orders by s
 
 - **Selecting Gift Wrap Items:** Customers select the items they want to gift wrap and choose whether they want the items wrapped together or separately.
 
-- **Choosing the Wrapping Style:** Customers select the gift wrap design (e.g., "With Love Wrapper").
+- **Choosing the Wrapping Style:** Customers select the gift wrap design (e.g., "With Love").
 
 - **Adding a Gift Note (Optional):** Customers have the option to add a personalized note that will appear on the gift.
 
