@@ -12,8 +12,7 @@ Gorjana offers customers the option to add a personal touch to their orders by s
 - Customers select the gift wrapper design (e.g., **"With Love Wrapper"**).  
 
 ### Adding a Gift Note (Optional)
-- Customers have the option to add a personalized note with the gift wrap.  
-- They can enter a custom message, which will appear on the gift.  
+- Customers have the option to add a personalized note that will appear on the gift.  
 
 ## Order Handling
 The order handling process smoothly manages gift wrapping choices from Shopify to HotWax OMS and then to NetSuite, making the fulfillment process efficient and automated.
