@@ -1,62 +1,43 @@
 # Gift Wrapping at Gorjana
 
-Gorjana offers customers the option to add a personal touch to their orders by selecting gift wrap for their items.
+Gorjana offers customers the option to add a personal touch to their orders by selecting gift wrapping for their items.
 
 ## Gift Wrap Process
 
-### Selecting Gift Wrap Items
-- Customers select the items they want to gift wrap.  
-- Customers choose whether they want the items wrapped together or separately.  
+- **Selecting Gift Wrap Items:** Customers select the items they want to gift wrap and choose whether they want the items wrapped together or separately.
 
-### Choosing the Wrapping Style
-- Customers select the gift wrapper design (e.g., **"With Love"**).  
+- **Choosing the Wrapping Style:** Customers select the gift wrap design (e.g., "With Love Wrapper").
 
-### Adding a Gift Note (Optional)
-- Customers have the option to add a personalized note that will appear on the gift.  
+- **Adding a Gift Note (Optional):** Customers have the option to add a personalized note that will appear on the gift.
 
-## Order Handling
+## Order Handling:
 The order handling process smoothly manages gift wrapping choices from Shopify to HotWax OMS and then to NetSuite, making the fulfillment process efficient and automated.
 
----
+### 1. Shopify Order Properties:
+Gift wrap selections are stored in Shopify with following details:
+- **Wrapper Name**: Indicates the selected wrapper (e.g., "With Love") for the item in the order stored in line items properties.
 
-### 1. Shopify Order Properties
-Gift wrap selections are stored as line item properties in Shopify. Orders with gift wrap contain the following details:
+- **Gift Wrap Option**: Indicates whether the items are wrapped together or separately, stored in the note attribute of the Shopify JSON (e.g., "Gift Wrap Items Together").
 
-#### Order Item
-- **Wrapper Name**: Indicates the selected wrapper (e.g., **"With Love"**) for the item in the order.  
+- **Gift Wrap Note**: Contains the personalized message from the customer, found in the order note.
 
-#### Additional Details
-- **Gift Wrap Option**: Indicates whether the items are wrapped together or separately, stored in the `note_attributes` of the Shopify JSON (e.g., **"Gift Wrap Items Together"**).  
-- **Gift Wrap Note**: Contains the personalized message from the customer, found in the order note.  
+### 2. Order Import into HotWax OMS:
+Placed orders are imported into OMS through the "Custom Order Import" NiFi flow, where a groovy script checks the order details. The relevant properties are then added as order item attributes.
 
----
+- **If the order includes "Gift Wrap Together"**: The first item's external ID is used as a reference, and all other items with the "Gift Wrap" property are grouped together using this ID.
 
-### 2. Order Import into HotWax OMS
-Orders are imported into HotWax OMS via the **"Custom Order Import" NiFi flow**, where a Groovy script runs to verify the order details during the import process.  
+- **If the order specifies "Gift Wrap Separately"**: The "Gift Wrap" property is added to each item individually.
 
-#### If the Order Includes "Gift Wrap Together"
-- The first item's external ID is used as a reference.  
-- The reference ID is applied to all subsequent items with the **"Gift Wrap"** property.  
-- This ensures that all items are grouped together for wrapping.  
+### 3. Gift Wrap Handling in NetSuite:
+In NetSuite, the gift wrap details are stored as follows:
+- **Memo (Message Note)**: Contains the Gift Wrap Note (personalized message).
 
-#### If the Order Specifies "Gift Wrap Separately"
-- The **"Gift Wrap"** property is added to each item individually.  
-- Items are not grouped together, ensuring separate wrapping.  
+- **Custom Gift Wrap Option**: Indicates whether the items are to be wrapped together or separately.
 
----
+#### Item Level Details:
+- **Gift Wrap**: Yes (indicates the item is gift wrapped).
 
-### 3. Gift Wrap Handling in NetSuite
-In NetSuite, the gift wrap details are stored as follows:  
-
-#### Memo (Message Note)
-- Contains the **Gift Wrap Note** (personalized message).  
-
-#### Custom Gift Wrap Option
-- Indicates whether the items are to be wrapped together or separately.  
-
-#### Item Level Details
-- **Gift Wrap**: Yes (indicates the item is gift wrapped).  
-- **Gift Wrapper Text**: Specifies the selected wrapping style (e.g., **"With Love"**).  
+- **Gift Wrapper Text**: Specifies the selected wrapping style (e.g., "With Love").
 
 ---
 <details>
