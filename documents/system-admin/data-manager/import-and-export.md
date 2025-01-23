@@ -49,6 +49,10 @@ When importing Employee data, some fields need to be filled mandatorily, while o
 
 
 
+{% file src="../.gitbook/assets/import_employee.csv" %}
+Sample CSV File
+{% endfile %}
+
 ***
 
 ## Import Calendar
@@ -110,7 +114,11 @@ When scheduling a restock, certain mandatory fields should be filled. These fiel
 
 <table><thead><tr><th width="89">S.No.</th><th width="187">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Shopify Product SKU</td><td>Unique ID for a Product in Shopify.</td></tr><tr><td>2</td><td>Restock Quantity</td><td>The quantity of items restocked.</td></tr><tr><td>3</td><td>Schedule</td><td>Allows selecting the time.</td></tr><tr><td>4</td><td>Facility ID</td><td>Unique ID for a facility where restock is scheduled.</td></tr><tr><td>5</td><td>Product Store</td><td>The name of the Product Store.</td></tr><tr><td>6</td><td>Shopify Store</td><td>Name of the Shopify Store on which the inventory will change.</td></tr><tr><td>7</td><td>Restock Name</td><td>Name for the restock.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/schedule_restock.csv" %}
+Sample CSV File
+{% endfile %}
 
+***
 
 ## Reset Inventory by ATP
 
