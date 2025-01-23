@@ -10,7 +10,7 @@
 * [Brokering](flows/brokering/README.md)
 * [Fulfillment](flows/fulfillment/README.MD)
   * [Financial Posting](flows/fulfillment/financial-posting.md)
-  * [BI/BW Feed](flows/fulfillment/bibw-Feed.md)
+  * [BI/BW Feed](flows/fulfillment/bibw-feed.md)
   * [Store Fulfillment Feed](flows/fulfillment/store-fulfilled-delta-feed.md)
   * [WMS Feed](flows/fulfillment/wms-feed/README.md)
     * [Header Item](flows/fulfillment/wms-feed/header-item.md)
