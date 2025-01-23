@@ -136,6 +136,12 @@ The Reset file contains the following fields:
 
 <table><thead><tr><th width="97">S. No.</th><th width="127">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>productId</td><td>Unique identifier for the product.</td></tr><tr><td>2</td><td>idValue</td><td>Value corresponding to the identification type.</td></tr><tr><td>3</td><td>facilityId</td><td>Identifier for the facility location.</td></tr><tr><td>4</td><td>locationSeqId</td><td>Sequence ID for the specific storage location.</td></tr><tr><td>5</td><td>quantity</td><td>Number of items involved in the action.</td></tr><tr><td>6</td><td>reason</td><td>Explanation for the inventory adjustment.</td></tr><tr><td>7</td><td>comments</td><td>Additional notes or remarks.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/reset_inventory.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
+
 ## Reset Inventory by QOH
 
 The **Reset Inventory by QOH** method is used when you want to sync the physical inventory from a third-party system, such as NetSuite, to HotWax Commerce OMS without considering inventory reservations. This ensures that the QOH (Quantity on Hand) in HotWax matches the physical inventory recorded in the external system.\
@@ -159,6 +165,12 @@ This method ensures a direct update of physical inventory levels in HotWax OMS.
 When the “RESET INVENTORY BY QOH” file is uploaded it has some fields which are listed below:
 
 <table><thead><tr><th width="114">S. No.</th><th width="137">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>productId</td><td>Unique identifier for the product.</td></tr><tr><td>2</td><td>idValue</td><td>Value corresponding to the identification type.</td></tr><tr><td>3</td><td>facilityId</td><td>Identifier for the facility location.</td></tr><tr><td>4</td><td>locationSeqId</td><td>Sequence ID for the specific storage location.</td></tr><tr><td>5</td><td>quantity</td><td>Number of items involved in the action.</td></tr><tr><td>6</td><td>reason</td><td>Explanation for the inventory adjustment.</td></tr><tr><td>7</td><td>comments</td><td>Additional notes or remarks.</td></tr></tbody></table>
+
+{% file src="../.gitbook/assets/reset_inventory_by_QOH.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
 
 ## Reset Inventory by ATP & QOH
 
@@ -184,6 +196,12 @@ When the “RESET INVENTORY BY ATP & QOH” file is uploaded it has some fields 
 
 <table><thead><tr><th width="85">S. No.</th><th width="145">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>productId</td><td>Unique identifier for the product.</td></tr><tr><td>2</td><td>idValue</td><td>Value corresponding to the identification type.</td></tr><tr><td>3</td><td>facilityId</td><td>Identifier for the facility location.</td></tr><tr><td>4</td><td>locationSeqId</td><td>Sequence ID for the specific storage location.</td></tr><tr><td>5</td><td>quantity</td><td>Number of items involved in the action.</td></tr><tr><td>6</td><td>reason</td><td>Explanation for the inventory adjustment.</td></tr><tr><td>7</td><td>comments</td><td>Additional notes or remarks.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/reset_inventory.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
+
 ## Export Order
 
 If the admin team wants to export orders based on multiple filters or criteria, they can navigate to their OMS instance. The default page that opens is the **“Find Order Page”**. From there, they can apply filters and then export the CSV file of orders.
@@ -192,11 +210,11 @@ When exporting the CSV it gives some major fields which are listed here :
 
 <table><thead><tr><th width="87">S. No.</th><th width="193">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>orderId</td><td>Unique identifier for the order.</td></tr><tr><td>2</td><td>orderName</td><td>Name or description of the order.</td></tr><tr><td>3</td><td>orderItemSeqId</td><td>Sequential identifier for the order item.</td></tr><tr><td>4</td><td>productId</td><td>Unique identifier for the product.</td></tr><tr><td>5</td><td>parentProductName</td><td>Name of the parent product associated with the order item.</td></tr><tr><td>6</td><td>productName</td><td>Name of the product in the order.</td></tr><tr><td>7</td><td>internalName</td><td>Internal name of the product within the system.</td></tr><tr><td>8</td><td>quantity</td><td>Quantity of the order item.</td></tr><tr><td>9</td><td>orderItemStatusId</td><td>Status identifier for the order item.</td></tr><tr><td>10</td><td>orderItemStatusDesc</td><td>Description of the order item status.</td></tr></tbody></table>
 
-
-
 {% file src="../.gitbook/assets/export_order.csv" %}
 Sample CSV
 {% endfile %}
+
+***
 
 ## Import/ Export that are generally used
 
@@ -207,8 +225,6 @@ This is used to export inventory details such as Product Id, Facility Id, ATP, M
 When exporting CSV fields are in this way:
 
 <table><thead><tr><th width="96">S.No.</th><th width="178">Field</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>product-id</td><td>Unique identifier for each product.</td></tr><tr><td>2</td><td>internal-name</td><td>Internal reference name for the product.</td></tr><tr><td>3</td><td>product-id-value</td><td>Specific value assigned to the product ID for mapping or identification.</td></tr><tr><td>4</td><td>facility-id</td><td>Unique identifier for the facility (e.g., warehouse or store) where the product is managed.</td></tr><tr><td>5</td><td>external-id</td><td>Identifier for the product used in external systems or integrations.</td></tr><tr><td>6</td><td>ATP</td><td>Available to Promise - quantity of product available to fulfill orders.</td></tr><tr><td>7</td><td>minimum-stock</td><td>The minimum required stock level to prevent stockouts.</td></tr><tr><td>8</td><td>inv-group-member</td><td>Specifies the inventory group or category the product belongs to.</td></tr></tbody></table>
-
-
 
 {% file src="../.gitbook/assets/export_inventory_config.csv" %}
 Sample CSV Files
