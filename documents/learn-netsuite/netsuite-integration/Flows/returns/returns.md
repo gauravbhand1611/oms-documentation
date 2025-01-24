@@ -1,8 +1,6 @@
 ---
 description: >-
-  Explore how retailers synchronize web returns from Shopify to NetSuite using
-  Loop as middleware or HotWax Commerce as the Order Management System (OMS),
-  ensuring efficient processing of returns across
+  Learn about returns in Shopify, Loop, NetSuite and HotWax Commerce.
 ---
 
 
