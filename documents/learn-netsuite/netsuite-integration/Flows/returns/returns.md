@@ -67,12 +67,24 @@ Unlike standard third-party connectors like NovaModule, which merely transfer da
 ### 4. Transform and Export Returns Data from HotWax Integration Platform
 Once the RMA data is transformed, a job in HotWax Commerce Integration Platform places the file at a designated SFTP location. This enables NetSuite to access and process the data for creating RMAs for downstream processing.
 
+**SFTP Locations**
+
+```
+/home/{sftp-username}netsuite/loop-return/create
+```
+
 ### 5. Import Returns Data in NetSuite
 Every 15 minutes, a scheduled SuiteScript in NetSuite runs to check for new return files at the SFTP location.
 
 If a new RMA JSON file is found, the NetSuite SuiteScript reads and processes the file. An RMA is then created in NetSuite and marked as **Pending Receipt.**
 
 The newly created RMA is linked to the original sales order. This offers traceability and provides warehouse teams with advance notice that the order item will be returned.
+
+**SuiteScript**
+
+```
+HC_SC_CreateLoopReturn.js
+```
 
 ### 6. Process and Export Item Receipts Records
 When the reAfter a few days, when the customer's returned item is physically received at the warehouse, the following actions take place:
@@ -85,8 +97,25 @@ As soon as the Item Receipt record is created in NetSuite, a CSV file is generat
 
 This step is important for completing the return process in Loop, let’s see how in the next steps.
 
+**SuiteScript**
+
+```
+HC_SC_CreateLoopReturn.js
+```
+**SFTP Locations**
+
+```
+/home/{sftp-username}netsuite/loop-return/process-return
+```
+
 ### 7. Import Item Receipt Records
-A job in HotWax Commerce Integration Platform runs every 5 minutes to check for new CSV files received at the SFTP location. If any new files are identified, the job extracts the Loop return IDs from the file and subsequently triggers the “Process Return” API.
+A job in HotWax Commerce Integration Platform runs every 5 minutes to check for new CSV files received at the SFTP location. If any new files are identified, the job extracts the Loop return IDs from the file and subsequently triggers the [https://api.loopreturns.com/api/v1/warehouse/return/%7Breturn_id%7D/process](“Process Return” API.)
+
+**SFTP Locations**
+
+```
+/home/{sftp-username}/netsuite/loop-return/process-return
+```
 
 ### 8. Close Returns in Loop
 The Process Return API triggers multiple actions in Loop based on the fetched Loop return IDs:
@@ -98,12 +127,17 @@ The Process Return API triggers multiple actions in Loop based on the fetched Lo
   - If the customer opted to receive a refund on their original payment method, Loop initiates the refund accordingly.
   - If the customer selected "Exchange," Loop creates a new exchange order in Shopify.
 
-
 ### 9. Synchronize Refund Details to Shopify
 Once the refund is initiated to the customer, Loop syncs the customer refund details to Shopify, updating the return from **In-Progress** to **Returned** in Shopify.
 
 ### 10. Fetch and Transform Refund Details
 HotWax Commerce Integration Platform subscribes to the Loop’s webhook to fetch the refund details.
+
+**SFTP Locations**
+
+```
+/home/{sftp-username}/netsuite/loop-return/close
+```
 
 ### 11. Transform and Export Refund Details
 A flow in HotWax Commerce Integration Platform transforms refund data. The JSON file is then placed at the SFTP location.
@@ -116,6 +150,13 @@ A SuiteScript in NetSuite imports the file from the SFTP location, processes the
 - A Credit Memo is created in Open status and linked to the RMA.
 - A Customer Refund record is automatically created based on the refund method and linked to the Credit Memo.
 - Once the Customer Refund record is created, the Credit Memo is updated from Open to Fully Applied, and the RMA is updated from Pending Refund to Refunded.
+
+
+**SuiteScript**
+
+```
+HC_SC_CreateLoopReturnRefund.js
+```
 
 ### 13. Sync Completed Returns from Shopify
 
