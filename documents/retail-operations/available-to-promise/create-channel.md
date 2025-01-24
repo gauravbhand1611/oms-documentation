@@ -15,7 +15,7 @@ In HotWax Commerce, Inventory Channels combine Facility Groups and Configuration
    * Enter a name for the new Inventory Channel. The channel ID will automatically populate with the same name.
    * Write a description of the channel to explain its purpose, such as "Inventory channel facility group to publish ATP on Shopify."
 
-### Add Inventory Channel to Configuration Facility
+### Add a Configuration Facility
 
 The Configuration Facility is a virtual facility that plays a critical role when managing product-level ATP configurations at a network-wide scale. Therefore when configuring network-level product ATP rules, you need to add a channel-level configuration facility:
 
