@@ -40,7 +40,7 @@ An exchange occurs when a customer returns a product and instead of receiving a 
 
 Retailers we work with use Shopify as their eCommerce platform, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. This returns management workflow involves downloading returns data, creating Return Merchandise Authorizations (RMAs), processing Item Receipt records, and creating Customer Refunds.
 
-<figure><img src="../../../.gitbook/assets/webReturnsLoop.png" alt=""><figcaption><p> Sync web returns to NetSuite using Loop</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/webReturnsLoop.png" alt=""><figcaption><p> Sync web returns to NetSuite</p></figcaption></figure>
 
 ### Data Flow
 
