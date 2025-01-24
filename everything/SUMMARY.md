@@ -1,6 +1,6 @@
 # Table of contents
 
-## Guidlines
+## Guidelines
 
 * [Internal Usage](README.md)
 * [Documentation Guideline](guidelines/documentation-guideline.md)
