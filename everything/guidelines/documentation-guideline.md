@@ -59,7 +59,7 @@ description:>- HotWax Commerce's BOPIS fulfillment app enables retailers to effi
 ### 2.3. Links
 
 * **[Internal Links](#id-1.-document-structure)**: Use relative URLs for links within the same documentation.
-* **[External Links](https://docs.hotwax.co/everything/guidlines/documentation-guideline)**: Open external links in a new tab.
+* **[External Links](https://docs.hotwax.co/everything/guidelines/documentation-guideline)**: Open external links in a new tab.
 
 ### 2.4. Tables
 
