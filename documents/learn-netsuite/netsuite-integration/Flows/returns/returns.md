@@ -230,12 +230,10 @@ Once the original sales order is retrieved from NetSuite, the necessary return d
 
 ### Preventing Duplicate Return Syncs to NetSuite
 
-HotWax Commerce OMS syncs all order data to NetSuite, to maintain accurate record-keeping across systems. However, web return orders follow a specific process, these return orders are synced to NetSuite from HotWax’s Integration Platform, while the OMS creates return records only after they are completed in Shopify. This raises an important questions: how does HotWax prevent duplicate return orders in **NetSuite?**
+HotWax Commerce OMS syncs all order data to NetSuite, to maintain accurate record-keeping across systems. However, web return orders follow a specific process, these return orders are synced to NetSuite from HotWax’s Integration Platform, while the OMS creates return records only after they are completed in Shopify. This raises an important questions: **how does HotWax prevent duplicate return orders in NetSuite?**
 
-- To address this, HotWax identifies returns initiated in Loop and prevents them from being synced again, as they are already present in NetSuite. When downloading returns from Shopify, HotWax reads the order notes added by Loop and tags the return order with the return channel identifier LOOP_RETURN_CHANNEL.
+To address this, HotWax identifies returns initiated in Loop and prevents them from being synced again, as they are already present in NetSuite. When downloading returns from Shopify, HotWax reads the order notes added by Loop and tags the return order with the return channel identifier `LOOP_RETURN_CHANNEL`. This allows HotWax to recognize Loop-initiated returns and exclude them from the sync process, avoiding duplication in NetSuite.
  
-- By storing returns channel as LOOP_RETURN_CHANNEL, HotWax accurately identifies returns that originated from Loop and excludes them from the regular sync process.
-
 ***
 
 
