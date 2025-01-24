@@ -1,10 +1,10 @@
 # Table of contents
 
-## Guidlines
+## Guidelines
 
 * [Internal Usage](README.md)
-* [Documentation Guideline](sop/documentation-guideline.md)
-* [ChatGPT Prompts](sop/chatgpt-prompts.md)
+* [Documentation Guideline](guidelines/documentation-guideline.md)
+* [ChatGPT Prompts](guidelines/chatgpt-prompts.md)
 * [GitHub Guideline](guidelines/github-guideline.md)
 * [Gitbook Spaces](guidelines/gitbook-spaces.md)
 * [Issue Report](guidelines/issue-report.md)
