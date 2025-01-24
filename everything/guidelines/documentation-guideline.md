@@ -64,19 +64,18 @@ description:>- HotWax Commerce's BOPIS fulfillment app enables retailers to effi
 ### 2.4. Tables
 
 * Use tables to present data clearly.
-* Ensure tables are responsive and accessible.
 
 ### 2.5. Images and Media
 
 * **Images**: Add images directly from the bottom of the GitHub markdown. Use high-quality images. Provide alternative text for accessibility.
 * **Images Names**: All images should be named in a specific format which is lowercase and words should be separated by a hyphen ( - ), such as `images-name`
-* **Videos**: Embed videos where necessary. Ensure they are properly captioned. Use the following format to embed YouTube videos:
+* **Videos**: Embed videos where necessary and properly caption them. Use the following format to embed YouTube videos:
 
 \{% embed url ="(Youtube URL)" %\} caption \{%endembed%\}
 
-### 2.6. Quotations
+### 2.6. Quotation
 
-* **Double Quotes**: Use “double quotations” when setting apart a word, quoting something, or using any title such as when documenting order status: “Created”, or “Approved”.
+* **Double Quotes**: Use “double quotations” when using any title, such as when documenting order status: “Created”, or “Approved”.  
 * **Backticks**: Use backticks ( \` ) for highlighting actions. Such as when documenting a \`job name\`, \`application\`, or \`button\` which will be shown as `job name`, `application`, `button`.
 
 ## 3. Writing Style
@@ -89,7 +88,7 @@ description:>- HotWax Commerce's BOPIS fulfillment app enables retailers to effi
   * Write abbreviations in full the first time they appear, followed by the abbreviation in parentheses. Use only the abbreviation thereafter.
   * Example: Buy Online Return In Store (BORIS).
 
-### 3.2. Words not to use repeatedly
+### 3.2. Words Not To Use Repeatedly
 * Words that look like they were AI-generated should not be used repeatedly. Minimize the use of overly dramatic adjectives such as seamless, ensure, ensuring, crucial, essential, critical, game-changer, streamlined, comprehensive.
 
 ### 3.3. Active Voice
@@ -99,7 +98,7 @@ description:>- HotWax Commerce's BOPIS fulfillment app enables retailers to effi
 
 ### 3.4. Consistency
 
-* Use markdown formatting. Learn more about Markdown [here](https://www.markdownguide.org/extended-syntax/).
+* Use Markdown formatting. Learn more about Markdown [here](https://www.markdownguide.org/extended-syntax/).
 * Maintain consistency in terminology, tone, and style throughout the document. You can refer to [ChatGPT Prompts](https://docs.google.com/document/d/1z2M\_wKWS4N3\_XkwD5HxwDOzm2xhFKjgHNGObZVKtGH4/edit) for consistency in the documents when using ChatGPT.
 * Use different types of hints to draw your reader’s attention to specific pieces of important information. Here’s markdown for different types of hints:
 
@@ -132,7 +131,7 @@ This markdown will look like this for hints:
 ### 3.5. Technical Content
 
 * **Use Annotations**: With annotations, you can add extra context to your words without breaking the reader’s train of thought. You can use them to explain the meaning of a word, insert extra information, and more. Readers can hover over the annotated text to show the annotation above the text.
-* **Create an annotation**: To create an annotation[^1], select the text you would like to annotate and click the Annotate option in the context menu. Once you’ve written your annotation, click outside of it to continue writing in the text block.
+* **Create an Annotation**: To create an annotation[^1], select the text you would like to annotate and click the Annotate option in the context menu. Once you’ve written your annotation, click outside of it to continue writing in the text block.
 
 <figure><img src="https://github.com/adayush17/oms-documentation/assets/72956835/aae47704-ea9e-4b48-9c96-e59b24e296d3" alt="Users can click on the underlined terms to see the annotations" width="375"><figcaption><p>Annotations</p></figcaption></figure>
 
@@ -141,13 +140,13 @@ This markdown will look like this for hints:
 ### 4.1. Alt Text
 
 * Provide descriptive alt text for images.
-* Ensure all media is accessible to screen readers.
+* All media should be accessible to readers.
 
 ## 5. Review and Maintenance
 
 ### 5.1. Regular Updates
 
-* Review and update documentation regularly to ensure accuracy.
+* Review and update documentation regularly to maintain accuracy.
 
 ### 5.2. Feedback
 
@@ -171,12 +170,13 @@ This markdown will look like this for hints:
 * Facilities App
 * Company App
 
-When writing the full name of an app, such as the Fulfillment App, ensure that the "A" in "App" is capitalized.
+When writing the full name of an app, such as the Fulfillment App, "A" in "App" should be capitalized.
 
 ### 6.2. Systems
 
 * HotWax Commerce
 * Shopify (We write e-commerce as “eCommerce”)
+* Shopify POS
 * NetSuite
 * RetailPro
 * EasyPost
