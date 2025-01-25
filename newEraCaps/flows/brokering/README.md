@@ -39,7 +39,7 @@ The WMS software used by New Era Caps is not able to differentiate between two s
 
 ## How “Reshipped” works in HotWax Commerce
 
-When an order is canceled on Shopify by the CSR team, the cancellation details are sent to the OMS through the "Import Order Updates" job. A NiFi flow identifies recently canceled order items from the warehouse using a time-based cursor and adds an order-level attribute to reshipped orders.
+When an order is canceled on Shopify by the CSR team, the cancellation details are sent to the OMS through the "Import Order Updates" job. A NiFi flow in hotWax identifies recently canceled order items from the warehouse using a time-based cursor and adds an order-level attribute to reshipped orders.
 
 Key: "ReShipped" Value: "Pending"
 
@@ -53,7 +53,7 @@ Because canceled items are no longer located at the facility they were brokered 
 ```
 
 
-A sevice at hotWax will pick up the feed, adds the order attribute and delete external fulfillment history.
+A sevice at hotWax will pick the feed, add the order attribute and will delete external fulfillment history.
 
 Now that the External Fulfillment Order Item record is deleted for the items that need to be reshipped, the brokered items feed will automatically include these items the next time it runs. 
 
