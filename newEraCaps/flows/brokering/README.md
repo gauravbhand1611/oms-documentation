@@ -39,25 +39,27 @@ The WMS software used by New Era Caps is not able to differentiate between two s
 
 ## How “Reshipped” works in HotWax Commerce
 
-When an order is canceled on Shopify by the CSR team, the cancellation details are sent to the OMS through the "Import Order Updates" job. A NiFi flow in hotWax identifies recently canceled order items from the warehouse using a time-based cursor and adds an order-level attribute to reshipped orders.
+When an order is partially canceled on Shopify by the CSR team, the cancellation details are sent to the OMS through the "Import Order Updates" job. A NiFi flow in HotWax identifies recently canceled order items from the warehouse using a time-based cursor and adds an order-level attribute to reshipped orders. The Reshipped flow does not apply to Store Fulfilled Orders because those orders are fulfilled using the HotWax Store Fulfillment App.
 
 Key: "ReShipped" Value: "Pending"
 
-The flow also deletes the External Fulfillment Order Item for all items in the ship group where the item is canceled.
+The flow also deletes the External Fulfillment Order Item for all items in the ship group that were not canceled.
 
-Because canceled items are no longer located at the facility they were brokered too, NiFi will use the Order Facility Change history to identify canceled items that were at the warehouse facility before being canceled. This entity will also contain details of which shipgroup the item was removed from, helping identify which order items to delete the fulfillment history for. NiFi puts the file of these orders on SFTP.
+Because canceled items are no longer located at the facility they were brokered too, NiFi uses the Order Facility Change history to identify canceled items that were at the warehouse facility before being canceled. This entity will also contain details of which shipgroup the item was removed from, helping identify which order items to delete the fulfillment history for. NiFi puts the file of these orders on SFTP.
 
 **SFTP path of UAT**
 ```
 /home/newera-uat-sftp/hotwax/oms/ImportJsonListData
 ```
+The JsonListData calls the following services:
+1. deleteExternalFulfillmentOrderItem
+2. updateOrderAttr
 
-
-A sevice at hotWax will pick the feed, add the order attribute and will delete external fulfillment history.
+Job name to consume these files: {to be added}
 
 Now that the External Fulfillment Order Item record is deleted for the items that need to be reshipped, the brokered items feed will automatically include these items the next time it runs. 
 
-The NiFi flow picks brokered orders, updates the attribute value for reshipped orders from "pending" to "sent," and puts the updated reshipped order attribute file on SFTP.
+When processing the brokered items feed, NiFi checks for orders that have an order attribute of Reshipped: Pending and logs each of these order Ids into a CSV. These orders are submitted to the OMS to have their order attribute value updated to "Sent"
 
 Key: "ReShipped" Value: "Sent"
  
@@ -65,6 +67,3 @@ Key: "ReShipped" Value: "Sent"
 ```
 /home/newera-uat-sftp/hotwax/ReshippedOrderAttr
 ```
-
-## Open Question:
-How to handle the rejection of soft allocated orders to the specific store?
