@@ -47,7 +47,7 @@ The flow also deletes the External Fulfillment Order Item for all items in the s
 
 Because canceled items are no longer located at the facility they were brokered too, NiFi will use the Order Facility Change history to identify canceled items that were at the warehouse facility before being canceled. This entity will also contain details of which shipgroup the item was removed from, helping identify which order items to delete the fulfillment history for. NiFi puts the file of these orders on SFTP.
 
-SFTP 
+SFTP path
 ```
 /home/hotwax/oms/ImportJsonListData
 ```
@@ -61,7 +61,7 @@ The NiFi flow picks brokered orders, updates the attribute value for reshipped o
 
 Key: "ReShipped" Value: "Sent"
  
-SFTP
+SFTP path
 ```
 /home/newera-uat-sftp/hotwax/ReshippedOrderAttr
 ```
