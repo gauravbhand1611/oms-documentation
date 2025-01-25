@@ -4,6 +4,17 @@ Retailers can manage the scheduling of the job responsible for ATP (Available to
 
 Retailers can view the history of job runs, disable a job, or run a job once by selecting the relevant option from the job's overflow menu.
 
+After creating a rule, it is necessary to apply it to products in HotWax so ATP can be calculated according to the rules. Applying ATP rules is a two-step process:
+
+**Step 1: Schedule Rules**
+
+First, schedule the rule categories like Threshold, Safety Stock, Store Pickup, or Shipping in the ATP App. For each category, a separate CSV file is generated containing all products matching the rules. These CSV files are then uploaded to a dedicated SFTP location.
+
+**Step 2: Schedule `Import Product Facility Job`**
+
+Next, schedule the “Import Product Facility” job in the [Job Manager App]([url](https://docs.hotwax.co/documents/retail-operations/workflow/job-manager)). This step imports the separate CSV files into HotWax, where ATP is computed based on the applied rules.
+
+
 Each rule card provides an overview of configurations and product facility selections. Retailers can click the "Edit rule" button to modify rule configurations.  
 The rule configuration can be adjusted by toggling the store pickup and shipping options on or off, or by setting values for threshold and safety stock by clicking on the number chips.
 
