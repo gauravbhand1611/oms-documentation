@@ -4,7 +4,7 @@ description: >-
   and consuming new orders entering the OMS.
 ---
 
-# Created Orders
+# Created Orders Feed
 
 ## Introduction
 
