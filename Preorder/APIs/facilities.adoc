@@ -1,0 +1,61 @@
+= Facilities
+
+To get the list of facilities you will need to call `/facilities` endpoint with post method. To release an item to the specific facility/warehouse, You can select a facility from the list, for releasing an item. Further it fetches the records from Facility entity.
+
+=== *Request*
+*Endpoint*
+----
+POST /api/facilities HTTP/1.1
+
+Host: example.com
+----
+*Headers*
+----
+Content-Type:​ application/json
+
+Authorization: Bearer <token_value>
+
+Accept: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "filters":{
+        "facilityName":"%%",
+        "facilityName_op":"like",
+        "facilityTypeId":"WAREHOUSE"
+    },
+    "fieldsToSelect":["facilityId","facilityName"],
+    "sortBy":"facilityName ASC",
+    "sortOrder":"facilityName ASC"
+}
+----------------------------------------------------------------
+=== *Response*
+
+*Status Code*
+----
+HTTP/1.1​ ​200​ ​OK
+----
+
+*Headers*
+----
+Content-Type: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "count": 2,
+    "docs":[
+        {
+            "facilityId":"NN_WH_2",
+            "facilityName":"New Jersey Warehouse"
+        },
+        {
+            "facilityId":"NN_WH",
+            "facilityName":"Notnaked Store"
+        }
+    ]
+}
+----------------------------------------------------------------

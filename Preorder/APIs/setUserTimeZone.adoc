@@ -1,0 +1,46 @@
+= Set user timezone
+
+To set the timezone as per the user you will need to call `/setUserTimeZone` endpoint with post method.
+
+=== *Request*
+*Endpoint*
+----
+POST /api/setUserTimeZone HTTP/1.1
+
+Host: example.com
+----
+*Headers*
+----
+Content-Type:​ application/json
+
+Authorization: Bearer <token_value>
+
+Accept: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "tzId":"Africa/Algiers"
+}
+----------------------------------------------------------------
+=== *Response*
+
+*Status Code*
+----
+HTTP/1.1​ ​200​ ​OK
+----
+
+*Headers*
+----
+Content-Type: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "cors.request.origin":<origin_URL>,
+    "cors.request.type":"actual",
+    "tzId":"Africa/Algiers",
+    "webSiteId":"API"
+}

@@ -1,0 +1,79 @@
+= Release Order Item
+
+To release the order-item you will need to call `/releaseOrderItem` endpoint with post method. Further it release the item using createOrderItemShipGroup, moveItemBetweenShipGroups and createOrderFacilityChange services.
+
+* If the toFacilityId is _NA_ and changeReasonEnumId is RELEASED then item is released for brokering.
+* If the toFacilityId is not _NA_ and changeReasonEnumId is BROKERED then item is released to the facility.
+
+== Properties
+Following are the attributes used in below API:
+
+[width="100%", cols="4" options="header"]
+|=======
+|Attribute |Type |Required| Description
+|orderId|String|Yes|This attribute contains the unique ID of order in OMS.
+|orderItemSeqId|String|No|This attribute contains the item ID of order in OMS.
+|shipGroupSeqId|String|No|This attribute contains the unique ID of ship-group in OMS.
+|fromFacilityId|String|No|This attribute contains the unique ID of fromFacility in OMS, from which item is released.
+|toFacilityId|String|No|This attribute contains the unique ID of toFacility in OMS, to which item is released.
+|changeReasonEnumId|String|No|This attribute contains the reason of releasing the item. Accepts predefined values in the system.
+|routerUserLogin|String|No|This attribute contains the value of userLoginId.
+|=======
+
+=== *Request*
+*Endpoint*
+----
+POST /api/releaseOrderItem HTTP/1.1
+
+Host: example.com
+----
+*Headers*
+----
+Content-Type:​ application/json
+
+Authorization: Bearer <token_value>
+
+Accept: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+For example: Release the item to facility/warehouse.
+
+{
+    "orderId":"NN11077",
+    "orderItemSeqId":"00001",
+    "toFacilityId":"NN_WH_2",
+    "changeReasonEnumId":"BROKERED"
+}
+----------------------------------------------------------------
+=== *Response*
+
+*Status Code*
+----
+HTTP/1.1​ ​200​ ​OK
+----
+
+*Headers*
+----
+Content-Type: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "orderItemSeqId":"00001",
+    "cors.request.origin":<origin_URL>,
+    "orderId":"NN11077",
+    "shipGroupSeqId":"00002",
+    "toFacilityId":"NN_WH_2",
+    "cors.request.type":"actual",
+    "changeReasonEnumId":"BROKERED",
+    "webSiteId":"API"
+}
+----------------------------------------------------------------
+
+To release the the order item in bulk you will need to call `/uploadJsonFile` endpoint with post method and MDM_REL_ORD_ITM_JSON as configId. Further it use uploadAndImportFile service.
+
+=== For more details please refer releaseOrderItem service:
+link:../Services/releaseOrderItem.adoc[releaseOrderItem]
