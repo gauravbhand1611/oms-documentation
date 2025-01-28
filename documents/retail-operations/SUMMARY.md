@@ -50,7 +50,7 @@
     * [Order Duplication](order-management/troubleshooting/duplicate-orders.md)
     * [Shopify Order Import Failures in HC](order-management/troubleshooting/order-import-failure.md)
 * [Order Routing](order-routing/README.md)
-  * [Brokering Runs](order-routing/order-routingruns.md)
+  * [Brokering Runs](order-routing/brokeringruns.md)
   * [Routing Rules](order-routing/routings.md)
   * [Inventory Rules](order-routing/rules.md)
   * [Use Cases](order-routing/scenarios.md)
