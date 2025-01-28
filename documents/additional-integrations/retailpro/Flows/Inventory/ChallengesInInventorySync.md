@@ -4,7 +4,7 @@ description: >-
   Prism POS could overcome for accurate inventory management.
 ---
 
-# Challenges
+# Challenges In Inventory Sync
 
 While developing this integration, several challenges surfaced, necessitating additional logic that is uncommon in typical inventory reset syncs. Here are the challenges and their solutions:
 
