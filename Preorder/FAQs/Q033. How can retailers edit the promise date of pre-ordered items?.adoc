@@ -1,0 +1,11 @@
+== Q033. How can retailers edit the promise date of pre-ordered items?
+
+Retailers can edit the promise date of pre-ordered items by selecting the items from the Orders screen of the Preorder Management app.
+
+=== These are the technical details for updating the item:
+
+API:
+link:../APIs/updateOrderItem.adoc[updateOrderItem]
+
+Service:
+link:../Services/updateOrderItem.adoc[updateOrderItem]

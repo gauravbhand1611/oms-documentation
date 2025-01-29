@@ -1,0 +1,48 @@
+= Login
+
+To get the token you will need to call `/login` endpoint with post method. Further it checks if the password change is required and then return token.
+
+=== *Request*
+*Endpoint*
+----
+POST /api/login HTTP/1.1
+
+Host: example.com
+----
+*Headers*
+----
+Content-Type:​ application/json
+
+Accept: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "USERNAME":<username>,
+    "PASSWORD":<password>
+}
+----------------------------------------------------------------
+=== *Response*
+
+*Status Code*
+----
+HTTP/1.1​ ​200​ ​OK
+----
+
+*Headers*
+----
+Content-Type: application/json
+----
+*Body*
+[source, json]
+----------------------------------------------------------------
+{
+    "cors.request.origin":<origin_URL>,
+    "token":<token_value>,
+    "cors.request.type":"actual",
+    "PASSWORD":<password>,
+    "expirationTime":1643807918604,
+    "USERNAME":<username>,
+    "webSiteId":"API"
+}
