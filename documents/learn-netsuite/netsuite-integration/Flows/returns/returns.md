@@ -109,7 +109,7 @@ This step is important for completing the return process in Loop, let’s see ho
 **SuiteScript**
 
 ```
-HC_SC_CreateLoopReturn.js
+HC_MR_ExportLoopReturnProcess.js
 ```
 
 **SFTP Locations**
