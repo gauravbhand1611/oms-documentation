@@ -27,7 +27,7 @@
   * [Fulfillment](tools/launchpad/fulfillment/README.md)
      * [Stuck orders in fulfillment app](tools/launchpad/fulfillment/README.md)
   * [Job Manager](tools/launchpad/job-manager/README.md)
-     * [Check Job Frequencies](tools/launchpad/job-manager/README.md)
+     * [Check Job Frequencies](tools/launchpad/job-manager/check-job-frequencies.md)
      * [Job Runtime Error](tools/launchpad/job-manager/runtime-error.md)
      * [Mismatch Time Zone](tools/launchpad/job-manager/timezone-mismatch.md)
 
@@ -57,8 +57,8 @@
     * [Create a Job using Data Manager Configuration](tools/ofbiz/README.md)
     * [SFTP Issue](tools/ofbiz/data-manager/sftp-issue.md)
 
-* [Shopify](shopify/README.md)
-  * [How to access Shopify POS APP](shopify/README.md)
+* [Shopify](tools/shopify/README.md)
+  * [How to access Shopify POS APP](tools/shopify/README.md)
 
 * [Tathya](tools/tathya/README.md)
   * [Database Configuration](tools/tathya/databaseConfiguration/README.md)
