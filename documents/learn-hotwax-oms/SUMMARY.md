@@ -5,25 +5,25 @@
 ## Business Processes
 
 * [Introduction](business-processes/README.md)
-* [Order Fulfillment](business-processes/orderfulfillmentbp.md)
-* [Inventory Management](business-processes/inventorymanagementbp.md)
+* [Order Fulfillment](business-processes/order-fulfillment-bp.md)
+* [Inventory Management](business-processes/inventory-management-bp.md)
 
 ## Business Process Models
 
 * [Introduction](business-process-models/README.md)
-* [Order Lifecycle](business-process-models/orderlifecycle.md)
-* [Store Fulfillment Lifecycle](business-process-models/store.fulfillment.md)
-* [Warehouse Fulfillment Lifecycle](business-process-models/warehousefulfillmentlifecycle.md)
-* [Inventory Lifecycle](business-process-models/inventorylifecycle.md)
-* [Transfer Orders Lifecycle](business-process-models/transferorderlifecycle.md)
-* [Gift Card Orders Lifecycle](business-process-models/giftcardorderslifecycle.md)
+* [Order Lifecycle](business-process-models/order-lifecycle.md)
+* [Store Fulfillment Lifecycle](business-process-models/store-fulfillment-lifecycle.md)
+* [Warehouse Fulfillment Lifecycle](business-process-models/warehouse-fulfillment-lifecycle.md)
+* [Inventory Lifecycle](business-process-models/inventory-lifecycle.md)
+* [Transfer Orders Lifecycle](business-process-models/transferorder-lifecycle.md)
+* [Gift Card Orders Lifecycle](business-process-models/giftcard-orders-lifecycle.md)
 * [Returns Lifecycle](business-process-models/returns-lifecycle/README.md)
-  * [Web Returns with Loop](business-process-models/returns-lifecycle/loopwebreturnslifecycle.md)
-  * [In-Store Returns with Shopify POS](business-process-models/returns-lifecycle/shopifyposreturnslifecycle.md)
-  * [In-Store Returns with Loop](business-process-models/returns-lifecycle/loopposreturnslifecycle.md)
+  * [Web Returns with Loop](business-process-models/returns-lifecycle/loop-web-returns-lifecycle.md)
+  * [In-Store Returns with Shopify POS](business-process-models/returns-lifecycle/shopify-pos-returns-lifecycle.md.md)
+  * [In-Store Returns with Loop](business-process-models/returns-lifecycle/loop-pos-returns-lifecycle.md)
 * [Exchanges Lifecycle](business-process-models/exchanges-lifecycle/README.md)
-  * [Web Exchanges with Loop](business-process-models/exchanges-lifecycle/loopwebexchangeslifecycle.md)
-  * [In-Store Exchanges with Loop](business-process-models/exchanges-lifecycle/loopposexchangeslifecycle.md)
+  * [Web Exchanges with Loop](business-process-models/exchanges-lifecycle/loop-web-exchanges-lifecycle.md)
+  * [In-Store Exchanges with Loop](business-process-models/exchanges-lifecycle/loop-pos-exchanges-lifecycle.md)
  
 ## How-To Guides
 
