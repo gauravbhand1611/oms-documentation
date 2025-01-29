@@ -49,6 +49,14 @@ Retailers can configure which rejection reasons they want to offer for their sta
 - **Customer Service Representatives (CSRs):** In the Order Management System, CSRs view broader rejection reasons suited for customer interactions, such as manual reallocation.  
 - **Admin Users:** Admin or operations managers can view all rejection reasons across roles for complete oversight.  
 
+### Toggle for Showing Rejection Reasons:
+
+Rejection reasons can be shown or hidden from store associates using the fulfillment app by using the toggle on the settings page.
+
+**How It Works:**
+- **When the toggle is ON:** The specific rejection reason will be visible, while all other reasons will remain hidden.
+- **When the toggle is OFF:** The specific rejection reason will be hidden, but all other reasons will still be visible.
+
 ### Rejection reason types that trigger inventory adjustments and how these types cause stock levels to be updated:
 
 Rejection reasons in the system are divided into specific types to define how they affect inventory. Each type explains what action should be taken on the inventory when a rejection reason is applied. This helps manage inventory updates smoothly and accurately.
