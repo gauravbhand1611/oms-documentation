@@ -22,7 +22,11 @@ In the Order Management System, every user is assigned specific permissions base
 
 To create a user in the HotWax Order Management System, follow these steps:
 
-1. Log in to the [users.hotwax.io](https://users.hotwax.io) app with your credentials. These credentials will be provided by the HotWax Support team.
+{% hint style="info" %}
+Only existing users in HotWax can create new users. Self registration is not currently supported.
+{% endhint %}
+
+1. Log in to the [users.hotwax.io](https://users.hotwax.io) app with your credentials. If you're setting up HotWax for the first time these credentials will be provided by the HotWax Support team.
 2. On the Find Users page, click the plus (+) button located at the bottom right.
 3. Upon clicking the plus button, you'll be guided to a user creation flow.
 
