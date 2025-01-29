@@ -17,17 +17,17 @@
   * [Order Fulfillment](tools/order-flow/order-fulfillment.md)
   * [Order Fulfillment Notification](tools/order-flow/order-fulfillment-notification.md)
 
-* [Git](tools/git/issue-report.md)
-  * [How to create issue on git](tools/git/issue-report.md)
+* [Git](tools/git/README.md)
+  * [How to create issue on git](tools/git/README.md)
 
-* [Jira](tools/jira)
-  * [Feature request on jira](tools/jira)
+* [Jira](tools/jira/README.md)
+  * [Feature request on jira](tools/jira/README.md)
 
-* [Launchpad](tools/launchpad/fulfillment/stuck-orders.md)
-  * [Fulfillment](tools/launchpad/fulfillment/stuck-orders.md)
-     * [Stuck orders in fulfillment app](tools/launchpad/fulfillment/stuck-orders.md)
-  * [Job Manager](tools/launchpad/job-manager/check-job-frequency.md)
-     * [Check Job Frequencies](tools/launchpad/job-manager/check-job-frequency.md)
+* [Launchpad](tools/launchpad/README.md)
+  * [Fulfillment](tools/launchpad/fulfillment/README.md)
+     * [Stuck orders in fulfillment app](tools/launchpad/fulfillment/README.md)
+  * [Job Manager](tools/launchpad/job-manager/README.md)
+     * [Check Job Frequencies](tools/launchpad/job-manager/README.md)
      * [Job Runtime Error](tools/launchpad/job-manager/runtime-error.md)
      * [Mismatch Time Zone](tools/launchpad/job-manager/timezone-mismatch.md)
 
@@ -44,21 +44,21 @@
     * [Queue Errors](tools/napita/troubleshooting/troubleshooting-queue-files.md)
     * [FetchPut SFTP Retry](tools/napita/troubleshooting/fetch-put-sftp-retry.md)
 
-* [Ofbiz](tools/ofbiz/order/multicurrency-sales-orders.md)
-  * [Orders](tools/ofbiz/order/multicurrency-sales-orders.md)
-    * [Multicurrency Sales Orders](tools/ofbiz/order/multicurrency-sales-orders.md)
+* [Ofbiz](tools/ofbiz/readme.md)
+  * [Orders](tools/ofbiz/order/README.md)
+    * [Multicurrency Sales Orders](tools/ofbiz/order/README.md)
     * [POS Order Refresh Failure](tools/ofbiz/order/pos-order-refresh-failure.md)
     * [Pre-Order Catalog Sync](tools/ofbiz/order/pre-order-sync.md)
-  * [Products](tools/ofbiz/products/duplicate-products.md)
-    * [Product Duplication](tools/ofbiz/products/duplicate-products.md)
-  * [Inventory](tools/ofbiz/inventory/add-new-variance-reason.md)
-     * [Add new variance reason](tools/ofbiz/inventory/add-new-variance-reason.md)
-  * [Data Manager Configuration](tools/ofbiz/data-manager/job-creation-by-data-configuration.md)
-    * [Create a Job using Data Manager Configuration](tools/ofbiz/data-manager/job-creation-by-data-configuration.md)
+  * [Products](tools/ofbiz/products/README.md)
+    * [Product Duplication](tools/ofbiz/products/README.md)
+  * [Inventory](tools/ofbiz/inventory/README.md)
+     * [Add new variance reason](tools/ofbiz/inventory/README.md)
+  * [Data Manager Configuration](tools/ofbiz/data-manager/README.md)
+    * [Create a Job using Data Manager Configuration](tools/ofbiz/README.md)
     * [SFTP Issue](tools/ofbiz/data-manager/sftp-issue.md)
 
-* [Shopify](tools/shopify/access-shopify-pos-app.md)
-  * [How to access Shopify POS APP](tools/shopify/access-shopify-pos-app.md)
+* [Shopify](shopify/README.md)
+  * [How to access Shopify POS APP](shopify/README.md)
 
 * [Tathya](tools/tathya/README.md)
   * [Database Configuration](tools/tathya/databaseConfiguration/README.md)
@@ -96,17 +96,17 @@
 
 ## Client Communication
 
-* [Templated Replies](client-communication/template-replies.md)
+* [Templated Replies](client-communication/README.md)
 * [Ticket and Release Mangemnet](client-communication/ticket-management.md)
 
 ## Monitoring
 
-* [Sanity Checklist](monitoring/sanity-checklist.md)
+* [Sanity Checklist](monitoring/README.md)
 * [System Monitoring Guide](monitoring/system-monitoring-guide.md)
 
 ## Hotwax Deployment & Versions
 
-* [HotWax Commerce Deployment](deployment/deployment.md)
+* [HotWax Commerce Deployment](deployment/README.md)
 * [Update OMS Version](deployment/updateOmsVersion.md)
 * [Rollback OMS Version](deployment/rollback-release.md)
 * [Optional Plugins](deployment/optional-plugins.md)
