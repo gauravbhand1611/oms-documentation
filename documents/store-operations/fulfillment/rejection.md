@@ -51,7 +51,7 @@ Retailers can configure which rejection reasons they want to offer for their sta
 
 ### Toggle for Showing Rejection Reasons:
 
-Store managers can decide if the app shows rejection reasons by using a toggle in the Rejection Reasons page.
+Rejection reasons can be shown or hidden from store associates using the fulfillment app by using the toggle on the settings page.
 
 **How It Works:**
 - **When the toggle is ON:** The specific rejection reason will be visible, while all other reasons will remain hidden.
