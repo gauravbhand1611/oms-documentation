@@ -107,6 +107,7 @@
 ## Hotwax Deployment & Versions
 
 * [HotWax Commerce Deployment](deployment/README.md)
+* [Launch Machine](deployment/launch-machine.md)
 * [Update OMS Version](deployment/updateOmsVersion.md)
 * [Rollback OMS Version](deployment/rollback-release.md)
 * [Optional Plugins](deployment/optional-plugins.md)
