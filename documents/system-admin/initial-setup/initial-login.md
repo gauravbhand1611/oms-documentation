@@ -8,7 +8,6 @@ description: >-
 # Initial login
 
 
-
 {% hint style="danger" %}
 ```
 After subsequent users are created, this default user should be disabled.
