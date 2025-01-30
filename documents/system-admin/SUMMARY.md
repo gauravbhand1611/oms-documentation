@@ -40,7 +40,7 @@
   * [Disabling facilities](administration/facilities/disabling-facilities.md)
   * [Manage parkings](administration/facilities/manage-parkings.md)
   * [Manage Groups](administration/facilities/manage-groups.md)
-* [Delete customers](delete-customers.md)
+* [Delete customers](administration/delete-customers.md)
 * [SOLR Indexing](solr-indexing.md)
 * [Data manager](data-manager/README.md)
   * [Data import and export](data-manager/import-and-export.md)
@@ -60,7 +60,7 @@
 ## Initial Setup
 
 * [Add DBIC](initial-setup/README.md)
-* [Load Facilities](initial-setup/LoadFacilities.md)
+* [Load Facilities](initial-setup/load-facilities.md)
 * [Bulk Import Employees](initial-setup/bulk-import-employee.md)
 * [SFTP Configuration](initial-setup/configure-sftp.md)
 
