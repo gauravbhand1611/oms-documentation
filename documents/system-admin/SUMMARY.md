@@ -63,6 +63,7 @@
 * [Load Facilities](initial-setup/load-facilities.md)
 * [Bulk Import Employees](initial-setup/bulk-import-employee.md)
 * [SFTP Configuration](initial-setup/configure-sftp.md)
+* [Configure System Property Data](initial-setup/configure-system-property.md)
 
 ## Inventory
 
