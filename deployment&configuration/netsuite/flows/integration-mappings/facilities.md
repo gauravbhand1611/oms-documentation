@@ -1,3 +1,9 @@
+---
+description: >-
+  Explore the significance of facility groups in HotWax Commerce for efficient
+  order routing and fulfillment.
+---
+
 # Facility Group
 
 HotWax Commerce routes orders to optimal fulfillment locations. To facilitate order routing, it’s imperative to configure all facilities, including both stores and warehouses, within HotWax Commerce.
@@ -28,3 +34,5 @@ You can simply click on the`bin` icon to remove a facility from the NetSuite Ful
 | -------------------- | -------------------- |
 | Central Warehouse    | NetSuite Fulfillment |
 | East Coast Warehouse | NetSuite Fulfillment |
+
+Here's a guide to [create mappings for facilities](README.md#configuring-mappings-between-hotwax-commerce-and-netsuite)
