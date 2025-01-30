@@ -10,12 +10,12 @@
   * [Manage Product Store](administration/company/manage-product-store.md)
   * [Manage Shopify connection](administration/company/manage-shopify-shop.md)
 * [Users](administration/users/README.md)
-  * [Create Users](administration/users/createUser.md)
-  * [Manage Users](administration/users/manageUser.md)
+  * [Create Users](administration/users/create-user.md)
+  * [Manage Users](administration/users/manage-user.md)
   * [Manage User Permissions](administration/users/user-permission.md)
   * [Create Pickers](administration/users/add-picker.md)
   * [Troubleshooting](administration/users/troubleshooting/README.md)
-    * [Application Access Issue](administration/users/application-access-issue.md)
+    * [Application Access Issue](administration/users/troubleshooting/application-access-issue.md)
     * [How to Bulk Import Employee](administration/users/troubleshooting/bulk-import-employee.md)
 * [User Permissions](administration/permissions/introduction.md)
   * [BOPIS App](administration/permissions/bopis-app.md)
@@ -40,17 +40,17 @@
   * [Disabling facilities](administration/facilities/disabling-facilities.md)
   * [Manage parkings](administration/facilities/manage-parkings.md)
   * [Manage Groups](administration/facilities/manage-groups.md)
-* [Delete customers](administration/delete-customers.md)
+* [Delete Customers](administration/delete-customers.md)
 * [SOLR Indexing](solr-indexing.md)
 * [Data manager](data-manager/README.md)
-  * [Data import and export](data-manager/import-and-export.md)
+  * [Data Import and Export](data-manager/import-and-export.md)
   * [Configurations](data-manager/configurations.md)
   * [Troubleshooting](administration/data-manager/troubleshooting/README.md)
-    * [Data not imported](data-manager/dataNotImportedInOMS.md)
-    * [SFTP errors](data-manager/data-import-errors.md)
-    * [Manual Data import](data-manager/manual-data-import.md)
+    * [Data Not Imported](data-manager/dataNotImportedInOMS.md)
+    * [SFTP Errors](data-manager/data-import-errors.md)
+    * [Manual Data Import](data-manager/manual-data-import.md)
     * [Shopify MDM](data-manager/shopify-mdm.md)
-    * [Schedule error mail](data-manager/schedule-error-mail.md)
+    * [Schedule Error Mail](data-manager/schedule-error-mail.md)
 
 ## Product Store
 
@@ -66,14 +66,14 @@
 
 ## Inventory
 
-* [Multichannel inventory setup](README.md)
+* [Multichannel Inventory Setup](README.md)
 
 ## Fulfillment
 
-* [Shipping methods](fulfillment/shipping-methods/README.md)
+* [Shipping Methods](fulfillment/shipping-methods/README.md)
   * [Create Carrier](fulfillment/shipping-methods/add-carrier.md)
   * [Create Shipping Boxes](fulfillment/shipping-box.md)
-  * [Shipping gateways](fulfillment/ShippingGateways.md)
+  * [Shipping Gateways](fulfillment/shipping-gateway.md.md)
   * [Map Carrier Shipment Methods](fulfillment/carrier-and-shipment-methods.md)
-* [How to map shipping method in HotWax Commerce](fulfillment/add-shipping-method.md)
+* [How to Map Shipping Method in HotWax Commerce](fulfillment/add-shipping-method.md)
 * [Configure Rate Shopping](fulfillment/configure-rate-shopping.md)
