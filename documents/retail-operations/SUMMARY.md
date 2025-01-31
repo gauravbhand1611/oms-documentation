@@ -27,7 +27,7 @@
 
 ## Products
 
-* [Product Management](products/products.md)
+* [Product Management](products/product-management.md)
 * [Breaking Variants Into Independent Products](products/breaking-variants-into-independent-products.md)
 
 ## Orders
