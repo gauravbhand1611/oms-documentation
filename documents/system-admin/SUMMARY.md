@@ -46,11 +46,11 @@
   * [Data Import and Export](data-manager/import-and-export.md)
   * [Configurations](data-manager/configurations.md)
   * [Troubleshooting](administration/data-manager/troubleshooting/README.md)
-    * [Data Not Imported](data-manager/dataNotImportedInOMS.md)
-    * [SFTP Errors](data-manager/data-import-errors.md)
-    * [Manual Data Import](data-manager/manual-data-import.md)
-    * [Shopify MDM](data-manager/shopify-mdm.md)
-    * [Schedule Error Mail](data-manager/schedule-error-mail.md)
+    * [Data Not Imported](administration/data-manager/troubleshooting/data-not-imported.md)
+    * [SFTP Errors](administration/data-manager/troubleshooting/data-import-errors.md)
+    * [Manual Data Import](administration/data-manager/troubleshooting/manual-data-import.md)
+    * [Shopify MDM](administration/data-manager/troubleshooting/shopify-mdm.md)
+    * [Schedule Error Mail](administration/data-manager/troubleshooting/schedule-error-mail.md)
 
 ## Product Store
 
@@ -61,7 +61,6 @@
 
 * [Add DBIC](initial-setup/README.md)
 * [Load Facilities](initial-setup/load-facilities.md)
-* [Bulk Import Employees](initial-setup/bulk-import-employee.md)
 * [SFTP Configuration](initial-setup/configure-sftp.md)
 * [Configure System Property Data](initial-setup/configure-system-property.md)
 
@@ -74,7 +73,7 @@
 * [Shipping Methods](fulfillment/shipping-methods/README.md)
   * [Create Carrier](fulfillment/shipping-methods/add-carrier.md)
   * [Create Shipping Boxes](fulfillment/shipping-box.md)
-  * [Shipping Gateways](fulfillment/shipping-gateway.md.md)
+  * [Shipping Gateways](fulfillment/shipping-gateway.md)
   * [Map Carrier Shipment Methods](fulfillment/carrier-and-shipment-methods.md)
 * [How to Map Shipping Method in HotWax Commerce](fulfillment/add-shipping-method.md)
 * [Configure Rate Shopping](fulfillment/configure-rate-shopping.md)
