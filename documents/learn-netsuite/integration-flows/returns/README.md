@@ -4,9 +4,6 @@ description: Learn about returns in Shopify, Loop, NetSuite and HotWax Commerce.
 
 # Returns
 
-Sync web returns to NetSuite
-
-\
 In omnichannel retailing, retailers provide customers with the options for online returns as well as in-store returns.
 
 ### Web Returns with Loop
