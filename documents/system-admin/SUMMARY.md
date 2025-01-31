@@ -42,7 +42,7 @@
   * [Manage Groups](administration/facilities/manage-groups.md)
 * [Delete Customers](administration/delete-customers.md)
 * [SOLR Indexing](solr-indexing.md)
-* [Data manager](administration/data-manager/README.md)
+* [Data Manager](administration/data-manager/README.md)
   * [Data Import and Export](administration/data-manager/import-and-export.md)
   * [Configurations](administration/data-manager/configurations.md)
   * [Troubleshooting](administration/data-manager/troubleshooting/README.md)
