@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Launchpad](README.md)
-* [Glossary](documents/GLOSSARY.md)
+* [Glossary](../documents/GLOSSARY.md)
 
 ## Orders
 
