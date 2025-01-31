@@ -66,7 +66,7 @@
 
 ## Inventory
 
-* [Multichannel Inventory Setup](README.md)
+* [Multichannel Inventory Setup](inventory/README.md)
 
 ## Fulfillment
 
