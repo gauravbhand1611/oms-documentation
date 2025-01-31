@@ -57,7 +57,7 @@ Brokering runs are scheduled by retailers to execute at specified intervals, all
 
 In the brokering run, the `order routing engine` looks for the best fulfillment location to fulfill orders from.
 
-Learn more about [order brokering and routing](https://docs.hotwax.co/documents/learn-hotwax-oms/business-process-models/order-lifecycle#fulfillment-of-standard-orders)
+Learn more about [order brokering and routing](https://docs.hotwax.co/documents/retail-operations/orders/order-routing)
 
 ## Successful Inventory Allocation
 
