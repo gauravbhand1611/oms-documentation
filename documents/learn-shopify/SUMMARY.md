@@ -15,7 +15,7 @@
   * [Inventory Synchronization](shopify-integration/inventory/inventory-sync.md)
   * [Location Mapping](shopify-integration/inventory/location-mapping.md)
   * [Inventory Synchronization of Gift Cards](shopify-integration/inventory/inventory-sync-giftcards.md)
-  * [Inventory Synchronization of Kit Products](shopify-integration/inventory/inventory-sync-kit-products.md)
+  * [Inventory Synchronization of Kit Products](shopify-integration/inventory/inventory-sync-kitproducts.md)
 * [Orders](shopify-integration/orders/README.md)
   * [Order Download](shopify-integration/orders/order-download.md)
     * [thruDateBuffer and bufferTime](shopify-integration/orders/buffertimes.md)
