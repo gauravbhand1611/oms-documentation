@@ -5,11 +5,11 @@
 ## Workflow
 
 * [Job Management](job-manager/README.md)
-  * [Job Details](job-manager/flows/job-details.md)
-  * [Job Categories](job-manager/flows/job-categories.md)
-  * [Job Queueing](job-manager/flows/job-queueing.md)
-  * [Initial Load](job-manager/flows/initial-load.md)
-  * [Bulk Scheduling](job-manager/flows/bulk-scheduling.md)
+  * [Job Details](job-manager/job-management/job-details.md)
+  * [Job Categories](job-manager/job-management/job-categories.md)
+  * [Job Queueing](job-manager/job-management/job-queueing.md)
+  * [Initial Load](job-managerjob-management/initial-load.md)
+  * [Bulk Scheduling](job-manager/job-management/bulk-scheduling.md)
   * [Troubleshooting](job-manager/troubleshooting/README.md)
     * [Job Stuck](job-manager/troubleshooting/jobStuck.md)
     * [Job Failure](job-manager/troubleshooting/jobFailed.md)
@@ -27,7 +27,7 @@
 
 ## Products
 
-* [Product Management](products/products.md)
+* [Product Management](products/product-management.md)
 * [Breaking Variants Into Independent Products](products/breaking-variants-into-independent-products.md)
 
 ## Orders
@@ -49,7 +49,7 @@
     * [Order Duplication](order-management/troubleshooting/duplicate-orders.md)
     * [Shopify Order Import Failures in HC](order-management/troubleshooting/order-import-failure.md)
 * [Order Routing](order-routing/README.md)
-  * [Brokering Runs](order-routing/brokeringruns.md)
+  * [Brokering Runs](order-routing/brokering-runs.md)
   * [Routing Rules](order-routing/routings.md)
   * [Inventory Rules](order-routing/rules.md)
   * [Use Cases](order-routing/scenarios.md)
