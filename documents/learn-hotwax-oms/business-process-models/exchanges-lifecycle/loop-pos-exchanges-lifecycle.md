@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/InstoreExchangesLoopbpm.png" alt=""><figcaption><p>In-store exchanges lifecycle business process model</p></figcaption></figure>
 
-The process of returning an item mirrors the steps previously discussed in the [In-Store Returns Lifecycle Business Process Model.](https://docs.hotwax.co/documents/learn-hotwax-oms/business-process-models/exchanges-lifecycle/loop-pos-exchanges-lifecycle) More specifically, customers visiting the store location, store associates looking up the customer’s order in the Loop POS App, and initiating the return process remains the same.
+The process of returning an item mirrors the steps previously discussed in the[ In-Store Returns Lifecycle Business Process Model](https://docs.hotwax.co/documents/learn-hotwax-oms/business-process-models/returns-lifecycle/shopify-pos-returns-lifecycle). More specifically, customers visiting the store location, store associates looking up the customer’s order in the Loop POS App, and initiating the return process remains the same.
 
 ## Exchange Processed
 
