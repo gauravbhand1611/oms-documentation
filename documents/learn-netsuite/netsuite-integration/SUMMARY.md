@@ -19,7 +19,7 @@
 
 ## Supported Integrations
 
-* [Inventory](Flows/inventory.md)
+* [Inventory](flows/inventory.md)
 * [Sales Orders](Flows/SalesOrder/README.md)
   * [Order Approval](Flows/SalesOrder/OrderApproval.md)
   * [Order Allocation](Flows/SalesOrder/OrderAllocation.md)
