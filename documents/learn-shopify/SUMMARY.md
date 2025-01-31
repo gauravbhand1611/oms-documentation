@@ -46,7 +46,7 @@
 ## Setup Shopify
 
 * [Install HotWax Commerce App](shopify-integration/ShopifyIntegration/README.md)
-* [Multiple Store Setup](integration/multiple-store-setup.md)
+* [Multiple Store Setup](shopify-integration/multiple-store-setup.md)
 * [Required Permissions from Shopify](integration/shopify-permissions.md)
 * [Enable BOPIS/Pre-order on Shopify](shopify-integration/ShopifyIntegration/bopis-preorder-scripts.md)
 * [Integrations](shopify-integration/ShopifyIntegration/integration-mapping.md)
