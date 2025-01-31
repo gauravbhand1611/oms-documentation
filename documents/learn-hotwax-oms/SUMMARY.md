@@ -19,7 +19,7 @@
 * [Gift Card Orders Lifecycle](business-process-models/giftcard-orders-lifecycle.md)
 * [Returns Lifecycle](business-process-models/returns-lifecycle/README.md)
   * [Web Returns with Loop](business-process-models/returns-lifecycle/loop-web-returns-lifecycle.md)
-  * [In-Store Returns with Shopify POS](business-process-models/returns-lifecycle/in-store-returns-with-shopify-pos.md)
+  * [In-Store Returns with Shopify POS](business-process-models/returns-lifecycle/shopify-pos-returns-lifecycle.md)
   * [In-Store Returns with Loop](business-process-models/returns-lifecycle/loop-pos-returns-lifecycle.md)
 * [Exchanges Lifecycle](business-process-models/exchanges-lifecycle/README.md)
   * [Web Exchanges with Loop](business-process-models/exchanges-lifecycle/loop-web-exchanges-lifecycle.md)
