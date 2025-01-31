@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Launchpad](README.md)
-* [Glossary](../store-operations/GLOSSARY.md)
 
 ## Workflow
 
