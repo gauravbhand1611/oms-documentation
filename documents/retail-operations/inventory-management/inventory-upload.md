@@ -4,7 +4,7 @@ description: >-
   seamless integration, even with legacy systems lacking API integration.
 ---
 
-# Inventory upload
+# Inventory Upload
 
 The `HotWax Commerce Import App` enables bulk updates to inventory, especially when dealing with legacy systems that lack API-based integration. This app eliminates the need for manual editing of CSV formats. Merchandisers can efficiently upload CSV files, map CSV fields directly, and identify errors before finalizing the upload.
 
