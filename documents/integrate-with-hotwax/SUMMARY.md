@@ -1,7 +1,6 @@
 # Table of Content
 
 * [Introduction](README.md)
-* [Glossary](../GLOSSARY.md)
 
 ## HotWax Commerce API and Data feeds
 
