@@ -4,22 +4,22 @@
 
 ## Integration Tools and Methodologies
 
-* [SuiteScript](netsuite-integration/integration-tools/SuiteScript/README.md)
-  * [N/Task Module](netsuite-integration/integration-tools/SuiteScript/N.taskModule.md)
-  * [N/Record Module](netsuite-integration/integration-tools/SuiteScript/N.recordModule.md)
-  * [N/Search Module](netsuite-integration/integration-tools/SuiteScript/N.searchModule.md)
-  * [N/File Module](netsuite-integration/integration-tools/SuiteScript/N.fileModule.md)
+* [SuiteScript](netsuite-integration/integration-tools/suitescript/README.md)
+  * [N/Task Module](netsuite-integration/integration-tools/suitescript/n-task-module.md)
+  * [N/Record Module](netsuite-integration/integration-tools/suitescript/n-record-module.md)
+  * [N/Search Module](netsuite-integration/integration-tools/suitescript/n-search-module.md)
+  * [N/File Module](netsuite-integration/integration-tools/suitescript/n-file-module.md)
 * [Saved Search](netsuite-integration/integration-tools/SavedSearch/README.md)
 * [Integration Methodologies](netsuite-integration/integration-methodologies/README.md)
-* [NetSuite](netsuite-integration/integration-methodologies/NetSuite.md)
-* [HotWax](netsuite-integration/integration-methodologies/HotWax.md)
+* [NetSuite](netsuite-integration/integration-methodologies/netsuite.md)
+* [HotWax](netsuite-integration/integration-methodologies/hotwax.md)
 
 ## Integration Flows
 
 * [Inventory](netsuite-integration/flows/inventory.md)
 * [Sales Orders](netsuite-integration/flows/sales-order/README.md)
   * [Order Approval](netsuite-integration/flows/sales-order/order-approval.md)
-  * [Order Allocation](netsuite-integration/flows/sales-order/Order-allocation.md)
+  * [Order Allocation](netsuite-integration/flows/sales-order/order-allocation.md)
   * [Fulfillment](netsuite-integration/flows/sales-order/fulfillment.md)
   * [Invoicing](netsuite-integration/flows/sales-order/invoicing.md)
   * [Shipping Methods](netsuite-integration/flows/sales-order/shipping-methods.md)
@@ -59,9 +59,9 @@
 ## Synchronization Flows
 
 * [Auditing](netsuite-deployment/flows/integration-audit/README.md)
-* [Products and Inventory](netsuite-deployment/flows/products-and-inventory/README.md)
-  * [Product IDs](netsuite-deployment/flows/product-inventory-sync/importProductId.md)
-  * [Inventory Reset](netsuite-deployment/flows/product-inventory-sync/inventoryReset.md)
+* [Products and Inventory](netsuite-deployment/flows/products-inventory-sync/README.md)
+  * [Product IDs](netsuite-deployment/flows/product-inventory-sync/import-productId.md)
+  * [Inventory Reset](netsuite-deployment/flows/product-inventory-sync/inventory-reset.md)
 * [Orders](netsuite-deployment/flows/order-sync/README.md)
   * [POS Cash Sales](netsuite-deployment/flows/order-sync/pos-cash-sales.md)
   * [Sync Customer](netsuite-deployment/flows/order-sync/sync-customer.md)
@@ -80,7 +80,7 @@
 
 ## Troubleshooting
 
-* [Failed suitescripts](troubleshooting/failedSuiteScripts.md)
-* [Error Logs](troubleshooting/findingLogs.md)
+* [Failed SuiteScripts](troubleshooting/failed-suitescripts.md)
+* [Error Logs](troubleshooting/finding-logs.md)
 * [Failure Notifications](troubleshooting/notifications.md)
 * [Order Sync Failure](troubleshooting/order-do-not-sync.md)
