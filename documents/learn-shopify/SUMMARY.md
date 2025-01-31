@@ -45,30 +45,30 @@
 
 ## Setup Shopify
 
-* [Install HotWax Commerce App](shopify-integration/ShopifyIntegration/README.md)
-* [Multiple Store Setup](shopify-integration/multiple-store-setup.md)
-* [Required Permissions from Shopify](integration/shopify-permissions.md)
-* [Enable BOPIS/Pre-order on Shopify](shopify-integration/ShopifyIntegration/bopis-preorder-scripts.md)
-* [Integrations](shopify-integration/ShopifyIntegration/integration-mapping.md)
-  * [Locations](shopify-integration/ShopifyIntegration/MapLocations.md)
-  * [Shipping Method](shopify-integration/ShopifyIntegration/shipping-method.md)
-  * [Sales channel](shopify-integration/ShopifyIntegration/sales-channel-mapping.md)
-  * [Payment Method](shopify-integration/ShopifyIntegration/payment-method-type.md)
-  * [Product Type](shopify-integration/ShopifyIntegration/product-type.md)
+* [Install HotWax Commerce App](setup-shopify/README.md)
+* [Multiple Store Setup](setup-shopify/multiple-store-setup.md)
+* [Required Permissions from Shopify](setup-shopify/shopify-permissions.md)
+* [Enable BOPIS/Pre-order on Shopify](setup-shopify/enable-bopis-preorder-scripts.md)
+* [Integrations](setup-shopify/ShopifyIntegration/README.md)
+  * [Locations](setup-shopify/integration-mappings/locations.md)
+  * [Shipping Method](setup-shopify/integration-mappings/shipping-method.md)
+  * [Sales channel](setup-shopify/integration-mappings/sales-channel.md)
+  * [Payment Method](setup-shopify/integration-mappings/payment-method-type.md)
+  * [Product Type](setup-shopify/integration-mappings/product-type.md)
 * [Troubleshooting](setup-shopify/troubleshooting/README.md)
   * [Facility Mapping Discrepancy](shopify-setup/troubleshooting/facility-mapping-discrepancy.md)
 
 ## Synchronization Flows
 
-* [Initial Product Sync](shopify-integration/sync-shopify/README.md)
-* [Initial Order Sync](shopify-integration/sync-shopify/importOrders.md)
-* [Initial Inventory Sync](shopify-integration/sync-shopify/upload-inventory.md)
-* [Troubleshooting](synchronization-flows/troubleshooting/README.md)
-  * [Product sync](troubleshooting/products.md)
-  * [Order sync](troubleshooting/order.md)
-  * [Inventory sync](troubleshooting/inventory.md)
+* [Initial Product Sync](intial-sync/sync-shopify/README.md)
+* [Initial Order Sync](intial-sync/sync-shopify/import-orders.md)
+* [Initial Inventory Sync](intial-sync/sync-shopify/upload-inventory.md)
+* [Troubleshooting](intial-sync/troubleshooting/README.md)
+  * [Product sync](intial-sync/products.md)
+  * [Order sync](intial-sync/order.md)
+  * [Inventory sync](intial-sync/inventory.md)
 
 ## Additional resources
 
-* [Kit Products](additional-resources/kitProducts.md)
-* [POS Completed Orders](additional-resources/posCompletedOrders.md)
+* [Kit Products](additional-resources/kit-products.md)
+* [POS Completed Orders](additional-resources/pos-completed-orders.md)
