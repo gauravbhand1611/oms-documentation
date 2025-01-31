@@ -106,7 +106,7 @@ HotWax Commerce generates an inventory variance feed and synchronizes it with th
 
 For example, in case of NetSuite as the ERP, HotWax Commerce generates the inventory variance feed, after that HotWax Commerce integration platform transforms this feed and synchronizes it to NetSuite. Once NetSuite’s script consumes this feed, inventory levels of the affected products are automatically updated.
 
-Learn more about [inventory variance synchronization](https://docs.hotwax.co/documents/v/learn-netsuite/supported-integrations/cycle-count)
+Learn more about [inventory variance synchronization](https://docs.hotwax.co/documents/learn-netsuite/integration-flows/cycle-count)
 
 Similarly, in the event where inventory is managed in another third party system, HotWax Commerce inventory variance feed can be used to update inventory in other ERP or WMS.
 
