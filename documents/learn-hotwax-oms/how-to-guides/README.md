@@ -1,0 +1,3 @@
+# How To
+
+The How-To section provides a step-by-step guide on configuring BOPIS and store fulfillment in HotWax Commerce. It outlines the process followed to set up store fulfillment and BOPIS (Buy Online Pickup in Store) options, ensuring seamless order management and store fulfillment operations.

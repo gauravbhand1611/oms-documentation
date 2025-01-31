@@ -1,8 +1,8 @@
 ---
 description: >-
-  Discover how integration between NetSuite and HotWax Commerce
-  automates Purchase Order synchronization, streamlines inventory receipt, and
-  updates order statuses efficiently.
+  Discover how integration between NetSuite and HotWax Commerce automates
+  Purchase Order synchronization, streamlines inventory receipt, and updates
+  order statuses efficiently.
 ---
 
 # Purchase Orders
@@ -23,7 +23,7 @@ When a PO is raised in NetSuite, it syncs with HotWax Commerce, allowing store a
 
 The procurement process begins in the NetSuite ERP, where POs are generated to replenish inventory in physical stores.
 
-<figure><img src="../../.gitbook/assets/POsync.png" alt=""><figcaption><p>Purchase Order sync from NetSuite to HotWax Commerce</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/POsync (1).png" alt=""><figcaption><p>Purchase Order sync from NetSuite to HotWax Commerce</p></figcaption></figure>
 
 ### Export Purchase Orders from NetSuite
 
@@ -119,4 +119,6 @@ HC_SC_ImportPurchaseOrderReceipts
 The HC\_SC\_ImportPurchaseOrderReceipts SuiteScript also generates a CSV file highlighting erroneous records found during processing and uploads the file to the SFTP server. Simultaneously, an email alert is automatically triggered to designated personnel, helping them quickly pinpoint the source of the issue and accelerating troubleshooting.
 {% endhint %}
 
-{% file src="../../.gitbook/assets/Purchase Orders Receipts Sample Feed.txt" %}
+{% file src="../../.gitbook/assets/Purchase-Orders-Receipt-Sample-Feed.json" %}
+Sample JSON Feed
+{% endfile %}
