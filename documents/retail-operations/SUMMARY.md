@@ -8,7 +8,7 @@
   * [Job Details](job-manager/job-management/job-details.md)
   * [Job Categories](job-manager/job-management/job-categories.md)
   * [Job Queueing](job-manager/job-management/job-queueing.md)
-  * [Initial Load](job-managerjob-management/initial-load.md)
+  * [Initial Load](job-manager/job-management/initial-load.md)
   * [Bulk Scheduling](job-manager/job-management/bulk-scheduling.md)
   * [Troubleshooting](job-manager/troubleshooting/README.md)
     * [Job Stuck](job-manager/troubleshooting/jobStuck.md)
