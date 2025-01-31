@@ -7,7 +7,7 @@ description: >-
 
 # Order Fulfillment
 
-<figure><img src="../.gitbook/assets/OrderFulfillment.png" alt=""><figcaption><p>Order allocation and fulfillment </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/OrderFulfillment.png" alt=""><figcaption><p>Order allocation and fulfillment</p></figcaption></figure>
 
 ## How Order Fulfillment Works
 
@@ -19,7 +19,7 @@ Approved orders are eligible for brokering in HotWax Commerce. The order routing
 
 Once an order item is allocated, a fulfillment request is sent to the assigned fulfillment location. If this location happens to be a warehouse, the allocation details are synced to the WMS or ERP systems, such as NetSuite, used for warehouse fulfillment.
 
-If an order item is allocated to a store, they are automatically reflected in the HotWax Commerce [Store Fulfillment App](https://docs.hotwax.co/documents/v/store-operations/orders/fulfillment).
+If an order item is allocated to a store, they are automatically reflected in the HotWax Commerce [Store Fulfillment App.](https://docs.hotwax.co/documents/system-admins/administration/introduction/fulfillment-app)
 
 {% hint style="info" %}
 HotWax Commerce provides a Store Fulfillment Suite comprising user-friendly apps such as the Store Fulfillment App and Picking App to quickly and accurately fulfill orders. These apps are specifically designed to facilitate easy adoption and minimize the learning curve for store personnel.
@@ -116,7 +116,7 @@ Once the order items have been picked, they can be quickly packed as HotWax Comm
 * In the event the packaging team discovers a mispacked order, the app offers an option to unpack it and then begin repacking.
 * Store associates have the flexibility to search for and prioritize specific orders for packing.
 
-Learn more about [Packing](https://docs.hotwax.co/documents/v/store-operations/orders/fulfillment/shiporders#pack-orders)
+Learn more about [Packing](https://docs.hotwax.co/documents/store-operations/orders/fulfillment/shiporders#pack-orders)
 
 ## Order Cancellations When Item is Being Prepared for Shipping
 
