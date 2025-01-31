@@ -15,7 +15,7 @@
   * [Inventory Synchronization](shopify-integration/inventory/inventory-sync.md)
   * [Location Mapping](shopify-integration/inventory/location-mapping.md)
   * [Inventory Synchronization of Gift Cards](shopify-integration/inventory/inventory-sync-giftcards.md)
-  * [Inventory Synchronization of Kit Products](shopify-integration/inventory/inventory-sync-kitProducts.md)
+  * [Inventory Synchronization of Kit Products](shopify-integration/inventory/inventory-sync-kit-products.md)
 * [Orders](shopify-integration/orders/README.md)
   * [Order Download](shopify-integration/orders/order-download.md)
     * [thruDateBuffer and bufferTime](shopify-integration/orders/buffertimes.md)
@@ -46,10 +46,10 @@
 ## Setup Shopify
 
 * [Install HotWax Commerce App](setup-shopify/README.md)
-* [Multiple Store Setup](setup-shopify/multiple-store-setup.md)
+* [Multiple Store Setup](shopify-integration/multiple-store-setup.md)
 * [Required Permissions from Shopify](setup-shopify/shopify-permissions.md)
 * [Enable BOPIS/Pre-order on Shopify](setup-shopify/enable-bopis-preorder-scripts.md)
-* [Integrations](setup-shopify/ShopifyIntegration/README.md)
+* [Integrations](setup-shopify/integration-mappings/README.md)
   * [Locations](setup-shopify/integration-mappings/locations.md)
   * [Shipping Method](setup-shopify/integration-mappings/shipping-method.md)
   * [Sales channel](setup-shopify/integration-mappings/sales-channel.md)
@@ -64,9 +64,9 @@
 * [Initial Order Sync](initial-sync/import-orders.md)
 * [Initial Inventory Sync](initial-sync/upload-inventory.md)
 * [Troubleshooting](initial-sync/troubleshooting/README.md)
-  * [Product sync](initial-sync/products.md)
-  * [Order sync](initial-sync/order.md)
-  * [Inventory sync](initial-sync/inventory.md)
+  * [Product sync](initial-sync/troubleshooting/products.md)
+  * [Order sync](initial-sync/troubleshooting/order.md)
+  * [Inventory sync](initial-sync/troubleshooting/inventory.md)
 
 ## Additional resources
 
