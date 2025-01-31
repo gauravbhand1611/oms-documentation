@@ -27,5 +27,5 @@
 
 ## How-To Guides
 
-* [How to Configure BOPIS](how-to-guides/how-to-configure-bopis.md)
-* [How to Configure Store Fulfillment](how-to-guides/how-to-configure-store-fulfillment.md)
+* [How to Configure BOPIS](how-tos/configure-bopis.md)
+* [How to Configure Store Fulfillment](how-tos/configure-store-fulfillment.md)
