@@ -23,7 +23,7 @@ Hotwax has various BI Reports that clients use to monitor operations and make da
     </tr>
     <tr>
       <td><strong>Products</strong></td>
-      <td>Reports covering product data, availability, and movement./td>
+      <td>Reports covering product data, availability, and movement.</td>
       <td><a href="reports/product.md">Product</a></td>
     </tr>
     <tr>
@@ -47,8 +47,8 @@ Hotwax has various BI Reports that clients use to monitor operations and make da
       <td><a href="report/netsuite.md">NetSuite</a></td>
     </tr>
       <tr>
-      <td><strong>Pre-Orders</strong></td>
-      <td>Reports tracking pre-order sales, fulfillment, and trends.</td>
+      <td><strong>Pre-Order</strong></td>
+      <td>Reports tracking pre-order fulfillment, and trends.</td>
       <td><a href="report/pre-order.md">Pre-Order</a></td>
     </tr>
   </tbody>
