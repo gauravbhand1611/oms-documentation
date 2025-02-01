@@ -8,14 +8,14 @@ description: >-
 
 An Advance Shipment Notification (ASN) is a notification sent by a supplier to a recipient detailing the contents and expected arrival of a shipment, often sent in advance of the physical delivery. For example, if a store anticipates receiving 100 shirts in an incoming shipment, the ASN will detail this expected inventory count.
 
-In the context of Hotwax Commerce, store associates receive ASNs in relation to Transfer Orders (TOs). Generally, a Transfer Order is created in an ERP system, and when the TO is fulfilled in the ERP or WMS (Warehouse Management System), an ASN is generated in HC. Store associates then perform the receiving based on this ASN using the HC Receiving App. In the context of Purchase orders, the ASN receiving is done in ERP/WMS.
+In the context of HotWax Commerce, store associates receive ASNs in relation to Transfer Orders (TOs). Generally, a Transfer Order is created in an ERP system, and when the TO is fulfilled in the ERP or WMS (Warehouse Management System), an ASN is generated in HC. Store associates then perform the receiving based on this ASN using the HC Receiving App. In the context of Purchase orders, the ASN receiving is done in ERP/WMS.
 
 Upon the shipment's arrival, store associates can use the Inventory Receiving App to locate the ASN by scanning the ASN barcode or manually inputting the ASN ID. They can then view the ASN details, including SKUs, names, SKU codes, images, and expected inventory counts.
 
 
 ## Appeasement
 
-Appeasement refers to refunds, discounts, or other forms of compensation provided to resolve disputes, improve customer satisfaction, and maintain positive relationships. HotWax Commerce does not allow the creation of appeasements. Instead, CSR teams can create appeasements in e-commerce platforms like Shopify, either by offering another product or issuing a refund without a return. HotWax Commerce downloads these appeasements for reporting purposes and posts them to the ERP for financial record keeping without tracking order line item details.
+Appeasement refers to refunds, discounts, or other forms of compensation provided to resolve disputes, improve customer satisfaction, and maintain positive relationships. HotWax Commerce does not allow the creation of appeasements. Instead, CSR teams can create appeasements in eCommerce platforms like Shopify, either by offering another product or issuing a refund without a return. HotWax Commerce downloads these appeasements for reporting purposes and posts them to the ERP for financial record keeping without tracking order line item details.
 
 ## Arrival Date
 
@@ -206,7 +206,7 @@ Shopify assigns a distinct numerical identifier to each order. It acts as anothe
 ## Split Shipment
 
 Split shipment, also known as order splitting, is a fulfillment strategy where a single customer order is divided into multiple shipments to ensure faster delivery of available items. This approach is used when different items in an order are located at different fulfillment centers or when some items are out of stock and need to be shipped separately once they become available.
-In HotWax Commerce (HC), this capability is a configurable setting. Retailers have the option to choose whether they want orders to be split for shipment or not. This global setting applies to all orders by default but can be overridden for specific orders as needed.
+In HotWax Commerce, this capability is a configurable setting. Retailers have the option to choose whether they want orders to be split for shipment or not. This global setting applies to all orders by default but can be overridden for specific orders as needed.
 When configuring brokering rules in HC, administrators can specify conditions for when orders should be split and when they should not. For instance, the brokering engine can prioritize shipping all items from one location to avoid splitting orders. However, if necessary, it can split an order and ship items from multiple locations as a last resort to fulfill the customer's requirements efficiently.
 
 To know more about Split Shipment [Click Here](https://docs.hotwax.co/documents/v/retail-operations/orders/order-management/update-sales-order#allow-splitting)

@@ -8,8 +8,8 @@
 * [Brokering](reports/brokering.md)
 * [Fulfillment](reports/fulfillment.md)
 * [Receiving](reports/receiving.md)
-* [Pre-orders](reports/pre-order.md)
-* [Netsuite Sync](reports/netsuitesync.md)
+* [Pre-Orders](reports/pre-order.md)
+* [NetSuite Sync](reports/netsuitesync.md)
 * [Reorder Limit](reports/reorder-limit.md)
 
 ## Data Documentation
