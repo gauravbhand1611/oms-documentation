@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how to delete products from both Shopify and HotWax Commerce for
-  easy inventory management.
+  Learn how to delete products from both Shopify and HotWax Commerce.
 ---
 
 # Deleting Products
