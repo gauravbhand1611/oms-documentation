@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how how store to warehouse transfer orders are processed in HotWax Commerce.
 --- 
