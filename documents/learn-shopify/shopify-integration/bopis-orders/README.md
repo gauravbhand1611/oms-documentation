@@ -1,7 +1,6 @@
 ---
 description: >-
-  Ensure seamless coordination between online orders and store operations for a
-  smooth BOPIS fulfillment.
+ Keep online orders and store operations in sync for easy BOPIS fulfillment.
 ---
 
 # BOPIS Orders
