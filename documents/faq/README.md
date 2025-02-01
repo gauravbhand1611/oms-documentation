@@ -316,7 +316,7 @@ Yes, there are several mobile apps available for store associates and managers, 
 
 </details>
 
-## Pre-orders
+## Pre-Orders
 
 <details>
 
