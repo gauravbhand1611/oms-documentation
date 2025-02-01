@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how HotWax Commerce synchronizes order updates for better order
-  management.
+  Learn how HotWax Commerce synchronizes order updates from Shopify.
 ---
 
 # Order Updates
