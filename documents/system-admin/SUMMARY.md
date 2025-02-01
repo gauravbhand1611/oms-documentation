@@ -7,7 +7,7 @@
 * [Company](administration/company/README.md)
   * [Create Product Store](administration/company/create-product-store.md)
   * [Manage Product Store](administration/company/manage-product-store.md)
-  * [Manage Shopify connection](administration/company/manage-shopify-shop.md)
+  * [Manage Shopify Shop](administration/company/manage-shopify-shop.md)
 * [Users](administration/users/README.md)
   * [Create Users](administration/users/create-user.md)
   * [Manage Users](administration/users/manage-user.md)
