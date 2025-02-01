@@ -1,7 +1,6 @@
 ---
 description: >-
-  Troubleshoot inventory sync issues between HotWax Commerce and Shopify to
-  ensure accurate inventory management and availability.
+  Troubleshoot inventory sync issues between HotWax Commerce and Shopify.
 ---
 
 # Inventory sync
