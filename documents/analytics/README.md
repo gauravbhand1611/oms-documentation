@@ -29,7 +29,7 @@ HotWax has various BI Reports that clients use to monitor operations and make da
     <tr>
       <td><strong>Inventory</strong></td>
       <td>Reports identifying inventory discrepancies and stock levels.</td>
-      <td><a href="reports/inventory">Inventory</a></td>
+      <td><a href="reports/inventory.md">Inventory</a></td>
     </tr>
     <tr>
       <td><strong>Brokering</strong></td>
@@ -39,17 +39,17 @@ HotWax has various BI Reports that clients use to monitor operations and make da
     <tr>
       <td><strong>Fulfillment</strong></td>
       <td>Reports on fulfillment efficiency and order completion.</td>
-      <td><a href="report/fulfillment.md">Fulfillment</a></td>
+      <td><a href="reports/fulfillment.md">Fulfillment</a></td>
     </tr>
     <tr>
       <td><strong>NetSuite</strong></td>
       <td>Reports monitoring NetSuite sync status and issues.</td>
-      <td><a href="report/netsuite.md">NetSuite</a></td>
+      <td><a href="reports/netsuitesync.md">NetSuite</a></td>
     </tr>
       <tr>
       <td><strong>Pre-Order</strong></td>
       <td>Reports tracking pre-order fulfillment, and trends.</td>
-      <td><a href="report/pre-order.md">Pre-Order</a></td>
+      <td><a href="reports/pre-order.md">Pre-Order</a></td>
     </tr>
   </tbody>
 </table>
