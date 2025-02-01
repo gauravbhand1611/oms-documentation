@@ -42,7 +42,7 @@ Hotwax has various BI Reports that clients use to monitor operations and make da
       <td><a href="report/fulfillment.md">Fulfillment</a></td>
     </tr>
     <tr>
-      <td><strong>Netsuite</strong></td>
+      <td><strong>NetSuite</strong></td>
       <td>Reports monitoring NetSuite sync status and issues.</td>
       <td><a href="report/netsuite.md">NetSuite</a></td>
     </tr>
