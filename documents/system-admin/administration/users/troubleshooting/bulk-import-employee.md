@@ -1,4 +1,4 @@
-../../.gitbook# How to Bulk Import Employee
+# How to Bulk Import Employee
 
 ## Problem:
 
