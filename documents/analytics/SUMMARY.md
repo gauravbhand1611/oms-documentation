@@ -3,7 +3,7 @@
 ## Reports
 
 * [Introduction](README.md)
-* [Orders](order.md)
+* [Orders](reports/order.md)
 * [Product](reports/product.md)
 * [Inventory](reports/inventory.md)
 * [Brokering](reports/brokering.md)
