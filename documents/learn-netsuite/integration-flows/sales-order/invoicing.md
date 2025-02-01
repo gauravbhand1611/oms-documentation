@@ -1,8 +1,6 @@
 ---
 description: >-
-  Learn how invoices are generated in NetSuite and HotWax Commerce, finalizing
-  payment transactions and accounting entries for completed orders, contributing
-  to accurate financial reporting in both system
+  Learn how NetSuite and HotWax Commerce generate invoices, complete payments, and update accounting for accurate financial records.
 ---
 
 # Invoicing

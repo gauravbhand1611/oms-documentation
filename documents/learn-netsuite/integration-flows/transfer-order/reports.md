@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how transfer order movements are tracked for timely synchronization
-  between HotWax and NetSuite with efficient reports.
+  Learn how transfer orders are tracked and synced between HotWax and NetSuite with efficient reports.
 ---
 
 # Reports
