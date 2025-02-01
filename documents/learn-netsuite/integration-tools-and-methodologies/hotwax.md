@@ -1,6 +1,8 @@
 ---
 description: >-
-  Learn about HotWax Commerce's export/import tools for NetSuite integration, allowing easy data transfer in CSV/JSON formats using specialized scripts.
+  Discover HotWax Commerce's export/import tools, vital for NetSuite
+  integration. Effortlessly export data in CSV/JSON formats & import via
+  specialized scripts for seamless transfer.
 ---
 
 # HotWax

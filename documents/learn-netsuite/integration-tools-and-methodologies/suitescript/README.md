@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how HotWax Commerce leverages SuiteScript for integration
+  Discover how HotWax Commerce leverages SuiteScript for seamless integration
   with NetSuite, using JavaScript-based customization, scheduled scripts, and
   data transformation.
 ---
