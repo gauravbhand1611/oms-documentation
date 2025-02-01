@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how to initiate the initial product sync process between HotWax
+  Learn how to initiate the initial product sync process between HotWax
   Commerce and Shopify for efficient data integration.
 ---
 

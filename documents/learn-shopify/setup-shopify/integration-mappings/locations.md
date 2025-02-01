@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how to efficiently set up facilities in HotWax Commerce for seamless
+  Learn how to set up facilities in HotWax Commerce for easy
   integration with Shopify locations.
 ---
 

@@ -1,3 +1,8 @@
+---
+description: >-
+  Learn how retailers can map sales channels from Shopify to HotWax Commerce to enhance operational efficiency.
+---
+
 # Sales Channel
 
 Retailers receive orders through diverse channels, including eCommerce websites, social media platforms, online marketplaces, and point-of-sale (POS) systems. To enhance operational efficiency and evaluate performance across these channels, retailers must accurately identify the sales channel associated with each order.
