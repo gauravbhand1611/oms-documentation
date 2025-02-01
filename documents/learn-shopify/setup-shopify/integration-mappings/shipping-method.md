@@ -1,7 +1,6 @@
 ---
-description: >-
-    Learn how to synchronize shipping methods between Shopify and HotWax
-  Commerce.
+description: >
+  Learn how to synchronize shipping methods between Shopify and HotWax Commerce.
 ---
 
 # Shipping Method
