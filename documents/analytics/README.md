@@ -19,37 +19,37 @@ Hotwax has various BI Reports that clients use to monitor operations and make da
     <tr>
       <td><strong>Orders</strong></td>
       <td>Reports tracking order processing, status, and flow.</td>
-      <td><a href="reports/order.md">reports/orders.md</a></td>
+      <td><a href="reports/order.md">Order/a></td>
     </tr>
     <tr>
       <td><strong>Products</strong></td>
       <td>Reports covering product data, availability, and movement./td>
-      <td><a href="reports/product.md">reports/products.md</a></td>
+      <td><a href="reports/product.md">reports/Product</a></td>
     </tr>
     <tr>
       <td><strong>Inventory</strong></td>
       <td>Reports identifying inventory discrepancies and stock levels.</td>
-      <td><a href="reports/inventory">reports/inventory.md</a></td>
+      <td><a href="reports/inventory">reports/Inventory</a></td>
     </tr>
     <tr>
       <td><strong>Brokering</strong></td>
       <td>Reports analyzing brokering counts</td>
-      <td><a href="reports/brokering.md">bulk-scheduling.md</a></td>
+      <td><a href="reports/brokering.md">Brokering</a></td>
     </tr>
     <tr>
       <td><strong>Fulfillment</strong></td>
       <td>Reports on fulfillment efficiency and order completion.</td>
-      <td><a href="report/fulfillment.md">job-categories.md</a></td>
+      <td><a href="report/fulfillment.md">Fulfillment</a></td>
     </tr>
     <tr>
       <td><strong>Netsuite</strong></td>
       <td>Reports monitoring NetSuite sync status and issues.</td>
-      <td><a href="report/netsuite.md">bulk-scheduling.md</a></td>
+      <td><a href="report/netsuite.md">NetSuite</a></td>
     </tr>
       <tr>
       <td><strong>Pre-Orders</strong></td>
       <td>Reports tracking pre-order sales, fulfillment, and trends.</td>
-      <td><a href="report/pre-order.md">bulk-scheduling.md</a></td>
+      <td><a href="report/pre-order.md">Pre-Order</a></td>
     </tr>
   </tbody>
 </table>
