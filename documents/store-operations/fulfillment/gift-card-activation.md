@@ -9,4 +9,4 @@ HotWax Commerce’s Fulfillment App enables store associates to activate gift ca
 3. **Click the Gift Box Icon**: Select the gift box icon to view the specific gift card details and its associated code.
 4. **Add the Gift Card Number**: Enter the gift card number on the activation page.
 5. **Click the Save Icon**: After entering the number, click the save icon to complete the activation, ensuring the gift card is immediately usable by the customer.
-```
+

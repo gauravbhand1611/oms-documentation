@@ -1,9 +1,9 @@
-# Fulfillment Trouble Shooting
+# Fulfillment TroubleShooting
 
 The fulfillment process has many different configurations that are setup to help you tune your workflow to your organizations needs. This document will help you troubleshoot common configuration issues in the fulfillment process that may be causing unexpected behaviour.
 
 ## Unable to login
-User unable to login into the Fulfillment app and view orders
+User unable to login into the Fulfillment App and view orders
 
 If your user credentials are created and are able to log into LaunchPad but are unable to login to the Fulfillment app you may not have permission to fulfill orders from any facility.
 
