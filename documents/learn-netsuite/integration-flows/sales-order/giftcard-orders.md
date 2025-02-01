@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how gift card is synchronized between NetSuite and HotWax Commerce.
 ---
