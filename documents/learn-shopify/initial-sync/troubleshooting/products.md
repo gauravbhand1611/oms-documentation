@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how to troubleshoot product synchronization issues between HotWax
-  Commerce and Shopify for seamless inventory management.
+  Commerce and Shopify.
 ---
 
 # Product sync

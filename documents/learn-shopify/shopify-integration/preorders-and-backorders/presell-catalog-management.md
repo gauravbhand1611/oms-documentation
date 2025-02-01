@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce efficiently manages pre-order and backorder
+  Learn how HotWax Commerce manages pre-order and backorder
   catalogs.
 ---
 

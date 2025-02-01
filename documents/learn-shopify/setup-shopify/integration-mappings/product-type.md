@@ -1,7 +1,7 @@
 ---
 description: >-
-  Discover how to manage Shopify product types in HotWax Commerce for
-  streamlined inventory and order processing.
+  Learn how to manage Shopify product types in HotWax Commerce for
+  easy inventory and order processing.
 ---
 
 # Product Type

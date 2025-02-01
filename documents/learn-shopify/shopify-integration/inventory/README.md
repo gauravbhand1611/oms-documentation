@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce calculates ATP inventory.
+  Learn how HotWax Commerce calculates ATP inventory.
 ---
 
 # Inventory

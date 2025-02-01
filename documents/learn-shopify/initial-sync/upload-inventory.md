@@ -1,3 +1,8 @@
+---
+description: >-
+  Learn how HotWax Commerce synchronizes inventory from HotWax Commerce to Shopify.
+---
+
 # Invnetory Sync from HotWax Commerce to Shopify
 
 HotWax Commerce serves as the master of inventory availability. It seamlessly connects with various technology systems used by retailers, including Enterprise Resource Planning (ERP), Point of Sale (POS), and Warehouse Management Systems (WMS). HotWax Commerce ensures that inventory updates from all these systems are well synchronized. 

@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how to configure payment methods in HotWax Commerce for a seamless
-  integration with Shopify.
+  Learn how to configure payment methods in HotWax Commerce.
 ---
 
 # Payment Method

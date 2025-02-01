@@ -1,3 +1,8 @@
+---
+description: >-
+   Learn how the gift cards are fulfilled in HotWax Commerce.
+---
+
 # Gift Card Orders Fulfillment
 
 Retailers we work with offer both physical and digital gift cards which have product type as “GIFT CARD” in Shopify. 

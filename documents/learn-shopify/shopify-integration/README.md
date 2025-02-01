@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover seamless integration between HotWax Commerce and Shopify to
-  streamline your e-commerce operations efficiently.
+  Learn about integration between HotWax Commerce and Shopify for efficient eCommerce operations.
 ---
 
 # Shopify Integration Overview

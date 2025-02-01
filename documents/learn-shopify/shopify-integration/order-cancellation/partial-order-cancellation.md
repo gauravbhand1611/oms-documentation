@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how to handle partial order cancellations in Shopify and their
+  Learn how to handle partial order cancellations in Shopify and their
   updates in HotWax Commerce.
 ---
 

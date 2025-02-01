@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore how Shopify retailers provide diverse options for online product
+  Learn how Shopify retailers provide diverse options for online product
   returns with omnichannel retail.
 ---
 

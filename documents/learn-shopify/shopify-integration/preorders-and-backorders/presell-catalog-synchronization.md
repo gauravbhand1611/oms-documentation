@@ -1,7 +1,6 @@
 ---
 description: >-
-  Explore how HotWax Commerce syncs pre-order and backorder catalogs to Shopify
-  seamlessly.
+  Learn how HotWax Commerce syncs pre-order and backorder catalogs to Shopify.
 ---
 
 # Presell Catalog Synchronization

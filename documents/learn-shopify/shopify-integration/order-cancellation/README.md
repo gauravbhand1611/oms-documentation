@@ -1,7 +1,6 @@
 ---
 description: >-
   Easily manage order cancellations when using both Shopify and HotWax Commerce.
-  Streamline your operations effortlessly.
 ---
 
 # Order Cancellations

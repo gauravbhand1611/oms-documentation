@@ -1,5 +1,5 @@
 ---
-description: Discover how HotWax Commerce efficiently downloads BOPIS orders from Shopify.
+description: Learn how HotWax Commerce downloads BOPIS orders from Shopify easily.
 ---
 
 # BOPIS Order Download
