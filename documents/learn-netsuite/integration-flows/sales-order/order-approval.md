@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how HotWax syncs sales orders to NetSuite.
 ---
