@@ -2,12 +2,13 @@
 
 ## Reports
 
-* [Orders](README.md)
-* [Products](reports/product.md)
+* [Introduction](README.md)
+* [order](order.md)
+* [Product](reports/product.md)
 * [Inventory](reports/inventory.md)
 * [Brokering](reports/brokering.md)
 * [Fulfillment](reports/fulfillment.md)
-* [Pre-Orders](reports/pre-order.md)
+* [Pre-Order](reports/pre-order.md)
 * [NetSuite Sync](reports/netsuitesync.md)
 * [Reorder Limit](reports/reorder-limit.md)
 
