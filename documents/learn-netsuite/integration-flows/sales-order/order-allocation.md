@@ -1,8 +1,7 @@
 ---
 description: >-
   Learn how the OMS syncs allocated items to systems for fulfillment, including
-  NetSuite facilities for warehouse orders, ensuring accurate allocation and
-  fulfillment processes.
+  NetSuite facilities for warehouse orders.
 ---
 
 # Order Allocation
