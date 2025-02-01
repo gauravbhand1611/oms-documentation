@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how NetSuite and HotWax Commerce sync purchase orders, track inventory, and update order status automatically.
+  Learn about purchase order sync from NetSuite to HotWax Commerce.
 ---
 
 # Purchase Orders
