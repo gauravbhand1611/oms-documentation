@@ -1,4 +1,4 @@
----
+../../.gitbook---
 description: Learn how sales orders are processed in HotWax Commerce and NetSuite
 ---
 

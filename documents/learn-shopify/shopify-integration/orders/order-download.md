@@ -1,4 +1,4 @@
----
+../../.gitbook---
 description: >-
   Learn the process of downloading initial orders from Shopify to HotWax
   Commerce for order management.

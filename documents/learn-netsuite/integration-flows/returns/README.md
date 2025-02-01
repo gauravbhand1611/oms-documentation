@@ -1,4 +1,4 @@
----
+../../.gitbook---
 description: Learn about returns in Shopify, Loop, NetSuite and HotWax Commerce.
 ---
 

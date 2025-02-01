@@ -1,4 +1,4 @@
----
+../../.gitbook---
 description: >-
   Learn how NetSuite and HotWax Commerce generate invoices, complete payments, and update accounting for accurate financial records.
 ---
