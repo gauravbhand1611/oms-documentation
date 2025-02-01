@@ -1,7 +1,7 @@
 ---
 description: >-
-  Explore the details of exporting and importing data from NetSuite during
-  integration, ensuring smooth and accurate data transfer.
+  Learn the details of exporting and importing data from NetSuite during
+  integration.
 ---
 
 # NetSuite

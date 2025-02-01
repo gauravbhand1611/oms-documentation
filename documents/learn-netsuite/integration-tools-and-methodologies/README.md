@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how our integration methodologies for NetSuite ensure seamless and
+  Learn about our integration methodologies for NetSuite ensure seamless and
   efficient data transfer, prioritizing reliability and scalability over
   real-time REST APIs for improved data integrity
 ---

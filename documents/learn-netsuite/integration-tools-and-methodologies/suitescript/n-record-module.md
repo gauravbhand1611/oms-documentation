@@ -1,8 +1,6 @@
 ---
 description: >-
-  Explore how the N/Record module in SuiteScript facilitates seamless data
-  integration by working with NetSuite records, including those not supported by
-  NetSuite's CSV import.
+  Learn how the N/Record module in SuiteScript helps integrate data by working with NetSuite records, even those not supported by CSV import.
 ---
 
 # N/Record Module

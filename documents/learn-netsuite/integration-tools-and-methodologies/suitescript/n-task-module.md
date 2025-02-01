@@ -1,8 +1,6 @@
 ---
 description: >-
-  Discover how N/task module in SuiteScript facilitates creating tasks for
-  internal NetSuite scheduling, executing scripts, importing CSV files, and
-  more, crucial for seamless integration.
+ Learn how the N/task module in SuiteScript helps create tasks for scheduling, running scripts, importing CSV files, and more, ensuring smooth integration.
 ---
 
 # N/Task Module
