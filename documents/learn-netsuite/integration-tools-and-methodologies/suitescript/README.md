@@ -1,8 +1,7 @@
 ---
 description: >-
-  Discover how HotWax Commerce leverages SuiteScript for seamless integration
-  with NetSuite, using JavaScript-based customization, scheduled scripts, and
-  data transformation.
+ Learn about the robust capabilities of Saved Search in NetSuite, enabling creating reusable search definitions for data retrieval and conditional
+  queries.
 ---
 
 # SuiteScript
