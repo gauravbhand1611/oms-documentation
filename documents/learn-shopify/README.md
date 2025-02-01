@@ -1,7 +1,7 @@
 ---
 description: >-
-  THis document outlines the integration between HotWax Commerce and Shopify to
-  simplify your e-commerce operation.
+  This document outlines the integration between HotWax Commerce and Shopify to
+  simplify your eCommerce operations.
 ---
 
 # Shopify Integration Overview
