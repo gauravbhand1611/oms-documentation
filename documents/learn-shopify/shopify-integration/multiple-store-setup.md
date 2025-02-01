@@ -1,6 +1,6 @@
 ---
-description: >-
-Learn how to setup multiple store in HotWax Commerce.
+description: >
+  Learn how to set up multiple stores in HotWax Commerce.
 ---
 
 # Product Synchronization for Multiple Shopify Stores
