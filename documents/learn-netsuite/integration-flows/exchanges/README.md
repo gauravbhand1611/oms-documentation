@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore how retailers handle exchanges, ensuring smooth operations across
+  Learn how retailers uses different approches to handle exchanges across
   Shopify, NetSuite, Loop, and HotWax Commerce.
 ---
 

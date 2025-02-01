@@ -1,3 +1,7 @@
+---
+description: Learn how transfer orders are managed in HotWax Commerce.
+---
+
 # Transfer Orders
 
 Transfer orders are instrumental in the internal movement of inventory within an omnichannel retail environment. They serve various purposes, including:

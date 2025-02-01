@@ -1,6 +1,6 @@
 ---
 description: >-
- Learn how the order approval process in HotWax Commerce improves fulfillment and streamlines operations.
+ Learn how the order approval process in HotWax Commerce improves fulfillment.
 ---
 
 # Order Approval for Fulfillment

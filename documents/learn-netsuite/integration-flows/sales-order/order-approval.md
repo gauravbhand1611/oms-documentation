@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how order approval in HotWax Commerce ensures seamless integration
-  with NetSuite, preventing conflicts and errors in order fulfillment.
+  Learn how HotWax syncs sales orders to NetSuite.
 ---
 
 # Order Approval

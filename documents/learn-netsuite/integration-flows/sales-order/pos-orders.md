@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce synchronizes POS sales to NetSuite, ensuring
+  Learn how HotWax Commerce synchronizes POS sales to NetSuite, ensuring
   accurate inventory and accounting updates for a consolidated view of online
   and in-store sales.
 ---
