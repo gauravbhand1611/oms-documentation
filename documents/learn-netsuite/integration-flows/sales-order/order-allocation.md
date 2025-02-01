@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how HotWax syncs order items allocated to stores and warehouses.
 ---
