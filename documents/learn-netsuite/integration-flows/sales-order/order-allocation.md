@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how the OMS syncs allocated items to systems for fulfillment, including
-  NetSuite facilities for warehouse orders.
+  Learn how HotWax syncs order items allocated to stores and warehouses.
 ---
 
 # Order Allocation
