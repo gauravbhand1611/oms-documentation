@@ -1,3 +1,7 @@
+---
+description: Learn how send sales orders are processed in HotWax Commerce and synchronized to NetSuite.
+---
+
 # Send Sales Orders
 
 Often, customers come into the store excited to purchase their favorite item, only to find it unavailable in their size or preferred color. When this happens, store associates check stock availability across their network of locations. If the desired item is found elsewhere, they place an order on the customer's behalf for the delivery to their home address.

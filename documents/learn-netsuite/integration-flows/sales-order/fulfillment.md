@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how fulfillment information is synchronized between NetSuite and HotWax
-  Commerce, ensuring accurate order status updates and financial processing.
+  Learn how fulfillment information is synchronized between NetSuite and HotWax Commerce.
 ---
 
 # Fulfillment

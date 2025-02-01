@@ -1,7 +1,7 @@
 ---
 description: >-
-  Explore a list of shipping methods mapped between Shopify, HotWax Commerce,
-  and NetSuite, ensuring accurate order syncing.
+  Learn how a list of shipping methods is mapped between Shopify, HotWax Commerce,
+  and NetSuite.
 ---
 
 # Shipping Methods

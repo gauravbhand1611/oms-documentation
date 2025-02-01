@@ -1,3 +1,7 @@
+---
+description: Learn about how order reports are managed in HotWax Commerce.
+---
+
 # Order Sync Assurance Reports
 
 These reports play a crucial role in ensuring order synchronization across Shopify, HotWax, and NetSuite.

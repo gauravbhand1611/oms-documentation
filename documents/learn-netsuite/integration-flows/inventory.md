@@ -1,7 +1,6 @@
 ---
 description: >-
-  Automated sync of inventory data from NetSuite to HotWax Commerce to ensure
-  accurate inventory counts.
+  Automated sync of inventory data from NetSuite to HotWax Commerce.
 ---
 
 # Inventory

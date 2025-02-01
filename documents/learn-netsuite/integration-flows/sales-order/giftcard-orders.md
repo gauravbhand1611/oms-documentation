@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how gift card is synchronized between NetSuite and HotWax Commerce.
+---
+
+
 # Gift Card Orders
 
 Gift cards are stored-value cards that carry a value determined at the time of the card's purchase. They are often given as gifts or rewards and are redeemable for products up to the value stored on the card.
