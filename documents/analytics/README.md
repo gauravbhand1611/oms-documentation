@@ -1,7 +1,8 @@
-
-## Analytics
-
-Hotwax has various BI Reports that clients use to monitor operations and make data-driven decisions.
+---
+description: >-
+    Learn about HotWax's reporting.
+---
+HotWax has various BI Reports that clients use to monitor operations and make data-driven decisions.
 
 
 ## Topics
