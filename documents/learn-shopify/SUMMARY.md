@@ -49,7 +49,7 @@
 * [Multiple Store Setup](shopify-integration/multiple-store-setup.md)
 * [Required Permissions from Shopify](setup-shopify/shopify-permissions.md)
 * [Enable BOPIS/Pre-order on Shopify](setup-shopify/enable-bopis-preorder-scripts.md)
-* [Integrations](setup-shopify/integration-mappings/README.md)
+* [Integration Mappings](setup-shopify/integration-mappings/README.md)
   * [Locations](setup-shopify/integration-mappings/locations.md)
   * [Shipping Method](setup-shopify/integration-mappings/shipping-method.md)
   * [Sales channel](setup-shopify/integration-mappings/sales-channel.md)
@@ -64,9 +64,9 @@
 * [Initial Order Sync](initial-sync/import-orders.md)
 * [Initial Inventory Sync](initial-sync/upload-inventory.md)
 * [Troubleshooting](initial-sync/troubleshooting/README.md)
-  * [Product sync](initial-sync/troubleshooting/products.md)
-  * [Order sync](initial-sync/troubleshooting/order.md)
-  * [Inventory sync](initial-sync/troubleshooting/inventory.md)
+  * [Product Sync](initial-sync/troubleshooting/products.md)
+  * [Order Sync](initial-sync/troubleshooting/order.md)
+  * [Inventory Sync](initial-sync/troubleshooting/inventory.md)
 
 ## Additional resources
 

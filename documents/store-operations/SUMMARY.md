@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Launchpad](README.md)
-* [Glossary](../GLOSSARY.md)
 
 ## Orders
 
@@ -18,7 +17,7 @@
   * [Catalog Page](bopis/catalog-page.md)
   * [Settings Page](bopis/settings-page.md)
   * [Troubleshooting](orders/bopis/troubleshooting/README.md)
-    * [Notification error](bopis/notifications.md)
+    * [Notification Error](bopis/notifications.md)
 * [Fulfillment](fulfillment/README.md)
   * [Order Fulfillment](fulfillment/shipOrders.md)
   * [Service Products](fulfillment/service-products.md)

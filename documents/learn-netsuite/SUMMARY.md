@@ -10,7 +10,7 @@
   * [N/Search Module](integration-tools-and-methodologies/suitescript/n-search-module.md)
   * [N/File Module](integration-tools-and-methodologies/suitescript/n-file-module.md)
 * [Saved Search](integration-tools-and-methodologies/savedsearch/README.md)
- * [Integration Methodologies](integration-tools-and-methodologies/README.md)
+* [Integration Methodologies](integration-tools-and-methodologies/README.md)
 * [NetSuite](integration-tools-and-methodologies/netsuite.md)
 * [HotWax](integration-tools-and-methodologies/hotwax.md)
 
@@ -59,7 +59,7 @@
 ## Synchronization Flows
 
 * [Auditing](synchronization-flows/integration-audit/README.md)
-* [Products and Inventory](synchronization-flows/products-inventory-sync/README.md)
+* [Products and Inventory](synchronization-flows/products-and-inventory/README.md)
   * [Product IDs](synchronization-flows/product-inventory-sync/import-productId.md)
   * [Inventory Reset](synchronization-flows/product-inventory-sync/inventory-reset.md)
 * [Orders](synchronization-flows/order-sync/README.md)

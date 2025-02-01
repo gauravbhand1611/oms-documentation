@@ -5,11 +5,11 @@
 ## Workflow
 
 * [Job Management](job-manager/README.md)
-  * [Job Details](job-manager/flows/job-details.md)
-  * [Job Categories](job-manager/flows/job-categories.md)
-  * [Job Queueing](job-manager/flows/job-queueing.md)
-  * [Initial Load](job-manager/flows/initial-load.md)
-  * [Bulk Scheduling](job-manager/flows/bulk-scheduling.md)
+  * [Job Details](job-manager/job-management/job-details.md)
+  * [Job Categories](job-manager/job-management/job-categories.md)
+  * [Job Queueing](job-manager/job-management/job-queueing.md)
+  * [Initial Load](job-manager/job-management/initial-load.md)
+  * [Bulk Scheduling](job-manager/job-management/bulk-scheduling.md)
   * [Troubleshooting](job-manager/troubleshooting/README.md)
     * [Job Stuck](job-manager/troubleshooting/jobStuck.md)
     * [Job Failure](job-manager/troubleshooting/jobFailed.md)
@@ -27,13 +27,13 @@
 
 ## Products
 
-* [Product Management](products/products.md)
+* [Product Management](products/product-management.md)
 * [Breaking Variants Into Independent Products](products/breaking-variants-into-independent-products.md)
 
 ## Orders
 
 * [Order Management](order-management/README.md)
-  * [Find Sales orders](order-management/find-sales-orders.md)
+  * [Find Sales Orders](order-management/find-sales-orders.md)
   * [View Order Details](order-management/view-order-details.md)
   * [Update Orders](order-management/update-sales-order.md)
   * [Allocation](order-management/allocate-sales-order.md)
@@ -49,7 +49,7 @@
     * [Order Duplication](order-management/troubleshooting/duplicate-orders.md)
     * [Shopify Order Import Failures in HC](order-management/troubleshooting/order-import-failure.md)
 * [Order Routing](order-routing/README.md)
-  * [Brokering Runs](order-routing/brokeringruns.md)
+  * [Brokering Runs](order-routing/brokering-runs.md)
   * [Routing Rules](order-routing/routings.md)
   * [Inventory Rules](order-routing/rules.md)
   * [Use Cases](order-routing/scenarios.md)
@@ -83,7 +83,7 @@
   * [Find Product Inventory](inventory-management/find-product-inventory.md)
   * [Product Inventory View Page](inventory-management/product-inventory-view.md)
   * [Inventory Configurations](inventory-management/inventory-configuration.md)
-* [Inventory upload](inventory-management/inventory-upload.md)
+* [Inventory Upload](inventory-management/inventory-upload.md)
   * [Schedule Restocking](inventory-management/schedule-restock.md)
 * [Cycle Count](inventory-management/cycle-count/introduction.md)
   * [Draft Counts](inventory-management/cycle-count/draft-cycle-count.md)
