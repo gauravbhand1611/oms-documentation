@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how retailers can map sales channels from Shopify to HotWax Commerce to enhance operational efficiency.
+  Learn how retailers can map sales channels from Shopify to HotWax Commerce.
 ---
 
 # Sales Channel
