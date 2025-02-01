@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how transfer orders in NetSuite are synchronized with HotWax Commerc
+  Learn how transfer orders in NetSuite are synchronized to HotWax Commerce.
 ---
 
 # Transfer Orders
