@@ -1,5 +1,5 @@
 ---
-description: Learn about order reports are manages in HotWax Commerce
+description: Learn about how order reports are managed in HotWax Commerce.
 ---
 
 # Order Sync Assurance Reports
