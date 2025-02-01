@@ -1,8 +1,6 @@
 ---
 description: >-
-  Discover how integration between NetSuite and HotWax Commerce automates
-  Purchase Order synchronization, streamlines inventory receipt, and updates
-  order statuses efficiently.
+  Learn how NetSuite and HotWax Commerce sync purchase orders, track inventory, and update order status automatically.
 ---
 
 # Purchase Orders

@@ -1,3 +1,7 @@
+---
+description: >-
+  Learn how how store to warehouse transfer orders are processed in HotWax Commerce.
+--- 
 # Store to Warehouse
 
 Store managers can return excess or unsold inventory from stores to the warehouse with store to warehouse transfer orders.

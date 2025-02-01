@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how integration with NetSuite simplifies the relationship of kit and its components in HotWax Commerce, ensuring accurate inventory calculations of kit products.
+  Learn how NetSuite integration helps manage kits and its components in HotWax Commerce for accurate inventory.
 ---
 # Kit Products
 

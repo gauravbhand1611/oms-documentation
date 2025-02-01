@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how transfer orders in NetSuite synchronize with HotWax Commerce,
-  streamlining inventory movement and ensuring efficient stock allocation.
+  Learn how transfer orders in NetSuite are synchronized with HotWax Commerc
 ---
 
 # Transfer Orders
