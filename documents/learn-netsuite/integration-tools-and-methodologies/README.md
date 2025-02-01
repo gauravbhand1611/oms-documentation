@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn about HotWax's integration methodologies with NetSuite.
+    Learn about HotWax's integration methodologies with NetSuite.
 ---
 
 # Introduction

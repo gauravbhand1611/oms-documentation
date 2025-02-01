@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how fulfillment information is synchronized between NetSuite and HotWax Commerce.
 ---

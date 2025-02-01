@@ -1,7 +1,8 @@
 ---
 description: >-
-  Learn about the robust capabilities of Saved Search in NetSuite, enabling creating reusable search definitions for data retrieval and conditional
-  queries.
+  Explore the robust capabilities of Saved Search in NetSuite, enabling users to
+  create reusable search definitions for precise data retrieval and conditional
+  queries, enhancing integration efficiency.
 ---
 
 # Saved Search
