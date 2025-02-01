@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn the intricacies of data mappings between Shopify and HotWax Commerce
+  View data mappings between Shopify and HotWax Commerce
   with detailed instructions and default mappings.
 ---
 
