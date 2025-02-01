@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how to troubleshoot product synchronization issues between HotWax
+  Troubleshoot product synchronization issues between HotWax
   Commerce and Shopify.
 ---
 
