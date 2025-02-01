@@ -1,4 +1,4 @@
-../../.gitbook---
+---
 description: >-
   Learn how retailers uses different approches to handle exchanges across
   Shopify, NetSuite, Loop, and HotWax Commerce.
