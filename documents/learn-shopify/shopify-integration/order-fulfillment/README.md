@@ -1,7 +1,7 @@
 ---
 description: >-
   Optimize workflow by fulfilling orders in HotWax Commerce with the Fulfillment
-  app or external systems like Warehouse Management Systems.
+  App or external systems.
 ---
 
 # Order Fulfillment
