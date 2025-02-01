@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce ensures accurate inventory synchronization of Kit
+  Learn how HotWax Commerce ensures accurate inventory synchronization of Kit
   Products to Shopify.
 ---
 

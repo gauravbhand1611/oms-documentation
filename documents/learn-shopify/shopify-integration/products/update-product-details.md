@@ -1,7 +1,6 @@
 ---
 description: >-
-  Effortlessly update product details from Shopify to HotWax Commerce for
-  seamless synchronization.
+  Easily update product details from Shopify to HotWax Commerce for smooth synchronization.
 ---
 
 # Updating Product Details

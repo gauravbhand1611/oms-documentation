@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how retailers can process in-store returns for online orders seamlessly
+  Learn how retailers can process in-store returns for online orders
   with HotWax Commerce.
 ---
 

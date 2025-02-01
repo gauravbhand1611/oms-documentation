@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how HotWax Commerce ensures accurate inventory synchronization of gift cards to Shopify.
+---
+
+
 # Inventory Synchronization of Gift Cards
 
 ## Physical Gift Cards

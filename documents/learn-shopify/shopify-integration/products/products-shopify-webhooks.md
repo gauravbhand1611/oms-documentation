@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover streamlined processes for product creation and deletion using Shopify
+  Learn processes for product creation and deletion using Shopify
   Webhooks.
 ---
 

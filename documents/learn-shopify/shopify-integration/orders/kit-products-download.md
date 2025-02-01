@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover the Process of Downloading Kit Orders from Shopify to HotWax
+  Learn the Process of Downloading Kit Orders from Shopify to HotWax
   Commerce.
 ---
 

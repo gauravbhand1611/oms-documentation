@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore how HotWax Commerce synchronizes order updates for seamless order
+  Learn how HotWax Commerce synchronizes order updates for better order
   management.
 ---
 

@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how HotWax Commerce reads Purchase Orders from the ERP to manage
-  pre-sales efficiently.
+  pre-sales.
 ---
 
 # Pre-orders and Backorders

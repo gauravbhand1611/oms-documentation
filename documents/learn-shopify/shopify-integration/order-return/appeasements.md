@@ -1,7 +1,7 @@
 ---
 description: >-
-  Explore how HotWax Commerce efficiently manages appeasements to streamline
-  customer service processes effortlessly.
+  Learn how HotWax Commerce handles appeasements to simplify customer service.
+
 ---
 
 # Appeasements

@@ -1,3 +1,7 @@
+---
+description: Learn how HotWax Commerce syncronizes order information from shopify.
+---
+
 # Orders
 
 HotWax Commerce ensures that order information is always updated to streamline the process of fulfilling orders. When syncing orders from Shopify, HotWax Commerce tackles four essential scenarios

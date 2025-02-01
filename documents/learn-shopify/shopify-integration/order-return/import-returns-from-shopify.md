@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce seamlessly imports returns from Shopify for
+  Learn how HotWax Commerce seamlessly imports returns from Shopify for
   online returns.
 ---
 

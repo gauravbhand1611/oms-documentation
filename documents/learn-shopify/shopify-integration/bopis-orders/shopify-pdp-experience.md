@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore how HotWax Commerce displays immediate product availability for store
+  Learn how HotWax Commerce displays immediate product availability for store
   pickup on Shopify's Product Detail Pages (PDP).
 ---
 
