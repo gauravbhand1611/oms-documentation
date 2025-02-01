@@ -19,17 +19,17 @@ Hotwax has various BI Reports that clients use to monitor operations and make da
     <tr>
       <td><strong>Orders</strong></td>
       <td>Reports tracking order processing, status, and flow.</td>
-      <td><a href="reports/order.md">Order/a></td>
+      <td><a href="reports/order.md">Order</a></td>
     </tr>
     <tr>
       <td><strong>Products</strong></td>
       <td>Reports covering product data, availability, and movement./td>
-      <td><a href="reports/product.md">reports/Product</a></td>
+      <td><a href="reports/product.md">Product</a></td>
     </tr>
     <tr>
       <td><strong>Inventory</strong></td>
       <td>Reports identifying inventory discrepancies and stock levels.</td>
-      <td><a href="reports/inventory">reports/Inventory</a></td>
+      <td><a href="reports/inventory">Inventory</a></td>
     </tr>
     <tr>
       <td><strong>Brokering</strong></td>
