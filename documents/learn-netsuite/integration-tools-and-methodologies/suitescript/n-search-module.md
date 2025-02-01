@@ -1,6 +1,8 @@
 ---
 description: >-
-  Learn how the N/Search module in SuiteScript allows dynamic data retrieval from NetSuite with custom filters, improving integration.
+  Discover the power of N/Search module in SuiteScript, enabling dynamic data
+  retrieval from NetSuite database with custom filters and conditions, enhancing
+  integration capabilities.
 ---
 
 # N/Search Module
