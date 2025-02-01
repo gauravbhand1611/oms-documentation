@@ -1,3 +1,10 @@
+
+---
+description: >-
+    Learn how to enable BOPIS/Pre-order on the Shopify PDP page through HotWax Commerce.
+---
+
+
 # Enable BOPIS/Pre-Order Scripts for Shopify
 
 Retailers seeking to offer Buy Online, Pick Up In Store (BOPIS), or pre-order solutions on their Shopify store need to enable bopis/Pre-order scripts to implement changes on Shopify PDP and to show `Pre-Order` or `Pick Up Today` Button. Integrating these features seamlessly into their online store not only enhances the shopping experience for customers but also streamlines the operational process for retailers. With the `HotWax Commerce Integration App`, retailers can customize directly on the Shopify interface.

@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how HotWax Commerce efficiently handles exchanges. Simplify your
-  exchange processes seamlessly.
+  Learn how HotWax Commerce makes exchanges simple and efficient.
 ---
 
 # Exchanges

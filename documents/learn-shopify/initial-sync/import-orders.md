@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how to initiate the initial order sync process between HotWax
-  Commerce and Shopify to seamlessly import open and unfulfilled orders.
+  Learn how to start the order sync process between HotWax Commerce and Shopify to easily import open and unfulfilled orders.
 ---
 
 # Initial Order Sync

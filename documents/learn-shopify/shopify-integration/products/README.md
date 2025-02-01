@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore how accurate product data drives real-time inventory updates on
+  Learn how accurate product data drives real-time inventory updates on
   Shopify.
 ---
 

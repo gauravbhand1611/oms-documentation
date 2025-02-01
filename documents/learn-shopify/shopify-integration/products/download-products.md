@@ -1,5 +1,5 @@
 ---
-description: Learn how to seamlessly launch the initial product download from Shopify.
+description: Learn how launch the initial product download from Shopify.
 ---
 
 # Product Download

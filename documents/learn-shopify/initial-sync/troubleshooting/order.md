@@ -1,7 +1,6 @@
 ---
 description: >-
-  Troubleshoot order synchronization between HotWax Commerce and Shopify for
-  seamless order management.
+  Troubleshoot order synchronization between HotWax Commerce and Shopify.
 ---
 
 # Order sync

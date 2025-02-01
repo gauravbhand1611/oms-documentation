@@ -1,7 +1,7 @@
 ---
 description: >-
   Easily configure locations in HotWax Commerce and Shopify with our
-  step-by-step guide to streamline inventory management.
+  step-by-step guide to manage inventory.
 ---
 
 # Location Mapping

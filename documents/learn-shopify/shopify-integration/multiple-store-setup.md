@@ -1,3 +1,8 @@
+---
+description: >
+  Learn how to set up multiple stores in HotWax Commerce.
+---
+
 # Product Synchronization for Multiple Shopify Stores
 
 HotWax Commerce streamlines product synchronization from Shopify by selecting one Shopify store as the primary data source. If a client utilizes a multi-store configuration within Shopify for a single brand, the process involves designating one Shopify store for product data sourcing while the other child stores are restricted to product linking. Product linking occurs through the utilization of the primary product identifier established in the Product Store settings, such as `SKU` or `UPCA`. This synchronization process is facilitated by customizable job workflows, which can be configured using the `Job Manager App`.

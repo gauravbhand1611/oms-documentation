@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how HotWax Commerce manages returns and exchange from Shopify POS.
+---
+
+
 # Shopify and HotWax Commerce Returns & Exchanges
 
 Many times customers visit their preferred store location to return or exchange their online order. Perhaps they received the wrong size, the item is defective, or they simply changed their mind. Shopify provides a streamlined process for returns and exchanges. Store associates can directly process returns using Shopify POS, specify the items customers wish to return and the reason for the return. If they'd like to exchange the item for a different product, Shopify allows them to select the new item directly within the return process.
