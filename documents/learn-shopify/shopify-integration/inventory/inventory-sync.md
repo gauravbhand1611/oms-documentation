@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to synchronize inventory effortlessly from HotWax Commerce to
-  Shopify
+  Learn how to synchronize inventory from HotWax Commerce to
+  Shopify.
 ---
 
 # Inventory Synchronization
