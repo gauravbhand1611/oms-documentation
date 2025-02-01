@@ -1,5 +1,5 @@
 ---
-description: Learn how send sales orders are processed in HotWax Commerce and synchronized with NetSuite
+description: Learn how send sales orders are processed in HotWax Commerce and synchronized to NetSuite.
 ---
 
 # Send Sales Orders
