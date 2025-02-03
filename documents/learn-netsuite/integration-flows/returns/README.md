@@ -266,7 +266,7 @@ A scheduled job in HotWax Commerce downloads these returns from Shopify POS, inc
 
 As POS returns are already synced to NetSuite by Loop, they are not synced again by HotWax commerce.
 
-<figure><img src="../../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
 **Synchronizing POS Returns to NetSuite when Shopify POS is used**
 
@@ -293,4 +293,4 @@ A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, 
 
 When returning an item a customer can also opt to take the exchange item against it. The exchange item may be of higher value than the original item or may be of lesser value. Learn more about how HotWax commerce handles exchanges on an order.
 
-<figure><img src="../../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>

@@ -21,9 +21,9 @@ Upon successful receipt of inventory, HotWax Commerce synchronizes item receipts
 
 ## Workflow
 
-<figure><img src="../../../.gitbook/assets/40.png" alt=""><figcaption><p>Fulfilling store to store transfer order</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/40.png" alt=""><figcaption><p>Fulfilling store to store transfer order</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/41.png" alt=""><figcaption><p>Receiving store to store transfer order</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/41.png" alt=""><figcaption><p>Receiving store to store transfer order</p></figcaption></figure>
 
 ### Create Transfer Orders in NetSuite
 
@@ -147,15 +147,15 @@ Following this approach, store associates at the destination store can efficient
 
 {% tabs %}
 {% tab title="Transfer Order Fields in NetSuite" %}
-<figure><img src="../../../.gitbook/assets/transferOrderNS.png" alt=""><figcaption><p>Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/transferOrderNS.png" alt=""><figcaption><p>Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Transfer Order Fields in HotWax Commerce" %}
-<figure><img src="../../../.gitbook/assets/salesOrderHC.png" alt=""><figcaption><p>Transfer Order Fields Mapping in HotWax Commerce</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/salesOrderHC.png" alt=""><figcaption><p>Transfer Order Fields Mapping in HotWax Commerce</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../../.gitbook/assets/44.png" alt=""><figcaption><p>Transfer Order Items Fulfilled in HotWax Commerce "Store Fulfillment App"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/44.png" alt=""><figcaption><p>Transfer Order Items Fulfilled in HotWax Commerce "Store Fulfillment App"</p></figcaption></figure>
 
 **Here's how transfer order fields are mapped in NetSuite and HotWax Commerce for receiving in store:**
 
@@ -163,11 +163,11 @@ Following this approach, store associates at the destination store can efficient
 
 {% tabs %}
 {% tab title="Transfer Order Fields in NetSuite" %}
-<figure><img src="../../../.gitbook/assets/itemFulfillment.png" alt=""><figcaption><p>Fulfilled Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/itemFulfillment.png" alt=""><figcaption><p>Fulfilled Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Transfer Order Fields in HotWax Commerce" %}
-<figure><img src="../../../.gitbook/assets/shipmentReceiving.png" alt=""><figcaption><p>Inbound Shipment Fields Mapping in HotWax Commerce "Inventory Receiving App"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/shipmentReceiving.png" alt=""><figcaption><p>Inbound Shipment Fields Mapping in HotWax Commerce "Inventory Receiving App"</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -199,6 +199,6 @@ In NetSuite, a scheduled SuiteScript reads this JSON file containing item receip
 
 </details>
 
-{% file src="../../../.gitbook/assets/Transfer Order Fulfilled Items Feed (1).txt" %}
+{% file src="../../.gitbook/assets/Transfer Order Fulfilled Items Feed (1).txt" %}
 
-{% file src="../../../.gitbook/assets/Transfer Order Receipt Feed (1).txt" %}
+{% file src="../../.gitbook/assets/Transfer Order Receipt Feed (1).txt" %}

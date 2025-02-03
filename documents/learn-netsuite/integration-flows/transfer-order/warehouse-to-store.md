@@ -26,7 +26,7 @@ As mentioned earlier, in NetSuite, the inventory count for transfer order items 
 
 ## Workflow
 
-<figure><img src="../../../.gitbook/assets/33.png" alt=""><figcaption><p>Warehouse to store transfer order</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/33.png" alt=""><figcaption><p>Warehouse to store transfer order</p></figcaption></figure>
 
 ### Fulfilling Transfer Order Items
 
@@ -97,11 +97,11 @@ Once all the transfer order item fulfillment records have been successfully rece
 
 {% tabs %}
 {% tab title="Transfer Order Fields in NetSuite" %}
-<figure><img src="../../../.gitbook/assets/34.png" alt=""><figcaption><p>Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/34.png" alt=""><figcaption><p>Transfer Order Fields Mapping in NetSuite</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Transfer Order Fields in HotWax Commerce" %}
-<figure><img src="../../../.gitbook/assets/35.png" alt=""><figcaption><p>Inbound Shipment Fields Mapping in HotWax Commerce "Inventory Receiving App"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/35.png" alt=""><figcaption><p>Inbound Shipment Fields Mapping in HotWax Commerce "Inventory Receiving App"</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -123,5 +123,5 @@ A scheduled job in HotWax Commerce OMS reads this CSV file and creates another i
 
 </details>
 
-{% file src="../../../.gitbook/assets/Transfer Order Receipt Feed (1).txt" %}
+{% file src="../../.gitbook/assets/Transfer Order Receipt Feed (1).txt" %}
 
