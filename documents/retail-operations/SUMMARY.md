@@ -54,7 +54,7 @@
   * [Inventory Rules](order-routing/rules.md)
   * [Use Cases](order-routing/scenarios.md)
   * [Additional Settings](order-routing/additional-settings.md)
-  * [Templates](orders/order-routing/templates/README.md)
+  * [Templates](order-routing/template/template.md)
     * [Retailer Fulfilling Domestic and International Orders and Doing Business in Multiple Countries](order-routing/template/cross-border-shipping.md)
     * [Retailer Fulfilling Domestic Orders and Doing Business in Multiple Countries](order-routing/template/inventory-based-shipping.md)
   * [Troubleshooting](order-routing/troubleshooting/README.md)
