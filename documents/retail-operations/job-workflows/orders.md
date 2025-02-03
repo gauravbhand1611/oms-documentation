@@ -584,7 +584,9 @@ Flow: Import Fulfillment update from HotWax to NetSuite.
 
 HotWax requires the fulfillment update for various reasons, such as to update status on eCommerce and ultimately to maintain the integrity between HotWax and NetSuite.
 
-**How is fulfillment status synced?** NetSuite runs a SuiteScript to provide details of items that are fulfilled in the warehouse. And uploads a JSON file of such details on the SFTP location `Order Item Fulfillment`; the job imports the JSON to HotWax and uploads it on `IMP_ODR_ITM_FLFLMNT` MDM. Finally, the `Process Bulk Import Files` job processes the file, and hence, fulfillments are synced from Netsuite to HotWax.
+**How is fulfillment status synced?**
+
+NetSuite runs a SuiteScript to provide details of items that are fulfilled in the warehouse. And uploads a JSON file of such details on the SFTP location `Order Item Fulfillment`; the job imports the JSON to HotWax and uploads it on `IMP_ODR_ITM_FLFLMNT` MDM. Finally, the `Process Bulk Import Files` job processes the file, and hence, fulfillments are synced from Netsuite to HotWax.
 
 **Custom Parameters**
 
