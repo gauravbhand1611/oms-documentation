@@ -9,8 +9,8 @@
   * [Find Order](api/orders/find-orders.md)
   * [Retrieve Orders](api/orders/retrieve-order.md)
   * [List Orders](api/orders/get-orders.md)
-  * [Created Orders](api/orders/createdOrderFeed.md)
-  * [Order Adjustments](api/orders/adjustmentTypes.md)
+  * [Created Orders](api/orders/created-orders-feed.md)
+  * [Order Adjustments](api/orders/order-adjustments.md)
   * [Order Reconciliations](api/orders/order-reconciliations.md)
 * [Inventory](api/inventory/README.md)
   * [Check Inventory](api/inventory/check-inventory.md)
@@ -44,9 +44,9 @@
   * [Update And Import File](api/fulfillment/apis/update-and-import-file.md)
   * [Fulfilled Order Items Feed](api/fulfillment/feed/fulfilled-order-items-feed.md)
 * [Appeasements](api/appeasements/README.md)
-  * [Appeasements feed](api/appeasements/appeasements-feed.md)
+  * [Appeasements Feed](api/appeasements/appeasements-feed.md)
 * [Miscellaneous](api/miscellaneous/README.md)
-  * [Perform Find](api/Miscellaneous/perform-find.md)
+  * [Perform Find](api/miscellaneous/perform-find.md)
 
 ## Journeys
 
@@ -65,4 +65,4 @@
 
 ## OMS Release Versions
 
-* [OMS Versions](additional-resources/omsReleases.md)
+* [OMS Versions](oms-releases.md)
