@@ -54,7 +54,9 @@ Flow: Order Fulfillment from HotWax
 
 **This job is used for notifying store associates of the open BOPIS orders allocated to their store.** Basically, when a BOPIS order is allocated to a store, it is generally expected that the BOPIS order must be catered to as soon as possible. So it is important to get notified for BOPIS orders when they are allocated to stores.
 
-**How are stores notified?** Basically, this job checks all the BOPIS orders placed between the timeframe of the last job run and the current timestamp. And sends push notifications on the BOPIS App for the respective stores.
+**How are stores notified?**&#x20;
+
+Basically, this job checks all the BOPIS orders placed between the timeframe of the last job run and the current timestamp. And sends push notifications on the BOPIS App for the respective stores.
 
 **It is important to note that if this job is not scheduled, stores will not be notified about BOPIS orders allocated to them.**
 
