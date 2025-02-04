@@ -12,7 +12,7 @@
   * [Bulk Scheduling](workflow/job-management/bulk-scheduling.md)
   * [Troubleshooting](workflow/job-management/troubleshooting/README.md)
     * [Job Stuck](workflow/job-management/troubleshooting/job-stuck.md)
-    * [Job Failure](workflow/job-management/troubleshooting/job-failed.md)
+    * [Job Failed](workflow/job-management/troubleshooting/job-failed.md)
     * [Duplicate Jobs](workflow/job-management/troubleshooting/duplicate-job-scheduled.md)
     * [Job Scheduling](workflow/job-management/troubleshooting/schedule-job.md)
     * [Job Scheduling Errors](workflow/job-management/troubleshooting/job-scheduling-errors.md) 
