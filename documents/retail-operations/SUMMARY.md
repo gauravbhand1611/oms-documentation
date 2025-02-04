@@ -95,7 +95,7 @@
   * [Store Permissions](inventory/cycle-count/store-permissions.md)
 * [Available to Promise Management](inventory/available-to-promise/README.md)
   * [Concepts](inventory/available-to-promise/concepts.md)
-  * [Create Channels](inventory/available-to-promise/create-channel.md)
+  * [Create Channels](inventory/available-to-promise/create-channels.md)
   * [Safety Stock Rules](inventory/available-to-promise/safety-stock-rules.md)
   * [Threshold Rules](inventory/available-to-promise/threshold-rules.md)
   * [Store Pickup Rules](inventory/available-to-promise/bopis-rule.md)
