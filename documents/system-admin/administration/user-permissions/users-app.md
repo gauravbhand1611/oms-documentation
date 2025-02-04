@@ -44,3 +44,11 @@ Below is a list of all the actions available in the Users App, along with the sp
 | 4   | Download Permission List | -                                   | Allows users to download a list of existing permissions within a security group.  |
 
 <figure><img src="../../.gitbook/assets/permissions.png" alt=""><figcaption></figcaption></figure>
+
+
+### Setting Page
+| No. | Action                   | Permission                          | Description |
+|----|--------------------------|-----------------------------------|-------------|
+| 1  | Go to OMS                | COMMERCEUSER_VIEW                 | Allows users to access HotWax OMS directly from the User App. |
+| 2  | View User App            | USERS_APP_VIEW                    | Grants users permission to view the User App. |
+| 3  | Manage Security Permission | SECURITY_CREATE OR SECURITY_ADMIN | Allows users to manage all User App operations. |

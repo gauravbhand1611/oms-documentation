@@ -93,19 +93,26 @@ The HotWax Commerce Fulfillment App is designed specifically for store fulfillme
 ### Settings
 
 | S.No | Action                         | Permission    | Description                                                                                                                                         |
-| ---- | ------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---- | ------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | 1    | Order online fulfillment       | COMMON\_ADMIN | Allows users to configure the order fulfillment capacity of their facility, ensuring the system accurately reflects the facility's capabilities.    |
 | 2    | Sell inventory online          | COMMON\_ADMIN | Controls whether the store's inventory is made available for online sales, allowing users to manage online inventory visibility.                    |
-| 3    | Product Identifier selection   | -             | Allows users to choose a product identifier to view products using their preferred identification method, facilitating easier product management.   |
-| 4    | Generate shipping label toggle | -             | Enables users to toggle the option to print supplementary documents, such as a shipping label, with the shipment for better package identification. |
+| 3 | Update Product Identifier setting| COMMON\_ADMIN | Allows users to choose a product identifier to view products using their preferred identification method, facilitating easier product management.   |
+| 4    | Generate shipping label toggle |              | Enables users to toggle the option to print supplementary documents, such as a shipping label, with the shipment for better package identification. |
 | 5    | Generate packing slip toggle   | -             | Provides the ability to toggle the option to print a packing slip alongside the shipment, ensuring proper documentation is included with orders.    |
+| 6    | Go To OMS   | VIEW_OMS             | Allows user to access OMS directly from the Fulfillment App|
+| 7    | View Fulfillment App   | FULFILLMENT_APP_VIEW  | Allows user to view Fulfillment App|
+| 8    | Manage All Fulfillment Operations  | STOREFULFILLMENT_ADMIN | Allows user to manage all the operations in Store Fulfillment for Online Orders|
+
+Manage All Fulfillment Operations
+
+
 
 <figure><img src="../../.gitbook/assets/settings (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Order Details Page
 
-| S.No | Action                                           | Permission    | Description                                                                                                                                                                                                  |
-| ---- | ------------------------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| S.No | Action                                           | Permission    | Description                                                                                            |
+| ---- | ------------------------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------ |
 | 1    | Orders detail page > Ship now (Completed orders) | COMMON\_ADMIN | Allows users to ship a packed order, provided all shipment and package information is complete. The button will be enabled when tracking information is either provided or force ship permission is granted. |
 | 2    | Orders detail page > View Details                | -             | Enables users to view the order details along with customer detailed information and the selected shipping carrier details                                                                                   |
 | 3    | Orders detail page > Unpack (Completed orders)   | COMMON\_ADMIN | Provides the ability to unpack a completed order and send it back to the "In Progress" state. This action is only enabled when all required shipment and package information is present.                     |
