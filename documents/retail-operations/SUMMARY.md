@@ -59,7 +59,7 @@
     * [Cross Border Shipping](orders/order-routing/template/cross-border-shipping.md)
   * [Troubleshooting](orders/order-routing/troubleshooting/README.md)
     * [Scheduling Errors](orders/order-routing/troubleshooting/scheduling-error.md)
-    * [Incorrect Facility Configurations](orders/order-routing/troubleshooting/facility-association.md)
+    * [Incorrect Facility Configurations](orders/order-routing/troubleshooting/incorrect-facility-configurations.md)
     * [Inventory Unavailability](orders/order-routing/troubleshooting/inventory-issues.md)
     * [Incorrect Shipping Method Mapping](order-routing/troubleshooting/incorrect-shipping-method-mapping.md)
 * [Pre-Orders](orders/pre-orders/README.md)
