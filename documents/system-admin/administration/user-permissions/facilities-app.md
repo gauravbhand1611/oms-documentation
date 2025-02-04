@@ -56,3 +56,7 @@ All actions within the `Facilities` App users with this permission level are unr
 | 13             | Assign Groups                            | Allows users to assign a facility to one or more facility groups for better organization.         |
 
 <figure><img src="../../.gitbook/assets/details.png" alt=""><figcaption></figcaption></figure>
+
+## Setting Page
+
+| 1            | Go TO OMS                            | Allows users to access OMS directly from the Facilities App|
