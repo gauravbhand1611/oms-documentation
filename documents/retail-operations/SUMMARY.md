@@ -39,7 +39,7 @@
   * [Allocate Sales Orders](orders/order-management/allocate-sales-order.md)
   * [Soft Allocation](orders/order-management/soft-allocation.md)
   * [Order Cancellations](orders/order-management/order-cancellations.md)
-  * [Auto-Cancellation](orders/order-management/auto-cancel-orders.md)
+  * [Auto-Cancellation](orders/order-management/auto-cancellation.md)
   * [Troubleshooting](orders/order-management/troubleshooting/README.md)
     * [Error Due to Incorrect JSON](orders/order-management/troubleshooting/order-import.md)
     * [Order Approval Errors](orders/order-management/troubleshooting/order-approval.md)
