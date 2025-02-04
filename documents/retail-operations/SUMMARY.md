@@ -47,7 +47,7 @@
     * [Order Indexing Discrepancy](orders/order-management/troubleshooting/order-indexing-discrepancy.md)
     * [Order Attribute Missing](orders/order-management/troubleshooting/order-attribute-missing.md)
     * [Duplicate Orders](orders/order-management/troubleshooting/duplicate-orders.md)
-    * [Shopify Order Import Failures in HC](orders/order-management/troubleshooting/order-import-failure.md)
+    * [Shopify Order Import Failures](orders/order-management/troubleshooting/shopify-order-import-failure.md)
 * [Order Routing](orders/order-routing/README.md)
   * [Brokering Runs](orders/order-routing/brokering-runs.md)
   * [Routing Rules](orders/order-routing/routings.md)
