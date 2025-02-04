@@ -1,4 +1,4 @@
-## All Return Adjustment Types
+## Return Enumerations
 
 Return adjustments are used to categorize different return-level charges. By storing all adjustments as types of adjustments that can be applied to the return, instead of including them in the return header, they can be extended based on the needs of custom implementations and integrations.
 

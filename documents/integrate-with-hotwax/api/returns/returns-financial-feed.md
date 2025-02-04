@@ -3,7 +3,7 @@ description: >-
   Learn about the Returns Financial Feed, a JSON-formatted return-wise feed generated from HotWax Commerce OMS.
 ---
 
-# Appeasements feed
+# Returns Financial Feed
 
 ## Introduction
 
