@@ -1,5 +1,5 @@
 ---
-description: Explore API and data feeds within the 'Appeasements WIP' documentation.
+description: Check API and data feeds within the 'Appeasements' documentation.
 ---
 
 # Appeasements WIP
