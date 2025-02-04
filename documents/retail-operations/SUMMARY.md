@@ -75,7 +75,7 @@
 * [Returns](orders/returns/README.md)
   * [Import Returns](orders/returns/import-returns.md)
   * [In-Store Returns](orders/returns/in-store-returns.md)
-  * [Restocking](orders/returns/restock-return.md)
+  * [Restock Returns](orders/returns/restock-returns.md)
 
 ## Inventory
 
