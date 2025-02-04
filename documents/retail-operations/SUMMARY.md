@@ -90,7 +90,7 @@
   * [Hard Counts](inventory/cycle-count/hard-count.md)
   * [View Assigned Counts](inventory/cycle-count/view-assigned-counts.md)
   * [Review Counts](inventory/cycle-count/pending-review-count.md)
-  * [View Closed Counts](inventory/cycle-count/closed-counts.md)
+  * [View Closed Counts](inventory/cycle-count/view-closed-counts.md)
   * [Bulk Upload Cycle Count](inventory/cycle-count/bulk-import.md)
   * [Store Permissions](inventory/cycle-count/store-permissions.md)
 * [Available to Promise Management](inventory/available-to-promise/README.md)
