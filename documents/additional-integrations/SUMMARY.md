@@ -15,7 +15,7 @@
 * [Send Sale Order](retailpro/flows/sendsale-order/README.md)
   * [Technical Workflow](retailpro/flows/sendsale-order/technical-workflow.md)
 
-* [Returns](retailpro/flows/Returns/README.md)
+* [Returns](retailpro/flows/returns/README.md)
 
 ##  Klaviyo
 
