@@ -35,8 +35,8 @@ The HotWax Commerce `Pre-Order` App is designed for merchandisers to gain a clea
 
 ## Product Audit Page
 
-| Serial No. | Action                            | Permissions Needed | Description                                                                                                                                                              |
-| --- | --------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Serial No. | Action                            | Permissions | Description|
+| --- | --------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------|
 | 1   | View Pre-Order Listing Status     | -                 | View the listing status, eligibility, and pre-order timeline of products.                                                                                                |
 | 2   | View Purchase Order Details       | -                 | View complete purchase order details, including purchase order date, ATP (Available to Promise) of the product, and already allocated inventory from the purchase order. |
 | 3   | View Online ATP Computation       | -                 | View ATP computation details, including current online ATP, quantity on hand (QOH), and excluded ATP.                                                                    |
@@ -46,3 +46,10 @@ The HotWax Commerce `Pre-Order` App is designed for merchandisers to gain a clea
 | 7   | View Shopify Listing Status       | -                 | View the listing status of products on Shopify.                                                                                                                          |
 
 <figure><img src="../../.gitbook/assets/audit.png" alt=""><figcaption></figcaption></figure>
+
+## Setting Page
+
+| Serial No. | Action                     | Permissions        | Description                                         |
+| --- | --------------------------------- | ------------------ | ----------------------------------------------------|
+| 1   | View OMS                          | COMMERCEUSER_VIEW  | Allow user to view OMS directly form the Pre-Order App.|
+| 2   | Update Product Identifier Setting | COMMON_ADMIN       |Allow user to manage product identifier settings      |

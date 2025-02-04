@@ -115,3 +115,9 @@ Below is a list of all the actions available in the Job Manager App, along with 
 | 2          | Schedule Jobs | COMMON\_ADMIN | Enables users to schedule multiple jobs in bulk, streamlining the job management process.   |
 
 <figure><img src="../../.gitbook/assets/schedule in bulk.png" alt=""><figcaption></figcaption></figure>
+
+## Setting Page
+| Serial No. | Action        | Permission    | Description                                                                                 |
+| ---------- | ------------- | ------------- | ------------------------------------------------------------------------------------------- |
+| 1          | Go To OMS     | COMMERCEUSER_VIEW | Allows users to access OMS directly from the Job Manager App |
+| 2          | View Job Manager App     | JOB_MANAGER_APP_VIEW | Allows users to view Job Manager App |
