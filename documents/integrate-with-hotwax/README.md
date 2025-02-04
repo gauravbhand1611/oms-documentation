@@ -1,6 +1,6 @@
 ---
 description: >-
-  Explore HotWax Commerce's technical documentation for insights on integrating
+  Read HotWax Commerce's technical documentation for insights on integrating
   with ERP, WMS, and POS systems.
 ---
 
