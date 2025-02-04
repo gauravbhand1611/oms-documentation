@@ -24,25 +24,25 @@
 * [Inbound Shipment](api/inbound-shipment/README.md)
   * [Import](api/inbound-shipment/import.md)
 * [Returns](api/returns/README.md)
-  * [Enumerations](api/returns/field-options.md)
+  * [Return Enumerations](api/returns/return-enumerations.md)
   * [Create Return](api/returns/create-return.md)
   * [Returns Financial Feed](api/returns/returns-financial-feed.md)
 * [Facility](api/facility/README.md)
   * [Post Code Lookup](api/facility/postcode-lookup.md)
   * [Store Lookup](api/facility/store-lookup.md)
-* [Fulfillment](api/fulfillment/apis/README.md)
-  * [Add Shipment Box](api/fulfillment/apis/add-shipment-box.md)
-  * [Create Picklist](api/fulfillment/apis/create-picklist.md)
-  * [In Progress Orders](api/fulfillment/apis/in-progress-orders.md)
-  * [Outstanding Orders](api/fulfillment/apis/outstanding-orders.md)
-  * [Packing Slip PDF](api/fulfillment/apis/packing-slip-pdf.md)
-  * [Ready To Ship Items](api/fulfillment/apis/ready-to-ship-items.md)
-  * [Retry Shipping Label](api/fulfillment/apis/retry-shipping-label.md)
-  * [Shipping Label and Packing Slip](api/fulfillment/apis/shipping-label-and-packing-slip.md)
-  * [Shipping Label PDF](api/fulfillment/apis/shipping-label-pdf.md)
-  * [Update Orders](api/fulfillment/apis/update-orders.md)
-  * [Update and Import File](api/fulfillment/apis/update-and-import-file.md)
-  * [Fulfilled Order Items Feed](api/fulfillment/feed/fulfilled-order-items-feed.md)
+* [Fulfillment](api/fulfillment/README.md)
+  * [Add Shipment Box](api/fulfillment/add-shipment-box.md)
+  * [Create Picklist](api/fulfillment/create-picklist.md)
+  * [In Progress Orders](api/fulfillment/in-progress-orders.md)
+  * [Outstanding Orders](api/fulfillment/outstanding-orders.md)
+  * [Packing Slip PDF](api/fulfillment/packing-slip-pdf.md)
+  * [Ready To Ship Items](api/fulfillment/ready-to-ship-items.md)
+  * [Retry Shipping Label](api/fulfillment/retry-shipping-label.md)
+  * [Shipping Label and Packing Slip](api/fulfillment/shipping-label-and-packing-slip.md)
+  * [Shipping Label PDF](api/fulfillment/shipping-label-pdf.md)
+  * [Update Orders](api/fulfillment/update-orders.md)
+  * [Update and Import File](api/fulfillment/update-and-import-file.md)
+  * [Fulfilled Order Items Feed](api/fulfillment/fulfilled-order-items-feed.md)
 * [Appeasements](api/appeasements/README.md)
   * [Appeasements Feed](api/appeasements/appeasements-feed.md)
 * [Miscellaneous](api/miscellaneous/README.md)
@@ -50,18 +50,20 @@
 
 ## Journeys
 
-* [Buy Online Pickup In Store](journeys/buy-online-pickup-in-store/introduction-buy-online-pickup-in-store.md)
+* [Buy Online Pickup In Store](journeys/buy-online-pickup-in-store/README.md)
   * [BOPIS PDP Experience](journeys/buy-online-pickup-in-store/bopis-pdp-experience.md)
   * [Ready For Pickup Notification](journeys/buy-online-pickup-in-store/ready-for-pickup-email.md)
-* [Brokering and Allocation](journeys/brokering-and-allocation/introduction-brokering-and-allocation.md)
+* [Brokering and Allocation](journeys/brokering-and-allocation/README.md)
   * [Order Soft Allocation](journeys/brokering-and-allocation/soft-allocation.md)
 * [Pre-Orders](journeys/pre-orders/README.md)
-  * [Promise Date Change Notification](journeys/pre-orders/promise-date-change-communication.md)
+  * [Promise Date Change Notification](journeys/pre-orders/promise-date-change-notification.md)
 
-## Additional Resources
+## Sample Files
 
-* [Sample Reset Inventory csv](additional-resources/sample-reset-inventory-csv.md)
-* [Sample Return Feed](additional-resources/sample-return-feed.md)
+* [Fulfilled Orders Items Json](sample-files/fulfilled-orders-items-json.md)
+* [Reset Inventory Csv](sample-files/reset-inventory-csv.md)
+* [Return Feed Json](sample-files/return-feed-json.md)
+  
 
 ## OMS Release Versions
 
