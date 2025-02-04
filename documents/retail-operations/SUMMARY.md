@@ -98,7 +98,7 @@
   * [Create Channels](inventory/available-to-promise/create-channels.md)
   * [Safety Stock Rules](inventory/available-to-promise/safety-stock-rules.md)
   * [Threshold Rules](inventory/available-to-promise/threshold-rules.md)
-  * [Store Pickup Rules](inventory/available-to-promise/bopis-rule.md)
+  * [Store Pickup Rules](inventory/available-to-promise/store-pickup-rules.md)
   * [Shipping Rules](inventory/available-to-promise/shipping-rule.md)
   * [Scheduling ATP Rules](inventory/available-to-promise/manage-rules.md)
 * [Safety Stock](inventory/safety-stock/README.md)
