@@ -20,7 +20,7 @@
   * [Update Inventory](api/inventory/update-inventory.md)
   * [Get Online ATP of Products](api/inventory/get-online-atp.md)
 * [Brokering](api/brokering/README.md)
-  * [Brokered Order Items Feed](api/brokering/feeds/brokered-order-items-feed.md)
+  * [Brokered Order Items Feed](api/brokering/brokered-order-items.md)
 * [Inbound Shipment](api/inbound-shipment/README.md)
   * [Import](api/inbound-shipment/import.md)
 * [Returns](api/returns/README.md)
