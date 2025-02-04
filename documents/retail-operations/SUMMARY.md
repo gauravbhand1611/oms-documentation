@@ -33,7 +33,7 @@
 ## Orders
 
 * [Order Management](orders/order-management/README.md)
-  * [Find Orders](orders/order-management/find-orders.md)
+  * [Find Sales Orders](orders/order-management/find-sales-orders.md)
   * [View Order Details](orders/order-management/view-order-details.md)
   * [Update Orders](orders/order-management/update-sales-order.md)
   * [Allocation](orders/order-management/allocate-sales-order.md)
