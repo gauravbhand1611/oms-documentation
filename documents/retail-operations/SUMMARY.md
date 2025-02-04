@@ -37,7 +37,7 @@
   * [View Order Details](orders/order-management/view-order-details.md)
   * [Update Sales Orders](orders/order-management/update-sales-order.md)
   * [Allocate Sales Orders](orders/order-management/allocate-sales-order.md)
-  * [Soft Allocation](orders/order-management/soft-allocations.md)
+  * [Soft Allocation](orders/order-management/soft-allocation.md)
   * [Order Cancellations](orders/order-management/order-cancellations.md)
   * [Auto-Cancellation](orders/order-management/auto-cancel-orders.md)
   * [Troubleshooting](orders/order-management/troubleshooting/README.md)
