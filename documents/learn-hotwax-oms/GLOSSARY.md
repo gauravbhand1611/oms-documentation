@@ -1,7 +1,6 @@
 ---
 description: >-
-  Explore essential terms in Omnichannel Order Management. Clarify your
-  understanding with our comprehensive glossary.
+  Learn about common terms in omnichannel order and inventory management.
 ---
 
 ## Advanced Shipping Notice (ASN)
