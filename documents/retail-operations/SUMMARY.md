@@ -91,7 +91,7 @@
   * [View Assigned Counts](inventory/cycle-count/view-assigned-counts.md)
   * [Review Counts](inventory/cycle-count/pending-review-count.md)
   * [View Closed Counts](inventory/cycle-count/view-closed-counts.md)
-  * [Bulk Upload Cycle Count](inventory/cycle-count/bulk-import.md)
+  * [Bulk Upload Cycle Counts](inventory/cycle-count/bulk-upload-cycle-counts.md)
   * [Store Permissions](inventory/cycle-count/store-permissions.md)
 * [Available to Promise Management](inventory/available-to-promise/README.md)
   * [Concepts](inventory/available-to-promise/concepts.md)
