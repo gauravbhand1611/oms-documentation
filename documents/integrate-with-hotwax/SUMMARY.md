@@ -50,7 +50,7 @@
 
 ## Journeys
 
-* [Buy Online Pickup in Store](journeys/buy-online-pickup-in-store/introduction-buy-online-pickup-in-store.md)
+* [Buy Online Pickup In Store](journeys/buy-online-pickup-in-store/introduction-buy-online-pickup-in-store.md)
   * [BOPIS PDP Experience](journeys/buy-online-pickup-in-store/bopis-pdp-experience.md)
   * [Ready For Pickup Notification](journeys/buy-online-pickup-in-store/ready-for-pickup-email.md)
 * [Brokering and Allocation](journeys/brokering-and-allocation/introduction-brokering-and-allocation.md)
