@@ -6,8 +6,8 @@
 ## Business Processes
 
 * [Introduction](business-processes/README.md)
-* [Order Fulfillment](business-processes/order-fulfillment-bp.md)
-* [Inventory Management](business-processes/inventory-management-bp.md)
+* [Order Fulfillment](business-processes/order-fulfillment.md)
+* [Inventory Management](business-processes/inventory-management.md)
 
 ## Business Process Models
 
