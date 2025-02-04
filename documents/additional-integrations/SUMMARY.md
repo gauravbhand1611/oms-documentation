@@ -4,18 +4,18 @@
 
 * [Introduction](retailpro/README.md)
 
-* [Inventory Sync](retailpro/Flows/Inventory/InventorySync.md)
-  * [Challenges](retailpro/Flows/Inventory/ChallengesInInventorySync.md)
-  * [Technical Workflow](retailpro/Flows/Inventory/TechnicalWorkflow.md)
+* [Inventory Sync](retailpro/flows/inventory/inventory-sync.md)
+  * [Challenges](retailpro/flows/inventory/challenges-in-inventory-sync.md)
+  * [Technical Workflow](retailpro/flows/inventory/technical-workflow.md)
 
-* [Order Sync](retailpro/Flows/Order/OrderSync.md)
-  * [Technical Workflow of Invoicing from Single Location](retailpro/Flows/Order/InvoiceFromSingleLocationTechWorkflow.md)
-  * [Technical Workflow of Invoicing from Multiple Location](retailpro/Flows/Order/InvoiceFromMultipleLocationTechWorkflow.md)
+* [Order Sync](retailpro/flows/order/README.md)
+  * [Technical Workflow of Invoicing from Single Location](retailpro/flows/order/workflow-of-invoice-from-single-location.md)
+  * [Technical Workflow of Invoicing from Multiple Location](retailpro/flows/order/workflow-of-invoice-from-multiple-location.md)
 
-* [Send Sale Order](retailpro/Flows/SendSaleOrder/SendSaleOrder.md)
-  * [Technical Workflow](retailpro/Flows/SendSaleOrder/TechnicalWorkflow.md)
+* [Send Sale Order](retailpro/flows/sendsale-order/README.md)
+  * [Technical Workflow](retailpro/flows/sendsale-order/technical-workflow.md)
 
-* [Returns](retailpro/Flows/Returns/return.md)
+* [Returns](retailpro/flows/returns/README.md)
 
 ##  Klaviyo
 
