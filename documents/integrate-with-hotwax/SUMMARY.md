@@ -55,7 +55,7 @@
   * [Ready For Pickup Notification](journeys/buy-online-pickup-in-store/ready-for-pickup-email.md)
 * [Brokering and Allocation](journeys/brokering-and-allocation/introduction-brokering-and-allocation.md)
   * [Order Soft Allocation](journeys/brokering-and-allocation/soft-allocation.md)
-* [Pre-orders](journeys/pre-orders/README.md)
+* [Pre-Orders](journeys/pre-orders/README.md)
   * [Promise Date Change Notification](journeys/pre-orders/promise-date-change-communication.md)
 
 ## Additional Resources
