@@ -52,7 +52,7 @@
   * [Brokering Runs](orders/order-routing/brokering-runs.md)
   * [Routing Rules](orders/order-routing/routing-rules.md)
   * [Inventory Rules](orders/order-routing/inventory-rules.md)
-  * [Use Cases](orders/order-routing/scenarios.md)
+  * [Use Cases](orders/order-routing/use-cases.md)
   * [Additional Settings](orders/order-routing/additional-settings.md)
   * [Templates](orders/order-routing/templates/README.md)
     * [Inventory Based Shipping](orders/order-routing/template/inventory-based-shipping.md)
