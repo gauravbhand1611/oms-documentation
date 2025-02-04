@@ -86,7 +86,7 @@
 * [Inventory Upload](inventory/inventory-upload)
   * [Schedule Restocking](inventory/inventory-upload/schedule-restock.md)
 * [Cycle Count](inventory/cycle-count/README.md)
-  * [Draft Counts](inventory/cycle-count/draft-cycle-count.md)
+  * [Draft Counts](inventory/cycle-count/draft-counts.md)
   * [Hard Counts](inventory/cycle-count/hard-count.md)
   * [View Assigned Counts](inventory/cycle-count/manage-assigned-counts.md)
   * [Review Counts](inventory/cycle-count/pending-review-count.md)
