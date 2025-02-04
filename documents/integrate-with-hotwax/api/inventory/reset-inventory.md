@@ -34,5 +34,3 @@ The Reset Inventory API accepts the following parameters:
 | `comments`           | Optional field to store additional information.                                                                                                             | No       |
 
 Note: `sku` `upca` and `shopifyProductId` are commonly used product Identifiers.
-
-[Reset inventory sample.csv](samples/reset-inventory-sample.csv)
