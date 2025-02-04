@@ -88,7 +88,7 @@
 * [Cycle Count](inventory/cycle-count/README.md)
   * [Draft Counts](inventory/cycle-count/draft-counts.md)
   * [Hard Counts](inventory/cycle-count/hard-count.md)
-  * [View Assigned Counts](inventory/cycle-count/manage-assigned-counts.md)
+  * [View Assigned Counts](inventory/cycle-count/view-assigned-counts.md)
   * [Review Counts](inventory/cycle-count/pending-review-count.md)
   * [View Closed Counts](inventory/cycle-count/closed-counts.md)
   * [Bulk Upload Cycle Count](inventory/cycle-count/bulk-import.md)
