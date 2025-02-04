@@ -38,7 +38,7 @@
   * [Packing Slip PDF](api/fulfillment/apis/packing-slip-pdf.md)
   * [Ready To Ship Items](api/fulfillment/apis/ready-to-ship-items.md)
   * [Retry Shipping Label](api/fulfillment/apis/retry-shipping-label.md)
-  * [Shipping Label And Packing Slip](api/fulfillment/apis/shipping-label-and-packing-slip.md)
+  * [Shipping Label and Packing Slip](api/fulfillment/apis/shipping-label-and-packing-slip.md)
   * [Shipping Label PDF](api/fulfillment/apis/shipping-label-pdf.md)
   * [Update Orders](api/fulfillment/apis/update-orders.md)
   * [Update and Import File](api/fulfillment/apis/update-and-import-file.md)
