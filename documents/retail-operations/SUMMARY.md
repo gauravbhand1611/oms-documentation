@@ -16,7 +16,7 @@
     * [Duplicate Jobs](workflow/job-management/troubleshooting/duplicate-job-scheduled.md)
     * [Job Scheduling](workflow/job-management/troubleshooting/schedule-job.md)
     * [Job Scheduling Errors](workflow/job-management/troubleshooting/job-scheduling-errors.md) 
-* [Job workflows](workflow/job-workflows/README.md)
+* [Job Workflows](workflow/job-workflows/README.md)
   * [Pre-Orders](workflow/job-workflows/pre-orders.md)
   * [Orders](workflow/job-workflows/orders.md)
   * [Fulfillment](workflow/job-workflows/fulfillment.md)
