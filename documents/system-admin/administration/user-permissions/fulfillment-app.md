@@ -100,7 +100,7 @@ The HotWax Commerce Fulfillment App is designed specifically for store fulfillme
 | 4    | Generate shipping label toggle |              | Enables users to toggle the option to print supplementary documents, such as a shipping label, with the shipment for better package identification. |
 | 5    | Generate packing slip toggle   | -             | Provides the ability to toggle the option to print a packing slip alongside the shipment, ensuring proper documentation is included with orders.    |
 | 6    | Go To OMS   | VIEW_OMS             | Allows user to access OMS directly from the Fulfillment App|
-| 7    | View Fulfillment App   | FULFILLMENT_APP_VIEW  | Allows user to access OMS directly from the Fulfillment App|
+| 7    | View Fulfillment App   | FULFILLMENT_APP_VIEW  | Allows user to view Fulfillment App|
 | 8    | Manage All Fulfillment Operations  | STOREFULFILLMENT_ADMIN | Allows user to manage all the operations in Store Fulfillment for Online Orders|
 
 Manage All Fulfillment Operations
