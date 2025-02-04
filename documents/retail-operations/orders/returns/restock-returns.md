@@ -5,7 +5,7 @@ description: >-
   Shopify.
 ---
 
-# Restocking
+# Restock Returns
 
 ## Restock Returns for Online Orders
 
