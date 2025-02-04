@@ -60,7 +60,7 @@
   * [Troubleshooting](orders/order-routing/troubleshooting/README.md)
     * [Scheduling Errors](orders/order-routing/troubleshooting/scheduling-error.md)
     * [Incorrect Facility Configurations](orders/order-routing/troubleshooting/incorrect-facility-configurations.md)
-    * [Inventory Unavailability](orders/order-routing/troubleshooting/inventory-issues.md)
+    * [Inventory Unavailability](orders/order-routing/troubleshooting/inventory-unavailability.md)
     * [Incorrect Shipping Method Mapping](order-routing/troubleshooting/incorrect-shipping-method-mapping.md)
 * [Pre-Orders](orders/pre-orders/README.md)
   * [Purchase Order Upload](orders/pre-orders/purchase-order-uploads.md)
