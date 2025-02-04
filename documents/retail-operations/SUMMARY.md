@@ -108,4 +108,4 @@
 * [Re-Order Inventory](inventory/reorder-inventory.md)
 * [Troubleshooting](inventory/troubleshooting/README.md)
   * [View Inventory Log](inventory/troubleshooting/view-inventory-log.md)
-  * [Inventory Synchronization Errors](inventory/troubleshooting/inventory-synchronization.md)
+  * [Inventory Synchronization Errors](inventory/troubleshooting/inventory-synchronization-errors.md)
