@@ -8,7 +8,7 @@
 * [Orders](api/orders/README.md)
   * [Find Order](api/orders/find-orders.md)
   * [Retrieve Orders](api/orders/retrieve-order.md)
-  * [List Orders](api/orders/get-orders.md)
+  * [Get Orders](api/orders/get-orders.md)
   * [Created Orders](api/orders/created-orders-feed.md)
   * [Order Adjustments](api/orders/order-adjustments.md)
   * [Order Reconciliations](api/orders/order-reconciliations.md)
