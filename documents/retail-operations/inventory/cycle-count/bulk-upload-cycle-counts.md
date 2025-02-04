@@ -4,7 +4,7 @@ description: >-
   different locations at once using the new bulk import feature.
 ---
 
-# Creating Cycle Counts in Bulk
+# Bulk Upload Cycle Counts
 
 The **Bulk Import** functionality of HotWax Commerce’s `Cycle Count` app is designed to simplify the process of creating and assigning cycle counts for multiple products across multiple facilities. It allows users to create multiple cycle counts using a CSV upload which eliminates the need to create individual requests for each product or location. 
 
