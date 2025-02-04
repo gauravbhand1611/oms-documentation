@@ -59,4 +59,6 @@ All actions within the `Facilities` App users with this permission level are unr
 
 ## Setting Page
 
+| **Serial No.** | **Action**                               | **Description**                                                                                   |
+| -------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | 1            | Go TO OMS                            | Allows users to access OMS directly from the Facilities App|
