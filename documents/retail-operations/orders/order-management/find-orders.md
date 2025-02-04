@@ -1,4 +1,4 @@
-# Find Sales orders
+# Find Orders
 
 The `Find Sales Order` page in HotWax Commerce offers users a comprehensive listing of all orders, accompanied by essential order details including order items, order ID, order date, and customer information. Additionally, users can easily ascertain the current status of each order and identify the facility to which it is allocated. For enhanced order management, the page also displays promise dates and auto-cancel dates, ensuring timely fulfillment.
 
