@@ -1,5 +1,5 @@
 
-# Create return API
+# Create Return API
 
 To create a return for a customer's order that has already been fulfilled and completed, you will need to call the `/createReturn` endpoint with the `POST` method.
 
