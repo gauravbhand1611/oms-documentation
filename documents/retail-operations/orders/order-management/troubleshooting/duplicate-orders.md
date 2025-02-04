@@ -2,7 +2,7 @@
 description: Troubleshooting guide for duplicate orders
 ---
 
-# Order Duplication
+# Duplicate Orders
 
 ## Objective
 

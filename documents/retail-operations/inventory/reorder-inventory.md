@@ -13,7 +13,7 @@ While traditional inventory thresholds help prevent stockouts and overselling on
 
 ## The Feature
 
-The Reorder Point Feature automates the replenishment process by enabling users to set minimum inventory levels for each product. When a product's inventory (including the current inventory and any purchase orders that are yet to be received) reaches this reorder point, an automated report is triggered to notify users to reorder. This report provides comprehensive details of the product including the SKU, the brand, the current inventory level, the purchase order (PO) inventory, and the specific reorder point, facilitating informed decision-making in inventory management.
+The Reorder Point feature automates the replenishment process by enabling users to set minimum inventory levels for each product. When a product's inventory (including the current inventory and any purchase orders that are yet to be received) reaches this reorder point, an automated report is triggered to notify users to reorder. This report provides comprehensive details of the product including the SKU, the brand, the current inventory level, the purchase order (PO) inventory, and the specific reorder point, facilitating informed decision-making in inventory management.
 
 ## The Implementation
 
