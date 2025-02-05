@@ -17,7 +17,7 @@ Once a transfer order is created and synced, any updates or modifications must b
 {% endhint %}
 
 {% hint style="info" %}
-HotWax Commerce helps store associates manage discrepancies in Transfer Order through the HotWax’s [Receiving App](https://docs.hotwax.co/documents/store-operations/inventory/receiving/receiving#handle-discrepancies). The app allows over receiving, under receiving as well as provides an option to receive unexpected items in a TO. HotWax’s BI Reports & Analytics platform also provides [Receiving Discrepancy](https://docs.hotwax.co/documents/analytics/reports/inventory#receiving-discrepancies-by-product) report for the operations team to track and manage these discrepancies.
+HotWax's [Receiving App](https://docs.hotwax.co/documents/store-operations/inventory/receiving/receiving#handle-discrepancies) helps store associates manage receiving discrepancies. The app allows over-receiving, under-receiving as well as provides an option to receive unexpected items in a TO. HotWax’s BI Reports & Analytics platform also provides [Receiving Discrepancy](https://docs.hotwax.co/documents/analytics/reports/inventory#receiving-discrepancies-by-product) report for the operations team to track and manage these discrepancies.
 {% endhint %}
 
 
