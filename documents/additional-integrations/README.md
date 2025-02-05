@@ -1,9 +1,8 @@
 ---
 description: >-
-    Learn about HotWax's reporting.
+    Learn about HotWax's Integration.
 ---
-HotWax has various BI Reports that clients use to monitor operations and make data-driven decisions.
-
+HotWax integrates with various platforms to streamline order processing, fulfillment, and efficient management.
 
 ## Topics
 
