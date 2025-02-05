@@ -78,6 +78,8 @@ Once POs are synchronized, store associates use the HotWax Commerce's Receiving 
 
 After store associates receive POs from app, Item Receipt records are created in HotWax Commerce. These records update inventory counts, making the newly received stock available for sale on eCommerce platforms.
 
+{% hint style="info" %}HotWax's Receiving App helps store associates manage in-store receiving discrepancies. The app allows over receiving, under receiving as well as provides an option to receive unexpected items in a PO. The operations team can also track and manage discrepancies using the reports available on HotWax’s BI Reports & Analytics platform.{% endhint %}
+
 ### Export Item Receipts from HotWax Commerce
 
 1. A scheduled job in the HotWax Commerce Integration Platform exports Item Receipt records created in the system back to NetSuite. Each Item Receipt is linked to its corresponding PO, enabling accurate reconciliation and processing. The job runs at defined intervals, based on the retailer's requirements, and compiles Item Receipt data into a JSON file with all relevant details.
