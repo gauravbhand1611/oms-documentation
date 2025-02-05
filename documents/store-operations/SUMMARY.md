@@ -34,7 +34,7 @@
     * [Change Language](fulfillment/troubleshooting/change-language.md)
     * [Unable to Login](fulfillment/troubleshooting/unable-to-login.md)
 * [Returns](orders/returns/README.md)
-  * [In-Store Returns](returns/in-store-returns.md)
+  * [In-Store Returns](in-store-returns/README.md)
 
 ## Inventory
 
