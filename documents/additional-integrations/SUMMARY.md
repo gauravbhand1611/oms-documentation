@@ -1,5 +1,5 @@
 # Table of contents
-
+* [HotWax Integrations](README.md)
 ## RetailPro
 
 * [Introduction](retailpro/README.md)
