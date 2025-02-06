@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Launchpad](documents/launchpad/README.md)
+* [Launchpad](../launchpad/README.md)
 
 ## Orders
 
