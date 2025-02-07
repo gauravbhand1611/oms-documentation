@@ -21,4 +21,4 @@ HotWax's [Receiving App](https://docs.hotwax.co/documents/store-operations/inven
 {% endhint %}
 
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Warehouse to Store</td><td><a href="warehousetostore.md">warehousetostore.md</a></td></tr><tr><td>Store to Warehouse</td><td><a href="storetowarehouse.md">storetowarehouse.md</a></td></tr><tr><td>Store to Store</td><td><a href="storetostore.md">storetostore.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Warehouse to Store</td><td><a href="warehouse-to-store.md">warehousetostore.md</a></td></tr><tr><td>Store to Warehouse</td><td><a href="store-to-warehouse.md">storetowarehouse.md</a></td></tr><tr><td>Store to Store</td><td><a href="store-to-store.md">storetostore.md</a></td></tr></tbody></table>
