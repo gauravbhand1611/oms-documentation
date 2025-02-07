@@ -26,6 +26,7 @@
   * [Users App](administration/user-permissions/users-app.md)
   * [Facilities App](administration/user-permissions/facilities-app.md)
   * [Pre-Order App](administration/user-permissions/pre-order-app.md)
+  * [Cycle Count App](administration/user-permissions/cycle-count-app.md)
 * [Facilities](administration/facilities/README.md)
   * [Add New Facilities](administration/facilities/add-new-facilities.md)
   * [Manage Existing facilities](administration/facilities/manage-existing-facilities.md)
