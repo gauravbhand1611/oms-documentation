@@ -102,7 +102,7 @@
   * [Threshold Rules](inventory/available-to-promise/threshold-rules.md)
   * [Store Pickup Rules](inventory/available-to-promise/store-pickup-rules.md)
   * [Shipping Rules](inventory/available-to-promise/shipping-rule.md)
-  * [Schedule ATP Rules](inventory/available-to-promise/manage-rules.md)
+  * [Schedule ATP Rules](inventory/available-to-promise/schedule-atp-rules.md)
   * [Use Cases](inventory/available-to-promise/use-cases.md)
 * [Safety Stock](inventory/safety-stock/README.md)
   * [Set Bulk Safety Stock](inventory/safety-stock/set-bulk-safety-stock.md)
