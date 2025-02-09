@@ -1,6 +1,5 @@
 ---
-description: >-
-  Learn about the Products job in HotWax Commerce.
+description: Learn about the Products job in HotWax Commerce.
 ---
 
 # Products
@@ -31,8 +30,7 @@ The job frequency is set to run every 15 minutes by default. You may adjust this
 | **`bufferTime`**      | Integer  | Specifies the buffer time (in minutes) for scheduling job downloads.                           | Not specified     | 5                 |
 | **`scheduleNow`**     | Boolean  | When set to true, forces the system to pick the file out of sequence for immediate processing. | false             | true              |
 
-<figure><img src="../.gitbook/assets/import new products.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/import new products.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Sync Products
 
@@ -58,8 +56,7 @@ The job frequency is set to run every 15 minutes by default. Adjust the frequenc
 | **`bufferTime`**      | Integer  | Specifies the buffer time (in minutes) for scheduling job downloads.                           | Not specified     | 5                 |
 | **`scheduleNow`**     | Boolean  | When set to true, forces the system to pick the file out of sequence for immediate processing. | false             | true              |
 
-<figure><img src="../.gitbook/assets/Import product Update.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Import product Update.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Webhooks
 
@@ -107,7 +104,6 @@ The frequency of running this job depends on the frequency of updates or changes
 | **`productVariantsQuery`** | String   | Specifies the query to identify kit products.                        | product\_type: Kit      | category: Bundle          |
 | **`namespaces`**           | String   | Specifies the namespaces for kit product components.                 | bundles\_app            | kit\_components           |
 
-
 ### Import Promo Code
 
 **Job Name:** `Import Promo Code`
@@ -122,7 +118,6 @@ The `Import Promo Code` job is designed to import promotional codes into the sys
 
 The frequency for running this job depends on the frequency of updates to your promotional codes. Adjust the frequency accordingly to ensure timely and accurate updates.
 
-
 **Custom Parameters**
 
 | **Parameter**              | **Type** | **Description**                                                                  | **Default Value** | **Example Value**                          |
@@ -135,8 +130,7 @@ The frequency for running this job depends on the frequency of updates to your p
 | **`remoteFilename`**       | Optional | Specifies the remote filename for the job.                                       | Not specified     | sample\_file.txt                           |
 | **`scheduleNow`**          | Optional | Specifies whether to schedule the job for immediate processing.                  | false             | true                                       |
 
-<figure><img src="../.gitbook/assets/Import Promo code.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Import Promo code.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Product Identification
 
@@ -166,8 +160,7 @@ The frequency for running this job depends on the frequency of updates to produc
 
 ***
 
-<figure><img src="../.gitbook/assets/Product identification.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Product identification.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Activate Products on Shopify
 
@@ -175,19 +168,18 @@ The frequency for running this job depends on the frequency of updates to produc
 
 **Job Enum ID:** `JOB_ACT_PROD_SHPFY`
 
-**Description**  
+**Description**\
 The `Activate Products on Shopify` job synchronizes activated products, such as gift cards, from HotWax Commerce to Shopify. Gift cards, as stored-value products, must be activated to ensure customers can redeem them upon receipt. This job ensures that once gift cards are activated in HotWax Commerce, the activation codes are automatically synced to Shopify, making them immediately redeemable for customers.
 
 **Custom Parameters**
 
-| **Parameter**  | **Type**   | **Description**                                                             | **Default Value** |
-|----------------|------------|-----------------------------------------------------------------------------|-------------------|
-| `facilityids`  | Optional   | Identifies the configuration for Order Item Attribute records.              | `Not specified`   |
-| `productId`    | Optional   | Specifies the property resource for configuration.                          | `Not specified`   |
-| `idType`       | Optional   | Specifies the remote filename for processing.                               | `Not specified`   |
-| `iDValue`      | Optional   | Specifies a grouping parameter for the job.                                 | `Not specified`   |
-| `limit`        | Optional   | Additional parameters for job customization.                                | `Not specified`   |
-
+| **Parameter** | **Type** | **Description**                                                | **Default Value** |
+| ------------- | -------- | -------------------------------------------------------------- | ----------------- |
+| `facilityids` | Optional | Identifies the configuration for Order Item Attribute records. | `Not specified`   |
+| `productId`   | Optional | Specifies the property resource for configuration.             | `Not specified`   |
+| `idType`      | Optional | Specifies the remote filename for processing.                  | `Not specified`   |
+| `iDValue`     | Optional | Specifies a grouping parameter for the job.                    | `Not specified`   |
+| `limit`       | Optional | Additional parameters for job customization.                   | `Not specified`   |
 
 ### Associate Products with Sub Catalog
 
@@ -205,18 +197,17 @@ The recommended frequency for running this job is every 60 minutes. Adjust the f
 
 **Custom Parameters**
 
-| **Parameter**     | **Type** | **Description**                                                                                                                                                                                                                      | **Default Value**      | **Example Value**        |
-| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ------------------------ |
-| **`configId`**    | String   | Specifies the configuration ID for updating product associations.                                                                                                                                                                    | IMP\_SHPFY\_SHOP\_PROD | ASSOC\_PROD\_CONFIG\_001 |
-| **`frequency`**   | Integer  | Specifies the frequency (in minutes) for running the job.                                                                                                                                                                            | 60                     | 30                       |
-| **`limit`**       | Optional | Sets a limit on the order import job, restricting the number of orders fetched from eCommerce.                                                                                                                                       | Not specified          | 100                      |
-| **`bufferTime`**  | Optional | Ensures orders are not imported until they have aged past a desired duration, accommodating post-processing workflows in eCommerce platforms.                                                                                        | Not specified          | 30 minutes               |
+| **Parameter**     | **Type** | **Description**                                                                                                                                                                                                                     | **Default Value**      | **Example Value**        |
+| ----------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------ |
+| **`configId`**    | String   | Specifies the configuration ID for updating product associations.                                                                                                                                                                   | IMP\_SHPFY\_SHOP\_PROD | ASSOC\_PROD\_CONFIG\_001 |
+| **`frequency`**   | Integer  | Specifies the frequency (in minutes) for running the job.                                                                                                                                                                           | 60                     | 30                       |
+| **`limit`**       | Optional | Sets a limit on the order import job, restricting the number of orders fetched from eCommerce.                                                                                                                                      | Not specified          | 100                      |
+| **`bufferTime`**  | Optional | Ensures orders are not imported until they have aged past a desired duration, accommodating post-processing workflows in eCommerce platforms.                                                                                       | Not specified          | 30 minutes               |
 | **`scheduleNow`** | Optional | When importing files into the OMS, force the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | Enabled                | false                    |
 
 ***
 
-<figure><img src="../.gitbook/assets/Associate product sub catalog.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Associate product sub catalog.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Remove Promo Code
 
@@ -244,5 +235,4 @@ The frequency for running this job depends on the removal frequency of your prom
 | **`remoteFilename`**       | Optional | Specifies the remote filename for the job.                                       | Not specified        | sample\_file.txt                           |
 | **`scheduleNow`**          | Optional | Specifies whether to schedule the job for immediate processing.                  | false                | true                                       |
 
-<figure><img src="../.gitbook/assets/Remove promo Code.png" alt="" width="375"><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Remove promo Code.png" alt="" width="375"><figcaption></figcaption></figure>

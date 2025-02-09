@@ -13,7 +13,7 @@ Multiple brokering runs allow retailers to set different frequencies for each ba
 ### Single vs. Multiple Brokering Runs
 
 * **Single run setup:** For retailers with similar urgency across orders and a lower order volume, a single run at regular intervals (every hour) can manage all order types in one brokering cycle.
-  * Everyday order routing: Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about [routing rules](routings.md) in the next sections.
+  * Everyday order routing: Within this single brokering run, multiple routing rules (order batches) can be created to address different delivery needs, such as same-day delivery orders, two-day delivery orders and standard delivery orders. We’ll understand in depth about [routing rules](broken-reference) in the next sections.
 * **Multiple runs for different priorities:** In the event where order fulfillment priorities vary significantly and the order volume is high, creating separate runs can optimize resources and allocation:
   * High-Priority Orders: For orders requiring same-day, next-day, or two-day delivery, setting a frequency of the brokering run to every 5 minutes can quickly allocate inventory to this order batch and meet urgent fulfillment deadlines.
   * Medium-Priority Orders: For orders on standard deliveries, a separate brokering run with a 6-hour interval can balance routine order routing with the available resources.
@@ -37,7 +37,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 2. **Initiate a new run**
    * Click on the `New Run` button to begin creating a new brokering run. You’ll be prompted to provide a name for this run, which will help identify it in the list of all existing brokering runs.
 
-<figure><img src="../.gitbook/assets/NewBrokeringRun.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/NewBrokeringRun.png" alt=""><figcaption><p>Initiate a New Run</p></figcaption></figure>
 
 3. **Name the run**
 
@@ -45,11 +45,11 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 
 {% tabs %}
 {% tab title="Single Brokering Run" %}
-<figure><img src="../.gitbook/assets/SingleBrokeringRun.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SingleBrokeringRun.png" alt=""><figcaption><p>Single Brokering Run</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Multiple Brokering Runs" %}
-<figure><img src="../.gitbook/assets/MultipleBrokeringRuns.png" alt=""><figcaption><p>Mutiple Brokering Runs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MultipleBrokeringRuns.png" alt=""><figcaption><p>Mutiple Brokering Runs</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -58,11 +58,11 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
    * Click on a specific `Run` to open its details and now navigate to the Description card and add details that best describes your run.
    * For example, if there is a single brokering run "Everyday order routing", you can write: “Hourly routing for all online orders” or if the run focuses on urgent orders, you can write: “Prioritized routing for same-day, next-day, and two-day delivery orders.”
 
-<figure><img src="../.gitbook/assets/Rundetails.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rundetails.png" alt=""><figcaption><p>Brokering Run Description</p></figcaption></figure>
 
 5. **Schedule the brokering run with a predefined frequency or using cron expressions**
 
-<figure><img src="../.gitbook/assets/schedulerun.png" alt="" width="375"><figcaption><p>Schedule Brokering Run</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/schedulerun.png" alt="" width="375"><figcaption><p>Schedule Brokering Run</p></figcaption></figure>
 
 * Navigate to the Scheduler card, here you can set the frequency and runtime for your brokering run.
 * You can choose predefined intervals or use cron expressions to customize the schedule based on your business needs. Here are a few examples of valid cron expressions that you can use:
@@ -72,7 +72,7 @@ If you have multiple product stores, you’ll be prompted to choose the store fo
 * For our <mark style="color:orange;">**Everyday order routing**</mark> brokering run we can directly choose the predefined "_Hourly_" frequency and save it.
 
 {% hint style="warning" %}
-You need to change the brokering run's status from **Draft** to **Active** to make it operational. 
+You need to change the brokering run's status from **Draft** to **Active** to make it operational.
 
 By default, new brokering runs are set to **Draft**. Simply select **Active** from the dropdown to activate it, or revert an active run back to **Draft** if adjustments are needed.
 
@@ -81,4 +81,4 @@ Ideally, activate the brokering run only once you've fully configured your routi
 
 Understanding how to view, schedule, and manage brokering runs is important for optimizing your order routing strategies.
 
-Now, let's understand about [routings](routings.md) within a brokering run.
+Now, let's understand about [routings](broken-reference) within a brokering run.

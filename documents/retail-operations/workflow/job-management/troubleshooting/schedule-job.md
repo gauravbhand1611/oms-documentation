@@ -4,13 +4,13 @@ description: >-
   Job Manager application for seamless job management.
 ---
 
-# Unable to Schedule
+# Job Scheduling
 
 If you are unable to schedule a job in the Job Manager application, and the job data is not appearing, it could be due to missing job draft data, missing job runtime data, or issues with the service in the OMS.
 
 ## Step 1: Verify Job Data in the OMS Backend
 
-Access the instance web tools using this URL: [https://{instance.name}.hotwax.io/webtools/control/FindGeneric?entityName=JobSandbox](https:/%3CinstanceName%3E.hotwax.io/webtools/control/FindGeneric).
+Access the instance web tools using this URL: [https://{instance.name}.hotwax.io/webtools/control/FindGeneric?entityName=JobSandbox](../../../job-manager/troubleshooting/https:/%3CinstanceName%3E.hotwax.io/webtools/control/FindGeneric/).
 
 ## Step 2: Check Job Data
 

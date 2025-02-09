@@ -65,7 +65,7 @@ Products from purchase orders that don't meet these criteria won't be listed in 
 | RunTime            | String | Specifies the Runtime scheduled for a job, which can be customized.                                                        | null          | April 17, 2024, 1:15 PM |
 | Schedule Frequency | String | Schedules frequency from the dropdown as every 5 minutes, Hourly, Daily, Weekly, etc. which can be customized as required. | Daily Once    | 11:30:00:00 AM          |
 
-<figure><img src="../.gitbook/assets/Pre-sell Catalog.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Pre-sell Catalog.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Jobs for Synchronizing the Pre-Order Catalog with eCommerce
 
@@ -109,7 +109,7 @@ Products from purchase orders that don't meet these criteria won't be listed in 
 | RunTime            | String | Specifies the Runtime scheduled for a job, which can be customized.                   | null          | April 17, 2024, 1:15 PM |
 | Schedule Frequency | String | Schedules frequency from the dropdown as every 5 minutes, Hourly, Daily, Weekly, etc. | Daily Once    | 23:59:00:00 PM          |
 
-<figure><img src="../.gitbook/assets/Sync upload preorder sync.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Sync upload preorder sync.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Promise Date Changes (Update Pre-Order Category Item Arrival Date)
 
@@ -216,4 +216,4 @@ Users are allowed to select multiple checkboxes to schedule various jobs in HotW
 | RunTime            | String | Specifies the Runtime scheduled for a job, which can be customized.                                                        | null          | April 17, 2024, 7:15 AM |
 | Schedule Frequency | String | Schedules frequency from the dropdown as every 5 minutes, Hourly, Daily, Weekly, etc. which can be customized as required. | Daily Once    | Every Day               |
 
-<figure><img src="../.gitbook/assets/Update promise Date for pre-order product.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Update promise Date for pre-order product.png" alt="" width="375"><figcaption></figcaption></figure>

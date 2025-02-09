@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Launchpad](../launchpad/README.md)
+* [Launchpad](README.md)
 
 ## Workflow
 
@@ -15,7 +15,7 @@
     * [Job Failed](workflow/job-management/troubleshooting/job-failed.md)
     * [Duplicate Jobs](workflow/job-management/troubleshooting/duplicate-job-scheduled.md)
     * [Job Scheduling](workflow/job-management/troubleshooting/schedule-job.md)
-    * [Job Scheduling Errors](workflow/job-management/troubleshooting/job-scheduling-errors.md) 
+    * [Job Scheduling Errors](workflow/job-management/troubleshooting/job-scheduling-errors.md)
 * [Job Workflows](workflow/job-workflows/README.md)
   * [Pre-Orders](workflow/job-workflows/pre-orders.md)
   * [Orders](workflow/job-workflows/orders.md)
@@ -23,7 +23,6 @@
   * [Inventory](workflow/job-workflows/inventory.md)
   * [Products](workflow/job-workflows/products.md)
   * [Miscellaneous](workflow/job-workflows/miscellaneous.md)
-  
 
 ## Products
 
@@ -61,7 +60,7 @@
     * [Scheduling Errors](orders/order-routing/troubleshooting/scheduling-error.md)
     * [Incorrect Facility Configurations](orders/order-routing/troubleshooting/incorrect-facility-configurations.md)
     * [Inventory Unavailability](orders/order-routing/troubleshooting/inventory-unavailability.md)
-    * [Incorrect Shipping Method Mapping](order-routing/troubleshooting/incorrect-shipping-method-mapping.md)
+    * [Incorrect Shipping Method Mapping](orders/order-routing/troubleshooting/incorrect-shipping-method-mapping.md)
 * [Pre-Orders](orders/pre-orders/README.md)
   * [Purchase Order Upload](orders/pre-orders/purchase-order-uploads.md)
   * [Purchase Order Management](orders/pre-orders/purchase-order-management.md)
@@ -73,7 +72,6 @@
   * [Troubleshooting](orders/pre-orders/troubleshooting/README.md)
     * [Inaccurate Inventory Computation](orders/pre-orders/troubleshooting/inaccurate-inventory-computation.md)
     * [Missing Product Linking](orders/pre-orders/troubleshooting/missing-product-linking.md)
-      
 * [Returns](orders/returns/README.md)
   * [Import Returns](orders/returns/import-returns.md)
   * [In-Store Returns](orders/returns/in-store-returns.md)

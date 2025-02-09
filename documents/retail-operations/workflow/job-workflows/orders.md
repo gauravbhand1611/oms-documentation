@@ -41,7 +41,9 @@ Flow : Order Approval
 
 **The `Approve Orders` job changes the status of orders from 'Created' to 'Approved,' making them eligible for brokering.** Orders must be verified and approved before fulfilment to prevent invalid or fraudulent orders. The Approved Orders job runs every 30 minutes and approves all the orders placed between the last job ran up and the current timestamp.
 
-**How are orders approved?** This job checks the payment preference for each order in the 'Created' state. If the payment preference is either 'Authorised' or 'Settled,' then the job changes the order status from ‘Created' to 'Approved’.
+**How are orders approved?**&#x20;
+
+This job checks the payment preference for each order in the 'Created' state. If the payment preference is either 'Authorised' or 'Settled,' then the job changes the order status from ‘Created' to 'Approved’.
 
 **Custom Parameter:**
 
@@ -150,7 +152,9 @@ Another method for importing returns is subscribing to Shopify webhooks via the 
 
 Although Shopify allows fetching 250 returns per API call, to avoid issues with large files, HotWax will download up to 100 returns per API call.
 
-**How are returns imported?** HotWax sends an API request to Shopify, which returns the order return details in JSON format. The JSON file is then uploaded to the internal file system of HotWax Commerce for further processing. The `Process Bulk Import Files` job then reads a JSON file and creates order records in HotWax Commerce.
+**How are returns imported?**
+
+HotWax sends an API request to Shopify, which returns the order return details in JSON format. The JSON file is then uploaded to the internal file system of HotWax Commerce for further processing. The `Process Bulk Import Files` job then reads a JSON file and creates order records in HotWax Commerce.
 
 Note: To find the Uploaded file, login to HotWax Commerce OMS, then navigate to Hamburger Menu>EXIM Page > Shopify Jobs tab > `Shopify Order Return`.
 
@@ -283,7 +287,9 @@ For example, if the retailers want to ensure that payment must be captured befor
 
 Some jobs, like `party identification` and `order identification`are those required jobs that need to be run before this job ensures custom conditions are matched.
 
-**How are orders approved?** This job queries the HotWax Commerce database to fetch orders in the created state and filters out the orders that pass the checks defined by the retailer. The filtered orders’ are then changed to the ‘Approved’ status.
+**How are orders approved?**
+
+This job queries the HotWax Commerce database to fetch orders in the created state and filters out the orders that pass the checks defined by the retailer. The filtered orders’ are then changed to the ‘Approved’ status.
 
 **Custom Parameters**
 
