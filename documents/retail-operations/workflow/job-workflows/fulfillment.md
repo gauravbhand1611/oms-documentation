@@ -86,33 +86,35 @@ Flow: Order Fulfillment from  HotWax
 ***
 
 ### Open Shipping Order Notification
+Job Name: `Open Shipping Order Notification`  
+Job Enum ID: `JOB_OPEN_SHIP_ORD_NT`  
+Service Name: `sendOrderNotification`  
+Flow: `Order Fulfillment from HotWax`  
+ 
+**This job is used for notifying store associates of the open shipping orders allocated to their store.** Basically, when an order is allocated to a store, it is generally expected that the order must be catered as soon as possible. So it is important to get notified for orders when they are allocated to stores.
+ 
+**How Are Stores Notified?**
+The `Open Shipping Order Notification` job fetches all those orders created in HotWax ‘topicEnum Id’  within the timeframe of the last job run to the current timestamp. It then sends a push notification to the relevant stores about these orders.
 
-**Job Name:** `Open Shipping Order Notification`\
-**Job Enum ID:** `JOB_OPEN_SHIP_ORD_NT`
-
-**Description**
-
-&#x20;The `Open Shipping Order Notification` job notifies store associates whenever an open order is received. This ensures that store associates are promptly alerted to new orders, enabling them to begin the fulfillment process without delay.
 
 **Custom Parameters**
 
-| Parameter     | Type     | Description                                                                                          | Default Value       |
-| ------------- | -------- | ---------------------------------------------------------------------------------------------------- | ------------------- |
-| `topicEnumId` | Required | This is used to represent a unique identifier for an enumerated value related to a topic or subject. | `OPEN_SHIPPING_ODR` |
-
-## Auto Cancellations
-
-### Auto Cancellations
-
-**Job Name: `Auto Cancellations`**
-
-**Description**&#x20;
-
-Orders that remain unfulfilled beyond their auto-cancellation date will be automatically canceled within HotWax Commerce. Additionally, if the upload for canceled orders is enabled, these orders will also be canceled in Shopify.
-
-**No custom parameters for this job**
+The recommended frequency for this job is 15 minutes.
+This job has `topicEnum Id` as required Parameter
 
 
+***
+### Auto cancelations:
+Job name: `Auto cancellations`  
+Service: `autoCancelOrderItems`  
+Flow: `Auto Cancellation From HotWax`  
+ 
+**HotWax Commerce facilitates retailers to set an auto cancellation date on orders that are unfulfilled.** The `Check Daily` toggle on the job card enables the job, and also the operations team can set the days in which the order will get auto-cancelled.
+ 
+**How does cancellation flow work?**
+Basically, this job checks for the orders that are in the unfillable parking, and the cancellation date is reached. This job simply changed their status to `cancelled` in HotWax.
+ 
+**Note: The `cancelled` orders will only be synced from HotWax to Shopify only if the `Upload Canceled Order` job is enabled.**
 
 ***
 
@@ -161,19 +163,16 @@ Flow: Packed Order Notification from HotWax to Klaviyo
 
 **Job Enum ID:** `JOB_SND_ML_COMM`
 
-**Description**&#x20;
-
+**Description**
 The `Notification Using Communication Events` job enables retailers to communicate to internal users by the help of the communication event feature on the view order page. This job ensures that internal teams are promptly alerted to important events for that particular order, facilitating efficient communication within the organization.
-
 **No custom parameters for this job**
 
 ***
-
 ### Packed BOPIS Order Reminder Notification
 
 **Job Name:** `Packed BOPIS Order Reminder Notification`
 
-**Description**&#x20;
+**Description**
 
 The `Packed BOPIS Order Reminder Notification` job sends a reminder notification to customers informing them that their Buy Online, Pick Up In Store (BOPIS) order has been packed and is ready for pickup. This reminder is sent every 7 days, up to 3 times, ensuring the customer is informed and reminded to collect their order.
 
@@ -184,3 +183,5 @@ The `Packed BOPIS Order Reminder Notification` job sends a reminder notification
 | `intervalDays`   | Optional | Number of days between each reminder                      | 7                      |
 | `maxOccurrences` | Optional | Maximum number of occurrences of the reminder             | 3                      |
 | `emailType`      | Optional | Specific type of email template to use for a notification | `PRDS_READY_TO_PICKUP` |
+
+***

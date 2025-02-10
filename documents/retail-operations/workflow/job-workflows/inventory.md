@@ -7,24 +7,20 @@ description: Discover how Inventory job works in HotWax Commerce.
 ## Adjustments
 
 ### Hard Sync
+Job Name: `Upload Inventory`  
+Job Enum ID: `JOB_UL_INV`  
+Service Name: `bulkResetShopifyInventoryLevel`  
+Flow: Inventory Sync from HotWax to Shopify.  
+ 
+**The `Hard Sync` job is used to synchronize the inventory of all the products from HotWax to Shopify once a day.** This job fetches the inventory counts of all products in Shopify and compares them with the inventory counts of all products  in HotWax Commerce. Then it prepares the delta file in GraphQL format for all the products where there is a difference in inventory counts in HotWax compared to Shopify. This delta file is then sent to Shopify, and Shopify updates the inventory counts by recording deltas.
 
-**Job Name:** `Upload Inventory`
-
-**Job Enum ID:** `JOB\_UL\_INV`
-
-**Description**
-
-The `Upload Inventory` job is designed to facilitate the upload of new inventory levels to the eCommerce platform for all the products. This job is crucial for keeping product availability up-to-date and ensuring accurate inventory representation on the eCommerce platform.
-
-**Recommended Frequency**
-
-The job frequency can be configured based on the business needs and the desired frequency of updating inventory levels.
+Note:  The `ShopifyFacilityGroupId` ' parameter allows retailers to not to push inventory of specific facilities included in that group.
 
 **Custom Parameters**
+- This job has no required parameters.
+- It has `facilityGroupId`,`shopifyFacilityGroupId`,`includeAll`, `useVaildATP` as optional parameters.
 
-| **Parameter** | **Type** | **Description**                                    | **Default Value** | **Example Value** |
-| ------------- | -------- | -------------------------------------------------- | ----------------- | ----------------- |
-| `includeAll`  | Optional | Specifies whether to include all inventory levels. | true              | false             |
+To know more about inventory synchronization between HotWax and Shopify, refer to this [document](https://docs.hotwax.co/documents/learn-shopify/shopify-integration/how-does-hotwax-commerce-ensure-accurate-inventory-is-synchronized-to-shopify/inventory-synchronization#hard-sync).
 
 <figure><img src="../../.gitbook/assets/Upload Inventory.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -56,7 +52,7 @@ This webhook is used to receive inventory level updates from Shopify to HotWax, 
 Job name: `Read Reset Inventory File From SFTP`\
 Job Enum id: `JOB_IMP_INV`\
 Service Name: `ftpImportFile`\
-Flow: `Inventory Reset in HotWax from NetSuite`
+Flow: Inventory Reset in HotWax from NetSuite
 
 **The `Import Inventory` Reset job is used for importing inventory reset files from SFTP locations uploaded by ERP systems (like NetSuite).**
 
@@ -93,38 +89,6 @@ After NetSuite uploads a JSON file to the SFTP location, the `Import Item Receip
 * It also has some optional parameters.
 
 ***
-
-### Import Product Thresholds
-
-**Job Name:** `Import Product Thresholds`
-
-**Job Enum ID:** `IMP\_PROD\_THOLD`
-
-**Description**
-
-The `Import Product Thresholds` job, identified by Job ID `IMP\_PROD\_THOLD`, is designed to import a list of product thresholds based on specified tags and categories. This job is essential for updating product stock levels and ensuring that inventory management aligns with defined thresholds.
-
-**Recommended Frequency**
-
-The job frequency can be configured based on the business needs and the frequency of updates required for product thresholds.
-
-**Custom Parameters**
-
-| **Parameter**          | **Type** | **Description**                                                  | **Default Value** | **Example Value**                          |
-| ---------------------- | -------- | ---------------------------------------------------------------- | ----------------- | ------------------------------------------ |
-| `configId`             | String   | Specifies the configuration ID for importing product thresholds. | IMP\_PROD\_THOLD  | IMP\_PROD\_THOLD                           |
-| `propertyResource`     | Required | Specifies the property resource for configuring FTP.             | FTP\_CONFIG       | FTP\_CONFIG                                |
-| `configId`             | Required | Specifies the configuration ID for importing inbound shipments.  | IMP\_TO\_SHPMNT   | IMP\_TO\_SHPMNT                            |
-| `remoteFilename`       | Optional | Specifies the remote filename for the job.                       | Not specified     | sample\_file.txt                           |
-| `groupBy`              | Optional | Specifies the grouping parameter for the job.                    | Not specified     | category                                   |
-| `additionalParameters` | Optional | Specifies additional parameters for customization.               | Not specified     | { "param1": "value1", "param2": "value2" } |
-| `fileNameRegex`        | Optional | Specifies the regular expression for matching file names.        | Not specified     | \*.csv                                     |
-| `scheduleNow`          | Optional | Specifies whether to schedule the job for immediate processing.  | false             | true                                       |
-
-<figure><img src="../../.gitbook/assets/Import Product threshold.png" alt="" width="375"><figcaption></figcaption></figure>
-
-***
-
 ### Import Product Facility
 
 Job Name: `Import Product Facility`\
@@ -132,45 +96,18 @@ Job Enum ID: `JOB_IMP_PROD_FAC`\
 Service Name: `ftpImportCSVFile`\
 Flow: Applying ATP rules in HotWax.
 
-HotWax Commerce ATP App allows retailers to configure rules for inventory computation based on product tags and facility types or groups, reducing manual work. Based on these rules, the available-to-promise (ATP) of a product is calculated, which is then synchronized to Shopify or other sales channels.
+HotWax Commerce [ATP App](https://docs.hotwax.co/documents/retail-operations/inventory/available-to-promise) allows retailers to configure rules for inventory computation based on product tags and facility types or groups, reducing manual work. Based on these rules, the available-to-promise (ATP) of a product is calculated, which is then synchronized to Shopify or other sales channels.
 
 A job in the ATP app generates a CSV file based on rules configured for calculating ATP and puts it in the SFTP location. \*\*The `Import Product Facility` job is used to download this CSV from the SFTP location and upload it on the file system of HotWax Commerce. \*\* Further, the `Process Bulk Import Files` job runs and processes all the files in HotWax. And finally, all the rules configured from the ATP app by the retailer are created.
 
 **It is important to note that this job is responsible for applying ATP rules configured by retailers on ATP computation.**
 
-* **Custom Parameters**
+**Custom Parameters**
 * The recommended frequency for this job is 15 minutes.
 * This job has configId and propertyResource as the required parameters.
 * It also has some optional parameters.
 
 ***
-
-### Export Product Thresholds
-
-**Job Name:** `Export Product Thresholds`
-
-**Job Enum ID:** `EXP\_PROD\_THOLD`
-
-**Description**
-
-The `Export Product Thresholds` job is designed to export a list of product thresholds based on specified tags and categories. This job is essential for obtaining insights into product stock levels and ensuring inventory management aligns with defined thresholds.
-
-**Recommended Frequency** The job frequency can be configured based on the business needs and the frequency of updates required for product thresholds.
-
-**Custom Parameters**
-
-| **Parameter**        | **Type** | **Description**                                                    | **Default Value** | **Example Value** |
-| -------------------- | -------- | ------------------------------------------------------------------ | ----------------- | ----------------- |
-| `facilityId`         | String   | Specifies the facility ID for exporting product thresholds.        | null              | FCTY-001          |
-| `propertyResource`   | String   | Specifies the property resource for configuring FTP export.        | FTP\_EXP\_CONFIG  | FTP\_EXP\_CONFIG  |
-| `threshold`          | String   | Specifies the threshold value for exporting products.              | null              | 10 units          |
-| `includeAll`         | Boolean  | Specifies whether to include all products in the export.           | null              | true              |
-| `searchPreferenceId` | String   | Specifies the search preference ID for customizing product search. | null              | SEARCH\_PREF\_001 |
-
-<figure><img src="../../.gitbook/assets/Export Product Threshold.png" alt="" width="375"><figcaption></figcaption></figure>
-
-***
-
 ### Bulk recent kit product inventory setup
 
 Job Name: `Bulk recent kit product inventory setup`\
@@ -217,7 +154,7 @@ Job Enum ID : `JOB_IMP_TO_SHPMNT`\
 Service Name: ftpImportFile\
 Flow: Inventory Synchronization
 
-This job is used to create inbound shipment in HotWax so that store associates can see an upcoming inbound shipment in their Receiving App. In case of a warehouse to store TO or store to store TO is created in NetSuite, HotWax imports it as an inbound shipment for the receiving store through this job.
+This job is used to create inbound shipment in HotWax so that store associates can see an upcoming inbound shipment in their [Receiving App](https://docs.hotwax.co/documents/store-operations/inventory/receiving/receiving). In case of a warehouse to store TO or store to store TO is created in NetSuite, HotWax imports it as an inbound shipment for the receiving store through this job.
 
 **Custom Parameters**
 
@@ -244,85 +181,22 @@ The HotWax Commerce Import App simplifies this process by allowing retailers to 
 
 ***
 
-### Import Inventory
+### Sync Invnetory from Shopify
+Job Name: `Sync Inventory from Shopify`  
+Job Enum Id : `JOB_SYNC_INV_FRM_SHPY`  
+Service Name: `bulkInventorySyncFromShopify`  
+Flow: Inventory Synchronization from Shopify  
 
-**Job Enum ID:** `JOB\_IMP\_INV`
+In cases where HotWax is not used as the source of truth for inventory availability—meaning retailers do not use HotWax for fulfillment and do not have an ERP system for inventory management—HotWax relies on Shopify for inventory updates. To ensure accurate inventory data, this job runs once a day to reset inventory updates for all products.
 
-**Job Name:** `Import Inventory`
+**How Does This Job Work?**  
+HotWax sends an API request to Shopify to fetch the latest inventory data for all products. In response, Shopify provides a JSON file, which is then uploaded to HotWax’s internal file system. After that, the `Process Bulk Imported Files` job processes the JSON file, updates the inventory, and syncs the changes in HotWax.
 
-**Description**
-
-The `Import Inventory` job is designed to import inventory from the ERP (Enterprise Resource Planning) system. This job plays a crucial role in keeping the inventory information synchronized between the ERP and the OMS.
-
-**Recommended Frequency**
-
-The job frequency can be configured based on the business needs and the frequency of updates from the ERP system.
-
-**Custom Parameters**
-
-| **Parameter**              | **Type** | **Description**                                                 | **Default Value** | **Example Value**                          |
-| -------------------------- | -------- | --------------------------------------------------------------- | ----------------- | ------------------------------------------ |
-| **`propertyResource`**     | Required | Specifies the property resource for configuring FTP.            | FTP\_CONFIG       | FTP\_CONFIG                                |
-| **`fileNameRegex`**        | Optional | Specifies the regular expression for matching file names.       | \*.csv            | \*.csv                                     |
-| **`configId`**             | Required | Specifies the configuration ID for importing inventory.         | RESET\_INVENTORY  | RESET\_INVENTORY                           |
-| **`remoteFilename`**       | Optional | Specifies the remote filename for the job.                      | Not specified     | sample\_file.txt                           |
-| **`groupBy`**              | Optional | Specifies the grouping parameter for inventory.                 | facilityId        | facilityId                                 |
-| **`locationSeqId`**        | Optional | Specifies the location sequence ID for inventory import.        | TLTLTLLL01        | TLTLTLLL01                                 |
-| **`additionalParameters`** | Optional | Specifies additional parameters for customization.              | Not specified     | { "param1": "value1", "param2": "value2" } |
-| **`fileNameRegex`**        | Optional | Specifies the regular expression for matching file names.       | Not specified     | \*.csv                                     |
-| **`scheduleNow`**          | Optional | Specifies whether to schedule the job for immediate processing. | false             | true                                       |
-
-<figure><img src="../../.gitbook/assets/Import Recent inventory.png" alt="" width="375"><figcaption></figcaption></figure>
-
-***
-
-### Sync Inventory From Shopify
-
-**Job Name:** `Sync Inventory From Shopify`
-
-**Job Enum ID:** `JOB_SYNC_INV_FRM_SHPY`
-
-**Description**\
-In the realm of inventory synchronization between HotWax Commerce and Shopify, typically, HotWax Commerce handles the updates to inventory data on Shopify. However, in specific scenarios, the Order Management System (OMS) sync inventory from Shopify. When there's a recent alteration in inventory, this task ensures that the inventory data is promptly updated from Shopify.
+This job is an alternative to Shopify Webhooks, but since Shopify Webhooks are reliable, it is recommended to schedule this job in HotWax.
 
 **Custom Parameters**
-
-| **Parameter** | **Type** | **Description**                                                                                                                                                                                                                      | **Default Value** |
-| ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
-| `includeAll`  | Optional | Specifies whether to include all inventory levels.                                                                                                                                                                                   | `True`            |
-| `frequency`   | Optional | Defines the default duration for syncing orders if there is no last sync time.                                                                                                                                                       | `15 minutes`      |
-| `buffertime`  | Optional | Specifies the buffer time (in minutes) for scheduling job downloads.                                                                                                                                                                 | `5 minutes`       |
-| `scheduleNow` | Optional | When importing files into the OMS, forces the system to pick the file out of sequence for immediate processing. Enabled by default when importing files from FTP, but can be disabled during high-volume syncs for system stability. | `Enabled`         |
-
-***
-
-### Sync Inventory From Shopify in Multi-Threading
-
-**Job Enum ID:** `SYNC\_INV\_SHPF\_MLTTHD`
-
-**Job Name:** `Sync Inventory From Shopify in Multi-Threading`
-
-**Description**
-
-The `Sync Inventory From Shopify in Multi-Threading` job is designed to synchronize inventory from Shopify, utilizing multi-threading for enhanced efficiency. This job is crucial for maintaining accurate inventory levels and ensuring seamless integration with the Shopify platform.
-
-**Recommended Frequency**
-
-The job frequency can be configured based on the business needs and the frequency of updates required for inventory synchronization.
-
-**Custom Parameters**
-
-| **Parameter**              | **Type** | **Description**                                                                  | **Default Value**       | **Example Value**                          |
-| -------------------------- | -------- | -------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------ |
-| **`propertyResource`**     | String   | Specifies the property resource for configuring FTP synchronization.             | FTP\_CONFIG             | FTP\_CONFIG                                |
-| **`fileNameRegex`**        | String   | Specifies the regular expression for matching file names during synchronization. | \*.csv                  | \*.csv                                     |
-| **`configId`**             | String   | Specifies the configuration ID for the multi-threaded inventory synchronization. | SYNC\_INV\_SHPF\_MLTTHD | SYNC\_INV\_SHPF\_MLTTHD                    |
-| **`groupBy`**              | String   | Specifies the grouping parameter for multi-threading, such as `location_id`.     | Not specified           | location\_id                               |
-| **`additionalParameters`** | Optional | Specifies additional parameters for customization.                               | Not specified           | { "param1": "value1", "param2": "value2" } |
-| **`remoteFilename`**       | Optional | Specifies the remote filename for the job.                                       | Not specified           | sample\_file.txt                           |
-| **`scheduleNow`**          | Optional | Specifies whether to schedule the job for immediate processing.                  | false                   | true                                       |
-
-<figure><img src="../../.gitbook/assets/Sync Inventory From Shopify in multi threading.png" alt="" width="375"><figcaption></figcaption></figure>
+- This job does not have any required parameters
+- It has some optional parameters.
 
 ***
 
