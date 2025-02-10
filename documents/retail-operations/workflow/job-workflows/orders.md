@@ -524,3 +524,20 @@ NetSuite runs a SuiteScript to provide details of items that are fulfilled in th
 * It has some optional parameters.
 
 ***
+### Import Customer
+
+**Job Name**: Import Customers from Shopify\
+**Job Enum ID**: JOB\_IMP\_CSTMR
+
+**Description**\
+The Import Customer job imports customer data from Shopify into HotWax Commerce. This job ensures that customer information, including contact details and order history, is accurately synced between the two platforms, supporting smooth order processing and customer management in HotWax Commerce.
+
+**Custom Parameters**
+
+| Parameter    | Type     | Description                                                              | Default Value |
+| ------------ | -------- | ------------------------------------------------------------------------ | ------------- |
+| frequency    | Required | Defines the default duration of the last syncing of the shipment status. | 15            |
+| `bufferTime` | Optional | Specifies the buffer time (in minutes) for scheduling job.               | Not Specified |
+| limit        | Optional | Additional parameters for job customization.                             | Not Specified |
+
+***
