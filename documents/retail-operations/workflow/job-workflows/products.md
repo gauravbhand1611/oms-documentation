@@ -174,7 +174,7 @@ Retailers usually maintain a master catalog containing all their products. When 
  
 **The `Associate Product with Sub Catalog` job maps specific products to their respective sub-catalogs, verifying accurate product linkage within the catalog.**
  
-**How are products mapped?**
+**How are products mapped?**  
 ERP systems (like NetSuite) generally maintain the mapping of the product and catalog. A suite script from NetSuite generates a JSON format file containing details about product mapping with the catalog and uploads it to an SFTP location. Then the `Associate Product with sub catalog` job is used to import the JSON in HotWax and upload it on `IMP_SHPFY_SHOP_PROD` MDM. Further, the `Process Bulk Import Files` job processes the file in HotWax OMS.
 
 
