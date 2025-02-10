@@ -73,7 +73,7 @@ Automated messages sent from eCommerce (Shopify) to OMS whenever an event occurs
 ## More Jobs
 
 
-### Product HS code Identification
+### Product HS Code Identification
 Job Name:`Product HS Code Identification`  
 Job Enum ID: `JOB_HS_IDENT`  
 Service Name: `ftpImportFile`  
