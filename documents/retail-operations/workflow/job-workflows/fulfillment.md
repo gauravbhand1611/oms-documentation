@@ -163,10 +163,25 @@ Flow: Packed Order Notification from HotWax to Klaviyo
 
 **Job Enum ID:** `JOB_SND_ML_COMM`
 
-**Description**&#x20;
-
+**Description**
 The `Notification Using Communication Events` job enables retailers to communicate to internal users by the help of the communication event feature on the view order page. This job ensures that internal teams are promptly alerted to important events for that particular order, facilitating efficient communication within the organization.
-
 **No custom parameters for this job**
+
+***
+### Packed BOPIS Order Reminder Notification
+
+**Job Name:** `Packed BOPIS Order Reminder Notification`
+
+**Description**
+
+The `Packed BOPIS Order Reminder Notification` job sends a reminder notification to customers informing them that their Buy Online, Pick Up In Store (BOPIS) order has been packed and is ready for pickup. This reminder is sent every 7 days, up to 3 times, ensuring the customer is informed and reminded to collect their order.
+
+**Custom Parameters**
+
+| Parameter        | Type     | Description                                               | Default Value          |
+| ---------------- | -------- | --------------------------------------------------------- | ---------------------- |
+| `intervalDays`   | Optional | Number of days between each reminder                      | 7                      |
+| `maxOccurrences` | Optional | Maximum number of occurrences of the reminder             | 3                      |
+| `emailType`      | Optional | Specific type of email template to use for a notification | `PRDS_READY_TO_PICKUP` |
 
 ***
