@@ -24,7 +24,6 @@
 * [Inbound Shipment](api/inbound-shipment/README.md)
   * [Import](api/inbound-shipment/import.md)
 * [Returns](api/returns/README.md)
-  * [Return Enumerations](api/returns/return-enumerations.md)
   * [Create Return](api/returns/create-return.md)
   * [Returns Financial Feed](api/returns/returns-financial-feed.md)
 * [Facility](api/facility/README.md)
