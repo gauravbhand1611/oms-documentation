@@ -152,6 +152,14 @@ Return adjustments are used to categorize different return-level charges. By sto
 | RET_VAT_TAX_ADJ        | Return VAT Tax                        |
 | RET_WARRANTY_ADJ       | Return Warranty                       |
 
+## Return channels
+
+The two return channels are as follows:
+
+| Enum Id            | Enum Type Id     | Description            | Enum Name         | Sequence Id |
+|---------------------|------------------|------------------------|-------------------|-------------|
+| ECOM_RTN_CHANNEL   | RETURN_CHANNEL   | Ecom Return Channel    |                   | 01          |
+| POS_RTN_CHANNEL    | RETURN_CHANNEL   | POS Return Channel     |                   | 02          |
 
 <details>
 
