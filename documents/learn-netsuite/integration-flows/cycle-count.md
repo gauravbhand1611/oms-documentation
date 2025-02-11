@@ -26,7 +26,7 @@ By conducting these periodic checks, retailers can resolve discrepancies in real
 
 The Cycle Count App's interface adapts for different user roles. Operations teams assign cycle counts to specific stores through the app. Once assigned, store associates leverage the app to conduct the cycle count, recording and submitting their counting results for review by the operations team.
 
-<figure><img src="../../.gitbook/assets/cycleCountvariance.png" alt=""><figcaption><p>Cycle Count Inventory Variance Synced from HotWax Commerce to NetSuite</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/cycleCountvariance.png" alt=""><figcaption><p>Cycle Count Inventory Variance Synced from HotWax Commerce to NetSuite</p></figcaption></figure>
 
 ### Automatically Update Inventory Levels in HotWax Commerce
 
@@ -85,7 +85,7 @@ Import Inventory Cycle Count Variance from SFTP:
 HC_SC_ImportInventoryAdjustment.js
 ```
 
-{% file src="../../.gitbook/assets/Inventory Cycle Count Variances Sample Feed.csv" %}
+{% file src="../.gitbook/assets/Inventory Cycle Count Variances Sample Feed.csv" %}
 
 ## Record Unexpected Store Inventory Variances Outside of Cycle Counts
 
@@ -97,7 +97,7 @@ To address these unexpected inventory changes, store managers can directly recor
 Unlike cycle counting, where an inventory count is conducted periodically, this process involves store managers directly recording the variance amount without physically counting the entire store inventory.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/inventoryVariance.png" alt=""><figcaption><p>Inventory Variance Synced from HotWax Commerce to NetSuite</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inventoryVariance.png" alt=""><figcaption><p>Inventory Variance Synced from HotWax Commerce to NetSuite</p></figcaption></figure>
 
 ### Pushing Inventory Variance to HotWax Commerce
 
@@ -154,7 +154,7 @@ Import Inventory Variance from SFTP:
 HC_SC_ImportInventoryAdjustment.js
 ```
 
-{% file src="../../.gitbook/assets/Inventory Item Variances Sample Feed.csv" %}
+{% file src="../.gitbook/assets/Inventory Item Variances Sample Feed.csv" %}
 
 ## Benefits:
 
