@@ -35,7 +35,7 @@ An exchange occurs when a customer returns a product and instead of receiving a 
 
 Retailers we work with use Shopify as their eCommerce platform, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. This returns management workflow involves downloading returns data, creating Return Merchandise Authorizations (RMAs), processing Item Receipt records, and creating Customer Refunds.
 
-<figure><img src="../../.gitbook/assets/webReturnsLoop.png" alt=""><figcaption><p>Sync web returns to NetSuite</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/online-returns-loop.png" alt=""><figcaption><p>Sync web returns to NetSuite</p></figcaption></figure>
 
 ### Data Flow
 
@@ -230,7 +230,7 @@ Retailers' return policies can vary, ranging from one to several months. To acco
 
 HotWax Commerce OMS and NetSuite both need return order data but at different stages of the return lifecycle. NetSuite requires return data early in the process for return authorization and processing, so HotWax’s Integration Platform syncs return orders to NetSuite as soon as they are initiated. However, OMS only needs return data once the return is completed in Shopify, so it downloads completed returns from Shopify at a later stage.
 
-Since NetSuite already has the return order data from the Integration Platform, syncing the same returns again from OMS would create duplicates. To prevent this, when downloading returns from Shopify, HotWax OMS reads the order notes added by Loop and tags the return order with LOOP_RETURN_CHANNEL. This return channel identifier allows OMS to recognize Loop-initiated returns and exclude them from syncing again, keeping NetSuite data clean.
+Since NetSuite already has the return order data from the Integration Platform, syncing the same returns again from OMS would create duplicates. To prevent this, when downloading returns from Shopify, HotWax OMS reads the order notes added by Loop and tags the return order with LOOP\_RETURN\_CHANNEL. This return channel identifier allows OMS to recognize Loop-initiated returns and exclude them from syncing again, keeping NetSuite data clean.
 
 ***
 
