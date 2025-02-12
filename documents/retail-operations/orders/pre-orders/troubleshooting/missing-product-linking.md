@@ -65,6 +65,8 @@ In instances where a common product catalog is employed across multiple Shopify 
    * Within the Job Manager app, initiate the following jobs: `Auto refresh pre-order catalog` and `Sync variant details` by searching them from the pipeline page.
 6. **Review products in Hotwax and Shopify**
 
+By following these steps meticulously, you ensure a seamless and accurate linking of products, ultimately improving the functionality of the pre-order option on the Shopify store.
+
 ___
 #### **Troubleshooting Use Case**
 
@@ -95,4 +97,24 @@ Products from purchase orders that don't meet these criteria won't be listed in 
 4. There is no Return for any pre-order or backorder.
 
 
-By following these steps meticulously, you ensure a seamless and accurate linking of products, ultimately improving the functionality of the pre-order option on the Shopify store.
+#### Troubleshooting Use Case
+
+**Issue 1:** The product is not updated as a pre-order or a backorder at Shopify and PDP
+
+**Possible Causes:**
+
+1. PO status is canceled
+2. PO has a past expected delivery date.
+3. Items have available inventory in the system.
+4. The generated file is not processed by Shopify and is lying unread at the specified SFTP location
+
+**Resolution Steps:**
+
+1. Status of PO items must be created or approved, ensuring canceled PO items are not considered for Pre-Order.
+2. The promise date of a PO item must be in the future, guaranteeing that the purchase order item will arrive in the future, not from an old PO.
+3. The current inventory of the item must be 0, indicating it's out of stock and qualified for Pre-Order or backorder.
+4. If the 'isNewProduct' field of a PO is marked as “yes”, it’s identified as a Pre-Order product; if marked “no”, it's categorized as a backorder product.
+5. Item is associated with the pre-order or backorder category.
+6. Ensure the file is read and processed from the SFTP location.
+
+Products from purchase orders that don't meet these criteria won't be listed in Shopify’s pre-order catalog. Contact the Shopify team if your product is still not listed on Shopify.
