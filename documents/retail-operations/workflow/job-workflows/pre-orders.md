@@ -73,24 +73,6 @@ The Pre-sell Catalog job automatically manages the addition or removal of pre-se
 
 When there are any changes in the arrival dates of the multiple items in the purchase orders, the promise dates need to be first updated in the HotWax Commerce pre-sell category. The Sync Variant Details job ensures that the expected date changes in the purchase order arrival date, and the promise dates of the product are also updated on Shopify. These changes happen through the Update Pre-Order Category Item Arrival Date job which creates a file and processes all the updated date changes in the HotWax Commerce category, after this, the Sync Variant Details updates the changes on Shopify.
 
-**Troubleshooting Use Case**
-
-**Issue 1:** The promise date of the Product is not updated on Shopify PDP.
-
-**Possible Causes:**
-
-1. PO status is canceled
-2. Item does not exist anymore in the pre-order or backorder category.
-3. Item has Inventory in the system.
-4. The generated file is not processed by Shopify and is lying unread at specified SFTP location
-
-**Resolution Steps:**
-
-1. Status of PO items must be created or approved.
-2. The promise date of a PO item must be in the future.
-3. Ensure the current inventory of the item must be 0.
-4. Ensure that the file is processed by Shopify from the SFTP location
-
 | Parameter          | Type   | Description                                                                                                                | Default Value | Example Value           |
 | ------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------- |
 | RunTime            | String | Specifies the Runtime scheduled for a job, which can be customized.                                                        | null          | April 17, 2024, 1:15 PM |
