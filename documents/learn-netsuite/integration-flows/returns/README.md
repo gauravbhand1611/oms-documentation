@@ -244,19 +244,72 @@ Customers who live near a brick-and-mortar store or those who prefer to get inst
 * **Buy Online Return In-Store (BORIS):** Customers directly return their online purchases to a nearby store location.
 * **Endless Aisle Return In-Store (EARIS):** Customers return orders made through an endless aisle feature, such as items ordered in-store for home delivery, to a nearby store location.
 
-Retailers we work with, use Shopify POS as their POS system, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. Some retailers initiate in-store returns using the Loop Returns POS App, while others opt to use their Shopify POS system. Let's explore how these two distinct approaches work:
+Retailers we work with, use Shopify POS as their POS system, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. Some retailers initiate in-store returns using the Loop Returns POS App, while others opt to use their Shopify POS system. Let's see how these two approaches work:
+
+## Synchronizing POS Returns to NetSuite when returns are accepted on Shopify POS
+
+<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
+
+By leveraging Shopify POS for in-store returns, store associates are not required to navigate through a separate interface. This returns management workflow involves downloading returns data, processing Item Receipt records, and creating Customer Refunds.
+
+#### In-Store Return by Customer
+
+Customers visit their preferred store to return a purchase, which may have been made in-store or online. Store associates search for the customer’s order ID, and once identified, they process the in-store return. Here’s how:
+
+* Select the order item being returned.
+* Specify the return reason.
+* Process refunds to customers.
+
+#### Import POS Returns in HotWax Commerce
+
+A scheduled job in HotWax Commerce downloads the return data from Shopify POS. These returns are downloaded as Completed, and the payment is marked as Refunded in HotWax Commerce.
+
+HotWax Commerce also restocks the returned inventory based on visibility into the specific location where the inventory was received.
+
+#### Transform and Export Returns Data
+
+A scheduled job in HotWax Commerce exports newly created POS returns and a job in HotWax’s Integration Platform imports and transforms this return data for NetSuite.
+
+A scheduled job in the HotWax Commerce Integration Platform then generates a CSV file of the transformed POS returns data and places this file at an SFTP location.
+
+#### Import POS Returns in NetSuite
+
+A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, triggering multiple actions:
+
+* An RMA is created with the Pending Receipt status and linked to the original sales order.
+* An Item Receipt record is generated, linked to the RMA, and inventory is automatically restocked at the store location where the returned item was received.
+
+* Once the Item Receipt record is created, the RMA is automatically updated to Pending Refund status.
+
+* A Credit Memo is created in Open status and linked to the RMA.
+
+* A Customer Refund record is automatically created based on the refund method and linked to the Credit Memo.
+
+* Once the Customer Refund record is created, the Credit Memo is marked as Fully Applied, and the RMA is updated to Refunded.
+
+When customers return items in-store, the return request and receipt are processed simultaneously.
+
+HotWax syncs all return data to NetSuite, enabling all subsequent actions, from RMA generation to customer refund creation, to progress sequentially and automatically in NetSuite. This process also helps maintain accurate GL accounting and posting, simplifying financial reconciliation.
+
+{% hint style="info" %}
+When retailers record in-store purchases as cash sales in NetSuite, POS returns do not require an RMA. Instead, a Cash Refund record is created, and the inventory is automatically restocked at the store. However, if in-store purchases are recorded as sales orders in NetSuite, the return follows the full RMA process, just like web returns.
+{% endhint %}
+
+#### Handling of Multiple Scenarios
+
+When returning an item a customer can also opt to take the exchange item against it. The exchange item may be of higher value than the original item or may be of lesser value. Learn more about how HotWax commerce handles exchanges on an order.
+
+***
 
 ## Synchronizing POS Returns to NetSuite when returns are accepted on Loop POS
 
 <figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
-Loop Returns POS App provides an intuitive interface to create POS returns.
-
-When it comes to in-store returns, because customers return their order items directly at the store location, the receiving of the order item and the processing of refunds happen simultaneously.
+Loop Returns POS App provides an intuitive interface to create POS returns. When it comes to in-store returns, because customers return their order items directly at the store location, the receiving of the order item and the processing of refunds happen simultaneously.
 
 #### Create Returns in Shopify and NetSuite
 
-Once the POS returns are accepted and completed in Loop, it syncs them with both Shopify POS and NetSuite.
+Once the POS returns are completed in Loop, it syncs them with both Shopify POS and NetSuite.
 
 Loop creates returns in Shopify POS, marks the order item as returned and payment as refunded. Subsequently, the inventory is restocked against the received order item.
 
@@ -268,30 +321,5 @@ A scheduled job in HotWax Commerce downloads these returns from Shopify POS, inc
 
 As POS returns are already synced to NetSuite by Loop, they are not synced again by HotWax commerce.
 
+***
 
-## Synchronizing POS Returns to NetSuite when returns are accepted on Shopify POS
-
-<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
-
-Leveraging Shopify POS for in-store returns ensures that store associates are not required to navigate through a separate interface to handle them.
-
-#### Import POS Returns in HotWax Commerce
-
-When POS returns are accepted within the store and completed, a scheduled job in the HotWax Commerce integration platform fetches all returns and exchanges from Shopify and generates a returns and exchanges feed. Another job reads and transforms this feed, sorting returns and exchange orders into different folders on the SFTP server.
-
-Two independent jobs in HotWax Commerce process these orders:
-
-* The `Create Return Order` job downloads the returns from the SFTP path.
-* The `Create Exchange Order` job downloads the exchanges.
-
-#### Export POS Returns from HotWax Commerce
-
-A scheduled job in the HotWax Commerce Integration Platform generates a CSV file of POS returns and places this file at an SFTP location.
-
-#### Import POS Returns in NetSuite
-
-A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, and generates a Return Merchandise Authorization (RMA) to track the returned items. Following this, a credit memo is generated to record the financial transaction associated with the refund. The credit memo details the total amount to be refunded to the customer.
-
-#### Handling of Multiple Scenarios
-
-When returning an item a customer can also opt to take the exchange item against it. The exchange item may be of higher value than the original item or may be of lesser value. Learn more about how HotWax commerce handles exchanges on an order.
