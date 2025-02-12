@@ -248,7 +248,7 @@ Retailers we work with, use Shopify POS as their POS system, NetSuite as their E
 
 ## Synchronizing POS Returns to NetSuite when returns are accepted on Shopify POS
 
-<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/In-store-returns-shopify-pos.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
 
 By leveraging Shopify POS for in-store returns, store associates are not required to navigate through a separate interface. This returns management workflow involves downloading returns data, processing Item Receipt records, and creating Customer Refunds.
 
@@ -278,13 +278,9 @@ A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, 
 
 * An RMA is created with the Pending Receipt status and linked to the original sales order.
 * An Item Receipt record is generated, linked to the RMA, and inventory is automatically restocked at the store location where the returned item was received.
-
 * Once the Item Receipt record is created, the RMA is automatically updated to Pending Refund status.
-
 * A Credit Memo is created in Open status and linked to the RMA.
-
 * A Customer Refund record is automatically created based on the refund method and linked to the Credit Memo.
-
 * Once the Customer Refund record is created, the Credit Memo is marked as Fully Applied, and the RMA is updated to Refunded.
 
 When customers return items in-store, the return request and receipt are processed simultaneously.
@@ -322,4 +318,3 @@ A scheduled job in HotWax Commerce downloads these returns from Shopify POS, inc
 As POS returns are already synced to NetSuite by Loop, they are not synced again by HotWax commerce.
 
 ***
-
