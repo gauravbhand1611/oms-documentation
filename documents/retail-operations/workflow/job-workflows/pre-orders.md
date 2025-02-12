@@ -30,33 +30,6 @@ All Pre-order jobs have a defined frequency of 15 minutes by default which can b
 **Description:**\
 The Pre-sell Catalog job automatically manages the addition or removal of pre-sell products from the HotWax Pre-order/Backorder category. This job checks for new products eligible for pre-order/backorder in the received feeds from ERP and adds them to the pre-order backorder catalog in HotWax Commerce based on specific eligibility criteria for product inventory, purchase orders, and order queues.
 
-#### **Troubleshooting Use Case**
-
-**Issue 1:** New or existing products do not appear as pre-orders or backorders.
-
-**Possible Causes:**
-
-* Item does not exist in the system
-* PO status is canceled
-* Item has Inventory in the system
-
-**Resolution Steps:**
-
-1. Status of PO items must be created or approved, ensuring canceled PO items are not considered for Pre-Order.
-2. The promise date of a PO item must be in the future, guaranteeing that purchase order items will arrive in the future, not from an old PO.
-3. The current inventory of the item must be 0, indicating it's out of stock and qualified for Pre-Order or backorder.
-4. If the 'isNewProduct' field of a PO is marked as “yes”, it’s identified as a Pre-Order product; if marked “no”, it's categorized as a backorder product.
-
-Products from purchase orders that don't meet these criteria won't be listed in HotWax Commerce's pre-order catalog. It's important to ensure that purchase order items adhere to these criteria for accurate listing.
-
-**Issue 2:** Products are not removed from the pre-order or backorder category.
-
-**Resolution Steps:**
-
-1. Ensure all future inventory of pre-orders is received.
-2. Ensure the Purchase Order status changes to “Canceled” or “Completed”.
-3. Ensure the Purchase Order arrival date (promised fulfillment date) has passed.
-4. There is no Return for any pre-order or backorder.
 
 #### **Custom Parameters**
 
