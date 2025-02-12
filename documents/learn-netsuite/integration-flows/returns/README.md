@@ -35,7 +35,7 @@ An exchange occurs when a customer returns a product and instead of receiving a 
 
 Retailers we work with use Shopify as their eCommerce platform, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. This returns management workflow involves downloading returns data, creating Return Merchandise Authorizations (RMAs), processing Item Receipt records, and creating Customer Refunds.
 
-<figure><img src="../../.gitbook/assets/webReturnsLoop.png" alt=""><figcaption><p>Sync web returns to NetSuite</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/online-returns-loop.png" alt=""><figcaption><p>Sync web returns to NetSuite</p></figcaption></figure>
 
 ### Data Flow
 
@@ -132,17 +132,17 @@ The Process Return API triggers multiple actions in Loop based on the fetched Lo
 
 * The RMA status is updated from **Open** to **Closed**.
 * As soon as the RMA in Loop is marked as Closed, multiple actions take place:
+  * If the customer opted to receive a refund on their original payment method, Loop triggers Shopify to process the refund.
   * If the customer selected "Return for Store Credit," Loop automatically issues a gift card to the customer for the corresponding amount.
-  * If the customer opted to receive a refund on their original payment method, Loop initiates the refund accordingly.
   * If the customer selected "Exchange," Loop creates a new exchange order in Shopify.
 
-#### 9. Synchronize Refund Details to Shopify
+#### 9. Process Refunds to Customers
 
-Once the refund is initiated to the customer, Loop syncs the customer refund details to Shopify, updating the return from **In-Progress** to **Returned** in Shopify.
+Shopify processes the customer refund using the original payment method, updating the return status from **In-Progress** to **Returned** in Shopify. At the same time, Shopify syncs the refund details back to Loop.
 
 #### 10. Fetch and Transform Refund Details
 
-HotWax Commerce Integration Platform subscribes to the Loop’s webhook to fetch the refund details.
+HotWax Commerce Integration Platform subscribes to Loop’s webhook to fetch and transform refund details.
 
 **SFTP Locations**
 
@@ -230,7 +230,7 @@ Retailers' return policies can vary, ranging from one to several months. To acco
 
 HotWax Commerce OMS and NetSuite both need return order data but at different stages of the return lifecycle. NetSuite requires return data early in the process for return authorization and processing, so HotWax’s Integration Platform syncs return orders to NetSuite as soon as they are initiated. However, OMS only needs return data once the return is completed in Shopify, so it downloads completed returns from Shopify at a later stage.
 
-Since NetSuite already has the return order data from the Integration Platform, syncing the same returns again from OMS would create duplicates. To prevent this, when downloading returns from Shopify, HotWax OMS reads the order notes added by Loop and tags the return order with LOOP_RETURN_CHANNEL. This return channel identifier allows OMS to recognize Loop-initiated returns and exclude them from syncing again, keeping NetSuite data clean.
+Since NetSuite already has the return order data from the Integration Platform, syncing the same returns again from OMS would create duplicates. To prevent this, when downloading returns from Shopify, HotWax OMS reads the order notes added by Loop and tags the return order with LOOP\_RETURN\_CHANNEL. This return channel identifier allows OMS to recognize Loop-initiated returns and exclude them from syncing again, keeping NetSuite data clean.
 
 ***
 
@@ -246,7 +246,9 @@ Customers who live near a brick-and-mortar store or those who prefer to get inst
 
 Retailers we work with, use Shopify POS as their POS system, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. Some retailers initiate in-store returns using the Loop Returns POS App, while others opt to use their Shopify POS system. Let's explore how these two distinct approaches work:
 
-**Synchronizing POS Returns to NetSuite when Loop POS is used**
+## Synchronizing POS Returns to NetSuite when returns are accepted on Loop POS
+
+<figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
 Loop Returns POS App provides an intuitive interface to create POS returns.
 
@@ -266,9 +268,10 @@ A scheduled job in HotWax Commerce downloads these returns from Shopify POS, inc
 
 As POS returns are already synced to NetSuite by Loop, they are not synced again by HotWax commerce.
 
-<figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
-#### Synchronizing POS Returns to NetSuite when Shopify POS is used
+## Synchronizing POS Returns to NetSuite when returns are accepted on Shopify POS
+
+<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
 
 Leveraging Shopify POS for in-store returns ensures that store associates are not required to navigate through a separate interface to handle them.
 
@@ -292,5 +295,3 @@ A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, 
 #### Handling of Multiple Scenarios
 
 When returning an item a customer can also opt to take the exchange item against it. The exchange item may be of higher value than the original item or may be of lesser value. Learn more about how HotWax commerce handles exchanges on an order.
-
-<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
