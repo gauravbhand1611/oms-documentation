@@ -132,17 +132,17 @@ The Process Return API triggers multiple actions in Loop based on the fetched Lo
 
 * The RMA status is updated from **Open** to **Closed**.
 * As soon as the RMA in Loop is marked as Closed, multiple actions take place:
+  * If the customer opted to receive a refund on their original payment method, Loop triggers Shopify to process the refund.
   * If the customer selected "Return for Store Credit," Loop automatically issues a gift card to the customer for the corresponding amount.
-  * If the customer opted to receive a refund on their original payment method, Loop initiates the refund accordingly.
   * If the customer selected "Exchange," Loop creates a new exchange order in Shopify.
 
-#### 9. Synchronize Refund Details to Shopify
+#### 9. Process Refunds to Customers
 
-Once the refund is initiated to the customer, Loop syncs the customer refund details to Shopify, updating the return from **In-Progress** to **Returned** in Shopify.
+Shopify processes the customer refund using the original payment method, updating the return status from **In-Progress** to **Returned** in Shopify. At the same time, Shopify syncs the refund details back to Loop.
 
 #### 10. Fetch and Transform Refund Details
 
-HotWax Commerce Integration Platform subscribes to the Loop’s webhook to fetch the refund details.
+HotWax Commerce Integration Platform subscribes to Loop’s webhook to fetch and transform refund details.
 
 **SFTP Locations**
 
