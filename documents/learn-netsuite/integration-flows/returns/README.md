@@ -246,7 +246,9 @@ Customers who live near a brick-and-mortar store or those who prefer to get inst
 
 Retailers we work with, use Shopify POS as their POS system, NetSuite as their ERP system, Loop as their RMS, and HotWax Commerce as their OMS. Some retailers initiate in-store returns using the Loop Returns POS App, while others opt to use their Shopify POS system. Let's explore how these two distinct approaches work:
 
-**Synchronizing POS Returns to NetSuite when Loop POS is used**
+## Synchronizing POS Returns to NetSuite when returns are accepted on Loop POS
+
+<figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
 Loop Returns POS App provides an intuitive interface to create POS returns.
 
@@ -266,9 +268,10 @@ A scheduled job in HotWax Commerce downloads these returns from Shopify POS, inc
 
 As POS returns are already synced to NetSuite by Loop, they are not synced again by HotWax commerce.
 
-<figure><img src="../../.gitbook/assets/29.png" alt=""><figcaption><p>Sync POS returns to NetSuite using Loop</p></figcaption></figure>
 
-#### Synchronizing POS Returns to NetSuite when Shopify POS is used
+## Synchronizing POS Returns to NetSuite when returns are accepted on Shopify POS
+
+<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
 
 Leveraging Shopify POS for in-store returns ensures that store associates are not required to navigate through a separate interface to handle them.
 
@@ -292,5 +295,3 @@ A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, 
 #### Handling of Multiple Scenarios
 
 When returning an item a customer can also opt to take the exchange item against it. The exchange item may be of higher value than the original item or may be of lesser value. Learn more about how HotWax commerce handles exchanges on an order.
-
-<figure><img src="../../.gitbook/assets/30.png" alt=""><figcaption><p>Sync POS returns to NetSuite using HotWax Commerce</p></figcaption></figure>
