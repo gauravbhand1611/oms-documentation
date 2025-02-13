@@ -19,8 +19,19 @@ description: Discover  the versions of HotWax Commerce OMS releases.
 | Release Type    | Hotfix                                                                                                              |
 | Image Tag       | v6.1.6                                                                                                              |
 | Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-latest-v6.1.6`                              |
-| Diff            | [Link to diff](https://git.hotwax.co/commerce/oms/-/compare/v6.1.4...v6.1.6?from_project_id=161&straight=false)     |
+| Diff            | [Link to diff](https://git.hotwax.co/commerce/oms/-/compare/v6.1.5...v6.1.6?from_project_id=161&straight=false)     |
 | Changelog       | [Link to changelog](https://git.hotwax.co/commerce/oms/-/blob/v6.1.6/CHANGELOG.md?ref_type=tags)                    |
+
+## Release - v6.1.5 (10th February 2025)
+
+| Information     | Value                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------  |
+| Release Version | v6.1.5                                                                                                              |
+| Release Type    | Hotfix                                                                                                              |
+| Image Tag       | v6.1.5                                                                                                              |
+| Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-latest-v6.1.5`                              |
+| Diff            | [Link to diff](https://git.hotwax.co/commerce/oms/-/compare/v6.1.4...v6.1.5?from_project_id=161&straight=false)     |
+| Changelog       | [Link to changelog](https://git.hotwax.co/commerce/oms/-/blob/v6.1.5/CHANGELOG.md?ref_type=tags)                    |
 
 ## Release - v6.1.4 (04th February 2025)
 
@@ -50,7 +61,7 @@ description: Discover  the versions of HotWax Commerce OMS releases.
 | --------------- | ------------------------------------------------------------------------------------------------------------------  |
 | Release Version | v6.1.2                                                                                                              |
 | Release Type    | Hotfix                                                                                                              |
-| Image Tag       | v6.1.2                                                                                                             |
+| Image Tag       | v6.1.2                                                                                                              |
 | Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-latest-v6.1.2`                              |
 | Diff            | [Link to diff](https://git.hotwax.co/commerce/oms/-/compare/v6.0.4...v6.1.2?from_project_id=161&straight=false)     |
 | Changelog       | [Link to changelog](https://git.hotwax.co/commerce/oms/-/blob/v6.1.2/CHANGELOG.md?ref_type=tags)                    |
@@ -289,7 +300,7 @@ description: Discover  the versions of HotWax Commerce OMS releases.
 
 | Information     | Value                                                                                                                |
 | --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Release Version | v5.17.17                                                                                                            |
+| Release Version | v5.17.17                                                                                                             |
 | Release Type    | Hotfix                                                                                                               |
 | Image Tag       | v5.17.17                                                                                                             |
 | Image URL       | `289432782788.dkr.ecr.us-east-1.amazonaws.com/omscoreimage:omscoreimage-v5.17.17`                                    |
