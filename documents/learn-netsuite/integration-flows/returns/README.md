@@ -252,7 +252,7 @@ Retailers we work with, use Shopify POS as their POS system, NetSuite as their E
 
 By leveraging Shopify POS for in-store returns, store associates are not required to navigate through a separate interface. This returns management workflow involves downloading returns data, processing Item Receipt records, and creating Customer Refunds.
 
-#### In-Store Return by Customer
+#### 1. In-Store Return by Customer
 
 Customers visit their preferred store to return a purchase, which may have been made in-store or online. Store associates search for the customer’s order ID, and once identified, they process the in-store return. Here’s how:
 
@@ -260,19 +260,19 @@ Customers visit their preferred store to return a purchase, which may have been 
 * Specify the return reason.
 * Process refunds to customers.
 
-#### Import POS Returns in HotWax Commerce
+#### 2. Import POS Returns in HotWax Commerce
 
 A scheduled job in HotWax Commerce downloads the return data from Shopify POS. These returns are downloaded as Completed, and the payment is marked as Refunded in HotWax Commerce.
 
 HotWax Commerce also restocks the returned inventory based on visibility into the specific location where the inventory was received.
 
-#### Transform and Export Returns Data
+#### 3. Transform and Export Returns Data
 
 A scheduled job in HotWax Commerce exports newly created POS returns and a job in HotWax’s Integration Platform imports and transforms this return data for NetSuite.
 
 A scheduled job in the HotWax Commerce Integration Platform then generates a CSV file of the transformed POS returns data and places this file at an SFTP location.
 
-#### Import POS Returns in NetSuite
+#### 4. Import POS Returns in NetSuite
 
 A scheduled SuiteScript in NetSuite reads this CSV file from the SFTP location, triggering multiple actions:
 
