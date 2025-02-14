@@ -127,4 +127,5 @@ Collateral rejection helps manage situations where the product in a rejected ord
 
 This feature ensures faster re-routing of unfulfillable items, minimizing delays across all orders containing the same product.
 
-<figure><img src="../.gitbook/assets/Configure Collateral Rejection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Configure Collateral Rejection.png" alt=""><figcaption><p>Configure Collateral Rejection</p></figcaption></figure>
+
