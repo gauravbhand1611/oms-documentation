@@ -102,7 +102,7 @@ The main reason to disable QOH impact from rejection reasons would be to limit t
 By suppressing ATP and not QOH, over-selling is still prevented and orders for those particular products won’t be routed to that store. When fulfillment administrators then review the rejections and inventory discrepancies, they are able to use the delta between the QOH and ATP to judge the validity of the store staff’s claim of inventory being unavailable.
 
 Retailers that don’t utilize HotWax Commerce for store inventory management only need the OMS to maintain an accurate record of sellable inventory. In that case, retailers should allow rejections to impact both ATP and QOH.
-<figure><img src="../.gitbook/assets/affect QOH.jpg" alt=""><figcaption><p>Affect QOH on Rejection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Affect QOH on Rejection.png" alt=""><figcaption><p>Affect QOH on Rejection</p></figcaption></figure>
 
 ## Partial Rejection
 
@@ -120,7 +120,7 @@ When partial rejection is disabled, rejecting any item in an order triggers the 
 3. **Automatic Rejection:** The entire order is rejected with the reason "reject entire order." This will not impact inventory variance or appear in rejection reports.
 
 If additional items need to be rejected with a specific reason, click on the default rejection reason applied to the item and make a selection.
-<figure><img src="../.gitbook/assets/rpartialRejection.jpg" alt=""><figcaption><p>Partial Rejection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Configure Partial Rejection.png" alt=""><figcaption><p>Partial Rejection</p></figcaption></figure>
 
 ## Collateral Rejection
 
@@ -130,4 +130,4 @@ Collateral rejection helps manage situations where the product in a rejected ord
 * **If partial rejection is not allowed:** All orders containing the rejected item will be completely rejected, not just the individual item.
 
 This feature ensures faster re-routing of unfulfillable items, minimizing delays across all orders containing the same product.
-<figure><img src="../.gitbook/assets/collateralRejection.png" alt=""><figcaption><p>Collateral Rejection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Configure Collateral Rejection.png" alt=""><figcaption><p>Collateral Rejection</p></figcaption></figure>
