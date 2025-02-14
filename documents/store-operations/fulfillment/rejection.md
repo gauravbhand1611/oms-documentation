@@ -23,6 +23,10 @@ Stores may face issues with their fulfillment capabilities in some instances. Wh
 1. In the **Open** or **In Progress Orders** screens, click the **Reject All** icon at the top right corner.
 2. All orders in that status will be rejected and removed from the facility.
 
+{% embed url="https://drive.google.com/file/d/1zGqM5HjeZBltktMe5vJIObOrznV74lvU/view?usp=drive_link" %}
+Bulk Reject Orders
+{% endembed %}
+
 {% hint style="info" %}
 The Reject All button does not affect the inventory of the facility. To ensure that no new orders are brokered to the facility, set the **Online order fulfillment capacity** to **No Capacity**.
 {% endhint %}
