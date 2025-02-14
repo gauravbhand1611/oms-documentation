@@ -130,3 +130,5 @@ Collateral rejection helps manage situations where the product in a rejected ord
 * **If partial rejection is not allowed:** All orders containing the rejected item will be completely rejected, not just the individual item.
 
 This feature ensures faster re-routing of unfulfillable items, minimizing delays across all orders containing the same product.
+
+<figure><img src="../.gitbook/assets/Configure Collateral Rejection.png" alt=""><figcaption></figcaption></figure>
