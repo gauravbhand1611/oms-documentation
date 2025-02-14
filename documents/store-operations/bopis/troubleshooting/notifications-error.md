@@ -4,7 +4,7 @@ description: >-
   for efficient customer communication.
 ---
 
-# Notification error
+# Notification Error
 
 ## Not Receiving Notifications
 
@@ -54,7 +54,7 @@ If you are not receiving reminder notifications, follow these steps to check the
 * Confirm the configuration of the `Open BOPIS Order Notifications` job.
 * Ensure that the job is set up with the desired frequency for reminder notifications.
 
-<figure><img src="../.gitbook/assets/Notification.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Notification.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Contact Support**
 
