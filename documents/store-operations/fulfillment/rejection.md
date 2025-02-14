@@ -120,7 +120,7 @@ When partial rejection is disabled, rejecting any item in an order triggers the 
 3. **Automatic Rejection:** The entire order is rejected with the reason "reject entire order." This will not impact inventory variance or appear in rejection reports.
 
 If additional items need to be rejected with a specific reason, click on the default rejection reason applied to the item and make a selection.
-<figure><img src="../.gitbook/assets/configurePartialrejection.png" alt=""><figcaption><p>Configure Partial Rejection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/configurePartialRejection.png" alt=""><figcaption><p>Configure Partial Rejection</p></figcaption></figure>
 
 ## Collateral Rejection
 
@@ -131,4 +131,4 @@ Collateral rejection helps manage situations where the product in a rejected ord
 
 This feature ensures faster re-routing of unfulfillable items, minimizing delays across all orders containing the same product.
 
-<figure><img src="../.gitbook/assets/configureCollateralrejection.png" alt=""><figcaption><p>Configure Collateral Rejection</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/configureCollateralRejection.png" alt=""><figcaption><p>Configure Collateral Rejection</p></figcaption></figure>
